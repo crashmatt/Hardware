@@ -24,7 +24,7 @@
 <layer number="14" name="Vertical" color="14" fill="15" visible="no" active="yes"/>
 <layer number="15" name="Power" color="11" fill="15" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
@@ -153,9 +153,9 @@
 <wire x1="23.7" y1="2.7432" x2="0.7" y2="2.7432" width="0" layer="20"/>
 <wire x1="0" y1="3.4432" x2="0" y2="36.9552" width="0" layer="20"/>
 <wire x1="0.7" y1="37.6552" x2="23.7952" y2="37.6552" width="0" layer="20"/>
-<wire x1="27.3952" y1="37.6552" x2="69.3" y2="37.6552" width="0" layer="20"/>
-<wire x1="70" y1="36.9552" x2="70" y2="3.4432" width="0" layer="20"/>
-<wire x1="69.3" y1="2.7432" x2="27.3" y2="2.7432" width="0" layer="20"/>
+<wire x1="27.3952" y1="37.6552" x2="57.616" y2="37.6552" width="0" layer="20"/>
+<wire x1="58.316" y1="36.9552" x2="58.316" y2="3.4432" width="0" layer="20"/>
+<wire x1="57.616" y1="2.7432" x2="27.3" y2="2.7432" width="0" layer="20"/>
 <wire x1="23.7952" y1="37.6552" x2="24.5952" y2="36.8552" width="0" layer="20" curve="90"/>
 <wire x1="24.5952" y1="36.8552" x2="26.5952" y2="36.8552" width="0" layer="20"/>
 <wire x1="26.5952" y1="36.8552" x2="27.3952" y2="37.6552" width="0" layer="20" curve="90"/>
@@ -167,8 +167,8 @@ manual soldering
 accessibility</text>
 <wire x1="0.7" y1="2.7432" x2="0" y2="3.4432" width="0" layer="20" curve="-90"/>
 <wire x1="0" y1="36.9552" x2="0.7" y2="37.6552" width="0" layer="20" curve="-90"/>
-<wire x1="69.3" y1="37.6552" x2="70" y2="36.9552" width="0" layer="20" curve="-90"/>
-<wire x1="70" y1="3.4432" x2="69.3" y2="2.7432" width="0" layer="20" curve="-90"/>
+<wire x1="57.616" y1="37.6552" x2="58.316" y2="36.9552" width="0" layer="20" curve="-90"/>
+<wire x1="58.316" y1="3.4432" x2="57.616" y2="2.7432" width="0" layer="20" curve="-90"/>
 <wire x1="48.8696" y1="28.448" x2="49.6824" y2="27.6352" width="0.4064" layer="22"/>
 <wire x1="48.8696" y1="27.6352" x2="49.6824" y2="28.448" width="0.4064" layer="22"/>
 <wire x1="62.5856" y1="23.1648" x2="68.2752" y2="22.352" width="0.508" layer="21"/>
@@ -853,120 +853,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="1.5" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
 <wire x1="-1" y1="-1" x2="-1.5" y2="-0.5" width="0.127" layer="21"/>
 </package>
-<package name="3X16RA">
-<wire x1="-3.97" y1="20.27" x2="-12.47" y2="20.27" width="0.2032" layer="52"/>
-<wire x1="-12.47" y1="20.27" x2="-12.47" y2="0.05" width="0.2032" layer="52"/>
-<wire x1="-3.97" y1="0.05" x2="-3.97" y2="20.27" width="0.2032" layer="52"/>
-<wire x1="-9.47" y1="20.97" x2="-9.47" y2="-0.55" width="0.127" layer="52"/>
-<wire x1="-12.47" y1="20.26" x2="3.43" y2="20.26" width="0.0096" layer="57"/>
-<wire x1="3.43" y1="20.26" x2="3.43" y2="-0.06" width="0.0096" layer="57"/>
-<wire x1="-12.47" y1="-0.06" x2="-12.47" y2="20.26" width="0.0096" layer="57"/>
-<wire x1="-12.47" y1="-0.05" x2="-12.47" y2="-20.27" width="0.2032" layer="52"/>
-<wire x1="-12.47" y1="-20.27" x2="-3.97" y2="-20.27" width="0.2032" layer="52"/>
-<wire x1="-3.97" y1="-20.27" x2="-3.97" y2="-0.05" width="0.2032" layer="52"/>
-<wire x1="-9.47" y1="0.65" x2="-9.47" y2="-20.87" width="0.127" layer="52"/>
-<wire x1="3.43" y1="-0.06" x2="3.43" y2="-20.26" width="0.0096" layer="57"/>
-<wire x1="3.43" y1="-20.26" x2="-12.47" y2="-20.26" width="0.0096" layer="57"/>
-<wire x1="-12.47" y1="-20.26" x2="-12.47" y2="-0.06" width="0.0096" layer="57"/>
-<rectangle x1="2.286" y1="18.796" x2="2.794" y2="19.304" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="18.796" x2="0.254" y2="19.304" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="16.256" x2="2.794" y2="16.764" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="18.796" x2="-2.286" y2="19.304" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="16.256" x2="-2.286" y2="16.764" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="16.256" x2="0.254" y2="16.764" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="13.716" x2="2.794" y2="14.224" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="13.716" x2="0.254" y2="14.224" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="13.716" x2="-2.286" y2="14.224" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="11.176" x2="0.254" y2="11.684" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="11.176" x2="2.794" y2="11.684" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="11.176" x2="-2.286" y2="11.684" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="8.636" x2="2.794" y2="9.144" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="8.636" x2="0.254" y2="9.144" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="8.636" x2="-2.286" y2="9.144" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="6.096" x2="2.794" y2="6.604" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="6.096" x2="0.254" y2="6.604" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="6.096" x2="-2.286" y2="6.604" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="3.556" x2="2.794" y2="4.064" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="3.556" x2="0.254" y2="4.064" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="3.556" x2="-2.286" y2="4.064" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="-4.064" x2="2.794" y2="-3.556" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="-4.064" x2="-2.286" y2="-3.556" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="-4.064" x2="0.254" y2="-3.556" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="-19.304" x2="-2.286" y2="-18.796" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="-19.304" x2="0.254" y2="-18.796" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="-6.604" x2="2.794" y2="-6.096" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="-6.604" x2="0.254" y2="-6.096" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="-6.604" x2="-2.286" y2="-6.096" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="-9.144" x2="0.254" y2="-8.636" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="-9.144" x2="2.794" y2="-8.636" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="-9.144" x2="-2.286" y2="-8.636" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="-11.684" x2="2.794" y2="-11.176" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="-11.684" x2="0.254" y2="-11.176" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="-11.684" x2="-2.286" y2="-11.176" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="-14.224" x2="2.794" y2="-13.716" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="-14.224" x2="0.254" y2="-13.716" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="-14.224" x2="-2.286" y2="-13.716" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="-16.764" x2="2.794" y2="-16.256" layer="52" rot="R270"/>
-<rectangle x1="-0.254" y1="-16.764" x2="0.254" y2="-16.256" layer="52" rot="R270"/>
-<rectangle x1="-2.794" y1="-16.764" x2="-2.286" y2="-16.256" layer="52" rot="R270"/>
-<rectangle x1="2.286" y1="-19.304" x2="2.794" y2="-18.796" layer="52" rot="R270"/>
-<pad name="1" x="2.54" y="19.05" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="2" x="0" y="19.05" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="3" x="-2.54" y="19.05" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="4" x="2.54" y="16.51" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="5" x="0" y="16.51" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="6" x="-2.54" y="16.51" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="7" x="2.54" y="13.97" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="8" x="0" y="13.97" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="9" x="-2.54" y="13.97" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="10" x="2.54" y="11.43" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="11" x="0" y="11.43" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="12" x="-2.54" y="11.43" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="13" x="2.54" y="8.89" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="14" x="0" y="8.89" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="15" x="-2.54" y="8.89" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="16" x="2.54" y="6.35" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="17" x="0" y="6.35" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="18" x="-2.54" y="6.35" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="19" x="2.54" y="3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="20" x="0" y="3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="21" x="-2.54" y="3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="22" x="2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="23" x="0" y="1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="24" x="-2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="25" x="2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="26" x="0" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="27" x="-2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="28" x="2.54" y="-3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="29" x="0" y="-3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="30" x="-2.54" y="-3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="31" x="2.54" y="-6.35" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="32" x="0" y="-6.35" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="33" x="-2.54" y="-6.35" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="34" x="2.54" y="-8.89" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="35" x="0" y="-8.89" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="36" x="-2.54" y="-8.89" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="37" x="2.54" y="-11.43" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="38" x="0" y="-11.43" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="39" x="-2.54" y="-11.43" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="40" x="2.54" y="-13.97" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="41" x="0" y="-13.97" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="42" x="-2.54" y="-13.97" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="43" x="2.54" y="-16.51" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="44" x="0" y="-16.51" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="45" x="-2.54" y="-16.51" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="46" x="2.54" y="-19.05" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="47" x="0" y="-19.05" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<pad name="48" x="-2.54" y="-19.05" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
-<text x="0.97" y="20.46" size="0.4" layer="27" font="vector" ratio="15">&gt;VALUE</text>
-<text x="-1.51" y="20.46" size="0.4" layer="25" font="vector" ratio="15">&gt;NAME</text>
-</package>
 <package name="SO08">
 <description>&lt;b&gt;Small Outline Package&lt;/b&gt; Fits JEDEC packages (narrow SOIC-8)</description>
 <wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
@@ -1397,6 +1283,85 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </package>
 </packages>
 </library>
+<library name="PX4lite">
+<packages>
+<package name="3X10RA">
+<wire x1="-3.97" y1="20.27" x2="-12.47" y2="20.27" width="0.2032" layer="52"/>
+<wire x1="-12.47" y1="20.27" x2="-12.47" y2="0.05" width="0.2032" layer="52"/>
+<wire x1="-3.97" y1="0.05" x2="-3.97" y2="20.27" width="0.2032" layer="52"/>
+<wire x1="-12.47" y1="20.26" x2="3.43" y2="20.26" width="0.0096" layer="57"/>
+<wire x1="3.43" y1="20.26" x2="3.43" y2="-20.26" width="0.0096" layer="57"/>
+<wire x1="-12.47" y1="-20.26" x2="-12.47" y2="20.26" width="0.0096" layer="57"/>
+<wire x1="-12.47" y1="-0.05" x2="-12.47" y2="-5.03" width="0.2032" layer="52"/>
+<wire x1="-12.47" y1="-5.03" x2="-3.97" y2="-5.03" width="0.2032" layer="52"/>
+<wire x1="-3.97" y1="-5.03" x2="-3.97" y2="-0.05" width="0.2032" layer="52"/>
+<wire x1="-9.47" y1="20.97" x2="-9.47" y2="-5.63" width="0.127" layer="52"/>
+<wire x1="3.43" y1="-20.26" x2="-12.47" y2="-20.26" width="0.0096" layer="57"/>
+<rectangle x1="2.286" y1="18.796" x2="2.794" y2="19.304" layer="52" rot="R270"/>
+<rectangle x1="-0.254" y1="18.796" x2="0.254" y2="19.304" layer="52" rot="R270"/>
+<rectangle x1="2.286" y1="16.256" x2="2.794" y2="16.764" layer="52" rot="R270"/>
+<rectangle x1="-2.794" y1="18.796" x2="-2.286" y2="19.304" layer="52" rot="R270"/>
+<rectangle x1="-2.794" y1="16.256" x2="-2.286" y2="16.764" layer="52" rot="R270"/>
+<rectangle x1="-0.254" y1="16.256" x2="0.254" y2="16.764" layer="52" rot="R270"/>
+<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="52" rot="R270"/>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="52" rot="R270"/>
+<rectangle x1="2.286" y1="13.716" x2="2.794" y2="14.224" layer="52" rot="R270"/>
+<rectangle x1="-0.254" y1="13.716" x2="0.254" y2="14.224" layer="52" rot="R270"/>
+<rectangle x1="-2.794" y1="13.716" x2="-2.286" y2="14.224" layer="52" rot="R270"/>
+<rectangle x1="-0.254" y1="11.176" x2="0.254" y2="11.684" layer="52" rot="R270"/>
+<rectangle x1="2.286" y1="11.176" x2="2.794" y2="11.684" layer="52" rot="R270"/>
+<rectangle x1="-2.794" y1="11.176" x2="-2.286" y2="11.684" layer="52" rot="R270"/>
+<rectangle x1="2.286" y1="8.636" x2="2.794" y2="9.144" layer="52" rot="R270"/>
+<rectangle x1="-0.254" y1="8.636" x2="0.254" y2="9.144" layer="52" rot="R270"/>
+<rectangle x1="-2.794" y1="8.636" x2="-2.286" y2="9.144" layer="52" rot="R270"/>
+<rectangle x1="2.286" y1="6.096" x2="2.794" y2="6.604" layer="52" rot="R270"/>
+<rectangle x1="-0.254" y1="6.096" x2="0.254" y2="6.604" layer="52" rot="R270"/>
+<rectangle x1="-2.794" y1="6.096" x2="-2.286" y2="6.604" layer="52" rot="R270"/>
+<rectangle x1="2.286" y1="3.556" x2="2.794" y2="4.064" layer="52" rot="R270"/>
+<rectangle x1="-0.254" y1="3.556" x2="0.254" y2="4.064" layer="52" rot="R270"/>
+<rectangle x1="-2.794" y1="3.556" x2="-2.286" y2="4.064" layer="52" rot="R270"/>
+<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="52" rot="R270"/>
+<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="52" rot="R270"/>
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="52" rot="R270"/>
+<rectangle x1="2.286" y1="-4.064" x2="2.794" y2="-3.556" layer="52" rot="R270"/>
+<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="52" rot="R270"/>
+<rectangle x1="-2.794" y1="-4.064" x2="-2.286" y2="-3.556" layer="52" rot="R270"/>
+<rectangle x1="-0.254" y1="-4.064" x2="0.254" y2="-3.556" layer="52" rot="R270"/>
+<pad name="1" x="2.54" y="19.05" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="2" x="0" y="19.05" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="3" x="-2.54" y="19.05" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="4" x="2.54" y="16.51" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="5" x="0" y="16.51" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="6" x="-2.54" y="16.51" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="7" x="2.54" y="13.97" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="8" x="0" y="13.97" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="9" x="-2.54" y="13.97" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="10" x="2.54" y="11.43" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="11" x="0" y="11.43" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="12" x="-2.54" y="11.43" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="13" x="2.54" y="8.89" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="14" x="0" y="8.89" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="15" x="-2.54" y="8.89" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="16" x="2.54" y="6.35" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="17" x="0" y="6.35" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="18" x="-2.54" y="6.35" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="19" x="2.54" y="3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="20" x="0" y="3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="21" x="-2.54" y="3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="22" x="2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="23" x="0" y="1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="24" x="-2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="25" x="2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="26" x="0" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="27" x="-2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="28" x="2.54" y="-3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="29" x="0" y="-3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<pad name="30" x="-2.54" y="-3.81" drill="1.016" diameter="1.8796" shape="octagon" rot="R270"/>
+<text x="0.97" y="20.46" size="0.4" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<text x="-1.51" y="20.46" size="0.4" layer="25" font="vector" ratio="15">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1625,10 +1590,10 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="C609" library="pixhawk2" package="0402-CAP" value="0u1" x="28.8544" y="38.2016" rot="R270">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="28.8544" y="38.2016" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="S601" library="pixhawk2" package="EVQP7J01K" value="RESET" x="25.6032" y="38.2016" smashed="yes" rot="R180">
-<attribute name="NAME" x="23.2138" y="39.8543" size="0.6" layer="25" font="vector" ratio="15" rot="R180"/>
-<attribute name="VALUE" x="28.2939" y="39.6908" size="0.6" layer="27" font="vector" ratio="15" rot="R270"/>
-<attribute name="PARTNO" value="EVQP7J01K" x="25.6032" y="38.2016" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="S601" library="pixhawk2" package="EVQP7J01K" value="RESET" x="25.7048" y="35.3568" smashed="yes" rot="R180">
+<attribute name="NAME" x="23.3154" y="37.0095" size="0.6" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="28.3955" y="36.846" size="0.6" layer="27" font="vector" ratio="15" rot="R270"/>
+<attribute name="PARTNO" value="EVQP7J01K" x="25.7048" y="35.3568" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C509" library="pixhawk2" package="0805-CAP" value="10u/10V" x="55.2704" y="43.18">
 <attribute name="PARTNO" value="CC0805ZKY5V6BB106" x="55.2704" y="43.18" size="1.778" layer="27" display="off"/>
@@ -1667,8 +1632,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="C610" library="pixhawk2" package="0402-CAP" value="0u1" x="29.2608" y="14.6304" rot="R90">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="29.2608" y="14.6304" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="J201" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="35.044" y="33.7376" rot="MR270">
-<attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="35.044" y="33.7376" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J201" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="99.1536" y="35.0584" rot="MR270">
+<attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="99.1536" y="35.0584" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="J203" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="34.4424" y="83.6168" rot="MR270">
 <attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="34.4424" y="83.6168" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -1676,12 +1641,12 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="J202" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="37.7384" y="48.7744" rot="MR270">
 <attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="37.7384" y="48.7744" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="J204" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="27.2288" y="6.9088" rot="MR270">
-<attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="27.2288" y="6.9088" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J204" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="54.7624" y="9.652" rot="MR270">
+<attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="54.7624" y="9.652" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="OSHW_LOGO" library="pixhawk2" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="56.4288" y="6.0912">
-<attribute name="PARTNO" value="*" x="56.4288" y="17.2672" size="1.778" layer="27" display="off"/>
-<attribute name="BOM" value="EXCLUDE" x="56.4288" y="17.2672" size="1.778" layer="27" display="off"/>
+<element name="OSHW_LOGO" library="pixhawk2" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="60.5944" y="35.7584">
+<attribute name="PARTNO" value="*" x="60.5944" y="46.9344" size="1.778" layer="27" display="off"/>
+<attribute name="BOM" value="EXCLUDE" x="60.5944" y="46.9344" size="1.778" layer="27" display="off"/>
 </element>
 <element name="M3_MOUNT1104" library="pixhawk2" package="MOUNT-HOLE3.1" value="MOUNT-HOLE3.1MM" x="20" y="5.2032">
 <attribute name="PARTNO" value="*" x="20" y="5.2032" size="1.778" layer="27" display="off"/>
@@ -1709,15 +1674,15 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <attribute name="BOM" value="EXCLUDE" x="70.5104" y="-14.732" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="63.4532" y="2.3248" size="0.5" layer="22" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="J301" library="pixhawk2" package="MOLEX-47346-0001" value="47346-0001" x="35.1536" y="63.1952" rot="R270">
-<attribute name="PARTNO" value="47346-0001" x="38.2016" y="85.5472" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="J301" library="pixhawk2" package="MOLEX-47346-0001" value="47346-0001" x="10.7696" y="33.2232" rot="MR180">
+<attribute name="PARTNO" value="47346-0001" x="-11.5824" y="30.1752" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="JX301" library="pixhawk2" package="FTSH-105-01-XXX-DV-K" value="ARM_MINI_JTAG-SMT" x="36.576" y="19.304" rot="MR270">
-<attribute name="PARTNO" value="M50-3900542" x="25.4" y="26.416" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="BOM" value="EXCLUDE" x="36.576" y="19.304" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="JX301" library="pixhawk2" package="FTSH-105-01-XXX-DV-K" value="ARM_MINI_JTAG-SMT" x="78.6384" y="3.6576" rot="MR270">
+<attribute name="PARTNO" value="M50-3900542" x="67.4624" y="10.7696" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="BOM" value="EXCLUDE" x="78.6384" y="3.6576" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="U301" library="baseboard" package="MICROSD" value="2908-05WB-MG" x="84.6328" y="19.5072" rot="MR90">
-<attribute name="PARTNO" value="2908-05WB-MG" x="84.6328" y="19.5072" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="U301" library="baseboard" package="MICROSD" value="2908-05WB-MG" x="84.6328" y="20.32" rot="MR90">
+<attribute name="PARTNO" value="2908-05WB-MG" x="84.6328" y="20.32" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="U201" library="pixhawk2" package="QFN20-RGY" value="TXS0108QFN20" x="39.4208" y="45.1104" rot="R90">
 <attribute name="PARTNO" value="TXS0108ERGYR" x="39.4208" y="45.1104" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1740,8 +1705,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="R711" library="pixhawk2" package="0402-RES" value="220R" x="8.636" y="49.4792" rot="R180">
 <attribute name="PARTNO" value="RC0402FR-07220RL" x="8.636" y="43.3832" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="LED704" library="pixhawk2" package="0603-LED" value="GREEN" x="7.62" y="48.4632" rot="MR270">
-<attribute name="PARTNO" value="APTD1608CGCK" x="3.556" y="51.5112" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="LED704" library="pixhawk2" package="0603-LED" value="GREEN" x="7.7216" y="52.0192" rot="MR270">
+<attribute name="PARTNO" value="APTD1608CGCK" x="3.6576" y="55.0672" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="C601" library="pixhawk2" package="0603-CAP" value="2u2" x="53.6448" y="61.7728">
 <attribute name="PARTNO" value="C1608Y5V1C225Z" x="53.6448" y="61.7728" size="1.778" layer="27" display="off"/>
@@ -1749,8 +1714,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="R603" library="pixhawk2" package="0402-RES" value="10K" x="53.9496" y="57.5056" rot="R270">
 <attribute name="PARTNO" value="RC0402FR-0710KL" x="53.9496" y="57.5056" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R708" library="pixhawk2" package="0402-RES" value="220R" x="19.9136" y="10.9728" rot="R270">
-<attribute name="PARTNO" value="RC0402FR-07220RL" x="26.0096" y="10.9728" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R708" library="pixhawk2" package="0402-RES" value="220R" x="24.0792" y="14.9352" rot="R270">
+<attribute name="PARTNO" value="RC0402FR-07220RL" x="30.1752" y="14.9352" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="LED702" library="pixhawk2" package="0603-LED" value="GREEN" x="6.1976" y="71.2216" rot="MR90">
 <attribute name="PARTNO" value="APTD1608CGCK" x="10.2616" y="68.1736" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -1781,20 +1746,17 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="C902" library="pixhawk2" package="0402-CAP" value="0u1" x="12.7" y="49.4792" rot="R180">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="17.78" y="42.3672" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J901" library="pixhawk2" package="3X16RA" value="" x="13.716" y="20.0914" rot="MR180">
-<attribute name="BOM" value="EXCLUDE" x="13.716" y="20.0914" size="1.778" layer="28" rot="MR180" display="off"/>
-</element>
 <element name="R713" library="pixhawk2" package="0402-RES" value="1K5" x="27.2288" y="19.5072" rot="R90">
 <attribute name="PARTNO" value="RC0402FR-071K5L" x="17.881603125" y="19.5072" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R710" library="pixhawk2" package="0402-RES" value="47R" x="23.1648" y="6.9088" rot="R90">
 <attribute name="PARTNO" value="RC0402JR-0747RL" x="15.4432" y="2.438396875" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="J702" library="con-hirose-df13" package="DF13C-3P-1.25V" value="DF13C-3P-1.25V" x="27.2288" y="20.32" rot="MR270">
-<attribute name="PARTNO" value="DF13C-3P-1.25V(20)" x="27.2288" y="20.32" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J702" library="con-hirose-df13" package="DF13C-3P-1.25V" value="DF13C-3P-1.25V" x="77.1144" y="41.656" rot="MR270">
+<attribute name="PARTNO" value="DF13C-3P-1.25V(20)" x="77.1144" y="41.656" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="J801" library="for-transfers" package="JST-ZH-SMT-VERTICAL" value="JST-ZH-3" x="24.7904" y="72.4408" rot="MR90">
-<attribute name="PARTNO" value="B3B-ZR-SM4-TF (LF)(SN)(P)" x="24.7904" y="72.4408" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="J801" library="for-transfers" package="JST-ZH-SMT-VERTICAL" value="JST-ZH-3" x="24.892" y="70.8152" rot="MR90">
+<attribute name="PARTNO" value="B3B-ZR-SM4-TF (LF)(SN)(P)" x="24.892" y="70.8152" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R609" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="51.1048" y="23.368" rot="R180">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="51.1048" y="23.368" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1841,8 +1803,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="C101" library="pixhawk2" package="0402-CAP" value="0u1" x="41.8592" y="9.3472" rot="R315">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="41.8592" y="9.3472" size="1.778" layer="27" rot="R315" display="off"/>
 </element>
-<element name="J302" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="34.3408" y="58.928" rot="MR270">
-<attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="34.3408" y="58.928" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J302" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="33.7312" y="55.4736" rot="MR270">
+<attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="33.7312" y="55.4736" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R608" library="pixhawk2" package="0402-RES" value="1K" x="33.6296" y="44.2976" rot="R90">
 <attribute name="PARTNO" value="RC0402FR-071KL" x="33.6296" y="44.2976" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1856,8 +1818,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="C603" library="pixhawk2" package="0603-CAP" value="1u0" x="57.404" y="59.436">
 <attribute name="PARTNO" value="CC0603ZRY5V7BB105" x="57.404" y="59.436" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U703" library="pixhawk2" package="6-PLCC" value="LRTB GFTG-T7AW-1+V7A7-29+R5T9-49-L" x="51.6128" y="20.32" rot="MR90">
-<attribute name="PARTNO" value="LRTB GFTG-T7AW-1+V7A7-29+R5T9-49-L" x="51.6128" y="20.32" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="U703" library="pixhawk2" package="6-PLCC" value="LRTB GFTG-T7AW-1+V7A7-29+R5T9-49-L" x="72.9488" y="21.6408" rot="MR90">
+<attribute name="PARTNO" value="LRTB GFTG-T7AW-1+V7A7-29+R5T9-49-L" x="72.9488" y="21.6408" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R101" library="pixhawk2" package="0402-RES" value="470R" x="24.1808" y="24.384" rot="R270">
 <attribute name="PARTNO" value="RC0402FR-07470RL" x="24.1808" y="24.384" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1865,8 +1827,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="U901" library="pixhawk2" package="QFN20-RGY" value="TXS0108QFN20" x="12.7" y="45.9232" rot="R180">
 <attribute name="PARTNO" value="TXS0108ERGYR" x="12.7" y="45.9232" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="JX801" library="pixhawk2" package="HEADER_3X01_SMD_H_BOARD_EDGE_SHORT" value="HEADER-3X1BOARDEDGE-SHORT" x="22.2504" y="53.5432" rot="MR0">
-<attribute name="BOM" value="EXCLUDE" x="22.2504" y="53.5432" size="1.778" layer="28" rot="MR0" display="off"/>
+<element name="JX801" library="pixhawk2" package="HEADER_3X01_SMD_H_BOARD_EDGE_SHORT" value="HEADER-3X1BOARDEDGE-SHORT" x="24.384" y="54.1528" rot="MR0">
+<attribute name="BOM" value="EXCLUDE" x="24.384" y="54.1528" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="U903" library="pixhawk2" package="TSSOP8_SOT505-2" value="74LVC2G240" x="9.4488" y="55.4736" rot="R270">
 <attribute name="PARTNO" value="74LVC2G240DP,125" x="9.4488" y="55.4736" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1958,8 +1920,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="L203" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="32.004" y="8.4328" rot="R45">
 <attribute name="PARTNO" value="KNH16C104DA5TS" x="32.004" y="8.4328" size="1.778" layer="27" rot="R45" display="off"/>
 </element>
-<element name="J403" library="con-hirose-df13" package="DF13C-7P-1.25V" value="DF13C-7P-1.25V" x="57.7088" y="32.9184" rot="MR270">
-<attribute name="PARTNO" value="DF13C-7P-1.25V(20)" x="57.7088" y="32.9184" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J403" library="con-hirose-df13" package="DF13C-7P-1.25V" value="DF13C-7P-1.25V" x="84.6328" y="36.068" rot="MR270">
+<attribute name="PARTNO" value="DF13C-7P-1.25V(20)" x="84.6328" y="36.068" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="L402" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="54.7624" y="35.3568" rot="R90">
 <attribute name="PARTNO" value="KNH16C104DA5TS" x="54.7624" y="35.3568" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1970,8 +1932,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="R405" library="pixhawk2" package="0402-RES" value="120R" x="42.3672" y="73.0504">
 <attribute name="PARTNO" value="RC0402FR-07120RL" x="37.4904" y="101.092" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J401" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="57.7088" y="5.6896" rot="MR270">
-<attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="57.7088" y="5.6896" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J401" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="96.012" y="4.572" rot="MR270">
+<attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="96.012" y="4.572" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R409" library="pixhawk2" package="0402-RES" value="120R" x="19.812" y="65.7352">
 <attribute name="PARTNO" value="RC0402FR-07120RL" x="10.0584" y="83.2104" size="1.778" layer="27" display="off"/>
@@ -1979,8 +1941,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="U401" library="pixhawk2" package="SOT23-8" value="MAX3051" x="20.0152" y="62.3824">
 <attribute name="PARTNO" value="MAX3051EKA" x="9.8552" y="66.04" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J405" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="42.672" y="5.6896" rot="MR270">
-<attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="42.672" y="5.6896" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J405" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="87.9856" y="5.2832" rot="MR270">
+<attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="87.9856" y="5.2832" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="C402" library="pixhawk2" package="0402-CAP" value="0u1" x="20.0152" y="59.944" rot="R180">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="34.6456" y="57.912" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1991,8 +1953,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="R402" library="pixhawk2" package="0402-RES" value="1K5" x="39.624" y="71.4248" rot="R180">
 <attribute name="PARTNO" value="RC0402FR-071K5L" x="44.0944" y="70.612" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J404" library="con-hirose-df13" package="DF13C-5P-1.25V" value="DF13C-5P-1.25V" x="42.672" y="20.32" rot="MR270">
-<attribute name="PARTNO" value="DF13C-5P-1.25V(20)" x="42.672" y="20.32" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J404" library="con-hirose-df13" package="DF13C-5P-1.25V" value="DF13C-5P-1.25V" x="73.5584" y="33.3248" rot="MR270">
+<attribute name="PARTNO" value="DF13C-5P-1.25V(20)" x="73.5584" y="33.3248" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R408" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="38.2016" y="9.4488">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="32.9184" y="-4.7752" size="1.778" layer="27" display="off"/>
@@ -2012,8 +1974,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="R707" library="pixhawk2" package="0402-RES" value="220R" x="16.764" y="49.4792" rot="R180">
 <attribute name="PARTNO" value="RC0402FR-07220RL" x="16.764" y="49.4792" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="LED701" library="pixhawk2" package="0603-LED" value="AMBER" x="11.684" y="48.4632" rot="MR270">
-<attribute name="PARTNO" value="APTD1608SECK" x="11.684" y="48.4632" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="LED701" library="pixhawk2" package="0603-LED" value="AMBER" x="11.4808" y="52.1208" rot="MR270">
+<attribute name="PARTNO" value="APTD1608SECK" x="11.4808" y="52.1208" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="U$301" library="pixhawk2" package="SOT563-6" value="NUF2042XV6" x="35.56" y="56.6928" rot="R180">
 <attribute name="PARTNO" value="NUF2042XV6T1G" x="35.56" y="56.6928" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2090,11 +2052,11 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="U$401" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="52.6288" y="44.8056" rot="R270">
 <attribute name="PARTNO" value="PESD0402-140" x="52.6288" y="44.8056" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$701" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="21.1328" y="21.9456" rot="R180">
-<attribute name="PARTNO" value="PESD0402-140" x="21.1328" y="21.9456" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="U$701" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="23.9776" y="22.0472" rot="R180">
+<attribute name="PARTNO" value="PESD0402-140" x="23.9776" y="22.0472" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$801" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="21.1328" y="23.1648" rot="R180">
-<attribute name="PARTNO" value="PESD0402-140" x="21.1328" y="23.1648" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="U$801" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="23.876" y="26.7208" rot="R180">
+<attribute name="PARTNO" value="PESD0402-140" x="23.876" y="26.7208" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U$901" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="9.0424" y="57.8104">
 <attribute name="PARTNO" value="PESD0402-140" x="9.0424" y="57.8104" size="1.778" layer="27" display="off"/>
@@ -2168,8 +2130,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="R3" library="pixhawk2" package="0402-RES" value="220R" x="14.732" y="49.4792" rot="R180">
 <attribute name="PARTNO" value="RC0402FR-07220RL" x="14.732" y="49.4792" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R4" library="pixhawk2" package="0402-RES" value="220R" x="19.812" y="13.5128" rot="R270">
-<attribute name="PARTNO" value="RC0402FR-07220RL" x="19.812" y="13.5128" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R4" library="pixhawk2" package="0402-RES" value="220R" x="24.0792" y="18.5928" rot="R270">
+<attribute name="PARTNO" value="RC0402FR-07220RL" x="24.0792" y="18.5928" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$1" library="pixhawk2" package="51281-1094" value="0512811094" x="68.3768" y="44.704" rot="R180">
 <attribute name="PARTNO" value="0781191109" x="68.3768" y="44.704" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2188,8 +2150,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <element name="D1" library="pixhawk2" package="MICROSMP" value="MSS1P4-M3" x="22.5552" y="44.9072" rot="R180">
 <attribute name="PARTNO" value="MSS1P4-M3/89A" x="22.5552" y="44.9072" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J601" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="65.4304" y="33.528" rot="MR270">
-<attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="65.4304" y="33.528" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J601" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="91.948" y="35.4584" rot="MR270">
+<attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="91.948" y="35.4584" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R605" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="59.0296" y="74.5744">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="52.9336" y="79.8576" size="1.778" layer="27" display="off"/>
@@ -2224,22 +2186,29 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <attribute name="PARTNO" value="*" x="65.4304" y="40.5384" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="65.4304" y="40.5384" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
+<element name="R1" library="pixhawk2" package="0402-RES" value="220R" x="2.2352" y="-2.1336">
+<attribute name="PARTNO" value="RC0402FR-07220RL" x="2.2352" y="-2.1336" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R2" library="pixhawk2" package="0402-RES" value="220R" x="2.2352" y="-3.7592">
+<attribute name="PARTNO" value="RC0402FR-07220RL" x="2.2352" y="-3.7592" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J1" library="PX4lite" package="3X10RA" value="" x="13.3096" y="8.0264"/>
 </elements>
 <signals>
 <signal name="IO-USART1_TX">
 <contactref element="R101" pad="P$2"/>
 <contactref element="JX801" pad="1"/>
-<wire x1="24.1808" y1="23.884" x2="24.7904" y2="53.5432" width="0" layer="19" extent="1-16"/>
+<wire x1="24.1808" y1="23.884" x2="26.924" y2="54.1528" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="IO-USART1_RX">
 <contactref element="J801" pad="P$3"/>
 <contactref element="JX801" pad="2"/>
-<wire x1="22.2504" y1="53.5432" x2="23.0404" y2="73.9408" width="0" layer="19" extent="16-16"/>
+<wire x1="24.384" y1="54.1528" x2="23.142" y2="72.3152" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="FMU-SWDIO">
 <contactref element="JX301" pad="2"/>
 <contactref element="U101" pad="72"/>
-<wire x1="34.544" y1="21.844" x2="40.676471875" y2="28.752434375" width="0" layer="19" extent="1-16"/>
+<wire x1="76.6064" y1="6.1976" x2="40.676471875" y2="28.752434375" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="PB2-BOOT1">
 <contactref element="R102" pad="P$1"/>
@@ -2255,8 +2224,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="63.1952" y1="35.9664" x2="63.1244" y2="35.8956" width="0.254" layer="1"/>
 <wire x1="42.090684375" y1="27.33821875" x2="63.1244" y2="35.8956" width="0" layer="19" extent="1-1"/>
 <wire x1="35.56" y1="56.0178" x2="42.090684375" y2="27.33821875" width="0" layer="19" extent="1-1"/>
-<wire x1="36.4536" y1="60.3952" x2="35.56" y2="56.0178" width="0" layer="19" extent="1-1"/>
-<wire x1="33.4408" y1="60.803" x2="36.4536" y2="60.3952" width="0" layer="19" extent="1-16"/>
+<wire x1="13.5696" y1="31.9232" x2="35.56" y2="56.0178" width="0" layer="19" extent="1-1"/>
+<wire x1="32.8312" y1="57.3486" x2="13.5696" y2="31.9232" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="ALARM">
 <contactref element="U101" pad="77"/>
@@ -2265,14 +2234,14 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="J204" pad="P$4"/>
 <contactref element="R212" pad="P$2"/>
 <contactref element="S5_TX" pad="P$1"/>
-<wire x1="25.916" y1="6.5024" x2="26.3288" y2="6.2838" width="0" layer="19" extent="1-16"/>
+<wire x1="25.916" y1="6.5024" x2="53.8624" y2="9.027" width="0" layer="19" extent="1-16"/>
 <wire x1="20.7264" y1="0.3048" x2="25.916" y2="6.5024" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SERIAL5_RX">
 <contactref element="J204" pad="P$5"/>
 <contactref element="R205" pad="P$2"/>
 <contactref element="S5_RX" pad="P$1"/>
-<wire x1="26.3288" y1="5.0338" x2="25.916" y2="5.2832" width="0" layer="19" extent="1-16"/>
+<wire x1="53.8624" y1="7.777" x2="25.916" y2="5.2832" width="0" layer="19" extent="1-16"/>
 <wire x1="24.0792" y1="0.6096" x2="25.916" y2="5.2832" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$1">
@@ -2423,22 +2392,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="C1004" pad="P$2"/>
 <contactref element="C1003" pad="P$2"/>
 <contactref element="C1001" pad="P$2"/>
-<contactref element="J901" pad="3"/>
-<contactref element="J901" pad="24"/>
-<contactref element="J901" pad="36"/>
-<contactref element="J901" pad="30"/>
-<contactref element="J901" pad="21"/>
-<contactref element="J901" pad="48"/>
-<contactref element="J901" pad="27"/>
-<contactref element="J901" pad="39"/>
-<contactref element="J901" pad="9"/>
-<contactref element="J901" pad="45"/>
-<contactref element="J901" pad="15"/>
-<contactref element="J901" pad="12"/>
-<contactref element="J901" pad="6"/>
-<contactref element="J901" pad="42"/>
-<contactref element="J901" pad="18"/>
-<contactref element="J901" pad="33"/>
 <contactref element="U$1001" pad="P$3"/>
 <contactref element="U$1001" pad="P$2"/>
 <contactref element="U$1001" pad="GND"/>
@@ -2516,6 +2469,16 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="48.1584" y1="15.24" x2="48.1584" y2="14.4336" width="0.254" layer="1"/>
 <wire x1="48.1584" y1="14.4336" x2="47.5424" y2="13.8176" width="0.254" layer="1"/>
 <contactref element="GND" pad="P$1"/>
+<contactref element="J1" pad="15"/>
+<contactref element="J1" pad="3"/>
+<contactref element="J1" pad="21"/>
+<contactref element="J1" pad="18"/>
+<contactref element="J1" pad="6"/>
+<contactref element="J1" pad="27"/>
+<contactref element="J1" pad="30"/>
+<contactref element="J1" pad="12"/>
+<contactref element="J1" pad="24"/>
+<contactref element="J1" pad="9"/>
 <wire x1="61.2648" y1="74.5744" x2="61.2648" y2="74.1744" width="0" layer="19" extent="1-1"/>
 <wire x1="61.2648" y1="74.9744" x2="61.2648" y2="74.5744" width="0" layer="19" extent="1-1"/>
 <wire x1="61.2648" y1="73.552" x2="61.2648" y2="74.1744" width="0" layer="19" extent="1-1"/>
@@ -2549,36 +2512,65 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="52.6288" y1="44.3056" x2="53.6972" y2="44.9232" width="0" layer="19" extent="1-1"/>
 <wire x1="59.1668" y1="43.18" x2="56.2204" y2="43.18" width="0" layer="19" extent="1-1"/>
 <wire x1="59.1232" y1="44.704" x2="59.1668" y2="43.18" width="0" layer="19" extent="1-1"/>
-<wire x1="63.1096" y1="51.3604" x2="55.6922" y2="51.1888" width="0" layer="19" extent="1-1"/>
-<wire x1="63.6096" y1="51.3604" x2="63.1096" y2="51.3604" width="0" layer="19" extent="1-1"/>
-<wire x1="64.1096" y1="51.3604" x2="63.6096" y2="51.3604" width="0" layer="19" extent="1-1"/>
-<wire x1="64.6096" y1="51.3604" x2="64.1096" y2="51.3604" width="0" layer="19" extent="1-1"/>
-<wire x1="65.1096" y1="51.3604" x2="64.6096" y2="51.3604" width="0" layer="19" extent="1-1"/>
+<wire x1="65.4304" y1="40.5384" x2="59.1668" y2="43.18" width="0" layer="19" extent="1-16"/>
+<wire x1="67.8768" y1="44.704" x2="65.4304" y2="40.5384" width="0" layer="19" extent="1-16"/>
+<wire x1="65.1096" y1="51.3604" x2="67.8768" y2="44.704" width="0" layer="19" extent="1-1"/>
+<wire x1="64.6096" y1="51.3604" x2="65.1096" y2="51.3604" width="0" layer="19" extent="1-1"/>
+<wire x1="64.1096" y1="51.3604" x2="64.6096" y2="51.3604" width="0" layer="19" extent="1-1"/>
+<wire x1="63.6096" y1="51.3604" x2="64.1096" y2="51.3604" width="0" layer="19" extent="1-1"/>
+<wire x1="63.1096" y1="51.3604" x2="63.6096" y2="51.3604" width="0" layer="19" extent="1-1"/>
 <wire x1="68.2672" y1="52.324" x2="65.1096" y2="51.3604" width="0" layer="19" extent="1-1"/>
 <wire x1="68.2672" y1="53.5432" x2="68.2672" y2="52.324" width="0" layer="19" extent="1-1"/>
 <wire x1="67.9624" y1="58.928" x2="68.2672" y2="53.5432" width="0" layer="19" extent="1-1"/>
-<wire x1="67.8768" y1="44.704" x2="65.1096" y2="51.3604" width="0" layer="19" extent="1-1"/>
 <wire x1="55.1624" y1="35.3568" x2="56.2204" y2="43.18" width="0" layer="19" extent="1-1"/>
 <wire x1="54.7624" y1="35.3568" x2="55.1624" y2="35.3568" width="0" layer="19" extent="1-1"/>
 <wire x1="54.3624" y1="35.3568" x2="54.7624" y2="35.3568" width="0" layer="19" extent="1-1"/>
 <wire x1="53.4416" y1="34.9584" x2="54.3624" y2="35.3568" width="0" layer="19" extent="1-1"/>
-<wire x1="56.8088" y1="29.1684" x2="55.1624" y2="35.3568" width="0" layer="19" extent="1-16"/>
-<wire x1="65.4304" y1="40.5384" x2="56.8088" y2="29.1684" width="0" layer="19" extent="16-16"/>
-<wire x1="64.5304" y1="31.653" x2="65.4304" y2="40.5384" width="0" layer="19" extent="16-16"/>
-<wire x1="64.5304" y1="30.403" x2="64.5304" y2="31.653" width="0" layer="19" extent="16-16"/>
+<wire x1="83.7328" y1="32.318" x2="55.1624" y2="35.3568" width="0" layer="19" extent="1-16"/>
+<wire x1="91.048" y1="32.3334" x2="83.7328" y2="32.318" width="0" layer="19" extent="16-16"/>
+<wire x1="91.048" y1="33.5834" x2="91.048" y2="32.3334" width="0" layer="19" extent="16-16"/>
+<wire x1="50.6048" y1="22.2504" x2="83.7328" y2="32.318" width="0" layer="19" extent="1-16"/>
+<wire x1="51.2064" y1="21.0232" x2="50.6048" y2="22.2504" width="0" layer="19" extent="1-1"/>
+<wire x1="49.784" y1="21.07" x2="51.2064" y2="21.0232" width="0" layer="19" extent="1-1"/>
+<wire x1="48.5808" y1="16.0054" x2="49.784" y2="21.07" width="0" layer="19" extent="1-1"/>
+<wire x1="51.7144" y1="14.6384" x2="48.5808" y2="15.6624" width="0" layer="19" extent="1-1"/>
+<wire x1="42.212753125" y1="8.99364375" x2="45.463953125" y2="11.83844375" width="0" layer="19" extent="1-1"/>
+<wire x1="36.9824" y1="7.2216" x2="41.0464" y2="8.696665625" width="0" layer="19" extent="1-1"/>
+<wire x1="33.78404375" y1="9.40004375" x2="36.9824" y2="7.2216" width="0" layer="19" extent="1-1"/>
+<wire x1="32.286840625" y1="8.14995625" x2="33.78404375" y2="9.40004375" width="0" layer="19" extent="1-1"/>
+<wire x1="32.004" y1="8.4328" x2="32.286840625" y2="8.14995625" width="0" layer="19" extent="1-1"/>
+<wire x1="32.86964375" y1="7.36804375" x2="32.286840625" y2="8.14995625" width="0" layer="19" extent="1-1"/>
+<wire x1="30.53284375" y1="12.65124375" x2="32.15844375" y2="11.02564375" width="0" layer="19" extent="1-1"/>
+<wire x1="30.79708125" y1="14.6304" x2="30.53284375" y2="12.65124375" width="0" layer="19" extent="1-1"/>
+<wire x1="87.0856" y1="3.4082" x2="41.0464" y2="8.696665625" width="0" layer="19" extent="1-16"/>
+<wire x1="27.2288" y1="20.0072" x2="29.2608" y2="15.1304" width="0" layer="19" extent="1-1"/>
+<wire x1="28.65565625" y1="21.681365625" x2="27.2288" y2="20.0072" width="0" layer="19" extent="1-1"/>
+<wire x1="26.416" y1="23.2584" x2="28.65565625" y2="21.681365625" width="0" layer="19" extent="1-1"/>
+<wire x1="26.424" y1="24.384" x2="26.416" y2="23.2584" width="0" layer="19" extent="1-1"/>
+<wire x1="23.376" y1="26.7208" x2="26.416" y2="23.2584" width="0" layer="19" extent="1-1"/>
+<wire x1="23.4776" y1="22.0472" x2="23.376" y2="26.7208" width="0" layer="19" extent="1-1"/>
+<wire x1="53.8624" y1="6.527" x2="29.551075" y2="8.715640625" width="0" layer="19" extent="1-16"/>
+<wire x1="72.6584" y1="30.8248" x2="45.9232" y2="13.3176" width="0" layer="19" extent="1-16"/>
+<wire x1="72.6584" y1="33.3248" x2="72.6584" y2="30.8248" width="0" layer="19" extent="16-16"/>
+<wire x1="80.6704" y1="4.9276" x2="72.6584" y2="33.3248" width="0" layer="19" extent="16-16"/>
+<wire x1="80.6704" y1="3.6576" x2="80.6704" y2="4.9276" width="0" layer="19" extent="16-16"/>
+<wire x1="80.6704" y1="1.1176" x2="80.6704" y2="3.6576" width="0" layer="19" extent="16-16"/>
+<wire x1="24.0792" y1="15.4352" x2="28.377278125" y2="12.2936" width="0" layer="19" extent="1-1"/>
+<wire x1="39.969365625" y1="29.459540625" x2="80.6704" y2="4.9276" width="0" layer="19" extent="1-16"/>
+<wire x1="98.2536" y1="31.9334" x2="39.969365625" y2="29.459540625" width="0" layer="19" extent="1-16"/>
 <wire x1="44.0944" y1="57.0928" x2="52.8448" y2="60.0924" width="0" layer="19" extent="1-1"/>
 <wire x1="44.0944" y1="56.6928" x2="44.0944" y2="57.0928" width="0" layer="19" extent="1-1"/>
 <wire x1="44.0944" y1="56.2928" x2="44.0944" y2="56.6928" width="0" layer="19" extent="1-1"/>
 <wire x1="43.8832" y1="54.0512" x2="44.0944" y2="56.2928" width="0" layer="19" extent="1-1"/>
-<wire x1="37.6536" y1="60.8952" x2="44.0944" y2="57.0928" width="0" layer="19" extent="1-1"/>
-<wire x1="38.1036" y1="63.1952" x2="37.6536" y2="60.8952" width="0" layer="19" extent="1-1"/>
-<wire x1="33.8536" y1="60.3952" x2="37.6536" y2="60.8952" width="0" layer="19" extent="1-1"/>
-<wire x1="32.6536" y1="60.8952" x2="33.8536" y2="60.3952" width="0" layer="19" extent="1-1"/>
-<wire x1="31.0896" y1="60.3504" x2="32.6536" y2="60.8952" width="0" layer="19" extent="1-16"/>
-<wire x1="32.2036" y1="63.1952" x2="32.6536" y2="60.8952" width="0" layer="19" extent="1-1"/>
-<wire x1="32.763953125" y1="57.757553125" x2="33.8536" y2="60.3952" width="0" layer="19" extent="1-1"/>
-<wire x1="33.4408" y1="57.053" x2="32.763953125" y2="57.757553125" width="0" layer="19" extent="1-16"/>
-<wire x1="33.956728125" y1="56.715128125" x2="33.4408" y2="57.053" width="0" layer="19" extent="1-16"/>
+<wire x1="13.0696" y1="30.7232" x2="44.0944" y2="57.0928" width="0" layer="19" extent="1-1"/>
+<wire x1="10.7696" y1="30.2732" x2="13.0696" y2="30.7232" width="0" layer="19" extent="1-1"/>
+<wire x1="13.5696" y1="34.5232" x2="13.0696" y2="30.7232" width="0" layer="19" extent="1-1"/>
+<wire x1="13.0696" y1="35.7232" x2="13.5696" y2="34.5232" width="0" layer="19" extent="1-1"/>
+<wire x1="31.0896" y1="60.3504" x2="13.0696" y2="35.7232" width="0" layer="19" extent="1-16"/>
+<wire x1="10.7696" y1="36.1732" x2="13.0696" y2="35.7232" width="0" layer="19" extent="1-1"/>
+<wire x1="32.763953125" y1="57.757553125" x2="13.5696" y2="34.5232" width="0" layer="19" extent="1-1"/>
+<wire x1="32.8312" y1="53.5986" x2="32.763953125" y2="57.757553125" width="0" layer="19" extent="1-16"/>
+<wire x1="33.956728125" y1="56.715128125" x2="32.8312" y2="53.5986" width="0" layer="19" extent="1-16"/>
 <wire x1="35.56" y1="57.3678" x2="33.956728125" y2="56.715128125" width="0" layer="19" extent="1-1"/>
 <wire x1="34.544" y1="50.7936" x2="33.956728125" y2="56.715128125" width="0" layer="19" extent="1-1"/>
 <wire x1="34.544" y1="50.3936" x2="34.544" y2="50.7936" width="0" layer="19" extent="1-1"/>
@@ -2592,8 +2584,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="23.2664" y1="47.3456" x2="23.2664" y2="47.7456" width="0" layer="19" extent="1-1"/>
 <wire x1="23.2664" y1="46.9456" x2="23.2664" y2="47.3456" width="0" layer="19" extent="1-1"/>
 <wire x1="23.6648" y1="46.228" x2="23.2664" y2="46.9456" width="0" layer="19" extent="1-1"/>
-<wire x1="19.7104" y1="53.5432" x2="23.2664" y2="47.7456" width="0" layer="19" extent="1-16"/>
-<wire x1="19.5152" y1="59.944" x2="19.7104" y2="53.5432" width="0" layer="19" extent="1-16"/>
+<wire x1="21.844" y1="54.1528" x2="23.2664" y2="47.7456" width="0" layer="19" extent="1-16"/>
+<wire x1="19.5152" y1="59.944" x2="21.844" y2="54.1528" width="0" layer="19" extent="1-16"/>
 <wire x1="19.6902" y1="61.2074" x2="19.5152" y2="59.944" width="0" layer="19" extent="1-1"/>
 <wire x1="19.0402" y1="63.5574" x2="19.6902" y2="61.2074" width="0" layer="19" extent="1-1"/>
 <wire x1="20.9902" y1="63.5574" x2="19.0402" y2="63.5574" width="0" layer="19" extent="1-1"/>
@@ -2622,60 +2614,25 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="9.136" y1="49.4792" x2="7.6738" y2="54.4986" width="0" layer="19" extent="1-1"/>
 <wire x1="12.2" y1="49.4792" x2="9.136" y2="49.4792" width="0" layer="19" extent="1-1"/>
 <wire x1="11.95" y1="48.1732" x2="12.2" y2="49.4792" width="0" layer="19" extent="1-1"/>
-<wire x1="23.0404" y1="72.4408" x2="18.3832" y2="66.04" width="0" layer="19" extent="1-16"/>
-<wire x1="27.4032" y1="38.9266" x2="23.6648" y2="46.228" width="0" layer="19" extent="1-1"/>
-<wire x1="28.8544" y1="38.7016" x2="27.4032" y2="38.9266" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="39.1414" x2="11.95" y2="48.1732" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="36.6014" x2="11.176" y2="39.1414" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="34.0614" x2="11.176" y2="36.6014" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="31.5214" x2="11.176" y2="34.0614" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="28.9814" x2="11.176" y2="31.5214" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="26.4414" x2="11.176" y2="28.9814" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="23.9014" x2="11.176" y2="26.4414" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="21.3614" x2="11.176" y2="23.9014" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="18.8214" x2="11.176" y2="21.3614" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="16.2814" x2="11.176" y2="18.8214" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="13.7414" x2="11.176" y2="16.2814" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="11.2014" x2="11.176" y2="13.7414" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="8.6614" x2="11.176" y2="11.2014" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="6.1214" x2="11.176" y2="8.6614" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="3.5814" x2="11.176" y2="6.1214" width="0" layer="19" extent="1-1"/>
-<wire x1="11.176" y1="1.0414" x2="11.176" y2="3.5814" width="0" layer="19" extent="1-1"/>
-<wire x1="19.9136" y1="11.4728" x2="11.176" y2="11.2014" width="0" layer="19" extent="1-1"/>
-<wire x1="28.377278125" y1="12.2936" x2="19.9136" y2="11.4728" width="0" layer="19" extent="1-1"/>
-<wire x1="30.79708125" y1="14.6304" x2="30.53284375" y2="12.65124375" width="0" layer="19" extent="1-1"/>
-<wire x1="32.15844375" y1="11.02564375" x2="30.53284375" y2="12.65124375" width="0" layer="19" extent="1-1"/>
-<wire x1="32.286840625" y1="8.14995625" x2="33.78404375" y2="9.40004375" width="0" layer="19" extent="1-1"/>
-<wire x1="32.004" y1="8.4328" x2="32.286840625" y2="8.14995625" width="0" layer="19" extent="1-1"/>
-<wire x1="32.86964375" y1="7.36804375" x2="32.286840625" y2="8.14995625" width="0" layer="19" extent="1-1"/>
-<wire x1="36.9824" y1="7.2216" x2="33.78404375" y2="9.40004375" width="0" layer="19" extent="1-1"/>
-<wire x1="41.0464" y1="8.696665625" x2="36.9824" y2="7.2216" width="0" layer="19" extent="1-1"/>
-<wire x1="45.463953125" y1="11.83844375" x2="42.212753125" y2="8.99364375" width="0" layer="19" extent="1-1"/>
-<wire x1="51.7144" y1="14.6384" x2="48.5808" y2="15.6624" width="0" layer="19" extent="1-1"/>
-<wire x1="41.772" y1="3.8146" x2="41.0464" y2="8.696665625" width="0" layer="19" extent="1-16"/>
-<wire x1="49.784" y1="21.07" x2="48.5808" y2="16.0054" width="0" layer="19" extent="1-1"/>
-<wire x1="51.2064" y1="21.0232" x2="49.784" y2="21.07" width="0" layer="19" extent="1-1"/>
-<wire x1="50.6048" y1="22.2504" x2="51.2064" y2="21.0232" width="0" layer="19" extent="1-1"/>
-<wire x1="27.2288" y1="20.0072" x2="29.2608" y2="15.1304" width="0" layer="19" extent="1-1"/>
-<wire x1="28.65565625" y1="21.681365625" x2="27.2288" y2="20.0072" width="0" layer="19" extent="1-1"/>
-<wire x1="26.416" y1="23.2584" x2="28.65565625" y2="21.681365625" width="0" layer="19" extent="1-1"/>
-<wire x1="26.424" y1="24.384" x2="26.416" y2="23.2584" width="0" layer="19" extent="1-1"/>
-<wire x1="20.6328" y1="23.1648" x2="26.416" y2="23.2584" width="0" layer="19" extent="1-1"/>
-<wire x1="20.6328" y1="21.9456" x2="20.6328" y2="23.1648" width="0" layer="19" extent="1-1"/>
-<wire x1="26.3288" y1="3.7838" x2="29.551075" y2="8.715640625" width="0" layer="19" extent="1-16"/>
-<wire x1="41.772" y1="17.82" x2="45.9232" y2="13.3176" width="0" layer="19" extent="1-16"/>
-<wire x1="41.772" y1="20.32" x2="41.772" y2="17.82" width="0" layer="19" extent="16-16"/>
-<wire x1="38.608" y1="20.574" x2="41.772" y2="20.32" width="0" layer="19" extent="16-16"/>
-<wire x1="38.608" y1="19.304" x2="38.608" y2="20.574" width="0" layer="19" extent="16-16"/>
-<wire x1="38.608" y1="16.764" x2="38.608" y2="19.304" width="0" layer="19" extent="16-16"/>
-<wire x1="39.969365625" y1="29.459540625" x2="38.608" y2="20.574" width="0" layer="19" extent="1-16"/>
-<wire x1="34.144" y1="30.6126" x2="39.969365625" y2="29.459540625" width="0" layer="19" extent="1-16"/>
-<wire x1="56.8088" y1="3.8146" x2="51.3" y2="12.192" width="0" layer="19" extent="1-16"/>
+<wire x1="23.142" y1="70.8152" x2="18.3832" y2="66.04" width="0" layer="19" extent="1-16"/>
+<wire x1="27.5048" y1="36.0818" x2="23.6648" y2="46.228" width="0" layer="19" extent="1-1"/>
+<wire x1="28.8544" y1="38.7016" x2="27.5048" y2="36.0818" width="0" layer="19" extent="1-1"/>
+<wire x1="95.112" y1="2.697" x2="51.3" y2="12.192" width="0" layer="19" extent="1-16"/>
 <wire x1="48.5902" y1="74.9554" x2="58.5296" y2="72.0344" width="0" layer="19" extent="1-1"/>
-<wire x1="33.5424" y1="80.4918" x2="23.0404" y2="72.4408" width="0" layer="19" extent="16-16"/>
+<wire x1="33.5424" y1="80.4918" x2="23.142" y2="70.8152" width="0" layer="19" extent="16-16"/>
 <wire x1="33.286" y1="82.2092" x2="33.5424" y2="80.4918" width="0" layer="19" extent="1-16"/>
 <wire x1="33.536" y1="83.6168" x2="33.286" y2="82.2092" width="0" layer="19" extent="1-1"/>
-<wire x1="87.5328" y1="23.0672" x2="64.5304" y2="30.403" width="0" layer="19" extent="16-16"/>
+<wire x1="10.7696" y1="27.0764" x2="9.136" y2="49.4792" width="0" layer="19" extent="1-1"/>
+<wire x1="10.7696" y1="24.5364" x2="10.7696" y2="27.0764" width="0" layer="19" extent="1-1"/>
+<wire x1="10.7696" y1="21.9964" x2="10.7696" y2="24.5364" width="0" layer="19" extent="1-1"/>
+<wire x1="10.7696" y1="19.4564" x2="10.7696" y2="21.9964" width="0" layer="19" extent="1-1"/>
+<wire x1="10.7696" y1="16.9164" x2="10.7696" y2="19.4564" width="0" layer="19" extent="1-1"/>
+<wire x1="10.7696" y1="14.3764" x2="10.7696" y2="16.9164" width="0" layer="19" extent="1-1"/>
+<wire x1="10.7696" y1="11.8364" x2="10.7696" y2="14.3764" width="0" layer="19" extent="1-1"/>
+<wire x1="10.7696" y1="9.2964" x2="10.7696" y2="11.8364" width="0" layer="19" extent="1-1"/>
+<wire x1="10.7696" y1="6.7564" x2="10.7696" y2="9.2964" width="0" layer="19" extent="1-1"/>
+<wire x1="10.7696" y1="4.2164" x2="10.7696" y2="6.7564" width="0" layer="19" extent="1-1"/>
+<wire x1="87.5328" y1="23.88" x2="91.048" y2="32.3334" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="FMU-VDD_3V3" class="1">
 <contactref element="VDD_3V1101" pad="P$1"/>
@@ -2730,7 +2687,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="48.10109375" y1="18.499384375" x2="48.296109375" y2="18.6944" width="0.254" layer="1"/>
 <wire x1="48.296109375" y1="18.6944" x2="49.5808" y2="18.6944" width="0.254" layer="1"/>
 <wire x1="49.5808" y1="18.6944" x2="50.3936" y2="18.6944" width="0.254" layer="1"/>
-<wire x1="48.3616" y1="19.1008" x2="48.3616" y2="18.759890625" width="0.254" layer="1"/>
+<wire x1="48.3616" y1="19.1008" x2="48.3616" y2="18.759890625" width="0" layer="19" extent="1-16"/>
 <wire x1="48.3616" y1="18.759890625" x2="48.10109375" y2="18.499384375" width="0.254" layer="1"/>
 <contactref element="U701" pad="10"/>
 <contactref element="U701" pad="1"/>
@@ -2780,17 +2737,16 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="37.6708" y1="43.3604" x2="37.6708" y2="46.8604" width="0" layer="19" extent="1-1"/>
 <wire x1="41.6708" y1="44.3604" x2="37.6708" y2="43.3604" width="0" layer="19" extent="1-1"/>
 <wire x1="42.4688" y1="41.9688" x2="41.6708" y2="44.3604" width="0" layer="19" extent="1-1"/>
-<wire x1="33.6296" y1="44.7976" x2="37.6708" y2="43.3604" width="0" layer="19" extent="1-1"/>
 <wire x1="45.4152" y1="41.148" x2="42.4688" y2="41.9688" width="0" layer="19" extent="1-16"/>
-<wire x1="39.6158125" y1="29.81309375" x2="45.4152" y2="41.148" width="0" layer="19" extent="1-16"/>
-<wire x1="35.00324375" y1="32.052753125" x2="39.6158125" y2="29.81309375" width="0" layer="19" extent="1-1"/>
+<wire x1="33.6296" y1="44.7976" x2="37.6708" y2="43.3604" width="0" layer="19" extent="1-1"/>
+<wire x1="35.00324375" y1="32.052753125" x2="37.6708" y2="43.3604" width="0" layer="19" extent="1-1"/>
 <wire x1="34.19044375" y1="31.239953125" x2="35.00324375" y2="32.052753125" width="0" layer="19" extent="1-1"/>
 <wire x1="33.37764375" y1="30.427153125" x2="34.19044375" y2="31.239953125" width="0" layer="19" extent="1-1"/>
-<wire x1="38.608" y1="21.844" x2="39.6158125" y2="29.81309375" width="0" layer="19" extent="1-16"/>
-<wire x1="35.535440625" y1="13.0048" x2="38.608" y2="21.844" width="0" layer="19" extent="1-16"/>
-<wire x1="31.8376375" y1="14.96385" x2="34.666065625" y2="12.135425" width="0" layer="19" extent="1-1"/>
-<wire x1="28.302103125" y1="21.3278125" x2="29.2608" y2="14.1304" width="0" layer="19" extent="1-1"/>
+<wire x1="39.6158125" y1="29.81309375" x2="35.00324375" y2="32.052753125" width="0" layer="19" extent="1-1"/>
+<wire x1="28.302103125" y1="21.3278125" x2="33.37764375" y2="30.427153125" width="0" layer="19" extent="1-1"/>
 <wire x1="26.416" y1="22.2584" x2="28.302103125" y2="21.3278125" width="0" layer="19" extent="1-1"/>
+<wire x1="29.2608" y1="14.1304" x2="28.302103125" y2="21.3278125" width="0" layer="19" extent="1-1"/>
+<wire x1="34.666065625" y1="12.135425" x2="31.8376375" y2="14.96385" width="0" layer="19" extent="1-1"/>
 <wire x1="50.5808" y1="13.2554" x2="41.50564375" y2="9.700753125" width="0" layer="19" extent="1-1"/>
 <wire x1="50.8" y1="17.9752" x2="50.5808" y2="16.0054" width="0" layer="19" extent="1-1"/>
 <wire x1="51.2064" y1="20.0232" x2="50.3936" y2="18.6944" width="0" layer="19" extent="1-1"/>
@@ -2800,7 +2756,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="13.45" y1="48.1732" x2="13.2" y2="49.4792" width="0" layer="19" extent="1-1"/>
 <wire x1="14.45" y1="44.1732" x2="13.45" y2="48.1732" width="0" layer="19" extent="1-1"/>
 <wire x1="10.95" y1="44.1732" x2="14.45" y2="44.1732" width="0" layer="19" extent="1-1"/>
-<wire x1="87.5328" y1="20.8672" x2="52.4176" y2="15.6384" width="0" layer="19" extent="1-16"/>
+<wire x1="80.6704" y1="6.1976" x2="52.4176" y2="15.6384" width="0" layer="19" extent="1-16"/>
+<wire x1="87.5328" y1="21.68" x2="80.6704" y2="6.1976" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="OTG_FS_DP">
 <contactref element="U101" pad="71"/>
@@ -2834,12 +2791,12 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="F2" pad="1"/>
 <wire x1="60.3376" y1="68.7832" x2="62.6212" y2="70.4716" width="0" layer="19" extent="1-1"/>
 <wire x1="27.7144" y1="49.1744" x2="60.3376" y2="68.7832" width="0" layer="19" extent="1-1"/>
-<wire x1="11.684" y1="47.7132" x2="27.7144" y2="49.1744" width="0" layer="19" extent="1-16"/>
-<wire x1="7.62" y1="47.7132" x2="11.684" y2="47.7132" width="0" layer="19" extent="16-16"/>
+<wire x1="11.4808" y1="51.3708" x2="27.7144" y2="49.1744" width="0" layer="19" extent="1-16"/>
+<wire x1="7.7216" y1="51.2692" x2="11.4808" y2="51.3708" width="0" layer="19" extent="16-16"/>
 <wire x1="50.6048" y1="23.368" x2="27.7144" y2="49.1744" width="0" layer="19" extent="1-1"/>
-<wire x1="50.5128" y1="21.795" x2="50.6048" y2="23.368" width="0" layer="19" extent="1-16"/>
-<wire x1="51.6128" y1="21.795" x2="50.5128" y2="21.795" width="0" layer="19" extent="16-16"/>
-<wire x1="52.7128" y1="21.795" x2="51.6128" y2="21.795" width="0" layer="19" extent="16-16"/>
+<wire x1="71.8488" y1="23.1158" x2="50.6048" y2="23.368" width="0" layer="19" extent="1-16"/>
+<wire x1="72.9488" y1="23.1158" x2="71.8488" y2="23.1158" width="0" layer="19" extent="16-16"/>
+<wire x1="74.0488" y1="23.1158" x2="72.9488" y2="23.1158" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="!BARO_CS">
 <contactref element="U503" pad="5"/>
@@ -2890,44 +2847,44 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="SAFETY">
 <contactref element="R713" pad="P$1"/>
 <contactref element="J702" pad="P$3"/>
-<wire x1="26.3288" y1="19.07" x2="27.2288" y2="19.0072" width="0" layer="19" extent="1-16"/>
+<wire x1="76.2144" y1="40.406" x2="27.2288" y2="19.0072" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SERIAL1_CTS">
 <contactref element="J201" pad="P$4"/>
 <contactref element="R211" pad="P$2"/>
-<wire x1="34.144" y1="33.1126" x2="42.3592" y2="48.3616" width="0" layer="19" extent="1-16"/>
+<wire x1="98.2536" y1="34.4334" x2="42.3592" y2="48.3616" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SERIAL1_RTS">
 <contactref element="J201" pad="P$5"/>
 <contactref element="R204" pad="P$2"/>
-<wire x1="34.144" y1="31.8626" x2="42.3592" y2="49.5808" width="0" layer="19" extent="1-16"/>
+<wire x1="98.2536" y1="33.1834" x2="42.3592" y2="49.5808" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SDIO_D0">
 <contactref element="U301" pad="7"/>
 <contactref element="U101" pad="65"/>
 <contactref element="R304" pad="P$1"/>
-<wire x1="43.151346875" y1="26.277559375" x2="87.3328" y2="24.1672" width="0" layer="19" extent="1-16"/>
+<wire x1="43.151346875" y1="26.277559375" x2="87.3328" y2="24.98" width="0" layer="19" extent="1-16"/>
 <wire x1="37.54324375" y1="55.12004375" x2="43.151346875" y2="26.277559375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDIO_D1">
 <contactref element="U301" pad="8"/>
 <contactref element="U101" pad="66"/>
 <contactref element="R305" pad="P$1"/>
-<wire x1="42.79779375" y1="26.6311125" x2="87.3328" y2="25.2672" width="0" layer="19" extent="1-16"/>
+<wire x1="42.79779375" y1="26.6311125" x2="87.3328" y2="26.08" width="0" layer="19" extent="1-16"/>
 <wire x1="37.44164375" y1="56.44084375" x2="42.79779375" y2="26.6311125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDIO_D2">
 <contactref element="U301" pad="1"/>
 <contactref element="U101" pad="78"/>
 <contactref element="R301" pad="P$1"/>
-<wire x1="36.080278125" y1="29.1059875" x2="87.3328" y2="17.5672" width="0" layer="19" extent="1-16"/>
+<wire x1="36.080278125" y1="29.1059875" x2="87.3328" y2="18.38" width="0" layer="19" extent="1-16"/>
 <wire x1="35.710353125" y1="31.34564375" x2="36.080278125" y2="29.1059875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDIO_D3">
 <contactref element="U301" pad="2"/>
 <contactref element="U101" pad="79"/>
 <contactref element="R302" pad="P$1"/>
-<wire x1="35.726725" y1="28.752434375" x2="86.9328" y2="18.6672" width="0" layer="19" extent="1-16"/>
+<wire x1="35.726725" y1="28.752434375" x2="86.9328" y2="19.48" width="0" layer="19" extent="1-16"/>
 <wire x1="34.897553125" y1="30.53284375" x2="35.726725" y2="28.752434375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!GYRO_CS">
@@ -2958,13 +2915,13 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="U301" pad="3"/>
 <contactref element="U101" pad="83"/>
 <contactref element="R303" pad="P$1"/>
-<wire x1="34.3125125" y1="27.33821875" x2="87.3328" y2="19.7672" width="0" layer="19" extent="1-16"/>
+<wire x1="34.3125125" y1="27.33821875" x2="87.3328" y2="20.58" width="0" layer="19" extent="1-16"/>
 <wire x1="34.084753125" y1="29.72004375" x2="34.3125125" y2="27.33821875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDIO_CK">
 <contactref element="U301" pad="5"/>
 <contactref element="U101" pad="80"/>
-<wire x1="35.373171875" y1="28.39888125" x2="87.3328" y2="21.9672" width="0" layer="19" extent="1-16"/>
+<wire x1="35.373171875" y1="28.39888125" x2="87.3328" y2="22.78" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="ACCEL_DRDY">
 <contactref element="U$501" pad="11"/>
@@ -2986,15 +2943,15 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="J201" pad="P$2"/>
 <contactref element="R210" pad="P$2"/>
 <contactref element="S1TX" pad="P$1"/>
-<wire x1="34.144" y1="35.6126" x2="42.3592" y2="50.8" width="0" layer="19" extent="1-16"/>
-<wire x1="31.1912" y1="42.3672" x2="34.144" y2="35.6126" width="0" layer="19" extent="16-16"/>
+<wire x1="98.2536" y1="36.9334" x2="42.3592" y2="50.8" width="0" layer="19" extent="1-16"/>
+<wire x1="31.1912" y1="42.3672" x2="98.2536" y2="36.9334" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SERIAL1_RX">
 <contactref element="J201" pad="P$3"/>
 <contactref element="R203" pad="P$2"/>
 <contactref element="S1RX" pad="P$1"/>
-<wire x1="34.144" y1="34.3626" x2="42.0544" y2="55.5752" width="0" layer="19" extent="1-16"/>
-<wire x1="31.2928" y1="40.3352" x2="34.144" y2="34.3626" width="0" layer="19" extent="16-16"/>
+<wire x1="98.2536" y1="35.6834" x2="42.0544" y2="55.5752" width="0" layer="19" extent="1-16"/>
+<wire x1="31.2928" y1="40.3352" x2="98.2536" y2="35.6834" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SERIAL2_RX">
 <contactref element="J202" pad="P$3"/>
@@ -3021,14 +2978,14 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="J204" pad="P$2"/>
 <contactref element="R213" pad="P$2"/>
 <contactref element="S4TX" pad="P$1"/>
-<wire x1="25.916" y1="8.9408" x2="26.3288" y2="8.7838" width="0" layer="19" extent="1-16"/>
+<wire x1="25.916" y1="8.9408" x2="53.8624" y2="11.527" width="0" layer="19" extent="1-16"/>
 <wire x1="18.8976" y1="1.4224" x2="25.916" y2="8.9408" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SERIAL4_RX">
 <contactref element="J204" pad="P$3"/>
 <contactref element="R206" pad="P$2"/>
 <contactref element="S4RX" pad="P$1"/>
-<wire x1="26.3288" y1="7.5338" x2="25.916" y2="7.7216" width="0" layer="19" extent="1-16"/>
+<wire x1="53.8624" y1="10.277" x2="25.916" y2="7.7216" width="0" layer="19" extent="1-16"/>
 <wire x1="22.2504" y1="1.3208" x2="25.916" y2="7.7216" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="VDD_5V_PERIPH" class="1" airwireshidden="yes">
@@ -3038,7 +2995,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="L202" pad="P$1"/>
 <contactref element="L402" pad="P$1"/>
 <contactref element="U$604" pad="8"/>
-<wire x1="47.1424" y1="13.0176" x2="47.1424" y2="12.2936" width="0.4064" layer="1"/>
+<wire x1="47.1424" y1="13.0176" x2="47.1424" y2="12.2936" width="0" layer="19" extent="1-16"/>
 <wire x1="33.744" y1="50.3936" x2="60.7212" y2="70.4716" width="0" layer="19" extent="1-1"/>
 <wire x1="17.9832" y1="65.24" x2="33.744" y2="50.3936" width="0" layer="19" extent="1-1"/>
 <wire x1="54.7624" y1="34.5568" x2="33.744" y2="50.3936" width="0" layer="19" extent="1-1"/>
@@ -3049,15 +3006,15 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="J301" pad="D-"/>
 <contactref element="J302" pad="P$3"/>
 <contactref element="U$301" pad="1"/>
-<wire x1="36.06" y1="57.3678" x2="35.8036" y2="60.3952" width="0" layer="19" extent="1-1"/>
-<wire x1="33.4408" y1="58.303" x2="36.06" y2="57.3678" width="0" layer="19" extent="1-16"/>
+<wire x1="36.06" y1="57.3678" x2="13.5696" y2="32.5732" width="0" layer="19" extent="1-1"/>
+<wire x1="32.8312" y1="54.8486" x2="36.06" y2="57.3678" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="OTG_DP1">
 <contactref element="J301" pad="D+"/>
 <contactref element="J302" pad="P$2"/>
 <contactref element="U$301" pad="3"/>
-<wire x1="33.4408" y1="59.553" x2="35.1536" y2="60.3952" width="0" layer="19" extent="1-16"/>
-<wire x1="35.06" y1="57.3678" x2="33.4408" y2="59.553" width="0" layer="19" extent="1-16"/>
+<wire x1="32.8312" y1="56.0986" x2="13.5696" y2="33.2232" width="0" layer="19" extent="1-16"/>
+<wire x1="35.06" y1="57.3678" x2="32.8312" y2="56.0986" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMU-USART2_TX">
 <contactref element="U101" pad="86"/>
@@ -3117,18 +3074,14 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="FMU-UART7_TX">
 <contactref element="U101" pad="39"/>
 <contactref element="U202" pad="5"/>
-<wire x1="44.21200625" y1="14.610296875" x2="44.191903125" y2="14.6304" width="0.1524" layer="1"/>
-<wire x1="44.191903125" y1="14.6304" x2="44.191903125" y2="14.634496875" width="0.1524" layer="1"/>
 <wire x1="45.0088" y1="13.5128" x2="45.0088" y2="13.813503125" width="0.1524" layer="1"/>
 <wire x1="45.0088" y1="13.813503125" x2="44.21200625" y2="14.610296875" width="0.1524" layer="1"/>
-<wire x1="44.191903125" y1="14.6304" x2="35.786" y2="79.7092" width="0" layer="19" extent="1-1"/>
+<wire x1="44.21200625" y1="14.610296875" x2="35.786" y2="79.7092" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-UART7_RX">
 <contactref element="U101" pad="38"/>
 <contactref element="U202" pad="4"/>
-<wire x1="43.858453125" y1="14.25674375" x2="42.875196875" y2="15.24" width="0.1524" layer="1"/>
-<wire x1="42.875196875" y1="15.24" x2="42.672" y2="15.24" width="0.1524" layer="1"/>
-<wire x1="42.672" y1="15.24" x2="35.786" y2="79.2092" width="0" layer="19" extent="1-1"/>
+<wire x1="43.858453125" y1="14.25674375" x2="35.786" y2="79.2092" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-UART8_TX">
 <contactref element="U101" pad="98"/>
@@ -3155,14 +3108,12 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="N$12">
 <contactref element="U101" pad="49"/>
 <contactref element="C611" pad="P$1"/>
-<wire x1="47.747540625" y1="18.14583125" x2="47.1424" y2="18.750971875" width="0.1524" layer="1"/>
-<wire x1="47.1424" y1="18.750971875" x2="47.1424" y2="19.1008" width="0.1524" layer="1"/>
 <wire x1="47.747540625" y1="18.14583125" x2="49.784" y2="19.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="LED704" pad="C"/>
 <contactref element="R711" pad="P$2"/>
-<wire x1="8.136" y1="49.4792" x2="7.62" y2="49.2132" width="0" layer="19" extent="1-16"/>
+<wire x1="8.136" y1="49.4792" x2="7.7216" y2="52.7692" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="VDD_3V3_SENSORS_EN">
 <contactref element="U101" pad="2"/>
@@ -3203,9 +3154,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="!VDD_5V_PERIPH_OC">
 <contactref element="U101" pad="46"/>
 <contactref element="U$604" pad="4"/>
-<wire x1="46.0248" y1="19.304" x2="46.0248" y2="17.747253125" width="0.1524" layer="1"/>
-<wire x1="46.0248" y1="17.747253125" x2="46.68688125" y2="17.085171875" width="0.1524" layer="1"/>
-<wire x1="46.0248" y1="19.304" x2="62.6212" y2="71.9716" width="0" layer="19" extent="1-1"/>
+<wire x1="46.68688125" y1="17.085171875" x2="62.6212" y2="71.9716" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="LED705" pad="C"/>
@@ -3215,7 +3164,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="N$29">
 <contactref element="LED702" pad="C"/>
 <contactref element="R708" pad="P$2"/>
-<wire x1="19.9136" y1="10.4728" x2="6.1976" y2="70.4716" width="0" layer="19" extent="1-16"/>
+<wire x1="24.0792" y1="14.4352" x2="6.1976" y2="70.4716" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="!IO-LED_AMBER">
 <contactref element="R709" pad="P$1"/>
@@ -3230,13 +3179,10 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </signal>
 <signal name="GYRO_DRDY">
 <contactref element="U101" pad="35"/>
-<wire x1="43.4848" y1="12.2936" x2="43.4848" y2="12.4968" width="0.1524" layer="1"/>
-<wire x1="43.4848" y1="12.4968" x2="42.79779375" y2="13.18380625" width="0.1524" layer="1"/>
-<wire x1="42.79779375" y1="13.18380625" x2="42.79779375" y2="13.196084375" width="0.1524" layer="1"/>
 <contactref element="U$1" pad="5"/>
 <contactref element="U502" pad="6"/>
 <wire x1="66.3768" y1="44.704" x2="62.7396" y2="53.2304" width="0" layer="19" extent="1-1"/>
-<wire x1="42.79779375" y1="13.18380625" x2="66.3768" y2="44.704" width="0" layer="19" extent="1-1"/>
+<wire x1="42.79779375" y1="13.196084375" x2="66.3768" y2="44.704" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!IO-LED_SAFETY">
 <contactref element="R710" pad="P$2"/>
@@ -3244,39 +3190,37 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="SPI_EXT_MISO">
 <contactref element="U101" pad="4"/>
 <contactref element="J403" pad="P$3"/>
-<wire x1="29.3627625" y1="17.438725" x2="56.8088" y2="34.1684" width="0" layer="19" extent="1-16"/>
+<wire x1="29.3627625" y1="17.438725" x2="83.7328" y2="37.318" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SPI_EXT_MOSI">
 <contactref element="U101" pad="5"/>
 <contactref element="J403" pad="P$4"/>
-<wire x1="29.716315625" y1="17.085171875" x2="56.8088" y2="32.9184" width="0" layer="19" extent="1-16"/>
+<wire x1="29.716315625" y1="17.085171875" x2="83.7328" y2="36.068" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SPI_EXT_SCK">
 <contactref element="U101" pad="1"/>
 <contactref element="J403" pad="P$2"/>
-<wire x1="28.302103125" y1="18.499384375" x2="56.8088" y2="35.4184" width="0" layer="19" extent="1-16"/>
+<wire x1="28.302103125" y1="18.499384375" x2="83.7328" y2="38.568" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="!SPI_EXT_NSS">
 <contactref element="U101" pad="3"/>
 <contactref element="J403" pad="P$5"/>
-<wire x1="29.009209375" y1="17.792278125" x2="56.8088" y2="31.6684" width="0" layer="19" extent="1-16"/>
+<wire x1="29.009209375" y1="17.792278125" x2="83.7328" y2="34.818" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMU-CH1">
 <contactref element="U901" pad="7"/>
 <contactref element="U101" pad="45"/>
-<wire x1="45.72" y1="17.34494375" x2="46.333325" y2="16.73161875" width="0.1524" layer="1"/>
-<wire x1="14.45" y1="46.6732" x2="45.72" y2="17.34494375" width="0" layer="19" extent="1-1"/>
+<wire x1="14.45" y1="46.6732" x2="46.333325" y2="16.73161875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-CH2">
 <contactref element="U901" pad="6"/>
 <contactref element="U101" pad="44"/>
-<wire x1="45.979771875" y1="16.378065625" x2="45.212" y2="17.1458375" width="0.1524" layer="1"/>
-<wire x1="45.212" y1="17.1458375" x2="14.45" y2="46.1732" width="0" layer="19" extent="1-1"/>
+<wire x1="14.45" y1="46.1732" x2="45.979771875" y2="16.378065625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-CH3">
 <contactref element="U901" pad="5"/>
 <contactref element="U101" pad="42"/>
-<wire x1="45.272665625" y1="15.67095625" x2="44.196" y2="16.747621875" width="0.1524" layer="1"/>
+<wire x1="45.272665625" y1="15.67095625" x2="44.196" y2="16.747621875" width="0" layer="19" extent="1-16"/>
 <wire x1="14.45" y1="45.6732" x2="44.196" y2="16.747621875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-CH4">
@@ -3316,7 +3260,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="N$57">
 <contactref element="R710" pad="P$1"/>
 <contactref element="J702" pad="P$2"/>
-<wire x1="23.1648" y1="6.4088" x2="26.3288" y2="20.32" width="0" layer="19" extent="1-16"/>
+<wire x1="23.1648" y1="6.4088" x2="76.2144" y2="41.656" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="BATT_VOLTAGE_SENS">
 <contactref element="R605" pad="P$1"/>
@@ -3332,10 +3276,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="R609" pad="P$1"/>
 <contactref element="R610" pad="P$1"/>
 <contactref element="U101" pad="29"/>
-<wire x1="40.676471875" y1="11.0747625" x2="40.0304" y2="11.720834375" width="0.1524" layer="1"/>
-<wire x1="40.0304" y1="11.720834375" x2="40.0304" y2="11.9888" width="0.1524" layer="1"/>
 <wire x1="51.6048" y1="22.2504" x2="51.6048" y2="23.368" width="0" layer="19" extent="1-1"/>
-<wire x1="40.0304" y1="11.9888" x2="51.6048" y2="22.2504" width="0" layer="19" extent="1-1"/>
+<wire x1="40.676471875" y1="11.0747625" x2="51.6048" y2="22.2504" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-BOOT0">
 <contactref element="FMU-BOOT1101" pad="P$1"/>
@@ -3399,7 +3341,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="FMU-SWO">
 <contactref element="U101" pad="89"/>
 <contactref element="JX301" pad="6"/>
-<wire x1="34.544" y1="19.304" x2="32.191190625" y2="25.2169" width="0" layer="19" extent="1-16"/>
+<wire x1="76.6064" y1="3.6576" x2="32.191190625" y2="25.2169" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMU-I2C1_SCL">
 <contactref element="U101" pad="95"/>
@@ -3440,7 +3382,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="FMU-SWCLK">
 <contactref element="JX301" pad="4"/>
 <contactref element="U101" pad="76"/>
-<wire x1="34.544" y1="20.574" x2="36.787384375" y2="29.81309375" width="0" layer="19" extent="1-16"/>
+<wire x1="76.6064" y1="4.9276" x2="36.787384375" y2="29.81309375" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="!ACCEL_MAG_CS">
 <contactref element="U101" pad="9"/>
@@ -3452,9 +3394,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="VBAT">
 <contactref element="U101" pad="6"/>
 <contactref element="R608" pad="P$1"/>
-<wire x1="29.187853125" y1="15.8496" x2="28.3464" y2="15.8496" width="0.1524" layer="1"/>
 <wire x1="30.069871875" y1="16.73161875" x2="33.6296" y2="43.7976" width="0" layer="19" extent="1-1"/>
-<wire x1="29.187853125" y1="15.8496" x2="30.069871875" y2="16.73161875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="C602" pad="P$2"/>
@@ -3471,8 +3411,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="11.2308" y1="63.0808" x2="10.8712" y2="64.0708" width="0" layer="19" extent="1-1"/>
 <wire x1="10.9808" y1="57.8104" x2="11.2308" y2="63.0808" width="0" layer="19" extent="1-1"/>
 <wire x1="11.2238" y1="56.4486" x2="10.9808" y2="57.8104" width="0" layer="19" extent="1-1"/>
-<wire x1="21.6328" y1="21.9456" x2="11.2238" y2="56.4486" width="0" layer="19" extent="1-1"/>
-<wire x1="26.3288" y1="21.57" x2="21.6328" y2="21.9456" width="0" layer="19" extent="1-16"/>
+<wire x1="24.4776" y1="22.0472" x2="11.2238" y2="56.4486" width="0" layer="19" extent="1-1"/>
+<wire x1="76.2144" y1="42.906" x2="24.4776" y2="22.0472" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$23">
 <contactref element="U101" pad="69"/>
@@ -3484,9 +3424,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="R408" pad="P$1"/>
 <wire x1="37.7016" y1="9.4488" x2="37.7016" y2="8.9488" width="0.1524" layer="1"/>
 <wire x1="37.7016" y1="8.9488" x2="37.592" y2="8.8392" width="0.1524" layer="1"/>
-<wire x1="35.1536" y1="13.5128" x2="35.1536" y2="13.330065625" width="0.1524" layer="1"/>
-<wire x1="35.1536" y1="13.330065625" x2="34.3125125" y2="12.488978125" width="0.1524" layer="1"/>
-<wire x1="34.3125125" y1="12.488978125" x2="37.7016" y2="9.4488" width="0" layer="19" extent="1-1"/>
+<wire x1="37.7016" y1="9.4488" x2="34.3125125" y2="12.488978125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU_AUX_ADC2">
 <contactref element="U101" pad="33"/>
@@ -3540,33 +3478,33 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </signal>
 <signal name="FMU-CH6-PROT">
 <contactref element="R902" pad="P$2"/>
-<contactref element="J901" pad="31"/>
-<wire x1="16.256" y1="26.4414" x2="8.136" y2="42.2656" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="16"/>
+<wire x1="15.8496" y1="14.3764" x2="8.136" y2="42.2656" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$68">
-<contactref element="J901" pad="34"/>
 <contactref element="R911" pad="P$2"/>
-<wire x1="16.256" y1="28.9814" x2="8.136" y2="43.4848" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="13"/>
+<wire x1="15.8496" y1="16.9164" x2="8.136" y2="43.4848" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$77">
-<contactref element="J901" pad="37"/>
 <contactref element="R903" pad="P$2"/>
-<wire x1="16.256" y1="31.5214" x2="8.136" y2="44.704" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="10"/>
+<wire x1="15.8496" y1="19.4564" x2="8.136" y2="44.704" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$78">
 <contactref element="R912" pad="P$2"/>
-<contactref element="J901" pad="40"/>
-<wire x1="16.256" y1="34.0614" x2="8.136" y2="45.9232" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="7"/>
+<wire x1="15.8496" y1="21.9964" x2="8.136" y2="45.9232" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$79">
-<contactref element="J901" pad="43"/>
 <contactref element="R904" pad="P$2"/>
-<wire x1="16.256" y1="36.6014" x2="8.136" y2="47.1424" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="4"/>
+<wire x1="15.8496" y1="24.5364" x2="8.136" y2="47.1424" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-CH1-PROT">
 <contactref element="R913" pad="P$2"/>
-<contactref element="J901" pad="46"/>
-<wire x1="16.256" y1="39.1414" x2="8.136" y2="48.3616" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="1"/>
+<wire x1="15.8496" y1="27.0764" x2="8.136" y2="48.3616" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$70">
 <contactref element="U201" pad="20"/>
@@ -3633,20 +3571,20 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="U703" pad="C1"/>
 <wire x1="50.0808" y1="13.2554" x2="50.0808" y2="13.6064" width="0.1524" layer="1"/>
 <wire x1="50.0808" y1="13.6064" x2="50.3936" y2="13.9192" width="0.1524" layer="1"/>
-<wire x1="50.3936" y1="13.9192" x2="52.7128" y2="18.845" width="0" layer="19" extent="1-16"/>
+<wire x1="50.3936" y1="13.9192" x2="74.0488" y2="20.1658" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="RGB_LED_4">
 <contactref element="U701" pad="8"/>
 <contactref element="U703" pad="C2"/>
 <wire x1="49.5808" y1="13.2554" x2="49.5808" y2="13.8176" width="0.1524" layer="1"/>
-<wire x1="49.5808" y1="13.8176" x2="51.6128" y2="18.845" width="0" layer="19" extent="1-16"/>
+<wire x1="49.5808" y1="13.8176" x2="72.9488" y2="20.1658" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="RGB_LED_14">
 <contactref element="U701" pad="7"/>
 <contactref element="U703" pad="C3"/>
 <wire x1="49.0808" y1="13.2554" x2="49.0808" y2="14.232" width="0.1524" layer="1"/>
 <wire x1="49.0808" y1="14.232" x2="49.5808" y2="14.732" width="0.1524" layer="1"/>
-<wire x1="49.5808" y1="14.732" x2="50.5128" y2="18.845" width="0" layer="19" extent="1-16"/>
+<wire x1="49.5808" y1="14.732" x2="71.8488" y2="20.1658" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$95">
 <contactref element="U701" pad="6"/>
@@ -3658,8 +3596,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </signal>
 <signal name="!VDD_5V_HIPOWER_OC">
 <contactref element="U101" pad="41"/>
-<wire x1="44.9191125" y1="15.317403125" x2="44.9191125" y2="15.3296875" width="0.1524" layer="1"/>
-<wire x1="44.9191125" y1="15.3296875" x2="43.688" y2="16.5608" width="0.1524" layer="1"/>
 </signal>
 <signal name="FMU-VDD_5V5" class="1">
 <contactref element="R603" pad="P$2"/>
@@ -3679,18 +3615,18 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="J403" pad="P$1"/>
 <contactref element="L402" pad="P$2"/>
 <contactref element="U$402" pad="C"/>
-<wire x1="54.7624" y1="36.1568" x2="56.8088" y2="36.6684" width="0" layer="19" extent="1-16"/>
+<wire x1="54.7624" y1="36.1568" x2="83.7328" y2="39.818" width="0" layer="19" extent="1-16"/>
 <wire x1="53.4416" y1="35.9584" x2="54.7624" y2="36.1568" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$33">
 <contactref element="R404" pad="P$2"/>
 <contactref element="J401" pad="P$2"/>
-<wire x1="56.8088" y1="6.3146" x2="42.8672" y2="74.168" width="0" layer="19" extent="1-16"/>
+<wire x1="95.112" y1="5.197" x2="42.8672" y2="74.168" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$37">
 <contactref element="R405" pad="P$2"/>
 <contactref element="J401" pad="P$3"/>
-<wire x1="56.8088" y1="5.0646" x2="42.8672" y2="73.0504" width="0" layer="19" extent="1-16"/>
+<wire x1="95.112" y1="3.947" x2="42.8672" y2="73.0504" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAN_H">
 <contactref element="R409" pad="P$1"/>
@@ -3698,8 +3634,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="J405" pad="P$2"/>
 <contactref element="CAN_H" pad="P$1"/>
 <wire x1="19.6902" y1="63.5574" x2="19.312" y2="65.7352" width="0" layer="19" extent="1-1"/>
-<wire x1="41.772" y1="6.3146" x2="19.6902" y2="63.5574" width="0" layer="19" extent="1-16"/>
-<wire x1="37.1856" y1="0.7112" x2="41.772" y2="6.3146" width="0" layer="19" extent="16-16"/>
+<wire x1="87.0856" y1="5.9082" x2="19.6902" y2="63.5574" width="0" layer="19" extent="1-16"/>
+<wire x1="37.1856" y1="0.7112" x2="87.0856" y2="5.9082" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="CAN_L">
 <contactref element="R409" pad="P$2"/>
@@ -3707,8 +3643,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="J405" pad="P$3"/>
 <contactref element="CAN_L" pad="P$1"/>
 <wire x1="20.312" y1="65.7352" x2="20.3402" y2="63.5574" width="0" layer="19" extent="1-1"/>
-<wire x1="41.772" y1="5.0646" x2="20.3402" y2="63.5574" width="0" layer="19" extent="1-16"/>
-<wire x1="38.5064" y1="1.7272" x2="41.772" y2="5.0646" width="0" layer="19" extent="16-16"/>
+<wire x1="87.0856" y1="4.6582" x2="20.3402" y2="63.5574" width="0" layer="19" extent="1-16"/>
+<wire x1="38.5064" y1="1.7272" x2="87.0856" y2="4.6582" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$98" class="1">
 <contactref element="J404" pad="P$1"/>
@@ -3716,15 +3652,15 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="U$403" pad="C"/>
 <wire x1="45.9232" y1="14.3176" x2="46.2232" y2="14.6176" width="0.254" layer="1"/>
 <wire x1="46.2232" y1="14.6176" x2="47.1424" y2="14.6176" width="0.254" layer="1"/>
-<wire x1="47.1424" y1="14.6176" x2="47.1424" y2="15.3416" width="0.4064" layer="1"/>
-<wire x1="47.1424" y1="15.3416" x2="41.772" y2="22.82" width="0" layer="19" extent="1-16"/>
+<wire x1="47.1424" y1="14.6176" x2="47.1424" y2="15.3416" width="0" layer="19" extent="1-16"/>
+<wire x1="47.1424" y1="15.3416" x2="72.6584" y2="35.8248" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$48" class="1">
 <contactref element="J405" pad="P$1"/>
 <contactref element="L403" pad="P$2"/>
 <contactref element="U$404" pad="C"/>
 <wire x1="36.9824" y1="8.2216" x2="17.9832" y2="66.84" width="0" layer="19" extent="1-1"/>
-<wire x1="41.772" y1="7.5646" x2="36.9824" y2="8.2216" width="0" layer="19" extent="1-16"/>
+<wire x1="87.0856" y1="7.1582" x2="36.9824" y2="8.2216" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$100" class="1">
 <contactref element="L203" pad="P$2"/>
@@ -3736,14 +3672,14 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="32.569684375" y1="8.998484375" x2="32.512" y2="9.05616875" width="0.254" layer="1"/>
 <wire x1="32.512" y1="9.05616875" x2="32.512" y2="9.9568" width="0.254" layer="1"/>
 <wire x1="32.512" y1="9.9568" x2="33.5424" y2="86.7418" width="0" layer="19" extent="1-16"/>
-<wire x1="26.3288" y1="10.0338" x2="32.512" y2="9.9568" width="0" layer="19" extent="1-16"/>
+<wire x1="53.8624" y1="12.777" x2="32.512" y2="9.9568" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$5" class="1">
 <contactref element="J201" pad="P$1"/>
 <contactref element="L201" pad="P$2"/>
 <contactref element="U$201" pad="C"/>
 <wire x1="42.8832" y1="54.0512" x2="43.2944" y2="56.6928" width="0" layer="19" extent="1-1"/>
-<wire x1="34.144" y1="36.8626" x2="42.8832" y2="54.0512" width="0" layer="19" extent="1-16"/>
+<wire x1="98.2536" y1="38.1834" x2="42.8832" y2="54.0512" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$101" class="1">
 <contactref element="J202" pad="P$1"/>
@@ -3758,14 +3694,10 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="U101" pad="14"/>
 <contactref element="U$605" pad="3"/>
 <contactref element="U701" pad="4"/>
-<wire x1="49.0728" y1="15.24" x2="49.0728" y2="15.9974" width="0.1524" layer="1"/>
-<wire x1="49.0728" y1="15.9974" x2="49.0808" y2="16.0054" width="0.1524" layer="1"/>
-<wire x1="33.7312" y1="14.732" x2="33.72710625" y2="14.732" width="0.1524" layer="1"/>
-<wire x1="33.72710625" y1="14.732" x2="32.898296875" y2="13.903190625" width="0.1524" layer="1"/>
 <wire x1="28.8544" y1="37.7016" x2="52.8448" y2="59.5924" width="0" layer="19" extent="1-1"/>
-<wire x1="27.4032" y1="37.4766" x2="28.8544" y2="37.7016" width="0" layer="19" extent="1-1"/>
-<wire x1="33.7312" y1="14.732" x2="28.8544" y2="37.7016" width="0" layer="19" extent="1-1"/>
-<wire x1="49.0728" y1="15.24" x2="33.7312" y2="14.732" width="0" layer="19" extent="1-1"/>
+<wire x1="27.5048" y1="34.6318" x2="28.8544" y2="37.7016" width="0" layer="19" extent="1-1"/>
+<wire x1="32.898296875" y1="13.903190625" x2="27.5048" y2="34.6318" width="0" layer="19" extent="1-1"/>
+<wire x1="49.0808" y1="16.0054" x2="32.898296875" y2="13.903190625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$89">
 <contactref element="U202" pad="13"/>
@@ -3780,24 +3712,18 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="N$42" class="1">
 <contactref element="J401" pad="P$1"/>
 <contactref element="U$401" pad="C"/>
-<wire x1="56.8088" y1="7.5646" x2="52.6288" y2="45.3056" width="0" layer="19" extent="1-16"/>
+<wire x1="95.112" y1="6.447" x2="52.6288" y2="45.3056" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="!FMU-LED_AMBER">
 <contactref element="R707" pad="P$1"/>
 <contactref element="U101" pad="43"/>
-<wire x1="45.62621875" y1="16.0245125" x2="44.704" y2="16.94673125" width="0.1524" layer="1"/>
-<wire x1="44.704" y1="16.94673125" x2="44.704" y2="16.9672" width="0.1524" layer="1"/>
-<wire x1="44.704" y1="16.9672" x2="17.264" y2="49.4792" width="0" layer="19" extent="1-1"/>
+<wire x1="45.62621875" y1="16.0245125" x2="17.264" y2="49.4792" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PPM-SBUS-PROT">
 <contactref element="R909" pad="P$2"/>
-<contactref element="J901" pad="1"/>
-<wire x1="16.256" y1="1.0414" x2="6.5104" y2="57.8104" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$99">
 <contactref element="R910" pad="P$2"/>
-<contactref element="J901" pad="4"/>
-<wire x1="16.256" y1="3.5814" x2="6.5104" y2="58.928" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IO-!RESET">
 <contactref element="U$1002" pad="3"/>
@@ -3807,9 +3733,9 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="C1003" pad="P$1"/>
 <contactref element="U$1002" pad="8"/>
 <contactref element="U$801" pad="C"/>
-<wire x1="10.7308" y1="63.0808" x2="23.0404" y2="70.9408" width="0" layer="19" extent="1-16"/>
+<wire x1="10.7308" y1="63.0808" x2="23.142" y2="69.3152" width="0" layer="19" extent="1-16"/>
 <wire x1="9.3472" y1="63.6404" x2="10.7308" y2="63.0808" width="0" layer="19" extent="1-1"/>
-<wire x1="21.6328" y1="23.1648" x2="10.7308" y2="63.0808" width="0" layer="19" extent="1-1"/>
+<wire x1="24.376" y1="26.7208" x2="10.7308" y2="63.0808" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD_3V3_SPEKTRUM_EN">
 <contactref element="U$1002" pad="5"/>
@@ -3824,14 +3750,12 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="LED705" pad="A"/>
 <contactref element="LED702" pad="A"/>
 <contactref element="D1001" pad="3"/>
-<contactref element="J901" pad="2"/>
 <wire x1="10.2616" y1="71.9716" x2="14.3256" y2="71.9716" width="0" layer="19" extent="16-16"/>
 <wire x1="6.1976" y1="71.9716" x2="10.2616" y2="71.9716" width="0" layer="19" extent="16-16"/>
 <wire x1="10.7308" y1="61.4808" x2="10.2616" y2="71.9716" width="0" layer="19" extent="1-16"/>
 <wire x1="12.2308" y1="61.4808" x2="10.7308" y2="61.4808" width="0" layer="19" extent="1-1"/>
 <wire x1="13.474" y1="61.0616" x2="12.2308" y2="61.4808" width="0" layer="19" extent="1-1"/>
 <wire x1="8.8216" y1="61.0616" x2="10.7308" y2="61.4808" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="1.0414" x2="13.474" y2="61.0616" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$104">
 <contactref element="C1002" pad="P$1"/>
@@ -3849,21 +3773,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="60.7212" y1="70.9716" x2="59.5296" y2="70.9168" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD_SERVO" class="1" airwireshidden="yes">
-<contactref element="J901" pad="35"/>
-<contactref element="J901" pad="20"/>
-<contactref element="J901" pad="47"/>
-<contactref element="J901" pad="26"/>
-<contactref element="J901" pad="38"/>
-<contactref element="J901" pad="8"/>
-<contactref element="J901" pad="44"/>
-<contactref element="J901" pad="41"/>
-<contactref element="J901" pad="5"/>
-<contactref element="J901" pad="17"/>
-<contactref element="J901" pad="11"/>
-<contactref element="J901" pad="32"/>
-<contactref element="J901" pad="14"/>
-<contactref element="J901" pad="23"/>
-<contactref element="J901" pad="29"/>
 <contactref element="R922" pad="P$2"/>
 <contactref element="D1" pad="ANODE"/>
 <polygon width="0.254" layer="14" thermals="no">
@@ -3872,22 +3781,27 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <vertex x="66.3448" y="32.6136"/>
 <vertex x="62.3824" y="36.576"/>
 </polygon>
+<contactref element="J1" pad="23"/>
+<contactref element="J1" pad="11"/>
+<contactref element="J1" pad="14"/>
+<contactref element="J1" pad="29"/>
+<contactref element="J1" pad="5"/>
+<contactref element="J1" pad="8"/>
+<contactref element="J1" pad="17"/>
+<contactref element="J1" pad="26"/>
+<contactref element="J1" pad="20"/>
+<contactref element="J1" pad="2"/>
 <wire x1="21.9052" y1="44.9072" x2="23.2744" y2="43.4848" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="39.1414" x2="21.9052" y2="44.9072" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="36.6014" x2="13.716" y2="39.1414" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="34.0614" x2="13.716" y2="36.6014" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="31.5214" x2="13.716" y2="34.0614" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="28.9814" x2="13.716" y2="31.5214" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="26.4414" x2="13.716" y2="28.9814" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="23.9014" x2="13.716" y2="26.4414" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="21.3614" x2="13.716" y2="23.9014" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="18.8214" x2="13.716" y2="21.3614" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="16.2814" x2="13.716" y2="18.8214" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="13.7414" x2="13.716" y2="16.2814" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="11.2014" x2="13.716" y2="13.7414" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="8.6614" x2="13.716" y2="11.2014" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="6.1214" x2="13.716" y2="8.6614" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="3.5814" x2="13.716" y2="6.1214" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3096" y1="27.0764" x2="21.9052" y2="44.9072" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3096" y1="24.5364" x2="13.3096" y2="27.0764" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3096" y1="21.9964" x2="13.3096" y2="24.5364" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3096" y1="19.4564" x2="13.3096" y2="21.9964" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3096" y1="16.9164" x2="13.3096" y2="19.4564" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3096" y1="14.3764" x2="13.3096" y2="16.9164" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3096" y1="11.8364" x2="13.3096" y2="14.3764" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3096" y1="9.2964" x2="13.3096" y2="11.8364" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3096" y1="6.7564" x2="13.3096" y2="9.2964" width="0" layer="19" extent="1-1"/>
+<wire x1="13.3096" y1="4.2164" x2="13.3096" y2="6.7564" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$110" class="1">
 <contactref element="L901" pad="P$1"/>
@@ -3902,14 +3816,14 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="44.244753125" y1="10.61924375" x2="44.297596875" y2="10.5664" width="0.1524" layer="1"/>
 <wire x1="44.5008" y1="11.5824" x2="44.5008" y2="10.875290625" width="0.1524" layer="1"/>
 <wire x1="44.5008" y1="10.875290625" x2="44.244753125" y2="10.61924375" width="0.1524" layer="1"/>
-<wire x1="44.5008" y1="11.5824" x2="41.772" y2="21.57" width="0" layer="19" extent="1-16"/>
+<wire x1="44.5008" y1="11.5824" x2="72.6584" y2="34.5748" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMU_AUX_ADC1_PROT">
 <contactref element="R408" pad="P$2"/>
 <contactref element="J404" pad="P$4"/>
 <wire x1="38.7016" y1="9.4488" x2="38.7016" y2="10.0664" width="0.1524" layer="1"/>
 <wire x1="38.7016" y1="10.0664" x2="38.608" y2="10.16" width="0.1524" layer="1"/>
-<wire x1="38.608" y1="10.16" x2="41.772" y2="19.07" width="0" layer="19" extent="1-16"/>
+<wire x1="38.608" y1="10.16" x2="72.6584" y2="32.0748" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$13">
 <contactref element="R707" pad="P$2"/>
@@ -3919,17 +3833,17 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="N$26">
 <contactref element="R3" pad="P$2"/>
 <contactref element="LED701" pad="C"/>
-<wire x1="11.684" y1="49.2132" x2="14.232" y2="49.4792" width="0" layer="19" extent="1-16"/>
+<wire x1="11.4808" y1="52.8708" x2="14.232" y2="49.4792" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$39">
 <contactref element="R709" pad="P$2"/>
 <contactref element="R4" pad="P$1"/>
-<wire x1="23.1648" y1="4.3768" x2="19.812" y2="14.0128" width="0" layer="19" extent="1-1"/>
+<wire x1="23.1648" y1="4.3768" x2="24.0792" y2="19.0928" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$40">
 <contactref element="R4" pad="P$2"/>
 <contactref element="LED703" pad="C"/>
-<wire x1="19.812" y1="13.0128" x2="10.2616" y2="70.4716" width="0" layer="19" extent="1-16"/>
+<wire x1="24.0792" y1="18.0928" x2="10.2616" y2="70.4716" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$3">
 <contactref element="R918" pad="P$2"/>
@@ -3947,12 +3861,12 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="BATT_VOLTAGE_SENS_PROT">
 <contactref element="J601" pad="P$4"/>
 <contactref element="L602" pad="P$1"/>
-<wire x1="64.5304" y1="32.903" x2="62.0648" y2="74.5744" width="0" layer="19" extent="1-16"/>
+<wire x1="91.048" y1="34.8334" x2="62.0648" y2="74.5744" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="BATT_CURRENT_SENS_PROT">
 <contactref element="J601" pad="P$3"/>
 <contactref element="L601" pad="P$1"/>
-<wire x1="64.5304" y1="34.153" x2="62.0648" y2="73.152" width="0" layer="19" extent="1-16"/>
+<wire x1="91.048" y1="36.0834" x2="62.0648" y2="73.152" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$102">
 <contactref element="L602" pad="P$2"/>
@@ -3968,8 +3882,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <contactref element="J601" pad="P$1"/>
 <contactref element="J601" pad="P$2"/>
 <contactref element="VDD_5V_BRICK" pad="P$1"/>
-<wire x1="63.9064" y1="40.0304" x2="64.5304" y2="36.653" width="0" layer="19" extent="16-16"/>
-<wire x1="64.5304" y1="35.403" x2="64.5304" y2="36.653" width="0" layer="19" extent="16-16"/>
+<wire x1="63.9064" y1="40.0304" x2="91.048" y2="38.5834" width="0" layer="19" extent="16-16"/>
+<wire x1="91.048" y1="37.3334" x2="91.048" y2="38.5834" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VDD_SERVO_IN" class="1">
 <contactref element="L901" pad="P$2"/>
@@ -3995,14 +3909,32 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <signal name="GPIO_EXT_1">
 <contactref element="J403" pad="P$6"/>
 <contactref element="U101" pad="8"/>
-<wire x1="33.528" y1="15.8496" x2="33.6296" y2="15.8496" width="0.1524" layer="1"/>
-<wire x1="33.6296" y1="15.8496" x2="56.8088" y2="30.4184" width="0" layer="19" extent="1-16"/>
-<wire x1="30.776978125" y1="16.0245125" x2="33.528" y2="15.8496" width="0" layer="19" extent="1-1"/>
+<wire x1="30.776978125" y1="16.0245125" x2="83.7328" y2="33.568" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$46">
 <contactref element="D1001" pad="1"/>
 <contactref element="F2" pad="2"/>
 <wire x1="6.7216" y1="62.0116" x2="24.9144" y2="49.1744" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$15">
+<contactref element="R1" pad="P$2"/>
+<contactref element="J1" pad="22"/>
+<wire x1="2.7352" y1="-2.1336" x2="15.8496" y2="9.2964" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$16">
+<contactref element="R2" pad="P$2"/>
+<contactref element="J1" pad="19"/>
+<wire x1="2.7352" y1="-3.7592" x2="15.8496" y2="11.8364" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$18">
+<contactref element="R1" pad="P$1"/>
+<contactref element="U901" pad="13"/>
+<wire x1="1.7352" y1="-2.1336" x2="10.95" y2="47.1732" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$21">
+<contactref element="U901" pad="12"/>
+<contactref element="R2" pad="P$1"/>
+<wire x1="1.7352" y1="-3.7592" x2="10.95" y2="47.6732" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
