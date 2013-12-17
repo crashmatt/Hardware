@@ -983,34 +983,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <text x="-1.6" y="2" size="0.4" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-1.6" y="-2.4" size="0.4" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
-<package name="MS5611-01BA">
-<wire x1="1.5" y1="-2.5" x2="-1.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="-2.5" x2="-1.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="2.5" x2="1.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="1.5" y1="2.5" x2="1.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="1.25" y1="2.75" x2="1.75" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="1.75" y1="2.75" x2="1.75" y2="2.25" width="0.2032" layer="21"/>
-<wire x1="1.25" y1="-2.75" x2="1.75" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="1.75" y1="-2.75" x2="1.75" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="-1.25" y1="-2.75" x2="-1.75" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="-1.75" y1="-2.75" x2="-1.75" y2="-2.25" width="0.2032" layer="21"/>
-<wire x1="-1.75" y1="2.25" x2="-1.25" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="2.5" x2="1.5" y2="2.5" width="0.0016" layer="57"/>
-<wire x1="1.5" y1="2.5" x2="1.5" y2="-2.5" width="0.0016" layer="57"/>
-<wire x1="1.5" y1="-2.5" x2="-1.5" y2="-2.5" width="0.0016" layer="57"/>
-<wire x1="-1.5" y1="-2.5" x2="-1.5" y2="2.5" width="0.0016" layer="57"/>
-<smd name="1" x="-1.1" y="1.875" dx="1.1" dy="0.6" layer="1"/>
-<smd name="2" x="-1.1" y="0.625" dx="1.1" dy="0.6" layer="1"/>
-<smd name="3" x="-1.1" y="-0.625" dx="1.1" dy="0.6" layer="1"/>
-<smd name="4" x="-1.1" y="-1.875" dx="1.1" dy="0.6" layer="1"/>
-<smd name="5" x="1.1" y="-1.875" dx="1.1" dy="0.6" layer="1" rot="R180"/>
-<smd name="6" x="1.1" y="-0.625" dx="1.1" dy="0.6" layer="1" rot="R180"/>
-<smd name="7" x="1.1" y="0.625" dx="1.1" dy="0.6" layer="1" rot="R180"/>
-<smd name="8" x="1.1" y="1.875" dx="1.1" dy="0.6" layer="1" rot="R180"/>
-<text x="-2" y="3" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2" y="-3.5" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.65" y1="-1.875" x2="1.65" y2="1.875" layer="39"/>
-</package>
 <package name="MICROSMP">
 <description>MicroSMP Package
 
@@ -2199,22 +2171,6 @@ diameter 2.54 mm, horizontal, grid 7.62 mm</description>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <text x="-2.54" y="2.794" size="1.27" layer="95">&gt;NAME</text>
 <pin name="P$1" x="-7.62" y="0" visible="off" length="middle" direction="pas"/>
-</symbol>
-<symbol name="MS5611-01BA">
-<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95" rot="MR180">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="CSB1" x="-15.24" y="2.54" length="middle"/>
-<pin name="VDD" x="-15.24" y="0" length="middle"/>
-<pin name="PS" x="-15.24" y="-2.54" length="middle"/>
-<pin name="GND" x="-15.24" y="-5.08" length="middle"/>
-<pin name="SCLK" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="SDO" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="SDI/SDA" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="CSB2" x="15.24" y="2.54" length="middle" rot="R180"/>
 </symbol>
 <symbol name="OSHW-LOGO">
 <rectangle x1="-9.5059" y1="-9.0106" x2="-9.4043" y2="-8.9979" layer="94"/>
@@ -6638,60 +6594,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 </device>
 </devices>
 </deviceset>
-<deviceset name="MS5611-01BA">
-<description>&lt;b&gt;MS5611-01BA&lt;/b&gt;
-&lt;p&gt;The MS5611-01BA is a new generation of high resolution altimeter sensors from MEAS Switzerland with SPI 
-and I
-2
-C bus interface. It is optimized for altimeters and  variometers with an altitude resolution of 10 cm. The 
-sensor module includes a high linearity pressure sensor and an ultra low power 24 bit ?? ADC with internal 
-factory calibrated coefficients. It provides a precise digital 24 Bit pressure and temperature value and different 
-operation modes that allow the user to optimize for conversion speed and current consumption. A high 
-resolution temperature output allows the implementation of an altimeter/thermometer function without any 
-additional sensor. The MS5611-01BA can be interfaced to virtually any microcontroller. The communication 
-protocol is simple, without the need of programming internal registers in the device. Small dimensions of only 
-5.0 mm x 3.0 mm and a height of 1.7 mm allow for integration in mobile devices. This new sensor module 
-generation is based on leading MEMS technology and latest benefits from  MEAS Switzerland proven 
-experience and know-how in high volume manufacturing of altimeter modules, which have been widely used for 
-over a decade. The sensing principle employed leads to very low hysteresis and high stability of both pressure 
-and temperature signal.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;High resolution module, 10 cm &lt;/li&gt;
-&lt;li&gt;Fast conversion down to 1 ms &lt;/li&gt;
-&lt;li&gt;Low power, 1 µA (standby &lt; 0.15 µA) &lt;/li&gt;
-&lt;li&gt;QFN package 5.0 x 3.0 x 1.7 mm3&lt;/li&gt;
-&lt;li&gt;Supply voltage 1.8 to 3.6 V &lt;/li&gt;
-&lt;li&gt;Integrated digital pressure sensor (24 bit ?? ADC) &lt;/li&gt;
-&lt;li&gt;Operating range: 10 to 1200 mbar, -40 to +85 °C &lt;/li&gt;
-&lt;li&gt;I2C and SPI interface up to 20 MHz &lt;/li&gt;
-&lt;li&gt;No external components (Internal oscillator) &lt;/li&gt;
-&lt;li&gt;Excellent long term stability&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="MS5611-01BA" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MS5611-01BA">
-<connects>
-<connect gate="G$1" pin="CSB1" pad="4"/>
-<connect gate="G$1" pin="CSB2" pad="5"/>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="PS" pad="2"/>
-<connect gate="G$1" pin="SCLK" pad="8"/>
-<connect gate="G$1" pin="SDI/SDA" pad="7"/>
-<connect gate="G$1" pin="SDO" pad="6"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DATASHEET" value="http://www.meas-spec.com/downloads/MS5611-01BA01.pdf" constant="no"/>
-<attribute name="LINK" value="http://www.meas-spec.com/product/t_product.aspx?id=8503#" constant="no"/>
-<attribute name="MFGPN" value="MS5611-01BA" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="DIODE-SCHOTTKY" prefix="D">
 <description>Schottky barrier diode in DO214AC, e.g. Fairchild SS14.</description>
 <gates>
@@ -8954,9 +8856,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <attribute name="PARTNO" value="CC0805ZKY5V6BB106"/>
 </part>
 <part name="GND23" library="pixhawk2" deviceset="GND" device=""/>
-<part name="U503" library="pixhawk2" deviceset="MS5611-01BA" device="">
-<attribute name="PARTNO" value="MS5611-01BA"/>
-</part>
 <part name="C508" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
@@ -9044,14 +8943,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <attribute name="PARTNO" value="TXS0108ERGYR"/>
 </part>
 <part name="GND22" library="pixhawk2" deviceset="GND" device=""/>
-<part name="U202" library="pixhawk2" deviceset="TXS0108" device="QFN20">
-<attribute name="PARTNO" value="TXS0108ERGYR"/>
-</part>
 <part name="C201" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
-<attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
-</part>
-<part name="GND28" library="pixhawk2" deviceset="GND" device=""/>
-<part name="C202" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
 <part name="U101" library="pixhawk2" deviceset="STM32F4X7VX" device="">
@@ -10292,15 +10184,8 @@ PD15: TIM4_CH4: spare
 <attribute name="PARTNO" x="68.58" y="147.32" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND22" gate="1" x="66.04" y="109.22"/>
-<instance part="U202" gate="G$1" x="68.58" y="73.66">
-<attribute name="PARTNO" x="68.58" y="73.66" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="C201" gate="G$1" x="50.8" y="116.84">
 <attribute name="PARTNO" x="50.8" y="116.84" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="GND28" gate="1" x="66.04" y="35.56"/>
-<instance part="C202" gate="G$1" x="50.8" y="43.18">
-<attribute name="PARTNO" x="50.8" y="43.18" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R201" gate="G$1" x="109.22" y="147.32">
 <attribute name="PARTNO" x="109.22" y="147.32" size="1.778" layer="96" display="off"/>
@@ -10401,16 +10286,6 @@ PD15: TIM4_CH4: spare
 <pinref part="U201" gate="G$1" pin="GND"/>
 <wire x1="81.28" y1="111.76" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
 <junction x="66.04" y="111.76"/>
-</segment>
-<segment>
-<pinref part="C202" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="40.64" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="GND28" gate="1" pin="GND"/>
-<wire x1="50.8" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="38.1" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U202" gate="G$1" pin="GND"/>
-<wire x1="81.28" y1="38.1" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
-<junction x="66.04" y="38.1"/>
 </segment>
 <segment>
 <pinref part="J201" gate="G$1" pin="6"/>
@@ -10614,26 +10489,6 @@ PD15: TIM4_CH4: spare
 <wire x1="83.82" y1="152.4" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
 <junction x="48.26" y="152.4"/>
 </segment>
-<segment>
-<pinref part="U202" gate="G$1" pin="VCCA"/>
-<wire x1="53.34" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
-<label x="43.18" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U202" gate="G$1" pin="OE"/>
-<wire x1="50.8" y1="78.74" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="78.74" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="50.8" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
-<junction x="50.8" y="78.74"/>
-<pinref part="C202" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="50.8" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
-<junction x="50.8" y="50.8"/>
-<wire x1="48.26" y1="78.74" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="86.36" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U202" gate="G$1" pin="VCCB"/>
-<wire x1="83.82" y1="78.74" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
-<junction x="48.26" y="78.74"/>
-</segment>
 </net>
 <net name="FMU-USART2_RX" class="0">
 <segment>
@@ -10651,23 +10506,29 @@ PD15: TIM4_CH4: spare
 </net>
 <net name="FMU-UART4_TX" class="0">
 <segment>
-<pinref part="U202" gate="G$1" pin="A8"/>
-<wire x1="53.34" y1="55.88" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 <label x="43.18" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R214" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="38.1" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="38.1" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="55.88" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-UART7_RX" class="0">
 <segment>
-<pinref part="U202" gate="G$1" pin="A3"/>
-<wire x1="53.34" y1="68.58" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
 <label x="43.18" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="101.6" y1="68.58" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="R205" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="68.58" x2="43.18" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-UART8_RX" class="0">
 <segment>
-<pinref part="U202" gate="G$1" pin="A5"/>
-<wire x1="53.34" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
 <label x="43.18" y="63.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="96.52" y1="63.5" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R206" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="53.34" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="63.5" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SERIAL5_TX" class="0">
@@ -10764,42 +10625,6 @@ PD15: TIM4_CH4: spare
 <wire x1="88.9" y1="111.76" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$91" class="0">
-<segment>
-<pinref part="U202" gate="G$1" pin="B3"/>
-<wire x1="81.28" y1="68.58" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="68.58" x2="101.6" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="R205" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="63.5" x2="104.14" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$92" class="0">
-<segment>
-<pinref part="U202" gate="G$1" pin="B4"/>
-<wire x1="81.28" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="66.04" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R212" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="58.42" x2="111.76" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$93" class="0">
-<segment>
-<pinref part="U202" gate="G$1" pin="B5"/>
-<wire x1="81.28" y1="63.5" x2="96.52" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="63.5" x2="96.52" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R206" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="53.34" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$94" class="0">
-<segment>
-<pinref part="U202" gate="G$1" pin="B6"/>
-<wire x1="81.28" y1="60.96" x2="93.98" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="60.96" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="R213" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="FMU-USART3_TX" class="0">
 <segment>
 <pinref part="U201" gate="G$1" pin="A4"/>
@@ -10877,39 +10702,32 @@ PD15: TIM4_CH4: spare
 </net>
 <net name="N$89" class="0">
 <segment>
-<pinref part="U202" gate="G$1" pin="B7"/>
-<wire x1="81.28" y1="58.42" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="58.42" x2="91.44" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R207" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="43.18" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$90" class="0">
-<segment>
-<pinref part="R214" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="38.1" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="38.1" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U202" gate="G$1" pin="B8"/>
-<wire x1="88.9" y1="55.88" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="58.42" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-UART7_TX" class="0">
 <segment>
-<pinref part="U202" gate="G$1" pin="A4"/>
-<wire x1="53.34" y1="66.04" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
 <label x="43.18" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="99.06" y1="66.04" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R212" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="58.42" x2="111.76" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="66.04" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-UART8_TX" class="0">
 <segment>
-<pinref part="U202" gate="G$1" pin="A6"/>
-<wire x1="53.34" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
 <label x="43.18" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="93.98" y1="60.96" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="R213" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-UART4_RX" class="0">
 <segment>
-<pinref part="U202" gate="G$1" pin="A7"/>
 <wire x1="53.34" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
 <label x="43.18" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -11698,9 +11516,6 @@ DO NOT stuff 3 with any of 1, 2 or 4</text>
 <attribute name="PARTNO" x="223.52" y="121.92" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND23" gate="1" x="180.34" y="73.66"/>
-<instance part="U503" gate="G$1" x="198.12" y="86.36">
-<attribute name="PARTNO" x="198.12" y="86.36" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="C508" gate="G$1" x="170.18" y="86.36">
 <attribute name="PARTNO" x="170.18" y="86.36" size="1.778" layer="96" display="off"/>
 </instance>
@@ -11755,9 +11570,7 @@ DO NOT stuff 3 with any of 1, 2 or 4</text>
 <wire x1="170.18" y1="81.28" x2="170.18" y2="83.82" width="0.1524" layer="91"/>
 <junction x="180.34" y="81.28"/>
 <pinref part="GND23" gate="1" pin="GND"/>
-<pinref part="U503" gate="G$1" pin="GND"/>
 <pinref part="C508" gate="G$1" pin="2"/>
-<pinref part="U503" gate="G$1" pin="PS"/>
 <wire x1="182.88" y1="83.82" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="83.82" x2="180.34" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -11832,7 +11645,6 @@ DO NOT stuff 3 with any of 1, 2 or 4</text>
 <pinref part="U502" gate="G$1" pin="SDO/SA0"/>
 </segment>
 <segment>
-<pinref part="U503" gate="G$1" pin="SDO"/>
 <wire x1="226.06" y1="83.82" x2="213.36" y2="83.82" width="0.1524" layer="91"/>
 <label x="226.06" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -11854,7 +11666,6 @@ DO NOT stuff 3 with any of 1, 2 or 4</text>
 <pinref part="U502" gate="G$1" pin="SDA/SDI/SDO"/>
 </segment>
 <segment>
-<pinref part="U503" gate="G$1" pin="SDI/SDA"/>
 <wire x1="213.36" y1="86.36" x2="226.06" y2="86.36" width="0.1524" layer="91"/>
 <label x="226.06" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -11876,7 +11687,6 @@ DO NOT stuff 3 with any of 1, 2 or 4</text>
 <pinref part="U502" gate="G$1" pin="SCL/SPC"/>
 </segment>
 <segment>
-<pinref part="U503" gate="G$1" pin="SCLK"/>
 <wire x1="213.36" y1="81.28" x2="226.06" y2="81.28" width="0.1524" layer="91"/>
 <label x="226.06" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -11895,7 +11705,6 @@ DO NOT stuff 3 with any of 1, 2 or 4</text>
 <wire x1="170.18" y1="91.44" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
 <junction x="170.18" y="93.98"/>
 <label x="165.1" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U503" gate="G$1" pin="VDD"/>
 <pinref part="C508" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -11988,7 +11797,6 @@ DO NOT stuff 3 with any of 1, 2 or 4</text>
 </net>
 <net name="!BARO_CS" class="0">
 <segment>
-<pinref part="U503" gate="G$1" pin="CSB2"/>
 <wire x1="213.36" y1="88.9" x2="226.06" y2="88.9" width="0.1524" layer="91"/>
 <label x="226.06" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
