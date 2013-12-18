@@ -9565,6 +9565,7 @@ by exp-lbrs.ulp</description>
 <part name="U1" library="SparkFun-Sensors" deviceset="MPU-6000" device="QFN-24"/>
 <part name="U$2" library="PX4FMUlite_V0_1" deviceset="LSM303D" device=""/>
 <part name="U$3" library="PX4lite" deviceset="W25Q64FV" device=""/>
+<part name="GND12" library="pixhawk2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10751,7 +10752,8 @@ mount micro USB connectors:
 <instance part="U$301" gate="G$1" x="53.34" y="134.62">
 <attribute name="PARTNO" x="53.34" y="134.62" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$3" gate="G$1" x="109.22" y="76.2"/>
+<instance part="U$3" gate="G$1" x="81.28" y="50.8"/>
+<instance part="GND12" gate="1" x="76.2" y="27.94"/>
 </instances>
 <busses>
 </busses>
@@ -10835,6 +10837,12 @@ mount micro USB connectors:
 <label x="144.78" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 <junction x="149.86" y="152.4"/>
 </segment>
+<segment>
+<wire x1="68.58" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="VCC"/>
+<wire x1="76.2" y1="71.12" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<label x="68.58" y="71.12" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="OTG_DM1" class="0">
 <segment>
@@ -10906,9 +10914,53 @@ mount micro USB connectors:
 <pinref part="JX301" gate="-TCK/SWCLK" pin="S"/>
 </segment>
 </net>
-<net name="N$4" class="1">
+<net name="SDIO_D0" class="0">
 <segment>
-<wire x1="81.28" y1="71.12" x2="78.74" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="DI/IO0"/>
+<wire x1="96.52" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
+<label x="109.22" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D1" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="DO/IO1"/>
+<wire x1="96.52" y1="48.26" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
+<label x="109.22" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D2" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="!WP!/IO2"/>
+<wire x1="96.52" y1="45.72" x2="109.22" y2="45.72" width="0.1524" layer="91"/>
+<label x="109.22" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_D3" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="!HOLD!/IO3"/>
+<wire x1="96.52" y1="43.18" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
+<label x="109.22" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_CMD" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="!CS"/>
+<wire x1="96.52" y1="55.88" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
+<label x="109.22" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDIO_CK" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="CLK"/>
+<wire x1="96.52" y1="58.42" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
+<label x="109.22" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="76.2" y1="35.56" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
