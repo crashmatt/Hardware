@@ -5700,22 +5700,6 @@ diameter 2.54 mm, horizontal, grid 7.62 mm</description>
 <pin name="VCAP_1" x="-5.08" y="22.86" length="middle" direction="pwr"/>
 <pin name="VCAP_2" x="-5.08" y="17.78" length="middle" direction="pwr"/>
 </symbol>
-<symbol name="FM25V01">
-<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<pin name="VDD" x="-15.24" y="7.62" length="middle"/>
-<pin name="VSS" x="-15.24" y="-7.62" length="middle"/>
-<pin name="C" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="D" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="Q" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="!S" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="!W" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="!HOLD" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<text x="-10.16" y="12.7" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-12.7" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
-</symbol>
 <symbol name="SERVO1">
 <wire x1="-2.54" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
@@ -6690,33 +6674,6 @@ STM32F417VG - 1 MB flash, with crypto</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FM25V01">
-<description>&lt;b&gt;FM25V01 128Kb Serial 3V F-RAM Memory&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="FM25V01" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SO08">
-<connects>
-<connect gate="G$1" pin="!HOLD" pad="7"/>
-<connect gate="G$1" pin="!S" pad="1"/>
-<connect gate="G$1" pin="!W" pad="3"/>
-<connect gate="G$1" pin="C" pad="6"/>
-<connect gate="G$1" pin="D" pad="5"/>
-<connect gate="G$1" pin="Q" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DATASHEET" value="http://www.ramtron.com/files/datasheets/FM25V01_ds.pdf" constant="no"/>
-<attribute name="LINK" value="http://www.digikey.com/product-detail/en/FM25V01-GTR/1140-1026-1-ND/2809832" constant="no"/>
-<attribute name="MFGPN" value="FM25V01" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -8060,6 +8017,33 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <smd name="P$15" x="-1.25" y="0.7" dx="0.28" dy="0.51" layer="1" rot="R180"/>
 <smd name="P$16" x="-1.75" y="0.7" dx="0.28" dy="0.51" layer="1" rot="R180"/>
 </package>
+<package name="WSON-8-5X6">
+<description>5*6mm 8DFN-EP</description>
+<wire x1="-2.25" y1="-3.03125" x2="-2.25" y2="3.03125" width="0.127" layer="51"/>
+<wire x1="-2.25" y1="3.03125" x2="2.25" y2="3.03125" width="0.127" layer="51"/>
+<wire x1="2.25" y1="3.03125" x2="2.25" y2="-3.03125" width="0.127" layer="51"/>
+<wire x1="2.25" y1="-3.03125" x2="-2.25" y2="-3.03125" width="0.127" layer="51"/>
+<wire x1="-2.25" y1="1" x2="-2.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.25" y1="1" x2="2.25" y2="-1" width="0.127" layer="21"/>
+<circle x="-1.859375" y="-1.9375" radius="0.05" width="0.5" layer="21"/>
+<rectangle x1="-0.6875" y1="-2.953125" x2="-0.4375" y2="-2.653125" layer="51"/>
+<rectangle x1="-1.96875" y1="-2.953125" x2="-1.71875" y2="-2.653125" layer="51"/>
+<rectangle x1="0.59375" y1="-2.953125" x2="0.84375" y2="-2.653125" layer="51"/>
+<rectangle x1="1.875" y1="-2.953125" x2="2.125" y2="-2.653125" layer="51"/>
+<rectangle x1="0.59375" y1="2.653125" x2="0.84375" y2="2.953125" layer="51" rot="R180"/>
+<rectangle x1="1.875" y1="2.653125" x2="2.125" y2="2.953125" layer="51" rot="R180"/>
+<rectangle x1="-0.765625" y1="2.653125" x2="-0.515625" y2="2.953125" layer="51" rot="R180"/>
+<rectangle x1="-1.96875" y1="2.653125" x2="-1.71875" y2="2.953125" layer="51" rot="R180"/>
+<smd name="1" x="-1.875" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="2" x="-0.605" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="3" x="0.665" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="4" x="1.935" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="5" x="1.935" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="6" x="0.665" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="7" x="-0.605" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="8" x="-1.875" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="4" dy="3.4" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MV-1">
@@ -8087,6 +8071,23 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <wire x1="3.81" y1="8.255" x2="-3.81" y2="8.255" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="8.255" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
 <text x="-3.175" y="3.175" size="1.27" layer="94">EP GND</text>
+</symbol>
+<symbol name="W25Q64FV">
+<description>W25Q64FV Winbond 64Mbit Serial Flash</description>
+<wire x1="-15.24" y1="-10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
+<pin name="!HOLD!/IO3" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="!CS" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="!WP!/IO2" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="CLK" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="DO/IO1" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="DI/IO0" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="VCC" x="-5.08" y="15.24" length="middle" rot="R270"/>
+<pin name="GND" x="-5.08" y="-15.24" length="middle" rot="R90"/>
+<text x="-2.54" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-12.7" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8161,6 +8162,29 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <connect gate="G$8" pin="P$1" pad="P$8"/>
 <connect gate="G$8" pin="P$2" pad="P$9"/>
 <connect gate="G$9" pin="GND" pad="P$EP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="W25Q64FV">
+<description>&lt;b&gt;W25Q64FV Winbond 64Mbit Flash&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="W25Q64FV" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WSON-8-5X6">
+<connects>
+<connect gate="G$1" pin="!CS" pad="1"/>
+<connect gate="G$1" pin="!HOLD!/IO3" pad="7"/>
+<connect gate="G$1" pin="!WP!/IO2" pad="3"/>
+<connect gate="G$1" pin="CLK" pad="6"/>
+<connect gate="G$1" pin="DI/IO0" pad="5"/>
+<connect gate="G$1" pin="DO/IO1" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9242,13 +9266,6 @@ by exp-lbrs.ulp</description>
 <part name="R307" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="1K5">
 <attribute name="PARTNO" value="RC0402FR-071K5L"/>
 </part>
-<part name="GND15" library="pixhawk2" deviceset="GND" device=""/>
-<part name="U102" library="pixhawk2" deviceset="FM25V01" device="">
-<attribute name="PARTNO" value="FM25V01-G"/>
-</part>
-<part name="C101" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
-<attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
-</part>
 <part name="J302" library="con-hirose-df13" deviceset="DF13-4P-1.25" device="V" value="DF13C-4P-1.25V">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)"/>
 </part>
@@ -9547,6 +9564,7 @@ by exp-lbrs.ulp</description>
 <part name="GND9" library="pixhawk2" deviceset="GND" device=""/>
 <part name="U1" library="SparkFun-Sensors" deviceset="MPU-6000" device="QFN-24"/>
 <part name="U$2" library="PX4FMUlite_V0_1" deviceset="LSM303D" device=""/>
+<part name="U$3" library="PX4lite" deviceset="W25Q64FV" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9616,13 +9634,6 @@ PD15: TIM4_CH4: spare
 <instance part="U101" gate="PORTE_L" x="162.56" y="157.48" rot="MR0"/>
 <instance part="U101" gate="PORTE_H" x="165.1" y="129.54" rot="MR0"/>
 <instance part="U101" gate="OSC" x="165.1" y="91.44"/>
-<instance part="GND15" gate="1" x="172.72" y="38.1"/>
-<instance part="U102" gate="G$1" x="198.12" y="50.8">
-<attribute name="PARTNO" x="198.12" y="50.8" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C101" gate="G$1" x="172.72" y="53.34">
-<attribute name="PARTNO" x="172.72" y="53.34" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="R101" gate="G$1" x="60.96" y="132.08">
 <attribute name="PARTNO" x="60.96" y="132.08" size="1.778" layer="96" display="off"/>
 </instance>
@@ -9692,15 +9703,6 @@ PD15: TIM4_CH4: spare
 <pinref part="X101" gate="G$1" pin="NC_4"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="X101" gate="G$1" pin="NC_2"/>
-</segment>
-<segment>
-<pinref part="U102" gate="G$1" pin="VSS"/>
-<pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="182.88" y1="43.18" x2="172.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="43.18" x2="172.72" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="C101" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="43.18" x2="172.72" y2="50.8" width="0.1524" layer="91"/>
-<junction x="172.72" y="43.18"/>
 </segment>
 </net>
 <net name="CAN1_RX" class="0">
@@ -10018,33 +10020,7 @@ PD15: TIM4_CH4: spare
 <label x="38.1" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="FMU-VDD_3V3" class="1">
-<segment>
-<pinref part="U102" gate="G$1" pin="VDD"/>
-<wire x1="182.88" y1="58.42" x2="177.8" y2="58.42" width="0.1524" layer="91"/>
-<label x="170.18" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="C101" gate="G$1" pin="1"/>
-<wire x1="177.8" y1="58.42" x2="172.72" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="58.42" x2="170.18" y2="58.42" width="0.1524" layer="91"/>
-<junction x="172.72" y="58.42"/>
-<pinref part="U102" gate="G$1" pin="!HOLD"/>
-<wire x1="213.36" y1="43.18" x2="215.9" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="43.18" x2="215.9" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="45.72" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="68.58" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="68.58" x2="177.8" y2="58.42" width="0.1524" layer="91"/>
-<junction x="177.8" y="58.42"/>
-<pinref part="U102" gate="G$1" pin="!W"/>
-<wire x1="213.36" y1="45.72" x2="215.9" y2="45.72" width="0.1524" layer="91"/>
-<junction x="215.9" y="45.72"/>
-</segment>
-</net>
 <net name="!FRAM_CS" class="0">
-<segment>
-<pinref part="U102" gate="G$1" pin="!S"/>
-<wire x1="213.36" y1="48.26" x2="220.98" y2="48.26" width="0.1524" layer="91"/>
-<label x="220.98" y="48.26" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U101" gate="PORTD_H" pin="PD10"/>
 <wire x1="106.68" y1="76.2" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
@@ -10053,11 +10029,6 @@ PD15: TIM4_CH4: spare
 </net>
 <net name="FRAM_SCK" class="0">
 <segment>
-<pinref part="U102" gate="G$1" pin="C"/>
-<wire x1="213.36" y1="58.42" x2="220.98" y2="58.42" width="0.1524" layer="91"/>
-<label x="220.98" y="58.42" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U101" gate="PORTB_H" pin="PB13"/>
 <wire x1="33.02" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
 <label x="38.1" y="68.58" size="1.27" layer="95" xref="yes"/>
@@ -10065,22 +10036,12 @@ PD15: TIM4_CH4: spare
 </net>
 <net name="FRAM_MOSI" class="0">
 <segment>
-<pinref part="U102" gate="G$1" pin="D"/>
-<wire x1="213.36" y1="55.88" x2="220.98" y2="55.88" width="0.1524" layer="91"/>
-<label x="220.98" y="55.88" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U101" gate="PORTB_H" pin="PB15"/>
 <wire x1="33.02" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
 <label x="38.1" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="FRAM_MISO" class="0">
-<segment>
-<pinref part="U102" gate="G$1" pin="Q"/>
-<wire x1="213.36" y1="53.34" x2="220.98" y2="53.34" width="0.1524" layer="91"/>
-<label x="220.98" y="53.34" size="1.27" layer="95" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U101" gate="PORTB_H" pin="PB14"/>
 <wire x1="33.02" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
@@ -10790,6 +10751,7 @@ mount micro USB connectors:
 <instance part="U$301" gate="G$1" x="53.34" y="134.62">
 <attribute name="PARTNO" x="53.34" y="134.62" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="U$3" gate="G$1" x="109.22" y="76.2"/>
 </instances>
 <busses>
 </busses>
@@ -11360,19 +11322,10 @@ SW COMPATIBLE</text>
 <wire x1="248.92" y1="68.58" x2="248.92" y2="33.02" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="248.92" y1="33.02" x2="185.42" y2="33.02" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="185.42" y1="33.02" x2="185.42" y2="68.58" width="0.1524" layer="94" style="dashdot"/>
-<text x="6.35" y="34.29" size="1.778" layer="94">Stuff option 2: L3GD20H (replacement gyro)</text>
 <text x="187.198" y="34.036" size="1.778" layer="94">Stuff option 3: offboard gyro/accel/mag</text>
 <wire x1="127" y1="165.1" x2="254" y2="165.1" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="254" y1="165.1" x2="254" y2="101.6" width="0.1524" layer="94" style="dashdot"/>
 <wire x1="254" y1="101.6" x2="127" y2="101.6" width="0.1524" layer="94" style="dashdot"/>
-<text x="128.016" y="102.616" size="1.778" layer="94">Stuff option 4: onboard accel/mag</text>
-<text x="101.6" y="10.16" size="1.778" layer="94">Valid stuff option combos:
-  1 + 4
-  2 + 4
-  3 only
-
-DO NOT stuff 1 + 2 at the same time
-DO NOT stuff 3 with any of 1, 2 or 4</text>
 <text x="22.86" y="111.76" size="1.778" layer="91">THIS IS A SPARKFUN LIBRARY PART USED FOR REFERENCE ONLY.  
 MUST BE REPLACED WITH OWN LIBRARY PART</text>
 </plain>

@@ -766,32 +766,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="1.5" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
 <wire x1="-1" y1="-1" x2="-1.5" y2="-0.5" width="0.127" layer="21"/>
 </package>
-<package name="SO08">
-<description>&lt;b&gt;Small Outline Package&lt;/b&gt; Fits JEDEC packages (narrow SOIC-8)</description>
-<wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
-<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
-<wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
-<circle x="-1.8034" y="-0.9906" radius="0.1436" width="0.2032" layer="21"/>
-<smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="2" x="-0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="3" x="0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="4" x="1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="5" x="1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="6" x="0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="7" x="-0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="8" x="-1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<rectangle x1="-2.0828" y1="-2.8702" x2="-1.7272" y2="-1.8542" layer="51"/>
-<rectangle x1="-0.8128" y1="-2.8702" x2="-0.4572" y2="-1.8542" layer="51"/>
-<rectangle x1="0.4572" y1="-2.8702" x2="0.8128" y2="-1.8542" layer="51"/>
-<rectangle x1="1.7272" y1="-2.8702" x2="2.0828" y2="-1.8542" layer="51"/>
-<rectangle x1="-2.0828" y1="1.8542" x2="-1.7272" y2="2.8702" layer="51"/>
-<rectangle x1="-0.8128" y1="1.8542" x2="-0.4572" y2="2.8702" layer="51"/>
-<rectangle x1="0.4572" y1="1.8542" x2="0.8128" y2="2.8702" layer="51"/>
-<rectangle x1="1.7272" y1="1.8542" x2="2.0828" y2="2.8702" layer="51"/>
-<text x="-2.667" y="-1.778" size="0.5" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
-<text x="3.175" y="-1.778" size="0.5" layer="27" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
-</package>
 <package name="HEADER_3X01_SMD_H_BOARD_EDGE_SHORT">
 <smd name="1" x="-2.54" y="0" dx="1.778" dy="1.27" layer="1" rot="R90"/>
 <smd name="2" x="0" y="0" dx="1.778" dy="1.27" layer="1" rot="R90"/>
@@ -1170,6 +1144,33 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <smd name="P$14" x="-0.75" y="0.7" dx="0.28" dy="0.51" layer="1" rot="R180"/>
 <smd name="P$15" x="-1.25" y="0.7" dx="0.28" dy="0.51" layer="1" rot="R180"/>
 <smd name="P$16" x="-1.75" y="0.7" dx="0.28" dy="0.51" layer="1" rot="R180"/>
+</package>
+<package name="WSON-8-5X6">
+<description>5*6mm 8DFN-EP</description>
+<wire x1="-2.25" y1="-3.03125" x2="-2.25" y2="3.03125" width="0.127" layer="51"/>
+<wire x1="-2.25" y1="3.03125" x2="2.25" y2="3.03125" width="0.127" layer="51"/>
+<wire x1="2.25" y1="3.03125" x2="2.25" y2="-3.03125" width="0.127" layer="51"/>
+<wire x1="2.25" y1="-3.03125" x2="-2.25" y2="-3.03125" width="0.127" layer="51"/>
+<wire x1="-2.25" y1="1" x2="-2.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="2.25" y1="1" x2="2.25" y2="-1" width="0.127" layer="21"/>
+<circle x="-1.859375" y="-1.9375" radius="0.05" width="0.5" layer="21"/>
+<rectangle x1="-0.6875" y1="-2.953125" x2="-0.4375" y2="-2.653125" layer="51"/>
+<rectangle x1="-1.96875" y1="-2.953125" x2="-1.71875" y2="-2.653125" layer="51"/>
+<rectangle x1="0.59375" y1="-2.953125" x2="0.84375" y2="-2.653125" layer="51"/>
+<rectangle x1="1.875" y1="-2.953125" x2="2.125" y2="-2.653125" layer="51"/>
+<rectangle x1="0.59375" y1="2.653125" x2="0.84375" y2="2.953125" layer="51" rot="R180"/>
+<rectangle x1="1.875" y1="2.653125" x2="2.125" y2="2.953125" layer="51" rot="R180"/>
+<rectangle x1="-0.765625" y1="2.653125" x2="-0.515625" y2="2.953125" layer="51" rot="R180"/>
+<rectangle x1="-1.96875" y1="2.653125" x2="-1.71875" y2="2.953125" layer="51" rot="R180"/>
+<smd name="1" x="-1.875" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="2" x="-0.605" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="3" x="0.665" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="4" x="1.935" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="5" x="1.935" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="6" x="0.665" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="7" x="-0.605" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="8" x="-1.875" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="4" dy="3.4" layer="1"/>
 </package>
 </packages>
 </library>
@@ -2287,15 +2288,6 @@ by exp-lbrs.ulp</description>
 <element name="R307" library="pixhawk2" package="0402-RES" value="1K5" x="50.8" y="17.4752" rot="R90">
 <attribute name="PARTNO" value="RC0402FR-071K5L" x="49.9872" y="17.4752" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U102" library="pixhawk2" package="SO08" value="FM25V01" x="50.4952" y="72.3392" rot="R180">
-<attribute name="MFGPN" value="FM25V01" x="55.7784" y="64.6176" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DATASHEET" value="http://www.ramtron.com/files/datasheets/FM25V01_ds.pdf" x="55.7784" y="64.6176" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="LINK" value="http://www.digikey.com/product-detail/en/FM25V01-GTR/1140-1026-1-ND/2809832" x="55.7784" y="64.6176" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PARTNO" value="FM25V01-G" x="50.4952" y="72.3392" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
-<element name="C101" library="pixhawk2" package="0402-CAP" value="0u1" x="41.8592" y="9.3472" rot="R315">
-<attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="41.8592" y="9.3472" size="1.778" layer="27" rot="R315" display="off"/>
-</element>
 <element name="J302" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="48.4632" y="26.5176" rot="MR270">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="48.4632" y="26.5176" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
@@ -2581,6 +2573,7 @@ by exp-lbrs.ulp</description>
 <attribute name="DATASHEET" value="http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/DM00057547.pdf" x="55.6768" y="5.08" size="1.778" layer="27" display="off"/>
 <attribute name="LINK" value="http://www.st.com/internet/analog/product/253884.jsp" x="55.6768" y="5.08" size="1.778" layer="27" display="off"/>
 </element>
+<element name="U$3" library="PX4lite" package="WSON-8-5X6" value="W25Q64FV" x="54.9656" y="28.3464"/>
 </elements>
 <signals>
 <signal name="IO-USART1_TX">
@@ -2695,8 +2688,6 @@ by exp-lbrs.ulp</description>
 <contactref element="R713" pad="P$2"/>
 <contactref element="J801" pad="P$2"/>
 <contactref element="R610" pad="P$2"/>
-<contactref element="U102" pad="4"/>
-<contactref element="C101" pad="P$2"/>
 <contactref element="C612" pad="P$2"/>
 <contactref element="U101" pad="20"/>
 <contactref element="C602" pad="P$1"/>
@@ -2757,7 +2748,6 @@ by exp-lbrs.ulp</description>
 <wire x1="32.15844375" y1="11.02564375" x2="32.2112875" y2="10.9728" width="0.254" layer="1"/>
 <wire x1="32.2112875" y1="10.9728" x2="33.7312" y2="10.9728" width="0.254" layer="1"/>
 <wire x1="39.969365625" y1="10.36765625" x2="41.343378125" y2="8.99364375" width="0.254" layer="1"/>
-<wire x1="41.343378125" y1="8.99364375" x2="42.212753125" y2="8.99364375" width="0.254" layer="1"/>
 <contactref element="J302" pad="P$4"/>
 <contactref element="U$301" pad="2"/>
 <contactref element="C1002" pad="P$2"/>
@@ -2923,8 +2913,8 @@ by exp-lbrs.ulp</description>
 <wire x1="21.8584" y1="11.7856" x2="24.0792" y2="15.4352" width="0" layer="19" extent="1-16"/>
 <wire x1="21.8584" y1="9.2856" x2="21.8584" y2="11.7856" width="0" layer="19" extent="16-16"/>
 <wire x1="41.0464" y1="8.696665625" x2="36.9824" y2="7.2216" width="0" layer="19" extent="1-1"/>
-<wire x1="42.5848" y1="6.8626" x2="42.212753125" y2="8.99364375" width="0" layer="19" extent="1-16"/>
-<wire x1="45.463953125" y1="11.83844375" x2="42.212753125" y2="8.99364375" width="0" layer="19" extent="1-1"/>
+<wire x1="42.5848" y1="6.8626" x2="41.0464" y2="8.696665625" width="0" layer="19" extent="1-16"/>
+<wire x1="45.463953125" y1="11.83844375" x2="41.343378125" y2="8.99364375" width="0" layer="19" extent="1-1"/>
 <wire x1="53.4416" y1="16.3576" x2="48.5808" y2="15.6624" width="0" layer="19" extent="1-16"/>
 <wire x1="53.964" y1="19.8366" x2="53.4416" y2="16.3576" width="0" layer="19" extent="16-16"/>
 <wire x1="51.2064" y1="21.0232" x2="53.964" y2="19.8366" width="0" layer="19" extent="1-16"/>
@@ -2958,7 +2948,6 @@ by exp-lbrs.ulp</description>
 <wire x1="57.0468" y1="5.58" x2="57.0468" y2="6.08" width="0" layer="19" extent="1-1"/>
 <wire x1="57.0468" y1="4.58" x2="57.0468" y2="5.58" width="0" layer="19" extent="1-1"/>
 <wire x1="54.3068" y1="4.08" x2="53.8624" y2="6.527" width="0" layer="19" extent="1-16"/>
-<wire x1="48.5902" y1="74.9554" x2="58.5296" y2="72.0344" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-VDD_3V3" class="1">
 <contactref element="VDD_3V1101" pad="P$1"/>
@@ -2975,10 +2964,6 @@ by exp-lbrs.ulp</description>
 <contactref element="C606" pad="P$1"/>
 <contactref element="R307" pad="P$2"/>
 <contactref element="R306" pad="P$2"/>
-<contactref element="U102" pad="8"/>
-<contactref element="C101" pad="P$1"/>
-<contactref element="U102" pad="7"/>
-<contactref element="U102" pad="3"/>
 <contactref element="U101" pad="21"/>
 <contactref element="C612" pad="P$1"/>
 <contactref element="U101" pad="22"/>
@@ -2993,7 +2978,6 @@ by exp-lbrs.ulp</description>
 <wire x1="35.726725" y1="11.0747625" x2="34.759115625" y2="10.107153125" width="0.254" layer="1"/>
 <wire x1="34.759115625" y1="10.107153125" x2="34.491153125" y2="10.107153125" width="0.254" layer="1"/>
 <wire x1="40.32291875" y1="10.721209375" x2="41.343375" y2="9.700753125" width="0.254" layer="1"/>
-<wire x1="41.343375" y1="9.700753125" x2="41.50564375" y2="9.700753125" width="0.254" layer="1"/>
 <wire x1="48.10109375" y1="18.499384375" x2="48.296109375" y2="18.6944" width="0.254" layer="1"/>
 <wire x1="48.296109375" y1="18.6944" x2="49.5808" y2="18.6944" width="0.254" layer="1"/>
 <wire x1="49.5808" y1="18.6944" x2="50.3936" y2="18.6944" width="0.254" layer="1"/>
@@ -3015,13 +2999,10 @@ by exp-lbrs.ulp</description>
 <wire x1="36.50678125" y1="12.033459375" x2="36.50678125" y2="11.85481875" width="0.254" layer="1"/>
 <wire x1="36.576" y1="11.9240375" x2="36.9176375" y2="11.5824" width="0.254" layer="1"/>
 <wire x1="36.9176375" y1="11.5824" x2="39.461728125" y2="11.5824" width="0.254" layer="1"/>
-<wire x1="51.1302" y1="69.723" x2="49.8602" y2="74.9554" width="0" layer="19" extent="1-1"/>
-<wire x1="52.4002" y1="69.723" x2="51.1302" y2="69.723" width="0" layer="19" extent="1-1"/>
-<wire x1="54.4448" y1="60.0924" x2="52.4002" y2="69.723" width="0" layer="19" extent="1-1"/>
-<wire x1="56.654" y1="59.436" x2="54.4448" y2="60.0924" width="0" layer="19" extent="1-1"/>
 <wire x1="56.2508" y1="57.6072" x2="56.654" y2="59.436" width="0" layer="19" extent="1-1"/>
-<wire x1="39.124" y1="72.5424" x2="49.8602" y2="74.9554" width="0" layer="19" extent="1-1"/>
-<wire x1="39.124" y1="71.4248" x2="39.124" y2="72.5424" width="0" layer="19" extent="1-1"/>
+<wire x1="54.4448" y1="60.0924" x2="56.654" y2="59.436" width="0" layer="19" extent="1-1"/>
+<wire x1="39.124" y1="71.4248" x2="54.4448" y2="60.0924" width="0" layer="19" extent="1-1"/>
+<wire x1="39.124" y1="72.5424" x2="39.124" y2="71.4248" width="0" layer="19" extent="1-1"/>
 <wire x1="32.05684375" y1="57.05044375" x2="39.124" y2="71.4248" width="0" layer="19" extent="1-1"/>
 <wire x1="20.5152" y1="59.944" x2="32.05684375" y2="57.05044375" width="0" layer="19" extent="1-1"/>
 <wire x1="20.2386" y1="61.7154" x2="20.5152" y2="59.944" width="0" layer="19" extent="1-1"/>
@@ -3549,24 +3530,16 @@ by exp-lbrs.ulp</description>
 <wire x1="29.716315625" y1="22.742025" x2="40.124" y2="71.4248" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!FRAM_CS">
-<contactref element="U102" pad="1"/>
 <contactref element="U101" pad="57"/>
-<wire x1="45.979771875" y1="23.44913125" x2="52.4002" y2="74.9554" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FRAM_SCK">
-<contactref element="U102" pad="6"/>
 <contactref element="U101" pad="52"/>
-<wire x1="47.747540625" y1="21.681365625" x2="49.8602" y2="69.723" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FRAM_MOSI">
-<contactref element="U102" pad="5"/>
 <contactref element="U101" pad="54"/>
-<wire x1="47.040434375" y1="22.388471875" x2="48.5902" y2="69.723" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FRAM_MISO">
-<contactref element="U102" pad="2"/>
 <contactref element="U101" pad="53"/>
-<wire x1="47.3939875" y1="22.03491875" x2="51.1302" y2="74.9554" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-SWCLK">
 <contactref element="JX301" pad="4"/>
