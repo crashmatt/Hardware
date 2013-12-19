@@ -37,9 +37,9 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
@@ -178,13 +178,12 @@ accessibility</text>
 <wire x1="62.992" y1="21.9456" x2="66.2432" y2="22.352" width="0.508" layer="21"/>
 <wire x1="62.992" y1="22.7584" x2="65.4304" y2="22.352" width="0.508" layer="21"/>
 <wire x1="64.2112" y1="22.352" x2="62.5856" y2="22.352" width="0.508" layer="21"/>
-<text x="33.3248" y="33.3248" size="1.016" layer="21" font="vector" ratio="15">PX4FMULite V0.1</text>
-<text x="53.34" y="11.4808" size="1.6764" layer="22" font="vector" ratio="15" rot="MR0">PX4FMU 2.3</text>
+<text x="75.7936" y="29.1592" size="1.016" layer="21" font="vector" ratio="15">PX4FMULite V0.x</text>
 <text x="0.9144" y="29.1592" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">FMU PWR</text>
 <text x="0.8128" y="35.7632" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">FMU B/E</text>
 <text x="68.1736" y="26.0096" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">POWER</text>
-<text x="57.3024" y="28.6512" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SPI</text>
-<text x="7.9248" y="34.4424" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">USB</text>
+<text x="56.4896" y="10.8712" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SPI</text>
+<text x="24.6888" y="28.6512" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">USB</text>
 <text x="67.8688" y="31.496" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SER1</text>
 <text x="-1.3208" y="23.4696" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SER2</text>
 <text x="-2.032" y="30.3784" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SPKT</text>
@@ -192,10 +191,16 @@ accessibility</text>
 <text x="1.7272" y="17.1704" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SWITCH</text>
 <text x="-1.9304" y="10.5664" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SER4</text>
 <text x="34.544" y="3.3528" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SER3</text>
-<text x="68.58" y="17.1704" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">CAN</text>
+<text x="56.5912" y="23.2664" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">CAN</text>
 <text x="42.2656" y="17.3736" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">ADC</text>
-<text x="68.4784" y="12.3952" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">I2C</text>
+<text x="49.784" y="14.224" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">I2C1</text>
 <text x="65.024" y="3.6576" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">AIR</text>
+<text x="41.0464" y="34.544" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">UART3 / GPS</text>
+<text x="32.3088" y="27.94" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">UART1</text>
+<text x="31.6992" y="12.2936" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">UART2</text>
+<text x="24.892" y="14.1224" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">AUX ADC</text>
+<text x="56.6928" y="34.544" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SAFETY</text>
+<text x="49.4792" y="26.416" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">I2C2</text>
 </plain>
 <libraries>
 <library name="pixhawk2">
@@ -2242,8 +2247,8 @@ by exp-lbrs.ulp</description>
 <element name="R710" library="pixhawk2" package="0402-RES" value="47R" x="23.1648" y="6.9088" rot="R90">
 <attribute name="PARTNO" value="RC0402JR-0747RL" x="15.4432" y="2.438396875" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="J702" library="con-hirose-df13" package="DF13C-3P-1.25V" value="DF13C-3P-1.25V" x="54.356" y="21.7424" rot="MR270">
-<attribute name="PARTNO" value="DF13C-3P-1.25V(20)" x="54.356" y="21.7424" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J802" library="con-hirose-df13" package="DF13C-3P-1.25V" value="DF13C-3P-1.25V" x="54.356" y="32.512" rot="MR270">
+<attribute name="PARTNO" value="DF13C-3P-1.25V(20)" x="54.356" y="32.512" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="J801" library="for-transfers" package="JST-ZH-SMT-VERTICAL" value="JST-ZH-3" x="42.3672" y="46.5328" rot="MR90">
 <attribute name="PARTNO" value="B3B-ZR-SM4-TF (LF)(SN)(P)" x="42.3672" y="46.5328" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -2262,12 +2267,6 @@ by exp-lbrs.ulp</description>
 <element name="IO-BOOT1101" library="pixhawk2" package="PAD.04X.04" value="PAD.04" x="18.8976" y="41.8592" rot="MR0">
 <attribute name="PARTNO" value="*" x="19.304" y="41.8592" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="19.304" y="41.8592" size="1.778" layer="28" rot="MR0" display="off"/>
-</element>
-<element name="R306" library="pixhawk2" package="0402-RES" value="1K5" x="49.5808" y="17.4752" rot="R90">
-<attribute name="PARTNO" value="RC0402FR-071K5L" x="49.1744" y="17.4752" size="1.778" layer="27" rot="R90" display="off"/>
-</element>
-<element name="R307" library="pixhawk2" package="0402-RES" value="1K5" x="50.8" y="17.4752" rot="R90">
-<attribute name="PARTNO" value="RC0402FR-071K5L" x="49.9872" y="17.4752" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="J302" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="22.6568" y="27.94" rot="MR270">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="22.6568" y="27.94" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -2311,20 +2310,14 @@ by exp-lbrs.ulp</description>
 <element name="L203" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="32.004" y="8.4328" rot="R45">
 <attribute name="PARTNO" value="KNH16C104DA5TS" x="32.004" y="8.4328" size="1.778" layer="27" rot="R45" display="off"/>
 </element>
-<element name="J403" library="con-hirose-df13" package="DF13C-7P-1.25V" value="DF13C-7P-1.25V" x="46.8376" y="14.9352" rot="MR270">
-<attribute name="PARTNO" value="DF13C-7P-1.25V(20)" x="46.8376" y="14.9352" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J403" library="con-hirose-df13" package="DF13C-7P-1.25V" value="DF13C-7P-1.25V" x="54.2544" y="10.3632" rot="MR270">
+<attribute name="PARTNO" value="DF13C-7P-1.25V(20)" x="54.2544" y="10.3632" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="L402" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="57.912" y="39.0144" rot="R90">
 <attribute name="PARTNO" value="KNH16C104DA5TS" x="57.912" y="39.0144" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R404" library="pixhawk2" package="0402-RES" value="120R" x="42.3672" y="74.168">
-<attribute name="PARTNO" value="RC0402FR-07120RL" x="42.3672" y="103.8352" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R405" library="pixhawk2" package="0402-RES" value="120R" x="42.3672" y="73.0504">
-<attribute name="PARTNO" value="RC0402FR-07120RL" x="37.4904" y="101.092" size="1.778" layer="27" display="off"/>
-</element>
-<element name="J401" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="38.7096" y="8.9408" rot="MR270">
-<attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="38.7096" y="8.9408" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J401" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="47.1424" y="12.9032" rot="MR270">
+<attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="47.1424" y="12.9032" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R409" library="pixhawk2" package="0402-RES" value="120R" x="39.116" y="6.096" rot="R90">
 <attribute name="PARTNO" value="RC0402FR-07120RL" x="21.6408" y="-3.6576" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2332,8 +2325,8 @@ by exp-lbrs.ulp</description>
 <element name="U401" library="pixhawk2" package="SOT23-8" value="MAX3051" x="41.9608" y="6.1976" rot="R90">
 <attribute name="PARTNO" value="MAX3051EKA" x="38.3032" y="-3.9624" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="J405" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="46.8376" y="27.3304" rot="MR270">
-<attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="46.8376" y="27.3304" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="J405" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="54.2544" y="22.6568" rot="MR270">
+<attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="54.2544" y="22.6568" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="C402" library="pixhawk2" package="0402-CAP" value="0u1" x="44.9072" y="6.2992" rot="R270">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="46.9392" y="20.9296" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2547,7 +2540,7 @@ by exp-lbrs.ulp</description>
 <element name="J1" library="PX4lite" package="3X10RA" value="" x="13.3096" y="8.0264"/>
 <element name="L1" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="18.3896" y="21.336" rot="R270"/>
 <element name="L2" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="27.7368" y="17.5768" rot="MR90"/>
-<element name="L3" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="52.6288" y="16.3576" rot="MR90"/>
+<element name="L3" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="44.9072" y="33.1216" rot="MR90"/>
 <element name="U1" library="SparkFun-Sensors" package="QFN-24-TESTING" value="MPU-6000QFN-24" x="55.372" y="10.2616"/>
 <element name="U$2" library="PX4FMUlite_V0_1" package="LGA-16L" value="LSM303D" x="55.6768" y="5.08">
 <attribute name="MFGPN" value="LSM303D" x="55.6768" y="5.08" size="1.778" layer="27" display="off"/>
@@ -2555,6 +2548,25 @@ by exp-lbrs.ulp</description>
 <attribute name="LINK" value="http://www.st.com/internet/analog/product/253884.jsp" x="55.6768" y="5.08" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$3" library="PX4lite" package="WSON-8-5X6" value="W25Q64FV" x="41.0464" y="34.2392" rot="R90"/>
+<element name="L4" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="99.7712" y="22.6568" rot="MR0">
+<attribute name="PARTNO" value="KNH16C104DA5TS" x="99.7712" y="22.6568" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="J2" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13-4P-1.25V" x="47.244" y="25.0952" rot="MR270">
+<attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="47.244" y="25.0952" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="R1" library="pixhawk2" package="0402-RES" value="1K5" x="100.9904" y="9.652" rot="MR0">
+<attribute name="PARTNO" value="RC0402FR-071K5L" x="100.9904" y="12.2936" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="R2" library="pixhawk2" package="0402-RES" value="1K5" x="105.2576" y="9.652" rot="MR0">
+<attribute name="PARTNO" value="RC0402FR-071K5L" x="109.5248" y="10.668" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="U$4" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="103.2256" y="11.8872" rot="MR0">
+<attribute name="PARTNO" value="PESD0402-140" x="105.4608" y="9.144" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="L5" library="pixhawk2" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="99.7712" y="11.7856" rot="MR0">
+<attribute name="PARTNO" value="KNH16C104DA5TS" x="99.7712" y="7.0104" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="L6" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="94.996" y="8.9408" rot="MR0"/>
 </elements>
 <signals>
 <signal name="IO-USART1_TX">
@@ -2595,12 +2607,12 @@ by exp-lbrs.ulp</description>
 <signal name="SERIAL5_TX">
 <contactref element="S5_TX" pad="P$1"/>
 <contactref element="L3" pad="P$15"/>
-<wire x1="20.7264" y1="0.3048" x2="53.3288" y2="15.1076" width="0" layer="19" extent="16-16"/>
+<wire x1="20.7264" y1="0.3048" x2="45.6072" y2="31.8716" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SERIAL5_RX">
 <contactref element="S5_RX" pad="P$1"/>
 <contactref element="L3" pad="P$16"/>
-<wire x1="24.0792" y1="0.6096" x2="53.3288" y2="14.6076" width="0" layer="19" extent="16-16"/>
+<wire x1="24.0792" y1="0.6096" x2="45.6072" y2="31.3716" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$1">
 <contactref element="C103" pad="P$2"/>
@@ -2798,6 +2810,10 @@ by exp-lbrs.ulp</description>
 <contactref element="U$2" pad="13"/>
 <contactref element="U$2" pad="16"/>
 <contactref element="U$2" pad="10"/>
+<contactref element="L4" pad="P$5"/>
+<contactref element="L4" pad="P$4"/>
+<contactref element="L4" pad="P$3"/>
+<contactref element="L6" pad="P$EP"/>
 <wire x1="61.6712" y1="71.2216" x2="61.6712" y2="71.6216" width="0" layer="19" extent="1-1"/>
 <wire x1="61.6712" y1="70.8216" x2="61.6712" y2="71.2216" width="0" layer="19" extent="1-1"/>
 <wire x1="60.7212" y1="71.4716" x2="61.6712" y2="71.6216" width="0" layer="19" extent="1-1"/>
@@ -2824,17 +2840,16 @@ by exp-lbrs.ulp</description>
 <wire x1="53.048" y1="33.9812" x2="53.7076" y2="35.8648" width="0" layer="19" extent="1-1"/>
 <wire x1="53.848" y1="33.7312" x2="53.048" y2="33.9812" width="0" layer="19" extent="1-1"/>
 <wire x1="53.856" y1="31.9024" x2="53.848" y2="33.7312" width="0" layer="19" extent="1-1"/>
-<wire x1="21.7568" y1="26.065" x2="53.856" y2="31.9024" width="0" layer="19" extent="1-16"/>
-<wire x1="52.6288" y1="30.238" x2="21.7568" y2="26.065" width="0" layer="19" extent="1-16"/>
+<wire x1="52.6288" y1="30.238" x2="53.856" y2="31.9024" width="0" layer="19" extent="1-1"/>
 <wire x1="56.888" y1="32.9184" x2="53.848" y2="33.7312" width="0" layer="19" extent="1-1"/>
 <wire x1="57.138" y1="34.3408" x2="56.888" y2="32.9184" width="0" layer="19" extent="1-1"/>
-<wire x1="45.9376" y1="25.4554" x2="52.6288" y2="30.238" width="0" layer="19" extent="1-16"/>
-<wire x1="50.6048" y1="22.2504" x2="45.9376" y2="25.4554" width="0" layer="19" extent="1-16"/>
+<wire x1="53.3544" y1="20.7818" x2="52.6288" y2="30.238" width="0" layer="19" extent="1-16"/>
+<wire x1="50.6048" y1="22.2504" x2="53.3544" y2="20.7818" width="0" layer="19" extent="1-16"/>
 <wire x1="51.2064" y1="21.0232" x2="50.6048" y2="22.2504" width="0" layer="19" extent="1-1"/>
 <wire x1="49.784" y1="21.07" x2="51.2064" y2="21.0232" width="0" layer="19" extent="1-1"/>
-<wire x1="52.6288" y1="16.3576" x2="51.2064" y2="21.0232" width="0" layer="19" extent="1-16"/>
-<wire x1="48.5808" y1="15.6624" x2="52.6288" y2="16.3576" width="0" layer="19" extent="1-16"/>
-<wire x1="45.9376" y1="11.1852" x2="45.463953125" y2="11.83844375" width="0" layer="19" extent="1-16"/>
+<wire x1="44.9072" y1="33.1216" x2="51.2064" y2="21.0232" width="0" layer="19" extent="1-16"/>
+<wire x1="48.5808" y1="15.6624" x2="44.9072" y2="33.1216" width="0" layer="19" extent="1-16"/>
+<wire x1="53.3544" y1="6.6132" x2="45.463953125" y2="11.83844375" width="0" layer="19" extent="1-16"/>
 <wire x1="41.343378125" y1="8.99364375" x2="45.463953125" y2="11.83844375" width="0" layer="19" extent="1-1"/>
 <wire x1="40.7858" y1="7.1726" x2="41.0464" y2="8.696665625" width="0" layer="19" extent="1-1"/>
 <wire x1="40.7858" y1="5.2226" x2="40.7858" y2="7.1726" width="0" layer="19" extent="1-1"/>
@@ -2843,8 +2858,8 @@ by exp-lbrs.ulp</description>
 <wire x1="38.8112" y1="3.8672" x2="38.8112" y2="4.2672" width="0" layer="19" extent="1-1"/>
 <wire x1="43.1358" y1="5.8726" x2="40.7858" y2="5.2226" width="0" layer="19" extent="1-1"/>
 <wire x1="44.9072" y1="5.7992" x2="43.1358" y2="5.8726" width="0" layer="19" extent="1-1"/>
-<wire x1="37.8096" y1="7.0658" x2="38.8112" y2="4.6672" width="0" layer="19" extent="1-16"/>
-<wire x1="36.9824" y1="7.2216" x2="37.8096" y2="7.0658" width="0" layer="19" extent="1-16"/>
+<wire x1="46.2424" y1="11.0282" x2="38.8112" y2="4.6672" width="0" layer="19" extent="1-16"/>
+<wire x1="36.9824" y1="7.2216" x2="46.2424" y2="11.0282" width="0" layer="19" extent="1-16"/>
 <wire x1="33.78404375" y1="9.40004375" x2="36.9824" y2="7.2216" width="0" layer="19" extent="1-1"/>
 <wire x1="32.286840625" y1="8.14995625" x2="33.78404375" y2="9.40004375" width="0" layer="19" extent="1-1"/>
 <wire x1="32.004" y1="8.4328" x2="32.286840625" y2="8.14995625" width="0" layer="19" extent="1-1"/>
@@ -2860,7 +2875,7 @@ by exp-lbrs.ulp</description>
 <wire x1="26.424" y1="24.384" x2="26.416" y2="23.2584" width="0" layer="19" extent="1-1"/>
 <wire x1="23.4776" y1="22.0472" x2="26.416" y2="23.2584" width="0" layer="19" extent="1-1"/>
 <wire x1="23.376" y1="26.7208" x2="26.424" y2="24.384" width="0" layer="19" extent="1-1"/>
-<wire x1="40.6172" y1="46.5328" x2="23.376" y2="26.7208" width="0" layer="19" extent="1-16"/>
+<wire x1="21.7568" y1="26.065" x2="23.376" y2="26.7208" width="0" layer="19" extent="1-16"/>
 <wire x1="24.0792" y1="15.4352" x2="27.7368" y2="17.5768" width="0" layer="19" extent="1-16"/>
 <wire x1="21.8584" y1="11.7856" x2="24.0792" y2="15.4352" width="0" layer="19" extent="1-16"/>
 <wire x1="21.8584" y1="9.2856" x2="21.8584" y2="11.7856" width="0" layer="19" extent="16-16"/>
@@ -2868,7 +2883,7 @@ by exp-lbrs.ulp</description>
 <wire x1="40.3352" y1="16.6624" x2="39.969365625" y2="10.36765625" width="0" layer="19" extent="1-16"/>
 <wire x1="40.3352" y1="19.2024" x2="40.3352" y2="16.6624" width="0" layer="19" extent="16-16"/>
 <wire x1="40.3352" y1="20.4724" x2="40.3352" y2="19.2024" width="0" layer="19" extent="16-16"/>
-<wire x1="39.969365625" y1="29.459540625" x2="45.9376" y2="25.4554" width="0" layer="19" extent="1-16"/>
+<wire x1="39.969365625" y1="29.459540625" x2="53.3544" y2="20.7818" width="0" layer="19" extent="1-16"/>
 <wire x1="38.0128" y1="27.6598" x2="39.969365625" y2="29.459540625" width="0" layer="19" extent="1-16"/>
 <wire x1="35.6972" y1="32.1056" x2="38.0128" y2="27.6598" width="0" layer="19" extent="1-16"/>
 <wire x1="35.7004" y1="33.9344" x2="35.6972" y2="32.1056" width="0" layer="19" extent="1-1"/>
@@ -2897,10 +2912,15 @@ by exp-lbrs.ulp</description>
 <wire x1="10.7696" y1="36.1732" x2="13.0696" y2="35.7232" width="0" layer="19" extent="16-16"/>
 <wire x1="40.154328125" y1="41.983128125" x2="35.7004" y2="35.4584" width="0" layer="19" extent="1-1"/>
 <wire x1="39.063153125" y1="43.127153125" x2="40.154328125" y2="41.983128125" width="0" layer="19" extent="1-1"/>
-<wire x1="34.4504" y1="49.1744" x2="39.063153125" y2="43.127153125" width="0" layer="19" extent="1-1"/>
+<wire x1="40.6172" y1="46.5328" x2="39.063153125" y2="43.127153125" width="0" layer="19" extent="1-16"/>
+<wire x1="34.4504" y1="49.1744" x2="40.6172" y2="46.5328" width="0" layer="19" extent="1-16"/>
 <wire x1="34.544" y1="49.9936" x2="34.4504" y2="49.1744" width="0" layer="19" extent="1-1"/>
 <wire x1="34.544" y1="50.3936" x2="34.544" y2="49.9936" width="0" layer="19" extent="1-1"/>
 <wire x1="34.544" y1="50.7936" x2="34.544" y2="50.3936" width="0" layer="19" extent="1-1"/>
+<wire x1="43.8832" y1="54.0512" x2="40.6172" y2="46.5328" width="0" layer="19" extent="1-16"/>
+<wire x1="43.2816" y1="55.48" x2="43.8832" y2="54.0512" width="0" layer="19" extent="1-1"/>
+<wire x1="43.2816" y1="55.88" x2="43.2816" y2="55.48" width="0" layer="19" extent="1-1"/>
+<wire x1="43.2816" y1="56.28" x2="43.2816" y2="55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="25.7048" y1="47.6424" x2="34.4504" y2="49.1744" width="0" layer="19" extent="1-1"/>
 <wire x1="23.2664" y1="47.7456" x2="25.7048" y2="47.6424" width="0" layer="19" extent="1-1"/>
 <wire x1="23.2664" y1="47.3456" x2="23.2664" y2="47.7456" width="0" layer="19" extent="1-1"/>
@@ -2912,10 +2932,6 @@ by exp-lbrs.ulp</description>
 <wire x1="57.0468" y1="6.08" x2="55.1768" y2="6.45" width="0" layer="19" extent="1-1"/>
 <wire x1="57.0468" y1="5.58" x2="57.0468" y2="6.08" width="0" layer="19" extent="1-1"/>
 <wire x1="57.0468" y1="4.58" x2="57.0468" y2="5.58" width="0" layer="19" extent="1-1"/>
-<wire x1="43.8832" y1="54.0512" x2="34.544" y2="50.7936" width="0" layer="19" extent="1-1"/>
-<wire x1="43.2816" y1="55.48" x2="43.8832" y2="54.0512" width="0" layer="19" extent="1-1"/>
-<wire x1="43.2816" y1="55.88" x2="43.2816" y2="55.48" width="0" layer="19" extent="1-1"/>
-<wire x1="43.2816" y1="56.28" x2="43.2816" y2="55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="31.0896" y1="60.3504" x2="34.544" y2="50.7936" width="0" layer="19" extent="1-16"/>
 <wire x1="11.9808" y1="57.8104" x2="21.844" y2="54.1528" width="0" layer="19" extent="1-16"/>
 <wire x1="9.5424" y1="57.8104" x2="11.9808" y2="57.8104" width="0" layer="19" extent="1-1"/>
@@ -2923,6 +2939,10 @@ by exp-lbrs.ulp</description>
 <wire x1="7.6738" y1="56.4486" x2="9.5424" y2="57.8104" width="0" layer="19" extent="1-1"/>
 <wire x1="7.6738" y1="54.4986" x2="7.6738" y2="56.4486" width="0" layer="19" extent="1-1"/>
 <wire x1="9.136" y1="49.4792" x2="7.6738" y2="54.4986" width="0" layer="19" extent="1-1"/>
+<wire x1="99.7712" y1="23.0568" x2="10.7696" y2="4.2164" width="0" layer="19" extent="1-1"/>
+<wire x1="99.7712" y1="22.6568" x2="99.7712" y2="23.0568" width="0" layer="19" extent="1-1"/>
+<wire x1="99.7712" y1="22.2568" x2="99.7712" y2="22.6568" width="0" layer="19" extent="1-1"/>
+<wire x1="94.996" y1="8.9408" x2="99.7712" y2="22.2568" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-VDD_3V3" class="1">
 <contactref element="VDD_3V1101" pad="P$1"/>
@@ -2937,8 +2957,6 @@ by exp-lbrs.ulp</description>
 <contactref element="C608" pad="P$1"/>
 <contactref element="C607" pad="P$1"/>
 <contactref element="C606" pad="P$1"/>
-<contactref element="R307" pad="P$2"/>
-<contactref element="R306" pad="P$2"/>
 <contactref element="U101" pad="21"/>
 <contactref element="C612" pad="P$1"/>
 <contactref element="U101" pad="22"/>
@@ -2954,15 +2972,12 @@ by exp-lbrs.ulp</description>
 <wire x1="34.759115625" y1="10.107153125" x2="34.491153125" y2="10.107153125" width="0.254" layer="1"/>
 <wire x1="40.32291875" y1="10.721209375" x2="41.343375" y2="9.700753125" width="0.254" layer="1"/>
 <wire x1="48.10109375" y1="18.499384375" x2="48.296109375" y2="18.6944" width="0.254" layer="1"/>
-<wire x1="48.296109375" y1="18.6944" x2="49.5808" y2="18.6944" width="0.254" layer="1"/>
-<wire x1="49.5808" y1="18.6944" x2="50.3936" y2="18.6944" width="0.254" layer="1"/>
+<wire x1="48.296109375" y1="18.6944" x2="50.3936" y2="18.6944" width="0.254" layer="1"/>
 <wire x1="48.3616" y1="18.759890625" x2="48.10109375" y2="18.499384375" width="0.254" layer="1"/>
 <wire x1="48.150215625" y1="18.499384375" x2="48.10109375" y2="18.499384375" width="0.254" layer="1"/>
 <contactref element="R608" pad="P$2"/>
 <contactref element="U$605" pad="7"/>
 <contactref element="C604" pad="P$1"/>
-<wire x1="49.5808" y1="17.9752" x2="49.5808" y2="18.6944" width="0.254" layer="1"/>
-<wire x1="50.8" y1="17.9752" x2="50.8" y2="18.288" width="0.254" layer="1"/>
 <wire x1="50.8" y1="18.288" x2="50.3936" y2="18.6944" width="0.254" layer="1"/>
 <wire x1="34.491153125" y1="10.107153125" x2="34.6456" y2="9.95270625" width="0.254" layer="1"/>
 <wire x1="40.32291875" y1="10.721209375" x2="39.461728125" y2="11.5824" width="0.254" layer="1"/>
@@ -2975,24 +2990,28 @@ by exp-lbrs.ulp</description>
 <wire x1="36.576" y1="11.9240375" x2="36.9176375" y2="11.5824" width="0.254" layer="1"/>
 <wire x1="36.9176375" y1="11.5824" x2="39.461728125" y2="11.5824" width="0.254" layer="1"/>
 <contactref element="U$3" pad="8"/>
-<wire x1="39.124" y1="72.5424" x2="39.124" y2="71.4248" width="0" layer="19" extent="1-1"/>
-<wire x1="33.6296" y1="44.7976" x2="39.124" y2="71.4248" width="0" layer="19" extent="1-1"/>
-<wire x1="31.9912" y1="34.5908" x2="33.6296" y2="44.7976" width="0" layer="19" extent="1-1"/>
-<wire x1="34.2004" y1="33.9344" x2="31.9912" y2="34.5908" width="0" layer="19" extent="1-1"/>
+<contactref element="R2" pad="P$2"/>
+<contactref element="R1" pad="P$2"/>
+<wire x1="100.4904" y1="9.652" x2="104.7576" y2="9.652" width="0" layer="19" extent="1-1"/>
+<wire x1="51.2064" y1="20.0232" x2="100.4904" y2="9.652" width="0" layer="19" extent="1-1"/>
+<wire x1="50.3936" y1="18.6944" x2="51.2064" y2="20.0232" width="0" layer="19" extent="1-1"/>
+<wire x1="40.3352" y1="21.7424" x2="48.10109375" y2="18.499384375" width="0" layer="19" extent="1-16"/>
+<wire x1="39.6158125" y1="29.81309375" x2="40.3352" y2="21.7424" width="0" layer="19" extent="1-16"/>
+<wire x1="38.4214" y1="32.3642" x2="39.6158125" y2="29.81309375" width="0" layer="19" extent="1-1"/>
+<wire x1="34.2004" y1="33.9344" x2="38.4214" y2="32.3642" width="0" layer="19" extent="1-1"/>
 <wire x1="33.7972" y1="32.1056" x2="34.2004" y2="33.9344" width="0" layer="19" extent="1-1"/>
-<wire x1="38.4214" y1="32.3642" x2="34.2004" y2="33.9344" width="0" layer="19" extent="1-1"/>
-<wire x1="39.6158125" y1="29.81309375" x2="38.4214" y2="32.3642" width="0" layer="19" extent="1-1"/>
-<wire x1="40.3352" y1="21.7424" x2="39.6158125" y2="29.81309375" width="0" layer="19" extent="1-16"/>
-<wire x1="48.10109375" y1="18.499384375" x2="40.3352" y2="21.7424" width="0" layer="19" extent="1-16"/>
-<wire x1="51.2064" y1="20.0232" x2="50.3936" y2="18.6944" width="0" layer="19" extent="1-1"/>
+<wire x1="31.9912" y1="34.5908" x2="34.2004" y2="33.9344" width="0" layer="19" extent="1-1"/>
+<wire x1="38.35604375" y1="42.42004375" x2="34.2004" y2="33.9344" width="0" layer="19" extent="1-1"/>
+<wire x1="33.6296" y1="44.7976" x2="38.35604375" y2="42.42004375" width="0" layer="19" extent="1-1"/>
+<wire x1="45.4152" y1="41.148" x2="38.35604375" y2="42.42004375" width="0" layer="19" extent="1-16"/>
 <wire x1="35.535440625" y1="13.0048" x2="40.3352" y2="21.7424" width="0" layer="19" extent="1-16"/>
 <wire x1="43.1358" y1="6.5226" x2="41.343375" y2="9.700753125" width="0" layer="19" extent="1-1"/>
 <wire x1="44.9072" y1="6.7992" x2="43.1358" y2="6.5226" width="0" layer="19" extent="1-1"/>
 <wire x1="31.8376375" y1="14.96385" x2="34.666065625" y2="12.135425" width="0" layer="19" extent="1-1"/>
 <wire x1="28.302103125" y1="21.3278125" x2="29.2608" y2="14.1304" width="0" layer="19" extent="1-1"/>
 <wire x1="26.416" y1="22.2584" x2="28.302103125" y2="21.3278125" width="0" layer="19" extent="1-1"/>
-<wire x1="45.4152" y1="41.148" x2="38.4214" y2="32.3642" width="0" layer="19" extent="1-16"/>
-<wire x1="38.35604375" y1="42.42004375" x2="26.416" y2="22.2584" width="0" layer="19" extent="1-1"/>
+<wire x1="39.124" y1="71.4248" x2="33.6296" y2="44.7976" width="0" layer="19" extent="1-1"/>
+<wire x1="39.124" y1="72.5424" x2="39.124" y2="71.4248" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OTG_FS_DP">
 <contactref element="U101" pad="71"/>
@@ -3045,30 +3064,33 @@ by exp-lbrs.ulp</description>
 </signal>
 <signal name="FMU-I2C2_SCL">
 <contactref element="U101" pad="47"/>
-<contactref element="R306" pad="P$1"/>
 <wire x1="47.040434375" y1="17.438725" x2="47.816759375" y2="16.6624" width="0.1524" layer="1"/>
 <wire x1="47.816759375" y1="16.6624" x2="49.1744" y2="16.6624" width="0.1524" layer="1"/>
 <wire x1="49.1744" y1="16.6624" x2="49.4872" y2="16.9752" width="0.1524" layer="1"/>
-<wire x1="49.4872" y1="16.9752" x2="49.5808" y2="16.9752" width="0.1524" layer="1"/>
+<contactref element="R1" pad="P$1"/>
+<contactref element="L6" pad="P$1"/>
+<wire x1="96.746" y1="8.2408" x2="101.4904" y2="9.652" width="0" layer="19" extent="1-1"/>
+<wire x1="49.4872" y1="16.9752" x2="96.746" y2="8.2408" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-I2C2_SDA">
 <contactref element="U101" pad="48"/>
-<contactref element="R307" pad="P$1"/>
-<wire x1="50.0808" y1="16.256" x2="50.8" y2="16.9752" width="0.1524" layer="1"/>
 <wire x1="47.3939875" y1="17.792278125" x2="48.015865625" y2="17.1704" width="0.1524" layer="1"/>
 <wire x1="48.015865625" y1="17.1704" x2="48.5648" y2="17.1704" width="0.1524" layer="1"/>
 <wire x1="48.5648" y1="17.1704" x2="48.8696" y2="17.4752" width="0.1524" layer="1"/>
 <wire x1="48.8696" y1="17.4752" x2="50.1904" y2="17.4752" width="0.1524" layer="1"/>
 <wire x1="50.1904" y1="17.4752" x2="50.6904" y2="16.9752" width="0.1524" layer="1"/>
-<wire x1="50.6904" y1="16.9752" x2="50.8" y2="16.9752" width="0.1524" layer="1"/>
+<contactref element="R2" pad="P$1"/>
+<contactref element="L6" pad="P$2"/>
+<wire x1="96.246" y1="8.2408" x2="105.7576" y2="9.652" width="0" layer="19" extent="1-1"/>
+<wire x1="50.6904" y1="16.9752" x2="96.246" y2="8.2408" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SBUS_INPUT">
 <contactref element="U903" pad="6"/>
 </signal>
 <signal name="SAFETY">
 <contactref element="R713" pad="P$1"/>
-<contactref element="J702" pad="P$3"/>
-<wire x1="27.2288" y1="19.0072" x2="53.456" y2="20.4924" width="0" layer="19" extent="1-16"/>
+<contactref element="J802" pad="P$3"/>
+<wire x1="27.2288" y1="19.0072" x2="53.456" y2="31.262" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SERIAL1_CTS">
 <contactref element="J201" pad="P$4"/>
@@ -3173,25 +3195,25 @@ by exp-lbrs.ulp</description>
 <contactref element="S3TX" pad="P$1"/>
 <contactref element="J203" pad="P$2"/>
 <contactref element="L3" pad="P$11"/>
-<wire x1="53.3288" y1="17.1076" x2="38.0128" y2="32.6598" width="0" layer="19" extent="16-16"/>
-<wire x1="33.9344" y1="1.7272" x2="53.3288" y2="17.1076" width="0" layer="19" extent="16-16"/>
+<wire x1="45.6072" y1="33.8716" x2="38.0128" y2="32.6598" width="0" layer="19" extent="16-16"/>
+<wire x1="33.9344" y1="1.7272" x2="45.6072" y2="33.8716" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SERIAL3_RX">
 <contactref element="S3RX" pad="P$1"/>
 <contactref element="J203" pad="P$3"/>
 <contactref element="L3" pad="P$12"/>
 <wire x1="38.0128" y1="31.4098" x2="31.5976" y2="79.9592" width="0" layer="19" extent="16-16"/>
-<wire x1="53.3288" y1="16.6076" x2="38.0128" y2="31.4098" width="0" layer="19" extent="16-16"/>
+<wire x1="45.6072" y1="33.3716" x2="38.0128" y2="31.4098" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SERIAL4_TX">
 <contactref element="S4TX" pad="P$1"/>
 <contactref element="L3" pad="P$13"/>
-<wire x1="18.8976" y1="1.4224" x2="53.3288" y2="16.1076" width="0" layer="19" extent="16-16"/>
+<wire x1="18.8976" y1="1.4224" x2="45.6072" y2="32.8716" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SERIAL4_RX">
 <contactref element="S4RX" pad="P$1"/>
 <contactref element="L3" pad="P$14"/>
-<wire x1="22.2504" y1="1.3208" x2="53.3288" y2="15.6076" width="0" layer="19" extent="16-16"/>
+<wire x1="22.2504" y1="1.3208" x2="45.6072" y2="32.3716" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VDD_5V_PERIPH" class="1" airwireshidden="yes">
 <contactref element="L404" pad="P$1"/>
@@ -3265,7 +3287,7 @@ by exp-lbrs.ulp</description>
 <wire x1="36.080278125" y1="10.721209375" x2="35.3568" y2="9.99773125" width="0.1524" layer="1"/>
 <wire x1="35.3568" y1="9.99773125" x2="35.3568" y2="8.5344" width="0.1524" layer="1"/>
 <contactref element="L3" pad="P$6"/>
-<wire x1="36.080278125" y1="10.721209375" x2="51.9288" y2="17.1076" width="0" layer="19" extent="1-16"/>
+<wire x1="36.080278125" y1="10.721209375" x2="44.2072" y2="33.8716" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMU-UART4_RX">
 <contactref element="U101" pad="24"/>
@@ -3273,29 +3295,29 @@ by exp-lbrs.ulp</description>
 <wire x1="35.6616" y1="9.595425" x2="35.6616" y2="8.7376" width="0.1524" layer="1"/>
 <wire x1="35.6616" y1="8.7376" x2="36.2712" y2="8.128" width="0.1524" layer="1"/>
 <contactref element="L3" pad="P$5"/>
-<wire x1="36.43383125" y1="10.36765625" x2="51.9288" y2="16.6076" width="0" layer="19" extent="1-16"/>
+<wire x1="36.43383125" y1="10.36765625" x2="44.2072" y2="33.3716" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMU-UART7_TX">
 <contactref element="U101" pad="39"/>
 <wire x1="45.0088" y1="13.5128" x2="45.0088" y2="13.813503125" width="0.1524" layer="1"/>
 <wire x1="45.0088" y1="13.813503125" x2="44.21200625" y2="14.610296875" width="0.1524" layer="1"/>
 <contactref element="L3" pad="P$2"/>
-<wire x1="45.0088" y1="13.813503125" x2="51.9288" y2="15.1076" width="0" layer="19" extent="1-16"/>
+<wire x1="45.0088" y1="13.813503125" x2="44.2072" y2="31.8716" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMU-UART7_RX">
 <contactref element="U101" pad="38"/>
 <contactref element="L3" pad="P$1"/>
-<wire x1="43.858453125" y1="14.25674375" x2="51.9288" y2="14.6076" width="0" layer="19" extent="1-16"/>
+<wire x1="43.858453125" y1="14.25674375" x2="44.2072" y2="31.3716" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMU-UART8_TX">
 <contactref element="U101" pad="98"/>
 <contactref element="L3" pad="P$4"/>
-<wire x1="29.009209375" y1="22.03491875" x2="51.9288" y2="16.1076" width="0" layer="19" extent="1-16"/>
+<wire x1="29.009209375" y1="22.03491875" x2="44.2072" y2="32.8716" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMU-UART8_RX">
 <contactref element="U101" pad="97"/>
 <contactref element="L3" pad="P$3"/>
-<wire x1="29.3627625" y1="22.388471875" x2="51.9288" y2="15.6076" width="0" layer="19" extent="1-16"/>
+<wire x1="29.3627625" y1="22.388471875" x2="44.2072" y2="32.3716" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="!VDD_5V_PERIPH_EN">
 <contactref element="U101" pad="67"/>
@@ -3382,22 +3404,22 @@ by exp-lbrs.ulp</description>
 <signal name="SPI_EXT_MISO">
 <contactref element="U101" pad="4"/>
 <contactref element="J403" pad="P$3"/>
-<wire x1="29.3627625" y1="17.438725" x2="45.9376" y2="16.1852" width="0" layer="19" extent="1-16"/>
+<wire x1="29.3627625" y1="17.438725" x2="53.3544" y2="11.6132" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SPI_EXT_MOSI">
 <contactref element="U101" pad="5"/>
 <contactref element="J403" pad="P$4"/>
-<wire x1="29.716315625" y1="17.085171875" x2="45.9376" y2="14.9352" width="0" layer="19" extent="1-16"/>
+<wire x1="29.716315625" y1="17.085171875" x2="53.3544" y2="10.3632" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SPI_EXT_SCK">
 <contactref element="U101" pad="1"/>
 <contactref element="J403" pad="P$2"/>
-<wire x1="28.302103125" y1="18.499384375" x2="45.9376" y2="17.4352" width="0" layer="19" extent="1-16"/>
+<wire x1="28.302103125" y1="18.499384375" x2="53.3544" y2="12.8632" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="!SPI_EXT_NSS">
 <contactref element="U101" pad="3"/>
 <contactref element="J403" pad="P$5"/>
-<wire x1="29.009209375" y1="17.792278125" x2="45.9376" y2="13.6852" width="0" layer="19" extent="1-16"/>
+<wire x1="29.009209375" y1="17.792278125" x2="53.3544" y2="9.1132" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMU-CH1">
 <contactref element="U101" pad="45"/>
@@ -3438,8 +3460,8 @@ by exp-lbrs.ulp</description>
 </signal>
 <signal name="N$57">
 <contactref element="R710" pad="P$1"/>
-<contactref element="J702" pad="P$2"/>
-<wire x1="23.1648" y1="6.4088" x2="53.456" y2="21.7424" width="0" layer="19" extent="1-16"/>
+<contactref element="J802" pad="P$2"/>
+<wire x1="23.1648" y1="6.4088" x2="53.456" y2="32.512" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="VDD_5V_SENS">
 <contactref element="R609" pad="P$1"/>
@@ -3502,17 +3524,17 @@ by exp-lbrs.ulp</description>
 </signal>
 <signal name="FMU-I2C1_SCL">
 <contactref element="U101" pad="95"/>
-<contactref element="R404" pad="P$1"/>
 <contactref element="R401" pad="P$1"/>
-<wire x1="40.124" y1="72.5424" x2="41.8672" y2="74.168" width="0" layer="19" extent="1-1"/>
+<contactref element="L6" pad="P$3"/>
 <wire x1="30.069871875" y1="23.095578125" x2="40.124" y2="72.5424" width="0" layer="19" extent="1-1"/>
+<wire x1="95.746" y1="8.2408" x2="30.069871875" y2="23.095578125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FMU-I2C1_SDA">
 <contactref element="U101" pad="96"/>
-<contactref element="R405" pad="P$1"/>
 <contactref element="R402" pad="P$1"/>
-<wire x1="40.124" y1="71.4248" x2="41.8672" y2="73.0504" width="0" layer="19" extent="1-1"/>
+<contactref element="L6" pad="P$4"/>
 <wire x1="29.716315625" y1="22.742025" x2="40.124" y2="71.4248" width="0" layer="19" extent="1-1"/>
+<wire x1="95.246" y1="8.2408" x2="29.716315625" y2="22.742025" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!FRAM_CS">
 <contactref element="U101" pad="57"/>
@@ -3551,13 +3573,13 @@ by exp-lbrs.ulp</description>
 <signal name="IO-VDD_3V3" class="1" airwireshidden="yes">
 <contactref element="U903" pad="8"/>
 <contactref element="C901" pad="P$1"/>
-<contactref element="J702" pad="P$1"/>
+<contactref element="J802" pad="P$1"/>
 <contactref element="C1004" pad="P$1"/>
 <contactref element="U$1002" pad="7"/>
 <contactref element="U$701" pad="C"/>
 <wire x1="54.648" y1="33.9812" x2="55.638" y2="34.3408" width="0" layer="19" extent="1-1"/>
-<wire x1="53.456" y1="22.9924" x2="54.648" y2="33.9812" width="0" layer="19" extent="1-16"/>
-<wire x1="24.4776" y1="22.0472" x2="53.456" y2="22.9924" width="0" layer="19" extent="1-16"/>
+<wire x1="53.456" y1="33.762" x2="54.648" y2="33.9812" width="0" layer="19" extent="1-16"/>
+<wire x1="24.4776" y1="22.0472" x2="53.456" y2="33.762" width="0" layer="19" extent="1-16"/>
 <wire x1="11.2238" y1="56.4486" x2="24.4776" y2="22.0472" width="0" layer="19" extent="1-1"/>
 <wire x1="10.9808" y1="57.8104" x2="11.2238" y2="56.4486" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -3638,17 +3660,17 @@ by exp-lbrs.ulp</description>
 <contactref element="L402" pad="P$2"/>
 <contactref element="U$402" pad="C"/>
 <wire x1="53.7464" y1="39.4128" x2="57.912" y2="39.8144" width="0" layer="19" extent="1-1"/>
-<wire x1="45.9376" y1="18.6852" x2="53.7464" y2="39.4128" width="0" layer="19" extent="1-16"/>
+<wire x1="53.3544" y1="14.1132" x2="53.7464" y2="39.4128" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$33">
-<contactref element="R404" pad="P$2"/>
 <contactref element="J401" pad="P$2"/>
-<wire x1="37.8096" y1="9.5658" x2="42.8672" y2="74.168" width="0" layer="19" extent="1-16"/>
+<contactref element="L6" pad="P$14"/>
+<wire x1="95.746" y1="9.6408" x2="46.2424" y2="13.5282" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$37">
-<contactref element="R405" pad="P$2"/>
 <contactref element="J401" pad="P$3"/>
-<wire x1="37.8096" y1="8.3158" x2="42.8672" y2="73.0504" width="0" layer="19" extent="1-16"/>
+<contactref element="L6" pad="P$13"/>
+<wire x1="95.246" y1="9.6408" x2="46.2424" y2="12.2782" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAN_H">
 <contactref element="R409" pad="P$1"/>
@@ -3656,7 +3678,7 @@ by exp-lbrs.ulp</description>
 <contactref element="J405" pad="P$2"/>
 <contactref element="CAN_H" pad="P$1"/>
 <wire x1="39.116" y1="5.596" x2="40.7858" y2="5.8726" width="0" layer="19" extent="1-1"/>
-<wire x1="45.9376" y1="27.9554" x2="39.116" y2="5.596" width="0" layer="19" extent="1-16"/>
+<wire x1="53.3544" y1="23.2818" x2="39.116" y2="5.596" width="0" layer="19" extent="1-16"/>
 <wire x1="37.1856" y1="0.7112" x2="39.116" y2="5.596" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CAN_L">
@@ -3665,7 +3687,7 @@ by exp-lbrs.ulp</description>
 <contactref element="J405" pad="P$3"/>
 <contactref element="CAN_L" pad="P$1"/>
 <wire x1="39.116" y1="6.596" x2="40.7858" y2="6.5226" width="0" layer="19" extent="1-1"/>
-<wire x1="45.9376" y1="26.7054" x2="39.116" y2="6.596" width="0" layer="19" extent="1-16"/>
+<wire x1="53.3544" y1="22.0318" x2="39.116" y2="6.596" width="0" layer="19" extent="1-16"/>
 <wire x1="38.5064" y1="1.7272" x2="39.116" y2="6.596" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$98" class="1">
@@ -3680,7 +3702,7 @@ by exp-lbrs.ulp</description>
 <contactref element="J405" pad="P$1"/>
 <contactref element="L403" pad="P$2"/>
 <contactref element="U$404" pad="C"/>
-<wire x1="36.9824" y1="8.2216" x2="45.9376" y2="29.2054" width="0" layer="19" extent="1-16"/>
+<wire x1="36.9824" y1="8.2216" x2="53.3544" y2="24.5318" width="0" layer="19" extent="1-16"/>
 <wire x1="38.0112" y1="4.2672" x2="36.9824" y2="8.2216" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$100" class="1">
@@ -3719,7 +3741,9 @@ by exp-lbrs.ulp</description>
 <signal name="N$42" class="1">
 <contactref element="J401" pad="P$1"/>
 <contactref element="U$401" pad="C"/>
-<wire x1="37.8096" y1="10.8158" x2="52.6288" y2="45.3056" width="0" layer="19" extent="1-16"/>
+<contactref element="L4" pad="P$2"/>
+<wire x1="46.2424" y1="14.7782" x2="52.6288" y2="45.3056" width="0" layer="19" extent="1-16"/>
+<wire x1="98.9712" y1="22.6568" x2="46.2424" y2="14.7782" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="!FMU-LED_AMBER">
 <contactref element="R707" pad="P$1"/>
@@ -3875,7 +3899,7 @@ by exp-lbrs.ulp</description>
 <signal name="GPIO_EXT_1">
 <contactref element="J403" pad="P$6"/>
 <contactref element="U101" pad="8"/>
-<wire x1="30.776978125" y1="16.0245125" x2="45.9376" y2="12.4352" width="0" layer="19" extent="1-16"/>
+<wire x1="30.776978125" y1="16.0245125" x2="53.3544" y2="7.8632" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$15">
 <contactref element="J1" pad="22"/>
@@ -3898,6 +3922,33 @@ by exp-lbrs.ulp</description>
 </signal>
 <signal name="GND">
 <contactref element="U$3" pad="4"/>
+<contactref element="J2" pad="P$4"/>
+<contactref element="U$4" pad="A"/>
+<contactref element="L5" pad="P$5"/>
+<contactref element="L5" pad="P$4"/>
+<contactref element="L5" pad="P$3"/>
+<wire x1="46.344" y1="23.2202" x2="43.6714" y2="36.1742" width="0" layer="19" extent="1-1"/>
+<wire x1="102.7256" y1="11.8872" x2="46.344" y2="23.2202" width="0" layer="19" extent="1-1"/>
+<wire x1="99.7712" y1="11.7856" x2="102.7256" y2="11.8872" width="0" layer="19" extent="1-1"/>
+<wire x1="99.7712" y1="12.1856" x2="99.7712" y2="11.7856" width="0" layer="19" extent="1-1"/>
+<wire x1="99.7712" y1="11.3856" x2="99.7712" y2="11.7856" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="J2" pad="P$2"/>
+<contactref element="L6" pad="P$16"/>
+<wire x1="46.344" y1="25.7202" x2="96.746" y2="9.6408" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$20">
+<contactref element="J2" pad="P$3"/>
+<contactref element="L6" pad="P$15"/>
+<wire x1="46.344" y1="24.4702" x2="96.246" y2="9.6408" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$21" class="1">
+<contactref element="J2" pad="P$1"/>
+<contactref element="U$4" pad="C"/>
+<contactref element="L5" pad="P$2"/>
+<wire x1="98.9712" y1="11.7856" x2="103.7256" y2="11.8872" width="0" layer="19" extent="1-1"/>
+<wire x1="46.344" y1="26.9702" x2="103.7256" y2="11.8872" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
