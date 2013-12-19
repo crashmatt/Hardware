@@ -9134,9 +9134,6 @@ by exp-lbrs.ulp</description>
 <part name="J202" library="con-hirose-df13" deviceset="DF13-6P-1.25" device="V" value="DF13C-6P-1.25V">
 <attribute name="PARTNO" value="DF13C-6P-1.25V(20)"/>
 </part>
-<part name="J204" library="con-hirose-df13" deviceset="DF13-6P-1.25" device="V" value="DF13C-6P-1.25V">
-<attribute name="PARTNO" value="DF13C-6P-1.25V(20)"/>
-</part>
 <part name="GND10" library="pixhawk2" deviceset="GND" device=""/>
 <part name="FIDUCIALS" library="pixhawk2" deviceset="A4L-LOC" device="" value="Fiducials"/>
 <part name="OSHW_LOGO" library="pixhawk2" deviceset="OSHW-LOGO" device="S">
@@ -10218,9 +10215,6 @@ PD15: TIM4_CH4: spare
 <instance part="J202" gate="G$1" x="226.06" y="114.3">
 <attribute name="PARTNO" x="226.06" y="114.3" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="J204" gate="G$1" x="226.06" y="50.8">
-<attribute name="PARTNO" x="226.06" y="50.8" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="GND10" gate="1" x="193.04" y="38.1"/>
 <instance part="L201" gate="G$1" x="193.04" y="157.48">
 <attribute name="PARTNO" x="193.04" y="157.48" size="1.778" layer="96" display="off"/>
@@ -10276,13 +10270,9 @@ PD15: TIM4_CH4: spare
 <segment>
 <wire x1="220.98" y1="68.58" x2="210.82" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="J203" gate="G$1" pin="6"/>
-<pinref part="J204" gate="G$1" pin="6"/>
 <wire x1="210.82" y1="68.58" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="43.18" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="68.58" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="43.18" x2="193.04" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="68.58" x2="193.04" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<junction x="193.04" y="43.18"/>
 <pinref part="L203" gate="G$1" pin="P$3"/>
 <wire x1="193.04" y1="68.58" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
 <junction x="193.04" y="68.58"/>
@@ -10437,22 +10427,12 @@ PD15: TIM4_CH4: spare
 </net>
 <net name="SERIAL4_TX" class="0">
 <segment>
-<wire x1="220.98" y1="53.34" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
-<label x="185.42" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J204" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <label x="124.46" y="48.26" size="1.27" layer="95" xref="yes"/>
 <pinref part="L3" gate="G$4" pin="P$2"/>
 <wire x1="124.46" y1="48.26" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SERIAL4_RX" class="0">
-<segment>
-<wire x1="220.98" y1="50.8" x2="185.42" y2="50.8" width="0.1524" layer="91"/>
-<label x="185.42" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J204" gate="G$1" pin="3"/>
-</segment>
 <segment>
 <label x="124.46" y="53.34" size="1.27" layer="95" xref="yes"/>
 <pinref part="L3" gate="G$3" pin="P$2"/>
@@ -10518,22 +10498,12 @@ PD15: TIM4_CH4: spare
 </net>
 <net name="SERIAL5_TX" class="0">
 <segment>
-<pinref part="J204" gate="G$1" pin="4"/>
-<wire x1="220.98" y1="48.26" x2="185.42" y2="48.26" width="0.1524" layer="91"/>
-<label x="185.42" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <label x="124.46" y="58.42" size="1.27" layer="95" xref="yes"/>
 <pinref part="L3" gate="G$2" pin="P$2"/>
 <wire x1="124.46" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SERIAL5_RX" class="0">
-<segment>
-<pinref part="J204" gate="G$1" pin="5"/>
-<wire x1="220.98" y1="45.72" x2="185.42" y2="45.72" width="0.1524" layer="91"/>
-<label x="185.42" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <label x="124.46" y="63.5" size="1.27" layer="95" xref="yes"/>
 <pinref part="L3" gate="G$1" pin="P$2"/>
@@ -10580,12 +10550,8 @@ PD15: TIM4_CH4: spare
 <wire x1="198.12" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="86.36" x2="218.44" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="86.36" x2="218.44" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="J204" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="81.28" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="55.88" x2="220.98" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="J203" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="81.28" x2="218.44" y2="81.28" width="0.1524" layer="91"/>
-<junction x="218.44" y="81.28"/>
 <pinref part="U$203" gate="G$1" pin="C"/>
 <junction x="210.82" y="86.36"/>
 </segment>
