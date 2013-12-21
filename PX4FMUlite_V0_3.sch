@@ -9271,10 +9271,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
 </part>
-<part name="IO-BOOT1101" library="pixhawk2" deviceset="PAD" device=".04">
-<attribute name="BOM" value="EXCLUDE"/>
-<attribute name="PARTNO" value="*"/>
-</part>
 <part name="J302" library="con-hirose-df13" deviceset="DF13-4P-1.25" device="V" value="DF13C-4P-1.25V">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)"/>
 </part>
@@ -9493,10 +9489,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
 </part>
-<part name="ADC_PR" library="pixhawk2" deviceset="PAD" device=".04">
-<attribute name="BOM" value="EXCLUDE"/>
-<attribute name="PARTNO" value="*"/>
-</part>
 <part name="CAN_H" library="pixhawk2" deviceset="PAD" device=".04">
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
@@ -9525,10 +9517,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="FRAME11" library="pixhawk2" deviceset="A4L-LOC" device=""/>
 <part name="U$6" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
 <attribute name="PARTNO" value="PESD0402-140"/>
-</part>
-<part name="VDD_5V_BRICK" library="pixhawk2" deviceset="PAD" device=".04">
-<attribute name="BOM" value="EXCLUDE"/>
-<attribute name="PARTNO" value="*"/>
 </part>
 <part name="GND" library="pixhawk2" deviceset="PAD" device=".04">
 <attribute name="BOM" value="EXCLUDE"/>
@@ -9601,6 +9589,9 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </part>
 <part name="SJ2" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="TRACE"/>
 <part name="JP3" library="SparkFun-Passives" deviceset="JUMPER-3" device="SMD"/>
+<part name="R5" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K">
+<attribute name="PARTNO" value="RC0402FR-0710KL"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -11130,13 +11121,6 @@ Aux ADC ports</text>
 <label x="139.7" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="L7" gate="G$1" pin="P$1"/>
 </segment>
-<segment>
-<label x="30.48" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="58.42" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="50.8" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="SPI_EXT_MISO" class="0">
 <segment>
@@ -11266,7 +11250,7 @@ Aux ADC ports</text>
 <pinref part="U401" gate="G$1" pin="DOUT"/>
 </segment>
 </net>
-<net name="CAN_H" class="0">
+<net name="CAN1_H" class="0">
 <segment>
 <wire x1="180.34" y1="53.34" x2="185.42" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="53.34" x2="187.96" y2="53.34" width="0.1524" layer="91"/>
@@ -11280,21 +11264,8 @@ Aux ADC ports</text>
 <wire x1="187.96" y1="53.34" x2="236.22" y2="53.34" width="0.1524" layer="91"/>
 <junction x="187.96" y="53.34"/>
 </segment>
-<segment>
-<wire x1="180.34" y1="101.6" x2="185.42" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="101.6" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="106.68" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="U2" gate="G$1" pin="CANH"/>
-<wire x1="185.42" y1="101.6" x2="185.42" y2="78.74" width="0.1524" layer="91"/>
-<junction x="185.42" y="101.6"/>
-<label x="185.42" y="78.74" size="1.4224" layer="95" xref="yes"/>
-<pinref part="J3" gate="G$1" pin="2"/>
-<wire x1="187.96" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
-<junction x="187.96" y="101.6"/>
-</segment>
 </net>
-<net name="CAN_L" class="0">
+<net name="CAN1_L" class="0">
 <segment>
 <wire x1="200.66" y1="50.8" x2="180.34" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U401" gate="G$1" pin="CANL"/>
@@ -11307,19 +11278,6 @@ Aux ADC ports</text>
 <wire x1="210.82" y1="58.42" x2="213.36" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="58.42" x2="213.36" y2="50.8" width="0.1524" layer="91"/>
 <junction x="213.36" y="50.8"/>
-</segment>
-<segment>
-<wire x1="200.66" y1="99.06" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="CANL"/>
-<wire x1="200.66" y1="99.06" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
-<label x="200.66" y="83.82" size="1.4224" layer="95" xref="yes"/>
-<pinref part="J3" gate="G$1" pin="3"/>
-<wire x1="200.66" y1="99.06" x2="213.36" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SJ2" gate="1" pin="2"/>
-<wire x1="213.36" y1="99.06" x2="236.22" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="106.68" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="106.68" x2="213.36" y2="99.06" width="0.1524" layer="91"/>
-<junction x="213.36" y="99.06"/>
 </segment>
 </net>
 <net name="FMU_AUX_ADC1" class="0">
@@ -11507,6 +11465,38 @@ Aux ADC ports</text>
 <wire x1="152.4" y1="99.06" x2="139.7" y2="99.06" width="0.1524" layer="91"/>
 <label x="139.7" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U2" gate="G$1" pin="DOUT"/>
+</segment>
+</net>
+<net name="CAN2_H" class="0">
+<segment>
+<wire x1="180.34" y1="101.6" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="106.68" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="U2" gate="G$1" pin="CANH"/>
+<pinref part="J3" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
+<junction x="187.96" y="101.6"/>
+</segment>
+</net>
+<net name="CAN2_L" class="0">
+<segment>
+<wire x1="213.36" y1="99.06" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="CANL"/>
+<pinref part="J3" gate="G$1" pin="3"/>
+<pinref part="SJ2" gate="1" pin="2"/>
+<wire x1="213.36" y1="99.06" x2="236.22" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="106.68" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="106.68" x2="213.36" y2="99.06" width="0.1524" layer="91"/>
+<junction x="213.36" y="99.06"/>
+</segment>
+</net>
+<net name="VDD_3V3_PERIPH" class="1">
+<segment>
+<label x="30.48" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="58.42" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="50.8" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -11884,7 +11874,7 @@ I(limit) = 25000 / R(ilim)
 <instance part="C603" gate="G$1" x="101.6" y="114.3">
 <attribute name="PARTNO" x="101.6" y="114.3" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND39" gate="1" x="78.74" y="15.24"/>
+<instance part="GND39" gate="1" x="106.68" y="12.7"/>
 <instance part="R607" gate="G$1" x="134.62" y="25.4" rot="R270">
 <attribute name="PARTNO" x="134.62" y="25.4" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
@@ -11996,7 +11986,7 @@ I(limit) = 25000 / R(ilim)
 <segment>
 <pinref part="GND39" gate="1" pin="GND"/>
 <wire x1="111.76" y1="17.78" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="17.78" x2="78.74" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="17.78" x2="106.68" y2="15.24" width="0.1524" layer="91"/>
 <junction x="111.76" y="17.78"/>
 <pinref part="R607" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="20.32" x2="134.62" y2="17.78" width="0.1524" layer="91"/>
@@ -12709,7 +12699,7 @@ S.Bus interface</text>
 <junction x="101.6" y="40.64"/>
 </segment>
 </net>
-<net name="IO-VDD_3V3" class="1">
+<net name="VDD_3V3_PERIPH" class="1">
 <segment>
 <wire x1="48.26" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
 <label x="33.02" y="48.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
@@ -12903,7 +12893,7 @@ S.Bus interface</text>
 </sheet>
 <sheet>
 <plain>
-<text x="165.1" y="17.78" size="1.778" layer="94">IO Power Supply</text>
+<text x="165.1" y="17.78" size="1.778" layer="94">Peripherals Power Supply</text>
 <text x="149.86" y="73.66" size="1.4224" layer="95">Reset output 1s / uF
 10n = 10ms delay from power good
 to reset de-asserted.</text>
@@ -12913,8 +12903,8 @@ to reset de-asserted.</text>
 <instance part="C1002" gate="G$1" x="152.4" y="91.44">
 <attribute name="PARTNO" x="152.4" y="91.44" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C1001" gate="G$1" x="124.46" y="96.52">
-<attribute name="PARTNO" x="124.46" y="96.52" size="1.778" layer="96" display="off"/>
+<instance part="C1001" gate="G$1" x="116.84" y="96.52">
+<attribute name="PARTNO" x="116.84" y="96.52" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C1003" gate="G$1" x="182.88" y="96.52">
 <attribute name="PARTNO" x="182.88" y="96.52" size="1.778" layer="96" display="off"/>
@@ -12930,6 +12920,11 @@ to reset de-asserted.</text>
 <attribute name="PARTNO" x="144.78" y="96.52" size="1.778" layer="96" rot="MR90" display="off"/>
 <attribute name="NAME" x="146.2786" y="92.71" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="141.478" y="92.71" size="1.778" layer="96" rot="MR90"/>
+</instance>
+<instance part="R5" gate="G$1" x="132.08" y="96.52" smashed="yes" rot="MR90">
+<attribute name="PARTNO" x="132.08" y="96.52" size="1.778" layer="96" rot="MR90" display="off"/>
+<attribute name="NAME" x="133.5786" y="92.71" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="128.778" y="92.71" size="1.778" layer="96" rot="MR90"/>
 </instance>
 </instances>
 <busses>
@@ -12953,17 +12948,21 @@ to reset de-asserted.</text>
 <junction x="170.18" y="86.36"/>
 <junction x="182.88" y="86.36"/>
 <pinref part="C1001" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="93.98" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="86.36" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="93.98" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="86.36" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
 <junction x="152.4" y="86.36"/>
 <pinref part="U$1002" gate="G$1" pin="GND"/>
 <pinref part="R1002" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="86.36" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="86.36" x2="152.4" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="86.36" x2="144.78" y2="91.44" width="0.1524" layer="91"/>
 <junction x="144.78" y="86.36"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="91.44" x2="132.08" y2="86.36" width="0.1524" layer="91"/>
+<junction x="132.08" y="86.36"/>
 </segment>
 </net>
-<net name="IO-VDD_3V3" class="1">
+<net name="VDD_3V3_PERIPH" class="1">
 <segment>
 <label x="195.58" y="114.3" size="1.27" layer="95" xref="yes"/>
 <wire x1="193.04" y1="114.3" x2="195.58" y2="114.3" width="0.1524" layer="91"/>
@@ -12976,19 +12975,14 @@ to reset de-asserted.</text>
 </net>
 <net name="FMU-VDD_5V" class="1">
 <segment>
-<wire x1="152.4" y1="119.38" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C1001" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="119.38" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="101.6" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="119.38" x2="124.46" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="119.38" x2="116.84" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="101.6" x2="116.84" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="U$1002" gate="G$1" pin="VIN"/>
-<pinref part="U$1002" gate="G$1" pin="EN2"/>
-<wire x1="152.4" y1="109.22" x2="147.32" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="109.22" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
-<junction x="147.32" y="119.38"/>
-<wire x1="132.08" y1="119.38" x2="132.08" y2="129.54" width="0.1524" layer="91"/>
-<junction x="132.08" y="119.38"/>
-<label x="132.08" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="124.46" y1="119.38" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
+<junction x="124.46" y="119.38"/>
+<label x="124.46" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$104" class="0">
@@ -13022,9 +13016,20 @@ to reset de-asserted.</text>
 <wire x1="152.4" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R1002" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="114.3" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="114.3" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
-<label x="121.92" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="144.78" y1="114.3" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
+<label x="114.3" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 <junction x="144.78" y="114.3"/>
+</segment>
+</net>
+<net name="VDD_3V3_PERIPH_EN" class="1">
+<segment>
+<label x="114.3" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1002" gate="G$1" pin="EN2"/>
+<wire x1="114.3" y1="109.22" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="101.6" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
+<junction x="132.08" y="109.22"/>
 </segment>
 </net>
 </nets>
@@ -13096,10 +13101,6 @@ vision alignment.</text>
 <attribute name="PARTNO" x="231.14" y="160.02" size="1.778" layer="96" display="off"/>
 <attribute name="BOM" x="231.14" y="160.02" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="IO-BOOT1101" gate="G$1" x="231.14" y="152.4">
-<attribute name="PARTNO" x="231.14" y="152.4" size="1.778" layer="96" display="off"/>
-<attribute name="BOM" x="231.14" y="152.4" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="S1TX" gate="G$1" x="162.56" y="160.02">
 <attribute name="PARTNO" x="162.56" y="160.02" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="BOM" x="162.56" y="160.02" size="1.778" layer="96" rot="R90" display="off"/>
@@ -13140,10 +13141,6 @@ vision alignment.</text>
 <attribute name="PARTNO" x="162.56" y="81.28" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="BOM" x="162.56" y="81.28" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="ADC_PR" gate="G$1" x="231.14" y="88.9">
-<attribute name="PARTNO" x="231.14" y="88.9" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="BOM" x="231.14" y="88.9" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
 <instance part="CAN_H" gate="G$1" x="162.56" y="71.12">
 <attribute name="PARTNO" x="162.56" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="BOM" x="162.56" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
@@ -13159,10 +13156,6 @@ vision alignment.</text>
 <instance part="JP2" gate="G$1" x="20.32" y="12.7">
 <attribute name="PARTNO" x="20.32" y="12.7" size="1.778" layer="96" display="off"/>
 <attribute name="BOM" x="20.32" y="12.7" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="VDD_5V_BRICK" gate="G$1" x="231.14" y="124.46">
-<attribute name="PARTNO" x="231.14" y="124.46" size="1.778" layer="96" rot="R90" display="off"/>
-<attribute name="BOM" x="231.14" y="124.46" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND" gate="G$1" x="231.14" y="114.3">
 <attribute name="PARTNO" x="231.14" y="114.3" size="1.778" layer="96" rot="R90" display="off"/>
@@ -13196,20 +13189,6 @@ vision alignment.</text>
 <pinref part="GND" gate="G$1" pin="P$1"/>
 <wire x1="223.52" y1="114.3" x2="218.44" y2="114.3" width="0.1524" layer="91"/>
 <label x="218.44" y="114.3" size="1.4224" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="FMU-BOOT0" class="0">
-<segment>
-<pinref part="FMU-BOOT1101" gate="G$1" pin="P$1"/>
-<wire x1="223.52" y1="160.02" x2="220.98" y2="160.02" width="0.1524" layer="91"/>
-<label x="220.98" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="IO-BOOT0" class="0">
-<segment>
-<pinref part="IO-BOOT1101" gate="G$1" pin="P$1"/>
-<wire x1="223.52" y1="152.4" x2="220.98" y2="152.4" width="0.1524" layer="91"/>
-<label x="220.98" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SERIAL1_TX" class="0">
@@ -13282,21 +13261,14 @@ vision alignment.</text>
 <label x="149.86" y="81.28" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PRESSURE_SENS_IN" class="0">
-<segment>
-<pinref part="ADC_PR" gate="G$1" pin="P$1"/>
-<wire x1="223.52" y1="88.9" x2="218.44" y2="88.9" width="0.1524" layer="91"/>
-<label x="218.44" y="88.9" size="1.4224" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="CAN_H" class="0">
+<net name="CAN1_H" class="0">
 <segment>
 <pinref part="CAN_H" gate="G$1" pin="P$1"/>
 <wire x1="154.94" y1="71.12" x2="149.86" y2="71.12" width="0.1524" layer="91"/>
 <label x="149.86" y="71.12" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="CAN_L" class="0">
+<net name="CAN1_L" class="0">
 <segment>
 <pinref part="CAN_L" gate="G$1" pin="P$1"/>
 <wire x1="154.94" y1="63.5" x2="149.86" y2="63.5" width="0.1524" layer="91"/>
@@ -13305,9 +13277,7 @@ vision alignment.</text>
 </net>
 <net name="VDD_5V_BRICK" class="1">
 <segment>
-<pinref part="VDD_5V_BRICK" gate="G$1" pin="P$1"/>
 <wire x1="223.52" y1="124.46" x2="218.44" y2="124.46" width="0.1524" layer="91"/>
-<label x="218.44" y="124.46" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
