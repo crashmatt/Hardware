@@ -12763,18 +12763,18 @@ S.Bus interface</text>
 <instance part="L1" gate="G$8" x="66.04" y="134.62"/>
 <instance part="GND5" gate="1" x="53.34" y="78.74"/>
 <instance part="L1" gate="G$9" x="53.34" y="88.9"/>
-<instance part="J1" gate="-CH1" x="101.6" y="134.62"/>
-<instance part="J1" gate="-CH2" x="101.6" y="129.54"/>
-<instance part="J1" gate="-CH3" x="101.6" y="124.46"/>
-<instance part="J1" gate="-CH4" x="101.6" y="119.38"/>
-<instance part="J1" gate="-CH5" x="101.6" y="114.3"/>
-<instance part="J1" gate="-CH6" x="101.6" y="109.22"/>
-<instance part="J1" gate="-CH7" x="101.6" y="104.14"/>
-<instance part="J1" gate="-CH8" x="101.6" y="99.06"/>
 <instance part="J1" gate="-GND" x="63.5" y="83.82"/>
 <instance part="J1" gate="-VCC" x="66.04" y="152.4"/>
 <instance part="U$14" gate="G$1" x="142.24" y="71.12"/>
 <instance part="JP4" gate="G$1" x="165.1" y="45.72" rot="R90"/>
+<instance part="J1" gate="-CH1" x="101.6" y="99.06"/>
+<instance part="J1" gate="-CH2" x="101.6" y="104.14"/>
+<instance part="J1" gate="-CH3" x="101.6" y="109.22"/>
+<instance part="J1" gate="-CH4" x="101.6" y="114.3"/>
+<instance part="J1" gate="-CH5" x="101.6" y="119.38"/>
+<instance part="J1" gate="-CH6" x="101.6" y="124.46"/>
+<instance part="J1" gate="-CH7" x="101.6" y="129.54"/>
+<instance part="J1" gate="-CH8" x="101.6" y="134.62"/>
 </instances>
 <busses>
 </busses>
@@ -12879,35 +12879,35 @@ S.Bus interface</text>
 <segment>
 <wire x1="71.12" y1="119.38" x2="99.06" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$5" pin="P$2"/>
-<pinref part="J1" gate="-CH4" pin="S"/>
+<pinref part="J1" gate="-CH5" pin="S"/>
 </segment>
 </net>
 <net name="N$77" class="0">
 <segment>
 <pinref part="L1" gate="G$4" pin="P$2"/>
 <wire x1="86.36" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="J1" gate="-CH5" pin="S"/>
+<pinref part="J1" gate="-CH4" pin="S"/>
 </segment>
 </net>
 <net name="N$78" class="0">
 <segment>
 <pinref part="L1" gate="G$3" pin="P$2"/>
 <wire x1="58.42" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="J1" gate="-CH6" pin="S"/>
+<pinref part="J1" gate="-CH3" pin="S"/>
 </segment>
 </net>
 <net name="N$79" class="0">
 <segment>
 <pinref part="L1" gate="G$2" pin="P$2"/>
 <wire x1="73.66" y1="104.14" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="J1" gate="-CH7" pin="S"/>
+<pinref part="J1" gate="-CH2" pin="S"/>
 </segment>
 </net>
 <net name="FMU-CH1-PROT" class="0">
 <segment>
 <pinref part="L1" gate="G$1" pin="P$2"/>
 <wire x1="86.36" y1="99.06" x2="99.06" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="J1" gate="-CH8" pin="S"/>
+<pinref part="J1" gate="-CH1" pin="S"/>
 </segment>
 </net>
 <net name="FMU-CH4" class="0">
@@ -12956,14 +12956,14 @@ S.Bus interface</text>
 <segment>
 <pinref part="L1" gate="G$8" pin="P$2"/>
 <wire x1="71.12" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="J1" gate="-CH1" pin="S"/>
+<pinref part="J1" gate="-CH8" pin="S"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <wire x1="83.82" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="L1" gate="G$7" pin="P$2"/>
-<pinref part="J1" gate="-CH2" pin="S"/>
+<pinref part="J1" gate="-CH7" pin="S"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -12976,7 +12976,7 @@ S.Bus interface</text>
 <segment>
 <pinref part="L1" gate="G$6" pin="P$2"/>
 <wire x1="58.42" y1="124.46" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="J1" gate="-CH3" pin="S"/>
+<pinref part="J1" gate="-CH6" pin="S"/>
 </segment>
 </net>
 <net name="N$18" class="0">
