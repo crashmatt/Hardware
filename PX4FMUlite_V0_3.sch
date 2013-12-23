@@ -9879,7 +9879,7 @@ PD13: TIM4_CH2: FMU-CH5
 PD14: TIM4_CH3: FMU-CH6
 PD15: TIM4_CH4: spare
 </text>
-<text x="111.506" y="62.992" size="1.27" layer="91">Spare PWM output</text>
+<text x="129.286" y="62.992" size="1.27" layer="91">Spare PWM output</text>
 <text x="68.58" y="134.62" size="1.27" layer="91">IO debug console</text>
 <text x="112.014" y="164.592" size="1.27" layer="91">Spare ADC</text>
 <text x="112.014" y="159.512" size="1.27" layer="91">Spare ADC</text>
@@ -10429,13 +10429,6 @@ PD15: TIM4_CH4: spare
 <label x="111.76" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="!VDD_5V_HIPOWER_OC" class="0">
-<segment>
-<pinref part="U101" gate="PORTE_H" pin="PE10"/>
-<wire x1="175.26" y1="132.08" x2="180.34" y2="132.08" width="0.1524" layer="91"/>
-<label x="180.34" y="132.08" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="!FMU-LED_AMBER" class="0">
 <segment>
 <pinref part="U101" gate="PORTE_H" pin="PE12"/>
@@ -10476,6 +10469,20 @@ PD15: TIM4_CH4: spare
 <pinref part="U101" gate="PORTC_H" pin="PC14"/>
 <wire x1="106.68" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
 <label x="111.76" y="121.92" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="FMU-CH6" class="0">
+<segment>
+<label x="111.76" y="63.5" size="1.27" layer="95" xref="yes"/>
+<pinref part="U101" gate="PORTD_H" pin="PD15"/>
+<wire x1="111.76" y1="63.5" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FMU-CH7" class="0">
+<segment>
+<wire x1="175.26" y1="132.08" x2="200.66" y2="132.08" width="0.1524" layer="91"/>
+<label x="200.66" y="132.08" size="2.54" layer="95" xref="yes"/>
+<pinref part="U101" gate="PORTE_H" pin="PE10"/>
 </segment>
 </net>
 </nets>
@@ -13001,15 +13008,6 @@ S.Bus interface</text>
 <pinref part="L1" gate="G$5" pin="P$1"/>
 </segment>
 </net>
-<net name="FMU-CH8" class="0">
-<segment>
-<wire x1="48.26" y1="124.46" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
-<label x="40.64" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-<label x="40.64" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
-<label x="40.64" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L1" gate="G$6" pin="P$1"/>
-</segment>
-</net>
 <net name="PPM-SBUS-PROT" class="0">
 <segment>
 <pinref part="R909" gate="G$1" pin="2"/>
@@ -13043,23 +13041,11 @@ S.Bus interface</text>
 <pinref part="J1" gate="-CH7" pin="S"/>
 </segment>
 </net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="L1" gate="G$7" pin="P$1"/>
-<wire x1="73.66" y1="129.54" x2="40.64" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="L1" gate="G$6" pin="P$2"/>
 <wire x1="58.42" y1="124.46" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="J1" gate="-CH6" pin="S"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="L1" gate="G$8" pin="P$1"/>
-<wire x1="60.96" y1="134.62" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13096,6 +13082,27 @@ S.Bus interface</text>
 <wire x1="101.6" y1="25.4" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="27.94" x2="101.6" y2="25.4" width="0.1524" layer="91"/>
 <junction x="101.6" y="25.4"/>
+</segment>
+</net>
+<net name="FMU-CH8" class="0">
+<segment>
+<wire x1="40.64" y1="134.62" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
+<label x="40.64" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="L1" gate="G$8" pin="P$1"/>
+</segment>
+</net>
+<net name="FMU-CH7" class="0">
+<segment>
+<label x="40.64" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="L1" gate="G$7" pin="P$1"/>
+<wire x1="40.64" y1="129.54" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FMU-CH6" class="0">
+<segment>
+<wire x1="40.64" y1="124.46" x2="48.26" y2="124.46" width="0.1524" layer="91"/>
+<label x="40.64" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="L1" gate="G$6" pin="P$1"/>
 </segment>
 </net>
 </nets>
