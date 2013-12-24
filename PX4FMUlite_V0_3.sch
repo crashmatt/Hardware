@@ -9765,7 +9765,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="PARTNO" value="PESD0402-140"/>
 </part>
 <part name="SJ2" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="TRACE"/>
-<part name="JP3" library="SparkFun-Passives" deviceset="JUMPER-3" device="SMD"/>
 <part name="U$2" library="PX4lite" deviceset="MAX21100" device=""/>
 <part name="C5" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
@@ -11152,7 +11151,6 @@ Aux ADC ports</text>
 <attribute name="PARTNO" x="226.06" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SJ2" gate="1" x="205.74" y="106.68"/>
-<instance part="JP3" gate="G$1" x="53.34" y="50.8" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -11585,13 +11583,6 @@ Aux ADC ports</text>
 <wire x1="198.12" y1="106.68" x2="200.66" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$31" class="1">
-<segment>
-<pinref part="L4" gate="G$1" pin="P$1"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="CAN2_TX" class="0">
 <segment>
 <wire x1="152.4" y1="101.6" x2="139.7" y2="101.6" width="0.1524" layer="91"/>
@@ -11629,15 +11620,6 @@ Aux ADC ports</text>
 <junction x="213.36" y="99.06"/>
 </segment>
 </net>
-<net name="VDD_3V3_PERIPH" class="1">
-<segment>
-<label x="30.48" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="58.42" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="50.8" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="VDD_5V_PERIPH" class="1">
 <segment>
 <wire x1="55.88" y1="160.02" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
@@ -11655,11 +11637,9 @@ Aux ADC ports</text>
 <pinref part="L403" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
-<label x="30.48" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="58.42" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="3"/>
-<wire x1="55.88" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="55.88" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+<label x="30.48" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="66.04" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="L4" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <wire x1="66.04" y1="114.3" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
@@ -13043,17 +13023,6 @@ S.Bus interface</text>
 <junction x="101.6" y="40.64"/>
 </segment>
 </net>
-<net name="VDD_3V3_PERIPH" class="1">
-<segment>
-<wire x1="48.26" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
-<label x="33.02" y="48.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
-<pinref part="U903" gate="G$1" pin="VCC"/>
-<pinref part="C901" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="48.26" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="38.1" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
-<junction x="38.1" y="48.26"/>
-</segment>
-</net>
 <net name="RSSI_IN" class="0">
 <segment>
 <pinref part="R901" gate="G$1" pin="1"/>
@@ -13215,6 +13184,17 @@ S.Bus interface</text>
 <wire x1="40.64" y1="124.46" x2="48.26" y2="124.46" width="0.1524" layer="91"/>
 <label x="40.64" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="L1" gate="G$6" pin="P$1"/>
+</segment>
+</net>
+<net name="VDD_3V3_PERIPH" class="1">
+<segment>
+<wire x1="48.26" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
+<label x="33.02" y="48.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<pinref part="U903" gate="G$1" pin="VCC"/>
+<pinref part="C901" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="48.26" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
+<junction x="38.1" y="48.26"/>
 </segment>
 </net>
 </nets>
