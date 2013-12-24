@@ -10665,23 +10665,6 @@ PD15: TIM4_CH4: spare
 <wire x1="124.46" y1="43.18" x2="101.6" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDD_5V_PERIPH" class="1">
-<segment>
-<pinref part="L203" gate="G$1" pin="P$1"/>
-<wire x1="187.96" y1="86.36" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
-<label x="185.42" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="L202" gate="G$1" pin="P$1"/>
-<wire x1="187.96" y1="124.46" x2="185.42" y2="124.46" width="0.1524" layer="91"/>
-<label x="185.42" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="L201" gate="G$1" pin="P$1"/>
-<wire x1="187.96" y1="157.48" x2="185.42" y2="157.48" width="0.1524" layer="91"/>
-<label x="185.42" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="FMU-USART2_RX" class="0">
 <segment>
 <label x="55.88" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -10835,6 +10818,23 @@ PD15: TIM4_CH4: spare
 <pinref part="U$202" gate="G$1" pin="A"/>
 <wire x1="210.82" y1="119.38" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
 <junction x="210.82" y="106.68"/>
+</segment>
+</net>
+<net name="VDD_5V_PERIPH" class="1">
+<segment>
+<pinref part="L203" gate="G$1" pin="P$1"/>
+<wire x1="187.96" y1="86.36" x2="185.42" y2="86.36" width="0.1524" layer="91"/>
+<label x="185.42" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="L202" gate="G$1" pin="P$1"/>
+<wire x1="187.96" y1="124.46" x2="185.42" y2="124.46" width="0.1524" layer="91"/>
+<label x="185.42" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="L201" gate="G$1" pin="P$1"/>
+<wire x1="187.96" y1="157.48" x2="185.42" y2="157.48" width="0.1524" layer="91"/>
+<label x="185.42" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -11157,35 +11157,6 @@ Aux ADC ports</text>
 <busses>
 </busses>
 <nets>
-<net name="VDD_5V_PERIPH" class="1">
-<segment>
-<wire x1="55.88" y1="160.02" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
-<label x="48.26" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L402" gate="G$1" pin="P$1"/>
-</segment>
-<segment>
-<wire x1="177.8" y1="66.04" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
-<label x="139.7" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L403" gate="G$1" pin="P$1"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="114.3" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
-<label x="27.94" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L5" gate="G$1" pin="P$1"/>
-</segment>
-<segment>
-<label x="30.48" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="58.42" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="JP3" gate="G$1" pin="3"/>
-<wire x1="55.88" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="55.88" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="177.8" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
-<label x="139.7" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L7" gate="G$1" pin="P$1"/>
-</segment>
-</net>
 <net name="SPI_EXT_MISO" class="0">
 <segment>
 <wire x1="88.9" y1="149.86" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
@@ -11667,6 +11638,35 @@ Aux ADC ports</text>
 <wire x1="58.42" y1="50.8" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="VDD_5V_PERIPH" class="1">
+<segment>
+<wire x1="55.88" y1="160.02" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
+<label x="48.26" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="L402" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<wire x1="177.8" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
+<label x="139.7" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="L7" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<wire x1="177.8" y1="66.04" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
+<label x="139.7" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="L403" gate="G$1" pin="P$1"/>
+</segment>
+<segment>
+<label x="30.48" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="58.42" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="G$1" pin="3"/>
+<wire x1="55.88" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="55.88" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="114.3" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
+<label x="27.94" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="L5" gate="G$1" pin="P$1"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -12072,8 +12072,8 @@ to reset de-asserted.</text>
 <attribute name="PARTNO" x="83.82" y="137.16" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND39" gate="1" x="101.6" y="7.62"/>
-<instance part="R607" gate="G$1" x="129.54" y="22.86" rot="R270">
-<attribute name="PARTNO" x="129.54" y="22.86" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="R607" gate="G$1" x="129.54" y="50.8" rot="R270">
+<attribute name="PARTNO" x="129.54" y="50.8" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="U$605" gate="G$1" x="66.04" y="149.86">
 <attribute name="PARTNO" x="66.04" y="149.86" size="1.778" layer="96" display="off"/>
@@ -12210,15 +12210,11 @@ to reset de-asserted.</text>
 <wire x1="106.68" y1="12.7" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="12.7" x2="101.6" y2="10.16" width="0.1524" layer="91"/>
 <junction x="106.68" y="12.7"/>
-<pinref part="R607" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="17.78" x2="129.54" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="12.7" x2="124.46" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="R606" gate="G$1" pin="2"/>
 <pinref part="U$604" gate="G$1" pin="VBAT"/>
 <wire x1="124.46" y1="12.7" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="45.72" x2="124.46" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="45.72" x2="124.46" y2="12.7" width="0.1524" layer="91"/>
-<junction x="124.46" y="12.7"/>
 <pinref part="U$604" gate="G$1" pin="VSS"/>
 <wire x1="101.6" y1="25.4" x2="101.6" y2="12.7" width="0.1524" layer="91"/>
 <junction x="101.6" y="12.7"/>
@@ -12317,8 +12313,14 @@ to reset de-asserted.</text>
 <net name="VDD_5V" class="1">
 <segment>
 <pinref part="U$604" gate="G$1" pin="IN"/>
-<wire x1="93.98" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="60.96" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
 <label x="86.36" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R607" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="55.88" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="68.58" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
+<junction x="91.44" y="60.96"/>
 </segment>
 <segment>
 <label x="22.86" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -12352,12 +12354,12 @@ to reset de-asserted.</text>
 <net name="!VDD_5V_PERIPH_EN" class="0">
 <segment>
 <wire x1="121.92" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
-<label x="132.08" y="35.56" size="1.27" layer="95" xref="yes"/>
-<wire x1="129.54" y1="35.56" x2="132.08" y2="35.56" width="0.1524" layer="91"/>
-<junction x="129.54" y="35.56"/>
-<pinref part="R607" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="27.94" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
+<label x="134.62" y="35.56" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$604" gate="G$1" pin="!CE"/>
+<pinref part="R607" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="45.72" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
+<junction x="129.54" y="35.56"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -12389,15 +12391,15 @@ to reset de-asserted.</text>
 </net>
 <net name="VDD_5V_PERIPH" class="1">
 <segment>
-<wire x1="121.92" y1="60.96" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
-<label x="132.08" y="60.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="121.92" y1="60.96" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
+<label x="134.62" y="60.96" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$604" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="!VDD_5V_PERIPH_OC" class="0">
 <segment>
-<label x="132.08" y="40.64" size="1.27" layer="95" xref="yes"/>
-<wire x1="121.92" y1="40.64" x2="132.08" y2="40.64" width="0.1524" layer="91"/>
+<label x="134.62" y="40.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="121.92" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U$604" gate="G$1" pin="!FAULT"/>
 </segment>
 </net>
@@ -12452,17 +12454,6 @@ to reset de-asserted.</text>
 <pinref part="R606" gate="G$1" pin="1"/>
 <pinref part="U$604" gate="G$1" pin="ILIM"/>
 <wire x1="106.68" y1="22.86" x2="106.68" y2="25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VDD_3V3_PERIPH" class="1">
-<segment>
-<label x="111.76" y="104.14" size="1.27" layer="95" xref="yes"/>
-<wire x1="109.22" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C1004" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="91.44" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U$1002" gate="G$1" pin="VOUT2"/>
-<wire x1="109.22" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
-<junction x="109.22" y="104.14"/>
 </segment>
 </net>
 <net name="N$104" class="0">
@@ -12522,6 +12513,17 @@ to reset de-asserted.</text>
 <wire x1="40.64" y1="149.86" x2="40.64" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
 <junction x="40.64" y="149.86"/>
+</segment>
+</net>
+<net name="VDD_3V3_PERIPH" class="1">
+<segment>
+<label x="111.76" y="104.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="109.22" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="C1004" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="91.44" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$1002" gate="G$1" pin="VOUT2"/>
+<wire x1="109.22" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
+<junction x="109.22" y="104.14"/>
 </segment>
 </net>
 </nets>
