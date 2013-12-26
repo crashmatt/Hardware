@@ -9490,6 +9490,12 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="PARTNO" value="PESD0402-140"/>
 </part>
 <part name="U$14" library="PX4lite" deviceset="HEADER-3X1" device="RA"/>
+<part name="C13" library="pixhawk2" deviceset="CAP" device="0603" value="2u2">
+<attribute name="PARTNO" value="C1608Y5V1C225Z"/>
+</part>
+<part name="C14" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
+<attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -10562,6 +10568,12 @@ mount micro USB connectors:
 <instance part="U$3" gate="G$1" x="81.28" y="50.8"/>
 <instance part="GND12" gate="1" x="76.2" y="27.94"/>
 <instance part="U$5" gate="G$1" x="53.34" y="134.62"/>
+<instance part="C13" gate="G$1" x="48.26" y="50.8">
+<attribute name="PARTNO" x="48.26" y="50.8" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C14" gate="G$1" x="58.42" y="50.8">
+<attribute name="PARTNO" x="58.42" y="50.8" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10580,10 +10592,18 @@ mount micro USB connectors:
 <pinref part="JX301" gate="-VTREF" pin="S"/>
 </segment>
 <segment>
-<label x="55.88" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="76.2" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
+<label x="40.64" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="76.2" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="VCC"/>
+<wire x1="58.42" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="71.12" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="71.12" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="55.88" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="55.88" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
+<junction x="58.42" y="71.12"/>
+<junction x="48.26" y="71.12"/>
 </segment>
 </net>
 <net name="OTG_DM1" class="0">
@@ -10678,7 +10698,16 @@ mount micro USB connectors:
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="76.2" y1="35.56" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="35.56" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="33.02" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="33.02" x2="48.26" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="48.26" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
+<junction x="58.42" y="33.02"/>
+<junction x="76.2" y="33.02"/>
 </segment>
 <segment>
 <wire x1="81.28" y1="127" x2="81.28" y2="109.22" width="0.1524" layer="91"/>
