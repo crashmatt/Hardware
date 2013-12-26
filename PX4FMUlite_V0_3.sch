@@ -9496,6 +9496,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="C14" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
+<part name="C15" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
+<attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -11818,6 +11821,9 @@ to reset de-asserted.</text>
 <instance part="R603" gate="G$1" x="40.64" y="132.08" rot="R90">
 <attribute name="PARTNO" x="40.64" y="132.08" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="C15" gate="G$1" x="170.18" y="157.48">
+<attribute name="PARTNO" x="170.18" y="157.48" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11863,6 +11869,10 @@ to reset de-asserted.</text>
 <junction x="210.82" y="139.7"/>
 <junction x="220.98" y="139.7"/>
 <junction x="228.6" y="139.7"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="154.94" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="139.7" x2="180.34" y2="139.7" width="0.1524" layer="91"/>
+<junction x="180.34" y="139.7"/>
 </segment>
 <segment>
 <pinref part="GND35" gate="1" pin="GND"/>
@@ -11966,9 +11976,13 @@ to reset de-asserted.</text>
 <junction x="210.82" y="165.1"/>
 <junction x="200.66" y="165.1"/>
 <junction x="190.5" y="165.1"/>
-<wire x1="180.34" y1="165.1" x2="177.8" y2="165.1" width="0.1524" layer="91"/>
-<label x="177.8" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="165.1" x2="170.18" y2="165.1" width="0.1524" layer="91"/>
+<label x="167.64" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 <junction x="180.34" y="165.1"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="165.1" x2="167.64" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="162.56" x2="170.18" y2="165.1" width="0.1524" layer="91"/>
+<junction x="170.18" y="165.1"/>
 </segment>
 <segment>
 <pinref part="U101" gate="BAT" pin="VREF+"/>
