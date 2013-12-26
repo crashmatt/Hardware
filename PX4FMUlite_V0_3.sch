@@ -9212,9 +9212,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="PARTNO" value="CC0603ZRY5V7BB105"/>
 </part>
 <part name="GND39" library="pixhawk2" deviceset="GND" device=""/>
-<part name="R101" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="470R">
-<attribute name="PARTNO" value="RC0402FR-07470RL"/>
-</part>
 <part name="R607" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K">
 <attribute name="PARTNO" value="RC0402FR-0710KL"/>
 </part>
@@ -9525,7 +9522,6 @@ PD14: TIM4_CH3: FMU-CH6
 PD15: TIM4_CH4: spare
 </text>
 <text x="129.286" y="62.992" size="1.27" layer="91">Spare PWM output</text>
-<text x="68.58" y="134.62" size="1.27" layer="91">IO debug console</text>
 <text x="112.014" y="164.592" size="1.27" layer="91">Spare ADC</text>
 <text x="112.014" y="159.512" size="1.27" layer="91">Spare ADC</text>
 <text x="112.014" y="162.052" size="1.27" layer="91">Spare ADC</text>
@@ -9562,9 +9558,6 @@ PD15: TIM4_CH4: spare
 <instance part="U101" gate="PORTE_L" x="162.56" y="157.48" rot="MR0"/>
 <instance part="U101" gate="PORTE_H" x="165.1" y="129.54" rot="MR0"/>
 <instance part="U101" gate="OSC" x="165.1" y="91.44"/>
-<instance part="R101" gate="G$1" x="60.96" y="132.08">
-<attribute name="PARTNO" x="60.96" y="132.08" size="1.778" layer="96" display="off"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -10025,18 +10018,11 @@ PD15: TIM4_CH4: spare
 <label x="180.34" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="SPEKTRUM_RX" class="0">
 <segment>
+<label x="63.5" y="132.08" size="1.27" layer="95" xref="yes"/>
 <pinref part="U101" gate="PORTA_H" pin="PA10"/>
-<pinref part="R101" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="IO-USART1_TX" class="0">
-<segment>
-<pinref part="R101" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="132.08" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
-<label x="68.58" y="132.08" size="1.27" layer="95" xref="yes"/>
+<wire x1="63.5" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!VDD_5V_PERIPH_EN" class="0">
@@ -10091,15 +10077,15 @@ PD15: TIM4_CH4: spare
 <net name="!VDD_BRICK_VALID" class="0">
 <segment>
 <pinref part="U101" gate="PORTB_L" pin="PB5"/>
-<wire x1="33.02" y1="96.52" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
-<label x="48.26" y="96.52" size="1.27" layer="95" xref="yes"/>
+<wire x1="33.02" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
+<label x="53.34" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!VDD_SERVO_VALID" class="0">
 <segment>
 <pinref part="U101" gate="PORTB_L" pin="PB7"/>
-<wire x1="33.02" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
-<label x="38.1" y="91.44" size="1.27" layer="95" xref="yes"/>
+<wire x1="33.02" y1="91.44" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
+<label x="58.42" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO_EXT_1" class="0">
@@ -10506,7 +10492,7 @@ PD15: TIM4_CH4: spare
 <label x="185.42" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IO-USART1_RX" class="0">
+<net name="SPEKTRUM_RX" class="0">
 <segment>
 <label x="73.66" y="86.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <wire x1="86.36" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
