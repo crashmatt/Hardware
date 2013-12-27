@@ -9887,20 +9887,6 @@ PD15: TIM4_CH4: spare
 <label x="111.76" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="FMU-UART4_TX" class="0">
-<segment>
-<pinref part="U101" gate="PORTA_L" pin="PA0"/>
-<wire x1="33.02" y1="165.1" x2="38.1" y2="165.1" width="0.1524" layer="91"/>
-<label x="38.1" y="165.1" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="FMU-UART4_RX" class="0">
-<segment>
-<pinref part="U101" gate="PORTA_L" pin="PA1"/>
-<wire x1="33.02" y1="162.56" x2="38.1" y2="162.56" width="0.1524" layer="91"/>
-<label x="38.1" y="162.56" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="FMU-UART8_RX" class="0">
 <segment>
 <pinref part="U101" gate="PORTE_L" pin="PE0"/>
@@ -10113,9 +10099,9 @@ PD15: TIM4_CH4: spare
 </net>
 <net name="FMU-CH7" class="0">
 <segment>
-<wire x1="175.26" y1="132.08" x2="200.66" y2="132.08" width="0.1524" layer="91"/>
-<label x="200.66" y="132.08" size="2.54" layer="95" xref="yes"/>
-<pinref part="U101" gate="PORTE_H" pin="PE10"/>
+<pinref part="U101" gate="PORTA_L" pin="PA1"/>
+<wire x1="33.02" y1="162.56" x2="40.64" y2="162.56" width="0.1524" layer="91"/>
+<label x="40.64" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VBUS" class="1">
@@ -10123,6 +10109,27 @@ PD15: TIM4_CH4: spare
 <pinref part="U101" gate="PORTA_H" pin="PA9"/>
 <wire x1="33.02" y1="134.62" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
 <label x="38.1" y="134.62" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="FMU-CH9" class="0">
+<segment>
+<pinref part="U101" gate="PORTA_L" pin="PA2"/>
+<wire x1="33.02" y1="160.02" x2="53.34" y2="160.02" width="0.1524" layer="91"/>
+<label x="53.34" y="160.02" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="FMU-CH10" class="0">
+<segment>
+<pinref part="U101" gate="PORTA_L" pin="PA3"/>
+<wire x1="33.02" y1="157.48" x2="53.34" y2="157.48" width="0.1524" layer="91"/>
+<label x="53.34" y="157.48" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="PPM_INPUT" class="0">
+<segment>
+<pinref part="U101" gate="PORTA_L" pin="PA0"/>
+<wire x1="33.02" y1="165.1" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
+<label x="40.64" y="165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -10522,6 +10529,7 @@ PD15: TIM4_CH4: spare
 <segment>
 <label x="73.66" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="73.66" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="L3" gate="G$3" pin="P$1"/>
 </segment>
 </net>
 <net name="FMU-UART7_RX" class="0">

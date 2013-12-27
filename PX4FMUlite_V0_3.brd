@@ -2047,12 +2047,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="36.94965625" y1="11.71674375" x2="36.2712" y2="12.3952" width="0.254" layer="1"/>
 <wire x1="36.2712" y1="12.3952" x2="36.145040625" y2="12.3952" width="0.254" layer="1"/>
 <wire x1="36.145040625" y1="12.3952" x2="34.869265625" y2="11.119425" width="0.254" layer="1"/>
-<via x="37.6936" y="11.5824" extent="1-16" drill="0.3"/>
+<via x="37.592" y="11.684" extent="1-16" drill="0.3"/>
 <via x="39.3192" y="10.8712" extent="1-16" drill="0.3"/>
 <wire x1="39.3192" y1="10.8712" x2="39.360128125" y2="10.8712" width="0.254" layer="1"/>
 <wire x1="39.360128125" y1="10.8712" x2="40.52611875" y2="9.705209375" width="0.254" layer="1"/>
-<wire x1="37.2872" y1="11.3792" x2="37.4904" y2="11.5824" width="0.254" layer="1"/>
-<wire x1="37.4904" y1="11.5824" x2="37.6936" y2="11.5824" width="0.254" layer="1"/>
+<wire x1="37.2872" y1="11.3792" x2="37.592" y2="11.684" width="0.254" layer="1"/>
 <wire x1="39.108" y1="45.1104" x2="53.34" y2="44.9072" width="0" layer="19" extent="1-16"/>
 <wire x1="38.4048" y1="41.7496" x2="39.108" y2="45.1104" width="0" layer="19" extent="1-1"/>
 <wire x1="39.116" y1="37.084" x2="38.4048" y2="41.7496" width="0" layer="19" extent="1-1"/>
@@ -2445,12 +2444,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="U101" pad="59"/>
 <contactref element="L2" pad="P$1"/>
 <wire x1="34.86" y1="9.934" x2="45.475865625" y2="23.140240625" width="0" layer="19" extent="1-16"/>
-</signal>
-<signal name="FMU-UART4_TX">
-<contactref element="U101" pad="23"/>
-</signal>
-<signal name="FMU-UART4_RX">
-<contactref element="U101" pad="24"/>
 </signal>
 <signal name="FMU-UART7_TX">
 <contactref element="U101" pad="39"/>
@@ -4030,8 +4023,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 </signal>
 <signal name="FMU-CH7">
 <contactref element="L1" pad="P$7"/>
-<contactref element="U101" pad="41"/>
-<wire x1="20.7152" y1="28.0108" x2="45.1223125" y2="14.301403125" width="0" layer="19" extent="1-16"/>
+<contactref element="U101" pad="24"/>
+<wire x1="36.63703125" y1="9.35165625" x2="20.7152" y2="28.0108" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="FMU-CH6">
 <contactref element="U101" pad="62"/>
@@ -4320,6 +4313,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="12.2936" y="12.4968"/>
 </polygon>
 <wire x1="13.462" y1="30.9372" x2="100.1696" y2="55.2704" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FMU-CH9">
+<contactref element="U101" pad="25"/>
+</signal>
+<signal name="FMU-CH10">
+<contactref element="U101" pad="26"/>
+</signal>
+<signal name="PPM_INPUT">
+<contactref element="U101" pad="23"/>
+<contactref element="L3" pad="P$3"/>
+<wire x1="25.7676" y1="11.5712" x2="36.283478125" y2="9.705209375" width="0" layer="19" extent="1-16"/>
 </signal>
 </signals>
 </board>
