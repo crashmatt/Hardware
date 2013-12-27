@@ -9530,7 +9530,7 @@ PD13: TIM4_CH2: FMU-CH5
 PD14: TIM4_CH3: FMU-CH6
 PD15: TIM4_CH4: spare
 </text>
-<text x="129.286" y="62.992" size="1.27" layer="91">Spare PWM output</text>
+<text x="131.826" y="62.992" size="1.27" layer="91">Spare PWM output</text>
 <text x="112.014" y="164.592" size="1.27" layer="91">Spare ADC</text>
 <text x="112.014" y="159.512" size="1.27" layer="91">Spare ADC</text>
 <text x="112.014" y="162.052" size="1.27" layer="91">Spare ADC</text>
@@ -10029,9 +10029,9 @@ PD15: TIM4_CH4: spare
 </net>
 <net name="SPEKTRUM_RX" class="0">
 <segment>
-<label x="63.5" y="132.08" size="1.27" layer="95" xref="yes"/>
+<label x="40.64" y="132.08" size="1.27" layer="95" xref="yes"/>
 <pinref part="U101" gate="PORTA_H" pin="PA10"/>
-<wire x1="63.5" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="132.08" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!VDD_5V_PERIPH_EN" class="0">
@@ -10083,11 +10083,11 @@ PD15: TIM4_CH4: spare
 <label x="180.34" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="!VDD_BRICK_VALID" class="0">
+<net name="!VDD_5V_VALID" class="0">
 <segment>
 <pinref part="U101" gate="PORTB_L" pin="PB5"/>
-<wire x1="33.02" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
-<label x="53.34" y="96.52" size="1.27" layer="95" xref="yes"/>
+<wire x1="33.02" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
+<label x="40.64" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!VDD_SERVO_VALID" class="0">
@@ -10106,9 +10106,9 @@ PD15: TIM4_CH4: spare
 </net>
 <net name="FMU-CH6" class="0">
 <segment>
-<label x="111.76" y="63.5" size="1.27" layer="95" xref="yes"/>
+<label x="114.3" y="63.5" size="1.27" layer="95" xref="yes"/>
 <pinref part="U101" gate="PORTD_H" pin="PD15"/>
-<wire x1="111.76" y1="63.5" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="63.5" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-CH7" class="0">
@@ -10332,13 +10332,6 @@ PD15: TIM4_CH4: spare
 <wire x1="101.6" y1="116.84" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FMU-UART4_TX" class="0">
-<segment>
-<label x="60.96" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L3" gate="G$6" pin="P$1"/>
-<wire x1="78.74" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="FMU-USART3_TX" class="0">
 <segment>
 <label x="55.88" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -10401,13 +10394,6 @@ PD15: TIM4_CH4: spare
 <pinref part="U$202" gate="G$1" pin="C"/>
 <wire x1="210.82" y1="124.46" x2="198.12" y2="124.46" width="0.1524" layer="91"/>
 <junction x="210.82" y="124.46"/>
-</segment>
-</net>
-<net name="FMU-UART4_RX" class="0">
-<segment>
-<label x="60.96" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L3" gate="G$5" pin="P$1"/>
-<wire x1="60.96" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-USART2_TX" class="0">
@@ -10536,6 +10522,20 @@ PD15: TIM4_CH4: spare
 <segment>
 <label x="73.66" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="73.66" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FMU-UART7_RX" class="0">
+<segment>
+<label x="60.96" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="L3" gate="G$5" pin="P$1"/>
+<wire x1="60.96" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FMU-UART7_TX" class="0">
+<segment>
+<label x="60.96" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="L3" gate="G$6" pin="P$1"/>
+<wire x1="78.74" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
