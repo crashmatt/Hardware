@@ -9081,9 +9081,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="GND27" library="pixhawk2" deviceset="GND" device=""/>
 <part name="FRAME3" library="pixhawk2" deviceset="A4L-LOC" device="" value="Sensors"/>
 <part name="GND23" library="pixhawk2" deviceset="GND" device=""/>
-<part name="C508" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
-<attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
-</part>
 <part name="GND36" library="pixhawk2" deviceset="GND" device=""/>
 <part name="C506" library="pixhawk2" deviceset="CAP" device="0805" value="10u/10V">
 <attribute name="PARTNO" value="CC0805ZKY5V6BB106"/>
@@ -11396,9 +11393,6 @@ Aux ADC ports</text>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="GND23" gate="1" x="81.28" y="30.48"/>
-<instance part="C508" gate="G$1" x="81.28" y="83.82">
-<attribute name="PARTNO" x="81.28" y="83.82" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="GND36" gate="1" x="50.8" y="81.28"/>
 <instance part="C506" gate="G$1" x="50.8" y="91.44">
 <attribute name="PARTNO" x="50.8" y="91.44" size="1.778" layer="96" display="off"/>
@@ -11417,9 +11411,7 @@ Aux ADC ports</text>
 <nets>
 <net name="GND" class="1">
 <segment>
-<wire x1="81.28" y1="81.28" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
-<pinref part="C508" gate="G$1" pin="2"/>
 <pinref part="U$2" gate="A" pin="GND"/>
 <wire x1="81.28" y1="40.64" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="45.72" x2="116.84" y2="40.64" width="0.1524" layer="91"/>
@@ -11432,7 +11424,6 @@ Aux ADC ports</text>
 <wire x1="86.36" y1="45.72" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
 <junction x="86.36" y="40.64"/>
 <junction x="101.6" y="40.64"/>
-<junction x="81.28" y="40.64"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="83.82" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
@@ -11468,14 +11459,10 @@ Aux ADC ports</text>
 </net>
 <net name="VDD_3V3_SENSORS" class="1">
 <segment>
-<wire x1="101.6" y1="101.6" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="101.6" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="88.9" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
-<junction x="81.28" y="101.6"/>
 <label x="43.18" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="C508" gate="G$1" pin="1"/>
 <pinref part="U$2" gate="A" pin="VDD"/>
 <wire x1="101.6" y1="101.6" x2="101.6" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="A" pin="VDD_IO"/>
