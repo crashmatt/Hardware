@@ -12496,18 +12496,6 @@ PA11: TIM1_CH4: RSSI_IN</text>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="V_SERVO" class="1">
-<segment>
-<pinref part="R922" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="109.22" x2="96.52" y2="127" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="127" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="162.56" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
-<junction x="96.52" y="127"/>
-<label x="147.32" y="162.56" size="1.27" layer="95" xref="yes"/>
-<pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="101.6" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="VDD_SERVO_SENS" class="0">
 <segment>
 <pinref part="R919" gate="G$1" pin="2"/>
@@ -12563,6 +12551,18 @@ PA11: TIM1_CH4: RSSI_IN</text>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="154.94" x2="116.84" y2="154.94" width="0.1524" layer="91"/>
 <junction x="116.84" y="154.94"/>
+</segment>
+</net>
+<net name="V_SERVO" class="1">
+<segment>
+<pinref part="R922" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="109.22" x2="96.52" y2="127" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="127" x2="96.52" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="162.56" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
+<junction x="96.52" y="127"/>
+<label x="147.32" y="162.56" size="1.27" layer="95" xref="yes"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="101.6" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
