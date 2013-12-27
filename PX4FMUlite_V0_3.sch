@@ -9609,7 +9609,7 @@ PD15: TIM4_CH4: spare
 <pinref part="U101" gate="OSC" pin="OSC_IN"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <wire x1="190.5" y1="101.6" x2="190.5" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="99.06" x2="190.5" y2="96.52" width="0.1524" layer="91"/>
@@ -10424,7 +10424,7 @@ PD15: TIM4_CH4: spare
 <wire x1="55.88" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="33.02" y1="93.98" x2="33.02" y2="99.06" width="0.1524" layer="91"/>
@@ -10697,7 +10697,7 @@ mount micro USB connectors:
 <label x="109.22" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <pinref part="GND12" gate="1" pin="GND"/>
@@ -11158,7 +11158,7 @@ Aux ADC ports</text>
 <pinref part="L6" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="78.74" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
@@ -11407,7 +11407,7 @@ Aux ADC ports</text>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <wire x1="81.28" y1="81.28" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
@@ -11590,7 +11590,7 @@ Aux ADC ports</text>
 <wire x1="78.74" y1="129.54" x2="81.28" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="U$15" gate="A" pin="GND"/>
 <pinref part="U$15" gate="A" pin="PGND"/>
@@ -11828,7 +11828,7 @@ to reset de-asserted.</text>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <wire x1="233.68" y1="66.04" x2="233.68" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -12317,7 +12317,7 @@ Cacluated If @ 5.5V: 10mA</text>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="R711" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="127" x2="203.2" y2="124.46" width="0.1524" layer="91"/>
@@ -12478,7 +12478,7 @@ PA11: TIM1_CH4: RSSI_IN</text>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="GND52" gate="1" pin="GND"/>
 <pinref part="R919" gate="G$1" pin="1"/>
@@ -12698,7 +12698,7 @@ S.Bus interface</text>
 <pinref part="J1" gate="-CH6" pin="S"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="53.34" y1="81.28" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
@@ -12881,7 +12881,7 @@ vision alignment.</text>
 <label x="218.44" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <wire x1="210.82" y1="30.48" x2="208.28" y2="30.48" width="0.1524" layer="91"/>
 <label x="208.28" y="30.48" size="1.27" layer="91" rot="R180" xref="yes"/>
