@@ -4036,7 +4036,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <contactref element="J302" pad="P$1"/>
 <contactref element="U$5" pad="5"/>
 <contactref element="U101" pad="68"/>
-<wire x1="63.1952" y1="35.9664" x2="63.1244" y2="35.8956" width="0.254" layer="1"/>
 <contactref element="D1" pad="ANODE"/>
 <wire x1="47.0408" y1="35.219" x2="47.0408" y2="36.068" width="0.254" layer="1"/>
 <wire x1="47.0408" y1="36.068" x2="46.6344" y2="36.4744" width="0.254" layer="1"/>
@@ -4059,7 +4058,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="45.3748" y1="33.9344" x2="44.6024" y2="33.9344" width="0.6096" layer="1"/>
 <wire x1="44.6024" y1="33.9344" x2="44.2976" y2="33.6296" width="0.6096" layer="1"/>
 <wire x1="44.2976" y1="33.6296" x2="44.2976" y2="32.6136" width="0.6096" layer="1"/>
-<wire x1="47.0408" y1="35.219" x2="63.1244" y2="35.8956" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD_5V_PERIPH" class="1">
 <contactref element="L203" pad="P$1"/>
