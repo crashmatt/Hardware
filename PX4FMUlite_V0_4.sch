@@ -9394,9 +9394,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="C7" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
-<part name="C11" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
-<attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
-</part>
 <part name="C12" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
@@ -11474,9 +11471,6 @@ Aux ADC ports</text>
 <instance part="C7" gate="G$1" x="139.7" y="111.76">
 <attribute name="PARTNO" x="139.7" y="111.76" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C11" gate="G$1" x="132.08" y="111.76">
-<attribute name="PARTNO" x="132.08" y="111.76" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="C12" gate="G$1" x="60.96" y="104.14">
 <attribute name="PARTNO" x="60.96" y="104.14" size="1.778" layer="96" display="off"/>
 </instance>
@@ -11566,12 +11560,9 @@ Aux ADC ports</text>
 <wire x1="68.58" y1="91.44" x2="68.58" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="73.66" x2="76.2" y2="73.66" width="0.1524" layer="91"/>
 <junction x="76.2" y="73.66"/>
-<wire x1="132.08" y1="109.22" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="109.22" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
 <junction x="139.7" y="96.52"/>
-<junction x="132.08" y="96.52"/>
-<pinref part="C11" gate="G$1" pin="2"/>
 <pinref part="C12" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="101.6" x2="60.96" y2="83.82" width="0.1524" layer="91"/>
 <junction x="60.96" y="83.82"/>
@@ -11600,8 +11591,7 @@ Aux ADC ports</text>
 <segment>
 <pinref part="U$15" gate="A" pin="VOUT"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="121.92" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="121.92" x2="139.7" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="121.92" x2="139.7" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="121.92" x2="147.32" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="121.92" x2="157.48" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="121.92" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
@@ -11621,10 +11611,7 @@ Aux ADC ports</text>
 <junction x="182.88" y="121.92"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="116.84" x2="139.7" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="116.84" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
-<junction x="132.08" y="121.92"/>
 <junction x="139.7" y="121.92"/>
-<pinref part="C11" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
