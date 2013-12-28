@@ -22,11 +22,11 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Vertical" color="14" fill="15" visible="no" active="yes"/>
-<layer number="15" name="Power" color="11" fill="15" visible="yes" active="yes"/>
+<layer number="15" name="Power" color="11" fill="15" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="14" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -3625,10 +3625,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <vertex x="15.5448" y="33.4264"/>
 <vertex x="15.5448" y="37.1856"/>
 <vertex x="15.9512" y="37.592"/>
-<vertex x="56.6928" y="37.592"/>
-<vertex x="57.8104" y="36.4744"/>
-<vertex x="57.8104" y="4.064"/>
-<vertex x="56.5912" y="2.8448"/>
+<vertex x="51.816" y="37.4904"/>
+<vertex x="51.816" y="34.1376"/>
+<vertex x="54.2544" y="31.6992"/>
+<vertex x="57.7088" y="31.6992"/>
+<vertex x="57.7088" y="8.5344"/>
+<vertex x="54.0512" y="8.5344"/>
+<vertex x="52.0192" y="6.5024"/>
+<vertex x="52.0192" y="3.048"/>
+<vertex x="51.816" y="2.8448"/>
 <vertex x="19.2024" y="2.8448"/>
 </polygon>
 <polygon width="0.1" layer="2">
