@@ -9148,12 +9148,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="C601" library="pixhawk2" deviceset="CAP" device="0603" value="2u2">
 <attribute name="PARTNO" value="C1608Y5V1C225Z"/>
 </part>
-<part name="LED705" library="pixhawk2" deviceset="LED" device="0603" value="BLUE">
-<attribute name="PARTNO" value="APTD1608QBC/D"/>
-</part>
-<part name="R712" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="220R">
-<attribute name="PARTNO" value="RC0402FR-07220RL"/>
-</part>
 <part name="C505" library="pixhawk2" deviceset="CAP" device="0402" value="10n">
 <attribute name="PARTNO" value="CC0402KRX7R7BB103"/>
 </part>
@@ -9276,9 +9270,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="PARTNO" value="PESD0402-140"/>
 </part>
 <part name="U$203" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
-<attribute name="PARTNO" value="PESD0402-140"/>
-</part>
-<part name="U$402" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
 <attribute name="PARTNO" value="PESD0402-140"/>
 </part>
 <part name="U$404" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
@@ -10722,6 +10713,7 @@ CAN
 Aux ADC ports</text>
 <text x="22.86" y="170.18" size="1.778" layer="91">Note: SPI port is UNBUFFERED; only suitable for short connections.</text>
 <text x="93.98" y="83.82" size="1.778" layer="97">I2C1</text>
+<text x="83.82" y="162.56" size="1.778" layer="91">ESD PROTECTOR REMOVED</text>
 </plain>
 <instances>
 <instance part="FRAME9" gate="G$1" x="0" y="0"/>
@@ -10765,9 +10757,6 @@ Aux ADC ports</text>
 </instance>
 <instance part="L403" gate="G$1" x="182.88" y="66.04">
 <attribute name="PARTNO" x="182.88" y="66.04" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$402" gate="G$1" x="81.28" y="157.48" rot="R90">
-<attribute name="PARTNO" x="81.28" y="157.48" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U$404" gate="G$1" x="226.06" y="58.42" rot="R90">
 <attribute name="PARTNO" x="226.06" y="58.42" size="1.778" layer="96" display="off"/>
@@ -10870,11 +10859,8 @@ Aux ADC ports</text>
 <pinref part="J403" gate="G$1" pin="1"/>
 <wire x1="88.9" y1="154.94" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="154.94" x2="86.36" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="160.02" x2="81.28" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="L402" gate="G$1" pin="P$2"/>
-<pinref part="U$402" gate="G$1" pin="C"/>
-<wire x1="81.28" y1="160.02" x2="66.04" y2="160.02" width="0.1524" layer="91"/>
-<junction x="81.28" y="160.02"/>
+<wire x1="86.36" y1="160.02" x2="66.04" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-VDD_3V3" class="1">
@@ -11143,7 +11129,6 @@ Aux ADC ports</text>
 <wire x1="81.28" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="139.7" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
 <junction x="88.9" y="139.7"/>
-<pinref part="U$402" gate="G$1" pin="A"/>
 <wire x1="81.28" y1="154.94" x2="81.28" y2="139.7" width="0.1524" layer="91"/>
 <junction x="81.28" y="139.7"/>
 </segment>
@@ -12220,6 +12205,7 @@ Vf(typ): 3.3V
 Target If: 6.6mA
 Selected R: 220
 Cacluated If @ 5.5V: 10mA</text>
+<text x="142.24" y="149.86" size="1.778" layer="91">BLUE LED REMOVED</text>
 </plain>
 <instances>
 <instance part="FRAME7" gate="G$1" x="0" y="0"/>
@@ -12230,12 +12216,6 @@ Cacluated If @ 5.5V: 10mA</text>
 <attribute name="PARTNO" x="203.2" y="149.86" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND14" gate="1" x="203.2" y="121.92"/>
-<instance part="LED705" gate="G$1" x="152.4" y="142.24">
-<attribute name="PARTNO" x="152.4" y="142.24" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R712" gate="G$1" x="152.4" y="129.54" rot="R90">
-<attribute name="PARTNO" x="152.4" y="129.54" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="R713" gate="G$1" x="121.92" y="50.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="118.3386" y="52.07" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="123.698" y="52.07" size="1.778" layer="96" rot="R270"/>
@@ -12287,21 +12267,6 @@ Cacluated If @ 5.5V: 10mA</text>
 <pinref part="R711" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<wire x1="152.4" y1="137.16" x2="152.4" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="LED705" gate="G$1" pin="C"/>
-<pinref part="R712" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="FMU-LED_BLUE" class="0">
-<segment>
-<wire x1="152.4" y1="119.38" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="124.46" x2="152.4" y2="119.38" width="0.1524" layer="91"/>
-<label x="147.32" y="119.38" size="1.4224" layer="95" rot="R180" xref="yes"/>
-<pinref part="R712" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="SAFETY" class="0">
 <segment>
 <wire x1="121.92" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91"/>
@@ -12344,10 +12309,6 @@ Cacluated If @ 5.5V: 10mA</text>
 <pinref part="LED701" gate="G$1" pin="A"/>
 <wire x1="203.2" y1="154.94" x2="210.82" y2="154.94" width="0.1524" layer="91"/>
 <junction x="203.2" y="154.94"/>
-<pinref part="LED705" gate="G$1" pin="A"/>
-<wire x1="152.4" y1="144.78" x2="152.4" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="154.94" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
-<junction x="180.34" y="154.94"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -12675,14 +12636,6 @@ S.Bus interface</text>
 <wire x1="40.64" y1="124.46" x2="48.26" y2="124.46" width="0.1524" layer="91"/>
 <label x="40.64" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="L1" gate="G$6" pin="P$1"/>
-</segment>
-</net>
-<net name="VDD_3V3_SPEKTRUM" class="1">
-<segment>
-<label x="104.14" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="104.14" y1="71.12" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="71.12" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="55.88" x2="127" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
