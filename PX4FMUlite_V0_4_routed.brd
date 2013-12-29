@@ -137,18 +137,18 @@
 </layers>
 <board>
 <plain>
-<wire x1="77.32" y1="8.03" x2="79.3752" y2="8.03" width="0.3048" layer="22"/>
-<wire x1="79.3752" y1="8.03" x2="78.8848" y2="8.538" width="0.3048" layer="22"/>
-<wire x1="78.8848" y1="8.538" x2="78.8848" y2="7.522" width="0.3048" layer="22"/>
-<wire x1="78.8848" y1="7.522" x2="79.3752" y2="8.03" width="0.3048" layer="22"/>
-<wire x1="76.62" y1="10.84" x2="77.128" y2="10.332" width="0.3048" layer="22"/>
-<wire x1="77.128" y1="10.332" x2="76.112" y2="10.332" width="0.3048" layer="22"/>
-<wire x1="76.112" y1="10.332" x2="76.62" y2="10.84" width="0.3048" layer="22"/>
-<wire x1="76.62" y1="10.5352" x2="76.62" y2="8.808" width="0.3" layer="22"/>
-<circle x="76.62" y="8.03" radius="0.65" width="0.3048" layer="22"/>
-<text x="80.3736" y="6.2712" size="1.27" layer="22" ratio="15" rot="MR0">X</text>
-<text x="75.8072" y="9.808" size="1.27" layer="22" ratio="15" rot="MR0">Y</text>
-<text x="75.1424" y="7.144" size="1.27" layer="22" ratio="15" rot="MR0">Z</text>
+<wire x1="62.9944" y1="19.9172" x2="65.0496" y2="19.9172" width="0.3048" layer="22"/>
+<wire x1="65.0496" y1="19.9172" x2="64.5592" y2="20.4252" width="0.3048" layer="22"/>
+<wire x1="64.5592" y1="20.4252" x2="64.5592" y2="19.4092" width="0.3048" layer="22"/>
+<wire x1="64.5592" y1="19.4092" x2="65.0496" y2="19.9172" width="0.3048" layer="22"/>
+<wire x1="62.2944" y1="22.7272" x2="62.8024" y2="22.2192" width="0.3048" layer="22"/>
+<wire x1="62.8024" y1="22.2192" x2="61.7864" y2="22.2192" width="0.3048" layer="22"/>
+<wire x1="61.7864" y1="22.2192" x2="62.2944" y2="22.7272" width="0.3048" layer="22"/>
+<wire x1="62.2944" y1="22.4224" x2="62.2944" y2="20.6952" width="0.3" layer="22"/>
+<circle x="62.2944" y="19.9172" radius="0.65" width="0.3048" layer="22"/>
+<text x="66.048" y="18.1584" size="1.27" layer="22" ratio="15" rot="MR0">X</text>
+<text x="61.4816" y="21.6952" size="1.27" layer="22" ratio="15" rot="MR0">Y</text>
+<text x="60.8168" y="19.0312" size="1.27" layer="22" ratio="15" rot="MR0">Z</text>
 <wire x1="9.2456" y1="3.4432" x2="9.2456" y2="36.9552" width="0" layer="20"/>
 <wire x1="9.9456" y1="37.6552" x2="57.108" y2="37.6552" width="0" layer="20"/>
 <wire x1="57.808" y1="36.9552" x2="57.808" y2="3.4432" width="0" layer="20"/>
@@ -160,8 +160,8 @@ accessibility</text>
 <wire x1="9.2456" y1="36.9552" x2="9.9456" y2="37.6552" width="0" layer="20" curve="-90"/>
 <wire x1="57.108" y1="37.6552" x2="57.808" y2="36.9552" width="0" layer="20" curve="-90"/>
 <wire x1="57.808" y1="3.4432" x2="57.108" y2="2.7432" width="0" layer="20" curve="-90"/>
-<wire x1="76.2" y1="8.4328" x2="77.0128" y2="7.62" width="0.4064" layer="22"/>
-<wire x1="76.2" y1="7.62" x2="77.0128" y2="8.4328" width="0.4064" layer="22"/>
+<wire x1="61.8744" y1="20.32" x2="62.6872" y2="19.5072" width="0.4064" layer="22"/>
+<wire x1="61.8744" y1="19.5072" x2="62.6872" y2="20.32" width="0.4064" layer="22"/>
 <wire x1="62.5856" y1="23.1648" x2="68.2752" y2="22.352" width="0.508" layer="21"/>
 <wire x1="68.2752" y1="22.352" x2="62.5856" y2="21.5392" width="0.508" layer="21"/>
 <wire x1="62.5856" y1="21.5392" x2="62.5856" y2="22.352" width="0.508" layer="21"/>
@@ -171,24 +171,17 @@ accessibility</text>
 <wire x1="64.2112" y1="22.352" x2="62.5856" y2="22.352" width="0.508" layer="21"/>
 <text x="43.4848" y="3.1496" size="1.016" layer="21" font="vector" ratio="15">PX4 Node
 V0_1</text>
-<text x="-1.9304" y="37.3888" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">FMU B/E</text>
 <text x="14.732" y="8.5344" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">POWER</text>
 <text x="46.228" y="28.6512" size="0.762" layer="22" font="vector" ratio="15" rot="MR90">SPI</text>
 <text x="51.5112" y="32.4104" size="0.762" layer="22" font="vector" ratio="15" rot="MR0">USB</text>
-<text x="61.468" y="18.1864" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SER1</text>
-<text x="-2.1336" y="25.4" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SER2</text>
 <text x="10.8712" y="11.7856" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">SPKT/PPM</text>
-<text x="-2.2352" y="20.828" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">SER4</text>
-<text x="37.3888" y="0.9144" size="0.762" layer="22" font="vector" ratio="15" rot="MR0">SER3</text>
 <text x="31.0896" y="32.1056" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">CAN1</text>
-<text x="61.5696" y="33.6296" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">ADC</text>
 <text x="51.4096" y="29.464" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">I2C1</text>
-<text x="61.2648" y="2.54" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">AIR</text>
 <text x="30.7848" y="8.8392" size="0.762" layer="22" font="vector" ratio="15" rot="MR0">UART3 / GPS</text>
 <text x="45.6184" y="14.224" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">UART1</text>
 <text x="37.7952" y="9.8552" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">UART2</text>
 <text x="29.7688" y="5.6896" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">AUX ADC</text>
-<text x="27.0256" y="53.0352" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">SAFETY</text>
+<text x="26.1112" y="23.0632" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">SAFETY</text>
 <text x="54.356" y="10.668" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">I2C2</text>
 <text x="19.2024" y="33.2232" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">CAN2</text>
 </plain>
