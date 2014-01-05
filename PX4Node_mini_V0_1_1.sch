@@ -67,7 +67,7 @@
 <layer number="58" name="bCAD" color="9" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -9693,6 +9693,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
+<part name="SJ3" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO"/>
 </parts>
 <sheets>
 <sheet>
@@ -11068,6 +11069,7 @@ Aux ADC ports</text>
 <attribute name="PARTNO" x="226.06" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SJ2" gate="1" x="205.74" y="106.68"/>
+<instance part="SJ3" gate="1" x="134.62" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -11542,14 +11544,9 @@ Aux ADC ports</text>
 <pinref part="L402" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
-<wire x1="177.8" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
-<label x="139.7" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L7" gate="G$1" pin="P$1"/>
-</segment>
-<segment>
-<wire x1="177.8" y1="66.04" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
-<label x="139.7" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L403" gate="G$1" pin="P$1"/>
+<label x="124.46" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="SJ3" gate="1" pin="1"/>
+<wire x1="129.54" y1="114.3" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="30.48" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -11560,6 +11557,23 @@ Aux ADC ports</text>
 <wire x1="66.04" y1="114.3" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
 <label x="27.94" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="L5" gate="G$1" pin="P$1"/>
+</segment>
+</net>
+<net name="5V_CAN_CONN" class="0">
+<segment>
+<pinref part="L7" gate="G$1" pin="P$1"/>
+<wire x1="139.7" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="114.3" x2="177.8" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="114.3" x2="147.32" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="121.92" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
+<label x="154.94" y="121.92" size="1.778" layer="95" xref="yes"/>
+<junction x="147.32" y="114.3"/>
+<pinref part="SJ3" gate="1" pin="2"/>
+</segment>
+<segment>
+<wire x1="177.8" y1="66.04" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
+<label x="139.7" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="L403" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 </nets>

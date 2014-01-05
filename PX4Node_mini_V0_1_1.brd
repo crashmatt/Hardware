@@ -9,8 +9,8 @@
 <grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="4" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Ground" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="3" name="Horizontal" color="13" fill="15" visible="yes" active="yes"/>
+<layer number="2" name="Ground" color="2" fill="10" visible="no" active="yes"/>
+<layer number="3" name="Horizontal" color="13" fill="15" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -22,11 +22,11 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Vertical" color="14" fill="15" visible="no" active="yes"/>
-<layer number="15" name="Power" color="11" fill="15" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Power" color="11" fill="15" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="14" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -1103,6 +1103,19 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="SJ_2S-NO">
+<description>Small solder jumper with no paste layer so it will open after reflow.</description>
+<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90"/>
+<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="ti_tps_soln2">
@@ -1738,6 +1751,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="41.4528" y="8.3312" size="1.778" layer="27" rot="R225" display="off"/>
 </element>
 <element name="JP3" library="SparkFun-Connectors" package="PAD-1.5X4.5" value="M01SMD-4.5X1.5" x="32.7" y="4.1"/>
+<element name="SJ3" library="SparkFun-Passives" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="42.2" y="35.1" rot="R270"/>
 </elements>
 <signals>
 <signal name="FMU-SWDIO">
@@ -2792,8 +2806,11 @@ Covered vias can be set in Masks (Limit).
 <via x="26.924" y="12.3952" extent="1-16" drill="0.3" diameter="0.55"/>
 <wire x1="27" y1="12.1" x2="27" y2="12.3" width="0.2" layer="3"/>
 <wire x1="27.4" y1="11.7" x2="27" y2="12.1" width="0.2" layer="3"/>
-<wire x1="36.6" y1="11.7" x2="27.4" y2="11.7" width="0.2" layer="3"/>
-<wire x1="39.7" y1="14.8" x2="36.6" y2="11.7" width="0.2" layer="3"/>
+<wire x1="36.8" y1="11.7" x2="27.4" y2="11.7" width="0.2" layer="3"/>
+<wire x1="39.7" y1="14.8" x2="39.7" y2="14.1" width="0.2" layer="3"/>
+<wire x1="39.7" y1="14.1" x2="37.9" y2="12.3" width="0.2" layer="3"/>
+<wire x1="37.9" y1="12.3" x2="37.4" y2="12.3" width="0.2" layer="3"/>
+<wire x1="37.4" y1="12.3" x2="36.8" y2="11.7" width="0.2" layer="3"/>
 <wire x1="42.4" y1="14.8" x2="39.7" y2="14.8" width="0.2" layer="1"/>
 <wire x1="44" y1="13.2" x2="42.4" y2="14.8" width="0.2" layer="1"/>
 <wire x1="27" y1="12.3" x2="26.924" y2="12.3952" width="0.2" layer="3"/>
@@ -2875,17 +2892,7 @@ Covered vias can be set in Masks (Limit).
 <wire x1="28.1" y1="16.4" x2="28.8" y2="17.1" width="0.2" layer="1"/>
 <wire x1="27.3" y1="16.4" x2="28.1" y2="16.4" width="0.2" layer="1"/>
 <wire x1="27.2" y1="16.3" x2="27.3" y2="16.4" width="0.2" layer="1"/>
-<wire x1="27.4" y1="16.3" x2="27.2" y2="16.3" width="0.2" layer="2"/>
-<wire x1="27.5" y1="16.4" x2="27.4" y2="16.3" width="0.2" layer="2"/>
-<wire x1="30.2" y1="16.4" x2="27.5" y2="16.4" width="0.2" layer="2"/>
-<wire x1="33.1" y1="13.5" x2="30.2" y2="16.4" width="0.2" layer="2"/>
-<wire x1="36.5" y1="13.5" x2="33.1" y2="13.5" width="0.2" layer="2"/>
-<wire x1="36.8" y1="13.8" x2="36.5" y2="13.5" width="0.2" layer="2"/>
-<wire x1="37.2" y1="13.8" x2="36.8" y2="13.8" width="0.2" layer="2"/>
-<wire x1="37.6" y1="14.2" x2="37.2" y2="13.8" width="0.2" layer="2"/>
-<wire x1="37.6" y1="14.8" x2="37.6" y2="14.2" width="0.2" layer="2"/>
-<wire x1="38.9" y1="14.8" x2="37.6" y2="14.8" width="0.2" layer="3"/>
-<wire x1="41.7" y1="17.6" x2="38.9" y2="14.8" width="0.2" layer="3"/>
+<wire x1="41.7" y1="17.6" x2="38.6" y2="14.5" width="0.2" layer="3"/>
 <wire x1="43.8" y1="17.6" x2="41.7" y2="17.6" width="0.2" layer="3"/>
 <wire x1="44" y1="17.8" x2="43.8" y2="17.6" width="0.2" layer="3"/>
 <wire x1="49.8" y1="17.8" x2="44" y2="17.8" width="0.2" layer="3"/>
@@ -2898,8 +2905,15 @@ Covered vias can be set in Masks (Limit).
 <wire x1="28.8" y1="17.1" x2="28.85885625" y2="17.12983125" width="0.2" layer="1"/>
 <wire x1="52.3" y1="15.2" x2="52.4256" y2="15.232" width="0.2" layer="1"/>
 <via x="27.2" y="16.3" extent="1-16" drill="0.3" diameter="0.55"/>
-<via x="37.6" y="14.8" extent="1-16" drill="0.3" diameter="0.55"/>
 <via x="49.9" y="17.7" extent="1-16" drill="0.3" diameter="0.55"/>
+<wire x1="37.2" y1="12.6" x2="36.4" y2="12.6" width="0.2" layer="3"/>
+<wire x1="36.4" y1="12.6" x2="36.1" y2="12.3" width="0.2" layer="3"/>
+<wire x1="36.1" y1="12.3" x2="28.5" y2="12.3" width="0.2" layer="3"/>
+<wire x1="28.5" y1="12.3" x2="27.1" y2="13.7" width="0.2" layer="3"/>
+<wire x1="27.1" y1="13.7" x2="27.1" y2="16.2" width="0.2" layer="3"/>
+<wire x1="27.1" y1="16.2" x2="27.2" y2="16.3" width="0.2" layer="3"/>
+<wire x1="37.2" y1="12.6" x2="38.6" y2="14" width="0.2" layer="3"/>
+<wire x1="38.6" y1="14" x2="38.6" y2="14.5" width="0.2" layer="3"/>
 </signal>
 <signal name="VDD_3V3_SENSORS" class="1">
 <contactref element="U$2" pad="14"/>
@@ -4442,11 +4456,6 @@ Covered vias can be set in Masks (Limit).
 <via x="28.0416" y="18.1864" extent="1-16" drill="0.3" diameter="0.55"/>
 <wire x1="28.0416" y1="18.1864" x2="28.0416" y2="18.0848" width="0.4064" layer="1"/>
 <wire x1="28.0416" y1="18.0848" x2="28.0924" y2="18.034" width="0.4064" layer="1"/>
-<wire x1="19.9136" y1="8.4248" x2="19.0928" y2="8.4248" width="0.4064" layer="16"/>
-<wire x1="19.0928" y1="8.4248" x2="18.8976" y2="8.2296" width="0.4064" layer="16"/>
-<wire x1="18.8976" y1="8.2296" x2="18.8976" y2="7.4168" width="0.4064" layer="16"/>
-<wire x1="18.8976" y1="7.4168" x2="18.1864" y2="6.7056" width="0.4064" layer="16"/>
-<wire x1="18.1864" y1="6.7056" x2="17.0688" y2="6.7056" width="0.4064" layer="16"/>
 <wire x1="20.936" y1="8.128" x2="20.6248" y2="8.128" width="0.3048" layer="16"/>
 <wire x1="20.6248" y1="8.128" x2="20.328" y2="8.4248" width="0.3048" layer="16"/>
 <wire x1="20.328" y1="8.4248" x2="19.9136" y2="8.4248" width="0.3048" layer="16"/>
@@ -4814,6 +4823,39 @@ Covered vias can be set in Masks (Limit).
 <wire x1="30.3" y1="4.1" x2="30.3" y2="3.5" width="0.4064" layer="1"/>
 <wire x1="35.56" y1="3.9624" x2="34.7624" y2="3.9624" width="0.4064" layer="1"/>
 <wire x1="34.7624" y1="3.9624" x2="34.4" y2="3.6" width="0.4064" layer="1"/>
+<polygon width="0.15" layer="16" thermals="no">
+<vertex x="18.6" y="25.8"/>
+<vertex x="18.9" y="26.1"/>
+<vertex x="21.4" y="26.1"/>
+<vertex x="23.3" y="24.2"/>
+<vertex x="25.1" y="24.2"/>
+<vertex x="25.1" y="13.6"/>
+<vertex x="22.3" y="10.8"/>
+<vertex x="18.2" y="10.8"/>
+<vertex x="17.9" y="11.1"/>
+<vertex x="17.9" y="16.1"/>
+<vertex x="18.3" y="16.5"/>
+<vertex x="18.3" y="18.6"/>
+<vertex x="18.6" y="18.9"/>
+</polygon>
+<polygon width="0.15" layer="16">
+<vertex x="19.3" y="6.6"/>
+<vertex x="19.3" y="8.4"/>
+<vertex x="20.3" y="8.4"/>
+<vertex x="20.3" y="9.5"/>
+<vertex x="21.5" y="10.7"/>
+<vertex x="21.5" y="12.3"/>
+<vertex x="15.2" y="12.3"/>
+<vertex x="14.4" y="11.5"/>
+<vertex x="12.7" y="11.5"/>
+<vertex x="11.9" y="12.3"/>
+<vertex x="9.9" y="12.3"/>
+<vertex x="9.9" y="8.9"/>
+<vertex x="10.4" y="8.4"/>
+<vertex x="13.6" y="8.4"/>
+<vertex x="14.8" y="7.2"/>
+<vertex x="14.8" y="6.6"/>
+</polygon>
 <wire x1="46.228" y1="27.1272" x2="46.228" y2="27.5272" width="0" layer="19" extent="16-16"/>
 <wire x1="20.7" y1="23.4" x2="20.828" y2="23.368" width="0" layer="19" extent="1-1"/>
 <wire x1="22.253" y1="22.768" x2="21.328" y2="22.868" width="0" layer="19" extent="1-1"/>
@@ -5136,8 +5178,6 @@ Covered vias can be set in Masks (Limit).
 <contactref element="L202" pad="P$1"/>
 <contactref element="L201" pad="P$1"/>
 <contactref element="L402" pad="P$1"/>
-<contactref element="L7" pad="P$1"/>
-<contactref element="L403" pad="P$1"/>
 <contactref element="L5" pad="P$1"/>
 <contactref element="U$604" pad="8"/>
 <contactref element="L4" pad="P$1"/>
@@ -5198,21 +5238,8 @@ Covered vias can be set in Masks (Limit).
 <via x="47.0408" y="28.3464" extent="1-16" drill="0.3" diameter="0.55"/>
 <wire x1="47.0408" y1="28.3464" x2="47.028" y2="28.3464" width="0.4064" layer="16"/>
 <wire x1="47.028" y1="28.3464" x2="47.028" y2="27.8" width="0.4064" layer="16"/>
-<via x="28.2464" y="31.2928" extent="1-16" drill="0.3" diameter="0.55"/>
-<via x="27.6656" y="31.2928" extent="1-16" drill="0.3" diameter="0.55"/>
 <wire x1="47.028" y1="27.8" x2="47.028" y2="27.1272" width="0.4064" layer="16"/>
-<wire x1="28.956" y1="31.4072" x2="28.3608" y2="31.4072" width="0.4064" layer="16"/>
-<wire x1="28.3608" y1="31.4072" x2="28.2464" y2="31.2928" width="0.4064" layer="16"/>
-<via x="41.7576" y="33.7312" extent="1-16" drill="0.3" diameter="0.55"/>
-<via x="42.4688" y="33.7312" extent="1-16" drill="0.3" diameter="0.55"/>
-<wire x1="40.5384" y1="35.3568" x2="30.2576" y2="35.3568" width="1.016" layer="15"/>
-<wire x1="30.2576" y1="35.3568" x2="27.94" y2="33.0392" width="1.016" layer="15"/>
-<wire x1="27.94" y1="33.0392" x2="27.94" y2="31.3992" width="1.016" layer="15"/>
-<wire x1="43.2688" y1="32.6136" x2="43.2688" y2="33.5408" width="0.4064" layer="16"/>
-<wire x1="43.2688" y1="33.5408" x2="43.0784" y2="33.7312" width="0.4064" layer="16"/>
-<wire x1="43.0784" y1="33.7312" x2="41.7576" y2="33.7312" width="0.4064" layer="16"/>
-<wire x1="40.5384" y1="35.3568" x2="42.164" y2="33.7312" width="1.016" layer="15"/>
-<wire x1="42.164" y1="33.7312" x2="42.4688" y2="33.7312" width="1.016" layer="15"/>
+<via x="42.4688" y="36.9312" extent="1-16" drill="0.3" diameter="0.55"/>
 <polygon width="0.2" layer="15" thermals="no">
 <vertex x="23.6664" y="8.008"/>
 <vertex x="28.4288" y="8.0112"/>
@@ -5237,11 +5264,11 @@ Covered vias can be set in Masks (Limit).
 <vertex x="51.2" y="31.096"/>
 <vertex x="51.2" y="32.1376"/>
 <vertex x="48.3824" y="35.1552"/>
-<vertex x="41.7576" y="35.2552"/>
-<vertex x="41.148" y="34.6456"/>
-<vertex x="41.148" y="34.1376"/>
-<vertex x="41.9608" y="33.3248"/>
-<vertex x="43.9928" y="33.3248"/>
+<vertex x="44.6576" y="35.1552"/>
+<vertex x="42.848" y="37.1456"/>
+<vertex x="41.648" y="37.1376"/>
+<vertex x="41.6608" y="35.9248"/>
+<vertex x="44.0928" y="33.3248"/>
 <vertex x="46.312" y="33.3056"/>
 <vertex x="47.5392" y="31.9056"/>
 <vertex x="47.5424" y="31.7024"/>
@@ -5278,7 +5305,6 @@ Covered vias can be set in Masks (Limit).
 <wire x1="47.1" y1="27.8" x2="47.0408" y2="27.8368" width="0.254" layer="16"/>
 <wire x1="47.1" y1="27.8" x2="47.028" y2="27.8" width="0.254" layer="16"/>
 <wire x1="47.2" y1="27.1" x2="47.028" y2="27.1272" width="0.254" layer="16"/>
-<wire x1="28.2464" y1="31.2928" x2="27.6656" y2="31.2928" width="0.4064" layer="16"/>
 <wire x1="25.5016" y1="16.4592" x2="25.5" y2="16.4576" width="0.254" layer="1"/>
 <polygon width="0.15" layer="1">
 <vertex x="24.7" y="15.9"/>
@@ -5293,7 +5319,13 @@ Covered vias can be set in Masks (Limit).
 <wire x1="24.9276" y1="15.99" x2="25.39" y2="15.99" width="0.254" layer="1"/>
 <wire x1="25.39" y1="15.99" x2="25.5016" y2="16.1016" width="0.254" layer="1"/>
 <wire x1="25.5016" y1="16.1016" x2="25.5016" y2="16.4592" width="0.254" layer="1"/>
-<wire x1="27.94" y1="31.3992" x2="27.6656" y2="31.2928" width="0" layer="19" extent="1-15"/>
+<contactref element="SJ3" pad="1"/>
+<via x="41.8688" y="36.9312" extent="1-16" drill="0.3" diameter="0.55"/>
+<wire x1="42.2" y1="35.55" x2="42.2" y2="36.3" width="0.4064" layer="1"/>
+<wire x1="42.2" y1="36.3" x2="42.4688" y2="36.5688" width="0.4064" layer="1"/>
+<wire x1="42.4688" y1="36.5688" x2="42.4688" y2="36.9312" width="0.4064" layer="1"/>
+<wire x1="41.8688" y1="36.9312" x2="41.8688" y2="36.6312" width="0.4064" layer="1"/>
+<wire x1="41.8688" y1="36.6312" x2="42.2" y2="36.3" width="0.4064" layer="1"/>
 </signal>
 <signal name="VDD_3V3_PERIPH" class="1">
 <contactref element="C1004" pad="P$1"/>
@@ -5430,6 +5462,28 @@ Covered vias can be set in Masks (Limit).
 <wire x1="36.2" y1="9.7" x2="35.5" y2="9" width="0.2" layer="1"/>
 <wire x1="25.3" y1="12.3" x2="25.2984" y2="12.3952" width="0.2" layer="1"/>
 <wire x1="36.2" y1="9.7" x2="36.283478125" y2="9.705209375" width="0.2" layer="1"/>
+</signal>
+<signal name="5V_CAN_CONN">
+<contactref element="L7" pad="P$1"/>
+<contactref element="L403" pad="P$1"/>
+<via x="42.2576" y="33.7312" extent="1-16" drill="0.3" diameter="0.55"/>
+<wire x1="43.2688" y1="32.6136" x2="43.2688" y2="33.5408" width="0.4064" layer="16"/>
+<wire x1="43.2688" y1="33.5408" x2="43.0784" y2="33.7312" width="0.4064" layer="16"/>
+<contactref element="SJ3" pad="2"/>
+<wire x1="42.2576" y1="33.7312" x2="40.4888" y2="35.5" width="0.8128" layer="15"/>
+<wire x1="40.4888" y1="35.5" x2="29.2" y2="35.5" width="0.8128" layer="15"/>
+<wire x1="29.2" y1="35.5" x2="27.9" y2="34.2" width="0.8128" layer="15"/>
+<wire x1="27.9" y1="34.2" x2="27.9" y2="31.2" width="0.8128" layer="15"/>
+<via x="27.9" y="31.2" extent="1-16" drill="0.3"/>
+<wire x1="27.9" y1="31.2" x2="28.1072" y2="31.4072" width="0.4064" layer="16"/>
+<wire x1="28.1072" y1="31.4072" x2="28.956" y2="31.4072" width="0.4064" layer="16"/>
+<via x="41.6" y="33.7" extent="1-16" drill="0.3"/>
+<wire x1="43.0784" y1="33.7312" x2="43.0472" y2="33.7" width="0.4064" layer="16"/>
+<wire x1="43.0472" y1="33.7" x2="41.6" y2="33.7" width="0.4064" layer="16"/>
+<wire x1="42.2" y1="34.65" x2="42.2576" y2="34.5924" width="0.4064" layer="1"/>
+<wire x1="42.2576" y1="34.5924" x2="42.2576" y2="33.7312" width="0.4064" layer="1"/>
+<wire x1="42.2576" y1="33.7312" x2="42.2264" y2="33.7" width="0.4064" layer="1"/>
+<wire x1="42.2264" y1="33.7" x2="41.6" y2="33.7" width="0.4064" layer="1"/>
 </signal>
 </signals>
 </board>
