@@ -1431,40 +1431,40 @@ Covered vias can be set in Masks (Limit).
 <element name="C715" library="pixhawk2" package="0402-CAP" value="0u1" x="29.8704" y="13.208" rot="R135">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="29.8704" y="13.208" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
-<element name="J201" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="47.8456" y="9.6584" rot="MR270">
+<element name="J201" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="47.8456" y="9.6584" locked="yes" rot="MR270">
 <attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="47.8456" y="9.6584" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="J203" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="25.7048" y="6.9088" rot="MR0">
+<element name="J203" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="25.7048" y="6.9088" locked="yes" rot="MR0">
 <attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="25.7048" y="6.9088" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="J202" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="38.716" y="6.864" rot="MR0">
+<element name="J202" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="38.716" y="6.864" locked="yes" rot="MR0">
 <attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="38.716" y="6.864" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="OSHW_LOGO" library="pixhawk2" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="50.2312" y="35.352">
 <attribute name="PARTNO" value="*" x="50.2312" y="46.528" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="50.2312" y="46.528" size="1.778" layer="27" display="off"/>
 </element>
-<element name="M3_MOUNT1104" library="pixhawk2" package="MOUNT-HOLE3.1" value="MOUNT-HOLE3.1MM" x="12.2" y="5.7">
+<element name="M3_MOUNT1104" library="pixhawk2" package="MOUNT-HOLE3.1" value="MOUNT-HOLE3.1MM" x="12.2" y="5.7" locked="yes">
 <attribute name="PARTNO" value="*" x="12.2" y="5.7" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="12.2" y="5.7" size="1.778" layer="27" display="off"/>
 </element>
-<element name="M3_MOUNT1102" library="pixhawk2" package="MOUNT-HOLE3.1" value="MOUNT-HOLE3.1MM" x="55" y="5.7">
+<element name="M3_MOUNT1102" library="pixhawk2" package="MOUNT-HOLE3.1" value="MOUNT-HOLE3.1MM" x="55" y="5.7" locked="yes">
 <attribute name="PARTNO" value="*" x="49.92" y="0.62" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="49.92" y="0.62" size="1.778" layer="27" display="off"/>
 </element>
-<element name="M3_MOUNT1101" library="pixhawk2" package="MOUNT-HOLE3.1" value="MOUNT-HOLE3.1MM" x="12.2" y="34.7">
+<element name="M3_MOUNT1101" library="pixhawk2" package="MOUNT-HOLE3.1" value="MOUNT-HOLE3.1MM" x="12.2" y="34.7" locked="yes">
 <attribute name="PARTNO" value="*" x="12.2" y="29.62" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="12.2" y="29.62" size="1.778" layer="27" display="off"/>
 </element>
-<element name="M3_MOUNT1103" library="pixhawk2" package="MOUNT-HOLE3.1" value="MOUNT-HOLE3.1MM" x="55" y="34.7">
+<element name="M3_MOUNT1103" library="pixhawk2" package="MOUNT-HOLE3.1" value="MOUNT-HOLE3.1MM" x="55" y="34.7" locked="yes">
 <attribute name="PARTNO" value="*" x="49.92" y="24.54" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="49.92" y="24.54" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JX301" library="pixhawk2" package="FTSH-105-01-XXX-DV-K" value="ARM_MINI_JTAG-SMT" x="38.3032" y="19.304" rot="MR270">
+<element name="JX301" library="pixhawk2" package="FTSH-105-01-XXX-DV-K" value="ARM_MINI_JTAG-SMT" x="38.3032" y="19.304" locked="yes" rot="MR270">
 <attribute name="PARTNO" value="M50-3900542" x="27.1272" y="26.416" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="38.3032" y="19.304" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="U101" library="pixhawk2" package="TQFP100" value="STM32F4X7VX" x="38.4048" y="18.8976" rot="R45">
+<element name="U101" library="pixhawk2" package="TQFP100" value="STM32F4X7VX" x="38.4048" y="18.8976" locked="yes" rot="R45">
 <attribute name="PARTNO" value="STM32F427VI" x="38.4048" y="18.8976" size="1.778" layer="27" rot="R45" display="off"/>
 </element>
 <element name="C711" library="pixhawk2" package="0402-CAP" value="0u1" x="39.5224" y="29.972" rot="R45">
@@ -1488,7 +1488,7 @@ Covered vias can be set in Masks (Limit).
 <element name="R801" library="pixhawk2" package="0402-RES" value="47R" x="28.0416" y="28.448" rot="R270">
 <attribute name="PARTNO" value="RC0402JR-0747RL" x="35.7632" y="32.918403125" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="J801" library="con-hirose-df13" package="DF13C-3P-1.25V" value="DF13C-3P-1.25V" x="28.0416" y="27.432" rot="MR0">
+<element name="J801" library="con-hirose-df13" package="DF13C-3P-1.25V" value="DF13C-3P-1.25V" x="28.0416" y="27.432" locked="yes" rot="MR0">
 <attribute name="PARTNO" value="DF13C-3P-1.25V(20)" x="28.0416" y="27.432" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R707" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="20.7264" y="11.0744">
@@ -1502,7 +1502,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="BOM" value="EXCLUDE" x="15.748" y="32.9184" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="15.9392" y="32.3556" size="0.5" layer="22" font="vector" ratio="15" rot="MR180"/>
 </element>
-<element name="J301" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="47.0408" y="33.528" rot="MR180">
+<element name="J301" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="47.0408" y="33.528" locked="yes" rot="MR180">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="47.0408" y="33.528" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R706" library="pixhawk2" package="0402-RES" value="1K" x="27.2288" y="18.6944" rot="MR90">
@@ -1526,13 +1526,13 @@ Covered vias can be set in Masks (Limit).
 <element name="L205" library="PX4lite" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="21.336" y="8.128" rot="MR270">
 <attribute name="PARTNO" value="KNH16C104DA5TS" x="21.336" y="8.128" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="J401" library="con-hirose-df13" package="DF13C-7P-1.25V" value="DF13C-7P-1.25V" x="38.9128" y="27.1272" rot="MR180">
+<element name="J401" library="con-hirose-df13" package="DF13C-7P-1.25V" value="DF13C-7P-1.25V" x="38.9128" y="27.1272" locked="yes" rot="MR180">
 <attribute name="PARTNO" value="DF13C-7P-1.25V(20)" x="38.9128" y="27.1272" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="L401" library="PX4lite" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="46.228" y="27.1272" rot="MR0">
 <attribute name="PARTNO" value="KNH16C104DA5TS" x="46.228" y="27.1272" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="J403" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="53.6448" y="26.7208" rot="MR270">
+<element name="J403" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="53.6448" y="26.7208" locked="yes" rot="MR270">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="53.6448" y="26.7208" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R408" library="pixhawk2" package="0402-RES" value="120R" x="38.2016" y="36.068">
@@ -1541,7 +1541,7 @@ Covered vias can be set in Masks (Limit).
 <element name="U402" library="pixhawk2" package="SOT23-8" value="MAX3051" x="34.6456" y="35.2552" rot="R270">
 <attribute name="PARTNO" value="MAX3051EKA" x="38.3032" y="45.4152" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="J405" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="36.4744" y="33.528" rot="MR180">
+<element name="J405" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="36.4744" y="33.528" locked="yes" rot="MR180">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="36.4744" y="33.528" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C402" library="pixhawk2" package="0402-CAP" value="0u1" x="34.9504" y="33.1216">
@@ -1619,7 +1619,7 @@ Covered vias can be set in Masks (Limit).
 <element name="L404" library="PX4lite" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="52.324" y="23.6728" rot="MR180">
 <attribute name="PARTNO" value="KNH16C104DA5TS" x="52.324" y="23.6728" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="J402" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13-4P-1.25V" x="53.6448" y="16.256" rot="MR270">
+<element name="J402" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13-4P-1.25V" x="53.6448" y="16.256" locked="yes" rot="MR270">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="53.6448" y="16.256" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R401" library="pixhawk2" package="0402-RES" value="1K5" x="50.292" y="22.352">
@@ -1650,7 +1650,7 @@ Covered vias can be set in Masks (Limit).
 <element name="U401" library="pixhawk2" package="SOT23-8" value="MAX3051" x="23.9776" y="35.2552" rot="R270">
 <attribute name="PARTNO" value="MAX3051EKA" x="31.0896" y="35.2552" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="J404" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="25.8064" y="33.528" rot="MR180">
+<element name="J404" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="25.8064" y="33.528" locked="yes" rot="MR180">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="25.8064" y="39.624" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C401" library="pixhawk2" package="0402-CAP" value="0u1" x="24.384" y="33.1216">
@@ -1667,7 +1667,7 @@ Covered vias can be set in Masks (Limit).
 <element name="C503" library="pixhawk2" package="0402-CAP" value="0u1" x="52.4256" y="9.9568" rot="R270">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="52.4256" y="9.9568" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="J1001" library="PX4lite" package="3X8RA_SERVO" value="" x="14.732" y="22.0472"/>
+<element name="J1001" library="PX4lite" package="3X8RA_SERVO" value="" x="14.732" y="22.0472" locked="yes"/>
 <element name="R902" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="27.2288" y="4.7752" rot="R90">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="16.4592" y="4.7752" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -1706,7 +1706,7 @@ Covered vias can be set in Masks (Limit).
 <element name="C601" library="SparkFun-Capacitors" package="1210" value="22uF" x="20.2184" y="27.0256" rot="R180">
 <attribute name="PROD_ID" value="CAP-10381" x="20.2184" y="27.0256" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="JP901" library="SparkFun-Connectors" package="1X02_LONGPADS" value="M02PTH3" x="17.0688" y="4.1656" rot="R90"/>
+<element name="JP901" library="SparkFun-Connectors" package="1X02_LONGPADS" value="M02PTH3" x="17.0688" y="4.1656" locked="yes" rot="R90"/>
 <element name="C603" library="pixhawk2" package="0402-CAP" value="0u1" x="20.7264" y="21.4376" rot="MR180">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="20.7264" y="20.9296" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
