@@ -9728,6 +9728,8 @@ PD15: TIM4_CH4: spare
 <text x="112.014" y="164.592" size="1.27" layer="91">Spare ADC</text>
 <text x="112.014" y="159.512" size="1.27" layer="91">Spare ADC</text>
 <text x="112.014" y="162.052" size="1.27" layer="91">Spare ADC</text>
+<text x="68.58" y="160.02" size="1.27" layer="91">FMU-CH10 changed to 
+Spektrum 3v3 EN</text>
 </plain>
 <instances>
 <instance part="X101" gate="G$1" x="205.74" y="96.52" smashed="yes">
@@ -10312,11 +10314,11 @@ PD15: TIM4_CH4: spare
 <label x="53.34" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="FMU-CH10" class="0">
+<net name="VDD_3V3_SPEKTRUM_EN" class="0">
 <segment>
 <pinref part="U101" gate="PORTA_L" pin="PA3"/>
-<wire x1="33.02" y1="157.48" x2="53.34" y2="157.48" width="0.1524" layer="91"/>
-<label x="53.34" y="157.48" size="1.27" layer="95" xref="yes"/>
+<wire x1="33.02" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
+<label x="40.64" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PPM_INPUT" class="0">
@@ -10336,8 +10338,8 @@ PD15: TIM4_CH4: spare
 <text x="233.68" y="83.82" size="1.778" layer="97">SERIAL3</text>
 <text x="233.68" y="58.42" size="1.778" layer="97">SERIAL4</text>
 <text x="231.14" y="78.74" size="1.778" layer="95">Default GPS port</text>
-<text x="53.34" y="88.9" size="1.778" layer="97">Spektrum/DSM</text>
-<text x="58.42" y="68.58" size="1.778" layer="91">REMOVED ESD PROTECTION, 
+<text x="53.34" y="63.5" size="1.778" layer="97">Spektrum/DSM</text>
+<text x="53.34" y="45.72" size="1.778" layer="91">REMOVED ESD PROTECTION, 
 RELY ON OUTPUT CAPACITANCE</text>
 </plain>
 <instances>
@@ -10382,18 +10384,18 @@ RELY ON OUTPUT CAPACITANCE</text>
 <instance part="L202" gate="G$8" x="91.44" y="111.76"/>
 <instance part="L202" gate="G$9" x="33.02" y="99.06"/>
 <instance part="GND8" gate="1" x="33.02" y="91.44"/>
-<instance part="L201" gate="G$9" x="45.72" y="27.94"/>
-<instance part="L201" gate="G$5" x="99.06" y="48.26"/>
-<instance part="L201" gate="G$6" x="83.82" y="43.18"/>
-<instance part="L201" gate="G$3" x="91.44" y="96.52"/>
-<instance part="L201" gate="G$4" x="91.44" y="86.36"/>
-<instance part="GND9" gate="1" x="45.72" y="20.32"/>
-<instance part="GND46" gate="1" x="81.28" y="60.96"/>
-<instance part="U$201" gate="G$1" x="114.3" y="78.74"/>
-<instance part="L201" gate="G$1" x="83.82" y="30.48"/>
-<instance part="L201" gate="G$2" x="99.06" y="25.4"/>
-<instance part="L201" gate="G$7" x="86.36" y="20.32"/>
-<instance part="L201" gate="G$8" x="101.6" y="12.7"/>
+<instance part="L201" gate="G$9" x="20.32" y="20.32"/>
+<instance part="L201" gate="G$5" x="93.98" y="27.94"/>
+<instance part="L201" gate="G$6" x="78.74" y="22.86"/>
+<instance part="L201" gate="G$3" x="91.44" y="71.12"/>
+<instance part="L201" gate="G$4" x="91.44" y="60.96"/>
+<instance part="GND9" gate="1" x="20.32" y="12.7"/>
+<instance part="GND46" gate="1" x="104.14" y="45.72"/>
+<instance part="U$201" gate="G$1" x="114.3" y="53.34"/>
+<instance part="L201" gate="G$1" x="91.44" y="83.82"/>
+<instance part="L201" gate="G$2" x="170.18" y="45.72"/>
+<instance part="L201" gate="G$7" x="157.48" y="40.64"/>
+<instance part="L201" gate="G$8" x="172.72" y="33.02"/>
 </instances>
 <busses>
 </busses>
@@ -10501,9 +10503,9 @@ RELY ON OUTPUT CAPACITANCE</text>
 <wire x1="185.42" y1="78.74" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="127" y="43.18" size="1.27" layer="95" xref="yes"/>
+<label x="121.92" y="22.86" size="1.27" layer="95" xref="yes"/>
 <pinref part="L201" gate="G$6" pin="P$2"/>
-<wire x1="127" y1="43.18" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="22.86" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SERIAL3_RX" class="0">
@@ -10513,9 +10515,9 @@ RELY ON OUTPUT CAPACITANCE</text>
 <wire x1="185.42" y1="76.2" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="127" y="48.26" size="1.27" layer="95" xref="yes"/>
+<label x="121.92" y="27.94" size="1.27" layer="95" xref="yes"/>
 <pinref part="L201" gate="G$5" pin="P$2"/>
-<wire x1="127" y1="48.26" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-USART2_RX" class="0">
@@ -10618,7 +10620,7 @@ RELY ON OUTPUT CAPACITANCE</text>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="45.72" y1="22.86" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="15.24" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="L201" gate="G$9" pin="GND"/>
 </segment>
 <segment>
@@ -10661,10 +10663,8 @@ RELY ON OUTPUT CAPACITANCE</text>
 <segment>
 <pinref part="GND46" gate="1" pin="GND"/>
 <pinref part="U$201" gate="G$1" pin="3"/>
-<wire x1="81.28" y1="66.04" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="78.74" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="78.74" x2="104.14" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="66.04" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="53.34" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="53.34" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD_5V_PERIPH" class="1">
@@ -10686,50 +10686,61 @@ RELY ON OUTPUT CAPACITANCE</text>
 </net>
 <net name="SPEKTRUM_RX" class="0">
 <segment>
-<label x="73.66" y="86.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<wire x1="86.36" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
+<label x="73.66" y="60.96" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="86.36" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="L201" gate="G$4" pin="P$1"/>
 </segment>
 </net>
 <net name="VDD_3V3_SPEKTRUM" class="1">
 <segment>
-<label x="73.66" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="73.66" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$201" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="L201" gate="G$4" pin="P$2"/>
-<wire x1="96.52" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="60.96" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="L201" gate="G$3" pin="P$2"/>
-<wire x1="96.52" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="96.52" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="71.12" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="71.12" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U$201" gate="G$1" pin="1"/>
-<wire x1="106.68" y1="83.82" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="83.82" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
-<junction x="104.14" y="86.36"/>
+<wire x1="106.68" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="58.42" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
+<junction x="104.14" y="60.96"/>
+<pinref part="L201" gate="G$1" pin="P$2"/>
+<wire x1="96.52" y1="83.82" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="83.82" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
+<junction x="104.14" y="71.12"/>
 </segment>
 </net>
 <net name="PPM_INPUT" class="0">
 <segment>
-<label x="73.66" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="73.66" y1="96.52" x2="86.36" y2="96.52" width="0.1524" layer="91"/>
+<label x="73.66" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="73.66" y1="71.12" x2="86.36" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="L201" gate="G$3" pin="P$1"/>
 </segment>
 </net>
 <net name="FMU-UART7_RX" class="0">
 <segment>
-<label x="60.96" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="55.88" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="L201" gate="G$5" pin="P$1"/>
-<wire x1="60.96" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="27.94" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-UART7_TX" class="0">
 <segment>
-<label x="60.96" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="55.88" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="L201" gate="G$6" pin="P$1"/>
-<wire x1="78.74" y1="43.18" x2="60.96" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="22.86" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PWM_SPARE_OUT" class="0">
+<segment>
+<pinref part="L201" gate="G$1" pin="P$1"/>
+<wire x1="86.36" y1="83.82" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
+<label x="73.66" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -12394,8 +12405,8 @@ to reset de-asserted.</text>
 </net>
 <net name="VDD_3V3_SPEKTRUM_EN" class="0">
 <segment>
-<wire x1="40.64" y1="165.1" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
-<label x="121.92" y="165.1" size="1.27" layer="95" xref="yes"/>
+<wire x1="40.64" y1="165.1" x2="33.02" y2="165.1" width="0.1524" layer="91"/>
+<label x="33.02" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R701" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="165.1" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="U$701" gate="G$1" pin="EN1"/>
