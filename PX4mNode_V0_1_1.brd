@@ -22,22 +22,22 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Vertical" color="14" fill="15" visible="yes" active="yes"/>
-<layer number="15" name="Power" color="11" fill="15" visible="yes" active="yes"/>
+<layer number="15" name="Power" color="11" fill="15" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -881,7 +881,16 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <smd name="6" x="0.665" y="2.625" dx="0.5" dy="0.75" layer="1"/>
 <smd name="7" x="-0.605" y="2.625" dx="0.5" dy="0.75" layer="1"/>
 <smd name="8" x="-1.875" y="2.625" dx="0.5" dy="0.75" layer="1"/>
-<smd name="PAD" x="0" y="0" dx="4" dy="3.4" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="4" dy="3.4" layer="1" cream="no"/>
+<rectangle x1="-0.5" y1="0.7" x2="0.5" y2="1.6" layer="31"/>
+<rectangle x1="-0.5" y1="-1.6" x2="0.5" y2="-0.7" layer="31"/>
+<rectangle x1="-1.8" y1="-1.6" x2="-0.8" y2="-0.7" layer="31"/>
+<rectangle x1="-1.8" y1="0.7" x2="-0.8" y2="1.6" layer="31"/>
+<rectangle x1="0.8" y1="0.7" x2="1.8" y2="1.6" layer="31"/>
+<rectangle x1="0.8" y1="-1.6" x2="1.8" y2="-0.7" layer="31"/>
+<rectangle x1="-0.5" y1="-0.45" x2="0.5" y2="0.45" layer="31"/>
+<rectangle x1="0.8" y1="-0.45" x2="1.8" y2="0.45" layer="31"/>
+<rectangle x1="-1.8" y1="-0.45" x2="-0.8" y2="0.45" layer="31"/>
 </package>
 <package name="HEADER_3X01_SMD_H_BOARD_EDGE_SHORT">
 <smd name="1" x="-2.54" y="0" dx="1.778" dy="1.27" layer="1" rot="R90"/>
@@ -1020,7 +1029,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <rectangle x1="-0.125" y1="-1.5" x2="0.125" y2="-1" layer="21"/>
 <rectangle x1="-0.625" y1="-1.5" x2="-0.375" y2="-1" layer="21"/>
 <rectangle x1="-1.125" y1="-1.5" x2="-0.875" y2="-1" layer="21"/>
-<smd name="EP" x="0" y="0" dx="2.15" dy="1.7" layer="1"/>
+<smd name="EP" x="0" y="0" dx="2.15" dy="1.7" layer="1" cream="no"/>
 <smd name="6" x="1.425" y="-0.6" dx="0.7" dy="0.23" layer="1"/>
 <smd name="7" x="1.425" y="-0.2" dx="0.7" dy="0.23" layer="1"/>
 <smd name="8" x="1.425" y="0.2" dx="0.7" dy="0.23" layer="1"/>
@@ -1034,6 +1043,11 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <pad name="21" x="-0.5" y="-0.5" drill="0.3" diameter="0.6096"/>
 <pad name="22" x="-0.5" y="0.5" drill="0.3" diameter="0.6096"/>
 <pad name="23" x="0" y="0" drill="0.3" diameter="0.6096"/>
+<smd name="EP1" x="0" y="0" dx="2.15" dy="1.7" layer="16" thermals="no" cream="no"/>
+<rectangle x1="0.1" y1="0.1" x2="1" y2="0.75" layer="31"/>
+<rectangle x1="-1" y1="-0.75" x2="-0.1" y2="-0.1" layer="31"/>
+<rectangle x1="-1" y1="0.1" x2="-0.1" y2="0.75" layer="31"/>
+<rectangle x1="0.1" y1="-0.75" x2="1" y2="-0.1" layer="31"/>
 </package>
 <package name="3X1RA">
 <wire x1="-1.43" y1="1.22" x2="-9.93" y2="1.22" width="0.2032" layer="52"/>
@@ -4913,6 +4927,7 @@ Covered vias can be set in Masks (Limit).
 <vertex x="28.1" y="24.3"/>
 <vertex x="27.5" y="24.3"/>
 </polygon>
+<contactref element="U$602" pad="EP1"/>
 <wire x1="46.228" y1="27.1272" x2="46.228" y2="27.5272" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$4">

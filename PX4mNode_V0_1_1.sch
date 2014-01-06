@@ -7171,7 +7171,16 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <smd name="6" x="0.665" y="2.625" dx="0.5" dy="0.75" layer="1"/>
 <smd name="7" x="-0.605" y="2.625" dx="0.5" dy="0.75" layer="1"/>
 <smd name="8" x="-1.875" y="2.625" dx="0.5" dy="0.75" layer="1"/>
-<smd name="PAD" x="0" y="0" dx="4" dy="3.4" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="4" dy="3.4" layer="1" cream="no"/>
+<rectangle x1="-0.5" y1="0.7" x2="0.5" y2="1.6" layer="31"/>
+<rectangle x1="-0.5" y1="-1.6" x2="0.5" y2="-0.7" layer="31"/>
+<rectangle x1="-1.8" y1="-1.6" x2="-0.8" y2="-0.7" layer="31"/>
+<rectangle x1="-1.8" y1="0.7" x2="-0.8" y2="1.6" layer="31"/>
+<rectangle x1="0.8" y1="0.7" x2="1.8" y2="1.6" layer="31"/>
+<rectangle x1="0.8" y1="-1.6" x2="1.8" y2="-0.7" layer="31"/>
+<rectangle x1="-0.5" y1="-0.45" x2="0.5" y2="0.45" layer="31"/>
+<rectangle x1="0.8" y1="-0.45" x2="1.8" y2="0.45" layer="31"/>
+<rectangle x1="-1.8" y1="-0.45" x2="-0.8" y2="0.45" layer="31"/>
 </package>
 <package name="3X1-BOARD-EDGE">
 <wire x1="1.324" y1="3.81" x2="-4.826" y2="3.81" width="0.2" layer="21"/>
@@ -7359,7 +7368,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <rectangle x1="-0.125" y1="-1.5" x2="0.125" y2="-1" layer="21"/>
 <rectangle x1="-0.625" y1="-1.5" x2="-0.375" y2="-1" layer="21"/>
 <rectangle x1="-1.125" y1="-1.5" x2="-0.875" y2="-1" layer="21"/>
-<smd name="EP" x="0" y="0" dx="2.15" dy="1.7" layer="1"/>
+<smd name="EP" x="0" y="0" dx="2.15" dy="1.7" layer="1" cream="no"/>
 <smd name="6" x="1.425" y="-0.6" dx="0.7" dy="0.23" layer="1"/>
 <smd name="7" x="1.425" y="-0.2" dx="0.7" dy="0.23" layer="1"/>
 <smd name="8" x="1.425" y="0.2" dx="0.7" dy="0.23" layer="1"/>
@@ -7373,6 +7382,11 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <pad name="21" x="-0.5" y="-0.5" drill="0.3" diameter="0.6096"/>
 <pad name="22" x="-0.5" y="0.5" drill="0.3" diameter="0.6096"/>
 <pad name="23" x="0" y="0" drill="0.3" diameter="0.6096"/>
+<smd name="EP1" x="0" y="0" dx="2.15" dy="1.7" layer="16" thermals="no" cream="no"/>
+<rectangle x1="0.1" y1="0.1" x2="1" y2="0.75" layer="31"/>
+<rectangle x1="-1" y1="-0.75" x2="-0.1" y2="-0.1" layer="31"/>
+<rectangle x1="-1" y1="0.1" x2="-0.1" y2="0.75" layer="31"/>
+<rectangle x1="0.1" y1="-0.75" x2="1" y2="-0.1" layer="31"/>
 </package>
 <package name="KYOCERA-KNH16-DA">
 <description>Kyocera KNH16-DA EMI filter</description>
@@ -7763,7 +7777,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <connect gate="A" pin="L1" pad="1"/>
 <connect gate="A" pin="L2" pad="14"/>
 <connect gate="A" pin="PG" pad="5"/>
-<connect gate="A" pin="PGND" pad="6 7 8 9 15 16 17 18 19 20 21 22 23 EP"/>
+<connect gate="A" pin="PGND" pad="6 7 8 9 15 16 17 18 19 20 21 22 23 EP EP1"/>
 <connect gate="A" pin="PS/SYNC" pad="4"/>
 <connect gate="A" pin="VAUX" pad="10"/>
 <connect gate="A" pin="VIN" pad="2"/>
