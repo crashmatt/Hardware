@@ -9601,7 +9601,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND17" library="pixhawk2" deviceset="GND" device=""/>
 <part name="L402" library="PX4lite" deviceset="NUF8402MN" device=""/>
 <part name="SJ403" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="TRACE"/>
-<part name="U$405" library="PX4lite" deviceset="HEADER-3X1" device="BOARDEDGE-SHORT"/>
+<part name="J$405" library="PX4lite" deviceset="HEADER-3X1" device="BOARDEDGE-SHORT"/>
 <part name="C403" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
@@ -9652,7 +9652,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="D902" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="B340A"/>
 <part name="D903" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="B340A"/>
 <part name="U$602" library="PX4lite" deviceset="TPS6303X" device=""/>
-<part name="U$601" library="ti_tps_soln2" deviceset="XFL4020-222MEB" device=""/>
+<part name="L$601" library="ti_tps_soln2" deviceset="XFL4020-222MEB" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="C607" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF"/>
 <part name="C605" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF"/>
@@ -11065,7 +11065,7 @@ Aux ADC ports</text>
 <instance part="L402" gate="G$3" x="127" y="142.24"/>
 <instance part="L402" gate="G$4" x="127" y="132.08"/>
 <instance part="SJ403" gate="1" x="205.74" y="58.42"/>
-<instance part="U$405" gate="G$1" x="228.6" y="157.48"/>
+<instance part="J$405" gate="G$1" x="228.6" y="157.48"/>
 <instance part="C403" gate="G$1" x="195.58" y="152.4">
 <attribute name="PARTNO" x="195.58" y="152.4" size="1.778" layer="96" display="off"/>
 </instance>
@@ -11299,7 +11299,7 @@ Aux ADC ports</text>
 <wire x1="190.5" y1="165.1" x2="205.74" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="165.1" x2="215.9" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="165.1" x2="215.9" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="U$405" gate="G$1" pin="1"/>
+<pinref part="J$405" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="162.56" x2="220.98" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="C404" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="157.48" x2="205.74" y2="165.1" width="0.1524" layer="91"/>
@@ -11310,7 +11310,7 @@ Aux ADC ports</text>
 <segment>
 <pinref part="R405" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="160.02" x2="195.58" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="U$405" gate="G$1" pin="2"/>
+<pinref part="J$405" gate="G$1" pin="2"/>
 <pinref part="C403" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="160.02" x2="220.98" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="157.48" x2="195.58" y2="160.02" width="0.1524" layer="91"/>
@@ -11454,7 +11454,7 @@ Aux ADC ports</text>
 <pinref part="GND50" gate="1" pin="GND"/>
 <wire x1="220.98" y1="157.48" x2="215.9" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="157.48" x2="215.9" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U$405" gate="G$1" pin="3"/>
+<pinref part="J$405" gate="G$1" pin="3"/>
 <pinref part="C403" gate="G$1" pin="2"/>
 <wire x1="215.9" y1="147.32" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="147.32" x2="205.74" y2="147.32" width="0.1524" layer="91"/>
@@ -11742,7 +11742,7 @@ Aux ADC ports</text>
 <instances>
 <instance part="FRAME11" gate="G$1" x="0" y="0"/>
 <instance part="U$602" gate="A" x="101.6" y="109.22" smashed="yes"/>
-<instance part="U$601" gate="A" x="101.6" y="144.78" smashed="yes">
+<instance part="L$601" gate="A" x="101.6" y="144.78" smashed="yes">
 <attribute name="NAME" x="96.8756" y="149.4536" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="88.3158" y="141.1986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
@@ -11789,13 +11789,13 @@ Aux ADC ports</text>
 <pinref part="U$602" gate="A" pin="L2"/>
 <wire x1="121.92" y1="129.54" x2="124.46" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="129.54" x2="124.46" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="U$601" gate="A" pin="1"/>
+<pinref part="L$601" gate="A" pin="1"/>
 <wire x1="124.46" y1="144.78" x2="109.22" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="U$601" gate="A" pin="2"/>
+<pinref part="L$601" gate="A" pin="2"/>
 <wire x1="93.98" y1="144.78" x2="78.74" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="144.78" x2="78.74" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="U$602" gate="A" pin="L1"/>
