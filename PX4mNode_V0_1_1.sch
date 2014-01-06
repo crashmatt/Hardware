@@ -10399,8 +10399,8 @@ RELY ON OUTPUT CAPACITANCE</text>
 <instance part="L202" gate="G$9" x="33.02" y="99.06"/>
 <instance part="GND8" gate="1" x="33.02" y="91.44"/>
 <instance part="L201" gate="G$9" x="20.32" y="20.32"/>
-<instance part="L201" gate="G$5" x="93.98" y="27.94"/>
-<instance part="L201" gate="G$6" x="78.74" y="22.86"/>
+<instance part="L201" gate="G$5" x="99.06" y="17.78"/>
+<instance part="L201" gate="G$6" x="83.82" y="12.7"/>
 <instance part="L201" gate="G$3" x="91.44" y="71.12"/>
 <instance part="L201" gate="G$4" x="91.44" y="60.96"/>
 <instance part="GND9" gate="1" x="20.32" y="12.7"/>
@@ -10517,9 +10517,9 @@ RELY ON OUTPUT CAPACITANCE</text>
 <wire x1="185.42" y1="78.74" x2="220.98" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="121.92" y="22.86" size="1.27" layer="95" xref="yes"/>
+<label x="127" y="12.7" size="1.27" layer="95" xref="yes"/>
 <pinref part="L201" gate="G$6" pin="P$2"/>
-<wire x1="121.92" y1="22.86" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="127" y1="12.7" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SERIAL3_RX" class="0">
@@ -10529,9 +10529,9 @@ RELY ON OUTPUT CAPACITANCE</text>
 <wire x1="185.42" y1="76.2" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="121.92" y="27.94" size="1.27" layer="95" xref="yes"/>
+<label x="127" y="17.78" size="1.27" layer="95" xref="yes"/>
 <pinref part="L201" gate="G$5" pin="P$2"/>
-<wire x1="121.92" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="127" y1="17.78" x2="104.14" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-USART2_RX" class="0">
@@ -10738,16 +10738,16 @@ RELY ON OUTPUT CAPACITANCE</text>
 </net>
 <net name="FMU-UART7_RX" class="0">
 <segment>
-<label x="55.88" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="60.96" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="L201" gate="G$5" pin="P$1"/>
-<wire x1="55.88" y1="27.94" x2="88.9" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-UART7_TX" class="0">
 <segment>
-<label x="55.88" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="60.96" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="L201" gate="G$6" pin="P$1"/>
-<wire x1="73.66" y1="22.86" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="12.7" x2="60.96" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM_SPARE_OUT" class="0">
