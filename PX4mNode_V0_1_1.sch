@@ -9433,7 +9433,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="PARTNO" value="ERA-2AEB103X"/>
 </part>
 <part name="GND35" library="pixhawk2" deviceset="GND" device=""/>
-<part name="FMU-BOOT1101" library="pixhawk2" deviceset="PAD" device=".04">
+<part name="BOOT" library="pixhawk2" deviceset="PAD" device=".04">
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
 </part>
@@ -12944,7 +12944,7 @@ vision alignment.</text>
 <attribute name="PARTNO" x="71.12" y="132.08" size="1.778" layer="96" display="off"/>
 <attribute name="BOM" x="71.12" y="132.08" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="FMU-BOOT1101" gate="G$1" x="231.14" y="160.02">
+<instance part="BOOT" gate="G$1" x="231.14" y="160.02">
 <attribute name="PARTNO" x="231.14" y="160.02" size="1.778" layer="96" display="off"/>
 <attribute name="BOM" x="231.14" y="160.02" size="1.778" layer="96" display="off"/>
 </instance>
@@ -12964,7 +12964,7 @@ vision alignment.</text>
 <segment>
 <wire x1="223.52" y1="160.02" x2="215.9" y2="160.02" width="0.1524" layer="91"/>
 <label x="215.9" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="FMU-BOOT1101" gate="G$1" pin="P$1"/>
+<pinref part="BOOT" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 </nets>
