@@ -11972,10 +11972,10 @@ to reset de-asserted.</text>
 <instance part="U$702" gate="G$1" x="81.28" y="104.14">
 <attribute name="PARTNO" x="81.28" y="104.14" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R703" gate="G$1" x="60.96" y="86.36" smashed="yes" rot="MR90">
-<attribute name="PARTNO" x="60.96" y="86.36" size="1.778" layer="96" rot="MR90" display="off"/>
-<attribute name="NAME" x="62.4586" y="82.55" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="57.658" y="82.55" size="1.778" layer="96" rot="MR90"/>
+<instance part="R703" gate="G$1" x="50.8" y="116.84" smashed="yes" rot="MR180">
+<attribute name="PARTNO" x="50.8" y="116.84" size="1.778" layer="96" rot="MR180" display="off"/>
+<attribute name="NAME" x="46.99" y="115.3414" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="46.99" y="120.142" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="R702" gate="G$1" x="53.34" y="86.36" smashed="yes" rot="MR90">
 <attribute name="PARTNO" x="53.34" y="86.36" size="1.778" layer="96" rot="MR90" display="off"/>
@@ -12118,11 +12118,7 @@ to reset de-asserted.</text>
 <wire x1="40.64" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
 <junction x="68.58" y="76.2"/>
 <pinref part="U$702" gate="G$1" pin="GND"/>
-<pinref part="R703" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="76.2" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="76.2" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
-<junction x="60.96" y="76.2"/>
+<wire x1="53.34" y1="76.2" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R702" gate="G$1" pin="1"/>
 <wire x1="53.34" y1="81.28" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
 <junction x="53.34" y="76.2"/>
@@ -12179,6 +12175,13 @@ to reset de-asserted.</text>
 <wire x1="83.82" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="U$701" gate="G$1" pin="VOUT2"/>
 <pinref part="C706" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<label x="35.56" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="48.26" y1="116.84" x2="45.72" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="R703" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="116.84" x2="35.56" y2="116.84" width="0.1524" layer="91"/>
+<junction x="45.72" y="116.84"/>
 </segment>
 </net>
 <net name="FMU-BOOT0" class="0">
@@ -12263,7 +12266,8 @@ to reset de-asserted.</text>
 <pinref part="U$702" gate="G$1" pin="EN1"/>
 <wire x1="68.58" y1="104.14" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R703" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="104.14" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="104.14" x2="60.96" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="116.84" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
 <label x="35.56" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 <junction x="60.96" y="104.14"/>
 <wire x1="60.96" y1="104.14" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
