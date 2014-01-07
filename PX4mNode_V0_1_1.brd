@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="4" altunitdist="mil" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Ground" color="2" fill="10" visible="no" active="yes"/>
 <layer number="3" name="Horizontal" color="13" fill="15" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -22,15 +22,15 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Vertical" color="14" fill="15" visible="no" active="yes"/>
-<layer number="15" name="Power" color="11" fill="15" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Power" color="11" fill="15" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="14" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -176,8 +176,11 @@ V0_1</text>
 <text x="29.7688" y="5.6896" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">AUX ADC</text>
 <text x="26.1112" y="23.0632" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">SAFETY</text>
 <text x="54.356" y="10.668" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">I2C2</text>
-<text x="19.2024" y="33.3232" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">CAN2</text>
+<text x="19.4024" y="33.3232" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">CAN2</text>
 <wire x1="9.245" y1="3.425" x2="9.245" y2="36.95" width="0" layer="20"/>
+<text x="22.2112" y="20.5632" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">3V3</text>
+<text x="19.1112" y="17.0632" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">5V</text>
+<text x="40.8504" y="32.1848" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">CANpwr</text>
 </plain>
 <libraries>
 <library name="pixhawk2">
@@ -1569,10 +1572,10 @@ Covered vias can be set in Masks (Limit).
 <element name="R708" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="18.6944" y="11.0744" rot="R180">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="18.6944" y="11.0744" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="BOOT" library="pixhawk2" package="PAD.04X.04" value="PAD.04" x="17.9416" y="32.9184" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="*" x="18.348" y="32.9184" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="BOM" value="EXCLUDE" x="18.348" y="32.9184" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="15.1392" y="33.1556" size="0.5" layer="22" font="vector" ratio="15" rot="MR180"/>
+<element name="BOOT" library="pixhawk2" package="PAD.04X.04" value="PAD.04" x="18.6416" y="32.9184" smashed="yes" rot="MR0">
+<attribute name="PARTNO" value="*" x="19.048" y="32.9184" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="BOM" value="EXCLUDE" x="19.048" y="32.9184" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="17.8392" y="32.0556" size="0.5" layer="22" font="vector" ratio="15" rot="MR180"/>
 </element>
 <element name="J301" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="47.0408" y="33.528" locked="yes" rot="MR180">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="47.0408" y="33.528" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -1880,6 +1883,14 @@ Covered vias can be set in Masks (Limit).
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="18.2" y="9.6" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="JP1" library="SparkFun-Passives" package="SJ_3" value="JUMPER-3SMD" x="21" y="18.7" rot="MR270"/>
+<element name="JP2" library="pixhawk2" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="51.2" y="30.9" rot="MR0">
+<attribute name="PARTNO" value="*" x="51.2" y="30.9" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="BOM" value="EXCLUDE" x="51.2" y="30.9" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="JP3" library="pixhawk2" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="30.9" y="10.2" rot="MR0">
+<attribute name="PARTNO" value="*" x="30.9" y="10.2" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="BOM" value="EXCLUDE" x="30.9" y="10.2" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="FMU-SWDIO">
@@ -3525,14 +3536,14 @@ Covered vias can be set in Masks (Limit).
 <wire x1="29.6" y1="23.4" x2="29.6" y2="24.5" width="0.2" layer="1"/>
 <wire x1="30.6" y1="22.4" x2="29.6" y2="23.4" width="0.2" layer="1"/>
 <wire x1="30.6" y1="22.4" x2="30.626625" y2="22.43313125" width="0.2" layer="1"/>
-<wire x1="21" y1="32.9" x2="18" y2="32.9" width="0.2" layer="16"/>
+<wire x1="21" y1="32.9" x2="20.9" y2="32.9" width="0.2" layer="16"/>
 <wire x1="25.9" y1="28" x2="21" y2="32.9" width="0.2" layer="16"/>
 <wire x1="25.9" y1="27" x2="25.9" y2="28" width="0.2" layer="16"/>
 <wire x1="26.3" y1="26.6" x2="25.9" y2="27" width="0.2" layer="16"/>
 <wire x1="28.3" y1="26.6" x2="26.3" y2="26.6" width="0.2" layer="16"/>
 <wire x1="28.9" y1="26" x2="28.3" y2="26.6" width="0.2" layer="1"/>
 <wire x1="28.9" y1="24.8" x2="28.9" y2="26" width="0.2" layer="1"/>
-<wire x1="18" y1="32.9" x2="17.9416" y2="32.9184" width="0.2" layer="16"/>
+<wire x1="20.9" y1="32.9" x2="18.6416" y2="32.9184" width="0.2" layer="16"/>
 <via x="28.3" y="26.6" extent="1-16" drill="0.3" diameter="0.55"/>
 <wire x1="28.9" y1="26" x2="28.9" y2="25.6408" width="0.254" layer="1"/>
 <wire x1="28.9" y1="25.6408" x2="28.848" y2="25.6888" width="0.254" layer="1"/>

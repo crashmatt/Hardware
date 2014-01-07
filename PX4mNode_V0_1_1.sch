@@ -9971,6 +9971,14 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
 <part name="JP1" library="SparkFun-Passives" deviceset="JUMPER-3" device="SMD"/>
+<part name="JP2" library="pixhawk2" deviceset="FIDUCIAL" device="1.5X3">
+<attribute name="BOM" value="EXCLUDE"/>
+<attribute name="PARTNO" value="*"/>
+</part>
+<part name="JP3" library="pixhawk2" deviceset="FIDUCIAL" device="1.5X3">
+<attribute name="BOM" value="EXCLUDE"/>
+<attribute name="PARTNO" value="*"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -13287,6 +13295,14 @@ vision alignment.</text>
 <instance part="JP1102" gate="G$1" x="20.32" y="12.7">
 <attribute name="PARTNO" x="20.32" y="12.7" size="1.778" layer="96" display="off"/>
 <attribute name="BOM" x="20.32" y="12.7" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="JP2" gate="G$1" x="15.24" y="17.78">
+<attribute name="PARTNO" x="15.24" y="17.78" size="1.778" layer="96" display="off"/>
+<attribute name="BOM" x="15.24" y="17.78" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="JP3" gate="G$1" x="15.24" y="12.7">
+<attribute name="PARTNO" x="15.24" y="12.7" size="1.778" layer="96" display="off"/>
+<attribute name="BOM" x="15.24" y="12.7" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
