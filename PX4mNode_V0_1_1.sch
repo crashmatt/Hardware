@@ -10672,14 +10672,14 @@ RELY ON OUTPUT CAPACITANCE</text>
 <instance part="GND8" gate="1" x="25.4" y="109.22"/>
 <instance part="L201" gate="G$9" x="20.32" y="20.32"/>
 <instance part="L201" gate="G$5" x="99.06" y="17.78"/>
-<instance part="L201" gate="G$6" x="83.82" y="12.7"/>
+<instance part="L201" gate="G$7" x="83.82" y="12.7"/>
 <instance part="L201" gate="G$3" x="50.8" y="76.2"/>
 <instance part="L201" gate="G$4" x="50.8" y="66.04"/>
 <instance part="GND9" gate="1" x="20.32" y="12.7"/>
 <instance part="GND46" gate="1" x="63.5" y="50.8"/>
 <instance part="U$201" gate="G$1" x="73.66" y="58.42"/>
-<instance part="L201" gate="G$1" x="78.74" y="88.9" rot="R180"/>
-<instance part="L201" gate="G$7" x="160.02" y="43.18"/>
+<instance part="L201" gate="G$1" x="132.08" y="48.26" rot="R180"/>
+<instance part="L201" gate="G$6" x="160.02" y="43.18"/>
 <instance part="L201" gate="G$2" x="152.4" y="50.8"/>
 <instance part="L201" gate="G$8" x="170.18" y="35.56"/>
 <instance part="U$1" gate="G$1" x="114.3" y="86.36"/>
@@ -10796,7 +10796,7 @@ RELY ON OUTPUT CAPACITANCE</text>
 </segment>
 <segment>
 <label x="127" y="12.7" size="1.27" layer="95" xref="yes"/>
-<pinref part="L201" gate="G$6" pin="P$2"/>
+<pinref part="L201" gate="G$7" pin="P$2"/>
 <wire x1="127" y1="12.7" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -11021,17 +11021,18 @@ RELY ON OUTPUT CAPACITANCE</text>
 <wire x1="66.04" y1="63.5" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="63.5" x2="63.5" y2="66.04" width="0.1524" layer="91"/>
 <junction x="63.5" y="66.04"/>
-<pinref part="L201" gate="G$1" pin="P$2"/>
-<wire x1="73.66" y1="88.9" x2="63.5" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="88.9" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
-<junction x="63.5" y="76.2"/>
 </segment>
 </net>
 <net name="PPM_INPUT" class="0">
 <segment>
 <label x="33.02" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="33.02" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="L201" gate="G$3" pin="P$1"/>
+<pinref part="U$1" gate="G$1" pin="1A"/>
+<wire x1="40.64" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="88.9" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="88.9" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+<junction x="40.64" y="76.2"/>
 </segment>
 </net>
 <net name="FMU-UART7_RX" class="0">
@@ -11044,15 +11045,8 @@ RELY ON OUTPUT CAPACITANCE</text>
 <net name="FMU-UART7_TX" class="0">
 <segment>
 <label x="60.96" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L201" gate="G$6" pin="P$1"/>
+<pinref part="L201" gate="G$7" pin="P$1"/>
 <wire x1="78.74" y1="12.7" x2="60.96" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="L201" gate="G$1" pin="P$1"/>
-<pinref part="U$1" gate="G$1" pin="1A"/>
-<wire x1="83.82" y1="88.9" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-VDD_3V3" class="1">
