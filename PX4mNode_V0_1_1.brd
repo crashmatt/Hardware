@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="14" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -1508,9 +1508,9 @@ Covered vias can be set in Masks (Limit).
 <element name="J202" library="con-hirose-df13" package="DF13C-6P-1.25V" value="DF13C-6P-1.25V" x="38.716" y="6.864" locked="yes" rot="MR0">
 <attribute name="PARTNO" value="DF13C-6P-1.25V(20)" x="38.716" y="6.864" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="OSHW_LOGO" library="pixhawk2" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="50.2312" y="35.352">
-<attribute name="PARTNO" value="*" x="50.2312" y="46.528" size="1.778" layer="27" display="off"/>
-<attribute name="BOM" value="EXCLUDE" x="50.2312" y="46.528" size="1.778" layer="27" display="off"/>
+<element name="OSHW_LOGO" library="pixhawk2" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="50.8312" y="35.452">
+<attribute name="PARTNO" value="*" x="50.8312" y="46.628" size="1.778" layer="27" display="off"/>
+<attribute name="BOM" value="EXCLUDE" x="50.8312" y="46.628" size="1.778" layer="27" display="off"/>
 </element>
 <element name="M3_MOUNT1104" library="pixhawk2" package="MOUNT-HOLE3.1" value="MOUNT-HOLE3.1MM" x="12.2" y="5.7" locked="yes">
 <attribute name="PARTNO" value="*" x="12.2" y="5.7" size="1.778" layer="27" display="off"/>
