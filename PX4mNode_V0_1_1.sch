@@ -10100,6 +10100,9 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP4" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NO"/>
 <part name="GND19" library="pixhawk2" deviceset="GND" device=""/>
 <part name="GND22" library="pixhawk2" deviceset="GND" device=""/>
+<part name="D1" library="pixhawk2" deviceset="DIODE-SCHOTTKY" device="_MSMP" value="MSS1P4-M3">
+<attribute name="PARTNO" value="MSS1P4-M3/89A"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -12396,23 +12399,23 @@ to reset de-asserted.</text>
 <attribute name="PARTNO" x="200.66" y="160.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND3" gate="1" x="68.58" y="121.92"/>
-<instance part="C717" gate="G$1" x="226.06" y="101.6">
-<attribute name="PARTNO" x="226.06" y="101.6" size="1.778" layer="96" display="off"/>
+<instance part="C717" gate="G$1" x="223.52" y="96.52">
+<attribute name="PARTNO" x="223.52" y="96.52" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R709" gate="G$1" x="233.68" y="73.66" rot="R90">
-<attribute name="PARTNO" x="233.68" y="73.66" size="1.778" layer="96" display="off"/>
+<instance part="R709" gate="G$1" x="231.14" y="68.58" rot="R90">
+<attribute name="PARTNO" x="231.14" y="68.58" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND6" gate="1" x="233.68" y="63.5"/>
-<instance part="C714" gate="G$1" x="208.28" y="83.82" rot="R180">
-<attribute name="PARTNO" x="208.28" y="83.82" size="1.778" layer="96" display="off"/>
+<instance part="GND6" gate="1" x="231.14" y="58.42"/>
+<instance part="C714" gate="G$1" x="205.74" y="78.74" rot="R180">
+<attribute name="PARTNO" x="205.74" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="S701" gate="G$1" x="195.58" y="81.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="198.12" y="83.82" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="193.04" y="83.82" size="1.778" layer="96" rot="R270"/>
-<attribute name="PARTNO" x="195.58" y="81.28" size="1.778" layer="96" display="off"/>
+<instance part="S701" gate="G$1" x="193.04" y="76.2" smashed="yes" rot="R270">
+<attribute name="NAME" x="195.58" y="78.74" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="190.5" y="78.74" size="1.778" layer="96" rot="R270"/>
+<attribute name="PARTNO" x="193.04" y="76.2" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND13" gate="1" x="203.2" y="73.66"/>
-<instance part="GND26" gate="1" x="226.06" y="93.98"/>
+<instance part="GND13" gate="1" x="200.66" y="68.58"/>
+<instance part="GND26" gate="1" x="223.52" y="88.9"/>
 <instance part="GND27" gate="1" x="210.82" y="137.16"/>
 <instance part="C716" gate="G$1" x="220.98" y="154.94">
 <attribute name="PARTNO" x="220.98" y="154.94" size="1.778" layer="96" display="off"/>
@@ -12420,24 +12423,24 @@ to reset de-asserted.</text>
 <instance part="C715" gate="G$1" x="210.82" y="160.02">
 <attribute name="PARTNO" x="210.82" y="160.02" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U101" gate="BAT" x="241.3" y="109.22" rot="MR0"/>
+<instance part="U101" gate="BAT" x="238.76" y="104.14" rot="MR0"/>
 <instance part="U101" gate="G$2" x="241.3" y="137.16"/>
-<instance part="U101" gate="RESET" x="246.38" y="83.82" rot="MR0"/>
+<instance part="U101" gate="RESET" x="243.84" y="78.74" rot="MR0"/>
 <instance part="C711" gate="G$1" x="180.34" y="160.02">
 <attribute name="PARTNO" x="180.34" y="160.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C701" gate="G$1" x="30.48" y="137.16">
 <attribute name="PARTNO" x="30.48" y="137.16" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R707" gate="G$1" x="220.98" y="48.26" rot="R180">
-<attribute name="PARTNO" x="220.98" y="48.26" size="1.778" layer="96" display="off"/>
+<instance part="R707" gate="G$1" x="218.44" y="43.18" rot="R180">
+<attribute name="PARTNO" x="218.44" y="43.18" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R708" gate="G$1" x="228.6" y="43.18" rot="R270">
-<attribute name="PARTNO" x="228.6" y="43.18" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="R708" gate="G$1" x="226.06" y="38.1" rot="R270">
+<attribute name="PARTNO" x="226.06" y="38.1" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="GND35" gate="1" x="228.6" y="33.02"/>
-<instance part="R706" gate="G$1" x="208.28" y="121.92" rot="R90">
-<attribute name="PARTNO" x="208.28" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="GND35" gate="1" x="226.06" y="27.94"/>
+<instance part="R706" gate="G$1" x="205.74" y="116.84" rot="R90">
+<attribute name="PARTNO" x="205.74" y="116.84" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="C703" gate="G$1" x="48.26" y="134.62" rot="MR180">
 <attribute name="PARTNO" x="48.26" y="134.62" size="1.778" layer="96" rot="MR0" display="off"/>
@@ -12496,22 +12499,26 @@ to reset de-asserted.</text>
 <instance part="C710" gate="G$1" x="170.18" y="157.48">
 <attribute name="PARTNO" x="170.18" y="157.48" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JP701" gate="G$1" x="193.04" y="106.68"/>
+<instance part="JP701" gate="G$1" x="190.5" y="101.6"/>
+<instance part="D1" gate="G$1" x="205.74" y="127" smashed="yes" rot="MR270">
+<attribute name="NAME" x="210.3374" y="127" size="1.778" layer="95" rot="MR270"/>
+<attribute name="PARTNO" x="205.74" y="127" size="1.778" layer="96" rot="MR90" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="1">
 <segment>
-<wire x1="233.68" y1="66.04" x2="233.68" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="60.96" x2="231.14" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="R709" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="195.58" y1="76.2" x2="203.2" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="76.2" x2="208.28" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="76.2" x2="208.28" y2="78.74" width="0.1524" layer="91"/>
-<junction x="203.2" y="76.2"/>
+<wire x1="193.04" y1="71.12" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="71.12" x2="205.74" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="71.12" x2="205.74" y2="73.66" width="0.1524" layer="91"/>
+<junction x="200.66" y="71.12"/>
 <pinref part="S701" gate="G$1" pin="2"/>
 <pinref part="C714" gate="G$1" pin="1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -12550,16 +12557,16 @@ to reset de-asserted.</text>
 <segment>
 <pinref part="GND35" gate="1" pin="GND"/>
 <pinref part="R708" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="38.1" x2="228.6" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="33.02" x2="226.06" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND26" gate="1" pin="GND"/>
 <pinref part="C717" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="99.06" x2="226.06" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="96.52" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="93.98" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="91.44" x2="233.68" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="U101" gate="BAT" pin="VSSA"/>
-<wire x1="236.22" y1="96.52" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
-<junction x="226.06" y="96.52"/>
+<wire x1="233.68" y1="91.44" x2="233.68" y2="96.52" width="0.1524" layer="91"/>
+<junction x="223.52" y="91.44"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -12657,19 +12664,19 @@ to reset de-asserted.</text>
 <segment>
 <pinref part="U101" gate="BAT" pin="VREF+"/>
 <pinref part="C717" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="106.68" x2="226.06" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="101.6" x2="223.52" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="U101" gate="BAT" pin="VDDA"/>
-<wire x1="236.22" y1="111.76" x2="226.06" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="111.76" x2="226.06" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="111.76" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
-<junction x="226.06" y="106.68"/>
-<junction x="226.06" y="111.76"/>
-<wire x1="226.06" y1="129.54" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
-<label x="198.12" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R706" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="129.54" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="127" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
-<junction x="208.28" y="129.54"/>
+<wire x1="233.68" y1="106.68" x2="223.52" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="106.68" x2="223.52" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="106.68" x2="223.52" y2="132.08" width="0.1524" layer="91"/>
+<junction x="223.52" y="101.6"/>
+<junction x="223.52" y="106.68"/>
+<label x="187.96" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="223.52" y1="132.08" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="205.74" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="129.54" x2="205.74" y2="132.08" width="0.1524" layer="91"/>
+<junction x="205.74" y="132.08"/>
 </segment>
 <segment>
 <pinref part="C705" gate="G$1" pin="1"/>
@@ -12694,13 +12701,13 @@ to reset de-asserted.</text>
 </net>
 <net name="FMU-BOOT0" class="0">
 <segment>
-<wire x1="233.68" y1="81.28" x2="236.22" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="78.74" x2="233.68" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="76.2" x2="233.68" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="73.66" x2="231.14" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R709" gate="G$1" pin="2"/>
 <pinref part="U101" gate="RESET" pin="BOOT0"/>
-<wire x1="233.68" y1="81.28" x2="231.14" y2="81.28" width="0.1524" layer="91"/>
-<label x="231.14" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<junction x="233.68" y="81.28"/>
+<wire x1="231.14" y1="76.2" x2="228.6" y2="76.2" width="0.1524" layer="91"/>
+<label x="228.6" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<junction x="231.14" y="76.2"/>
 </segment>
 </net>
 <net name="VDD_5V" class="1">
@@ -12731,8 +12738,8 @@ to reset de-asserted.</text>
 </segment>
 <segment>
 <pinref part="R707" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="48.26" x2="215.9" y2="48.26" width="0.1524" layer="91"/>
-<label x="213.36" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="210.82" y1="43.18" x2="213.36" y2="43.18" width="0.1524" layer="91"/>
+<label x="210.82" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C702" gate="G$1" pin="1"/>
@@ -12798,26 +12805,26 @@ to reset de-asserted.</text>
 <net name="VDD_5V_SENS" class="0">
 <segment>
 <pinref part="R707" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="48.26" x2="228.6" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="43.18" x2="226.06" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R708" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="48.26" x2="233.68" y2="48.26" width="0.1524" layer="91"/>
-<junction x="228.6" y="48.26"/>
-<label x="233.68" y="48.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="226.06" y1="43.18" x2="231.14" y2="43.18" width="0.1524" layer="91"/>
+<junction x="226.06" y="43.18"/>
+<label x="231.14" y="43.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
 <segment>
 <pinref part="U101" gate="BAT" pin="VBAT"/>
-<wire x1="208.28" y1="116.84" x2="215.9" y2="116.84" width="0.1524" layer="91"/>
-<junction x="208.28" y="116.84"/>
-<wire x1="215.9" y1="116.84" x2="236.22" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="116.84" x2="198.12" y2="116.84" width="0.1524" layer="91"/>
-<label x="198.12" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="205.74" y1="111.76" x2="213.36" y2="111.76" width="0.1524" layer="91"/>
+<junction x="205.74" y="111.76"/>
+<wire x1="213.36" y1="111.76" x2="233.68" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="111.76" x2="195.58" y2="111.76" width="0.1524" layer="91"/>
+<label x="195.58" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R706" gate="G$1" pin="1"/>
 <pinref part="JP701" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="106.68" x2="215.9" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="106.68" x2="215.9" y2="116.84" width="0.1524" layer="91"/>
-<junction x="215.9" y="116.84"/>
+<wire x1="198.12" y1="101.6" x2="213.36" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="101.6" x2="213.36" y2="111.76" width="0.1524" layer="91"/>
+<junction x="213.36" y="111.76"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -12832,13 +12839,13 @@ to reset de-asserted.</text>
 <segment>
 <pinref part="S701" gate="G$1" pin="1"/>
 <pinref part="C714" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="86.36" x2="208.28" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="81.28" x2="205.74" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U101" gate="RESET" pin="NRST"/>
-<wire x1="208.28" y1="86.36" x2="236.22" y2="86.36" width="0.1524" layer="91"/>
-<junction x="208.28" y="86.36"/>
-<wire x1="195.58" y1="86.36" x2="193.04" y2="86.36" width="0.1524" layer="91"/>
-<junction x="195.58" y="86.36"/>
-<label x="193.04" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="205.74" y1="81.28" x2="233.68" y2="81.28" width="0.1524" layer="91"/>
+<junction x="205.74" y="81.28"/>
+<wire x1="193.04" y1="81.28" x2="190.5" y2="81.28" width="0.1524" layer="91"/>
+<junction x="193.04" y="81.28"/>
+<label x="190.5" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <wire x1="81.28" y1="144.78" x2="119.38" y2="144.78" width="0.1524" layer="91"/>
@@ -12921,6 +12928,13 @@ to reset de-asserted.</text>
 <pinref part="U$702" gate="G$1" pin="VOUT2"/>
 <wire x1="109.22" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
 <junction x="109.22" y="104.14"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R706" gate="G$1" pin="2"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="205.74" y1="121.92" x2="205.74" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
