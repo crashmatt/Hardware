@@ -7496,11 +7496,11 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="21"/>
 <wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="21"/>
-<smd name="P$1" x="-0.8" y="0" dx="0.55" dy="0.6" layer="1"/>
-<smd name="P$2" x="0.8" y="0" dx="0.55" dy="0.6" layer="1"/>
+<smd name="P$1" x="-0.8" y="0" dx="0.6" dy="0.6" layer="1"/>
+<smd name="P$2" x="0.8" y="0" dx="0.6" dy="0.6" layer="1"/>
 <smd name="P$3" x="0" y="-0.4" dx="0.4" dy="0.4" layer="1"/>
 <smd name="P$4" x="0" y="0.4" dx="0.4" dy="0.4" layer="1"/>
-<pad name="P$5" x="0" y="0" drill="0.3" diameter="0.55" rot="R90"/>
+<pad name="P$5" x="0" y="0" drill="0.3" diameter="0.6" rot="R90" stop="no" thermals="no"/>
 </package>
 <package name="QFN8-DSG">
 <circle x="-1.4" y="-0.8" radius="0.14141875" width="0.15" layer="21"/>
@@ -10120,23 +10120,25 @@ EXTI3 - &lt;free&gt;
 EXTI4 - TIM3_CH1 - ACCEL
 EXTI5-9 - TIM3_CH2 - MAG
 </text>
-<text x="7.62" y="33.02" size="1.27" layer="91">Timer allocation:
+<text x="7.62" y="27.94" size="1.27" layer="91">Timer allocation:
 PE9: TIM1_CH1: FMU-CH4
 PE11: TIM1_CH2: FMU-CH3
 PE13: TIM1_CH3: FMU-CH2
 PE14: TIM1_CH4: FMU-CH1
+PA1: TIM5_CH2: FMU-CH7
+PA2: TIM5_CH3: FMU-CH9 (NC)
+PA3: TIM5_CH4: FMU-CH10 (NC)
 PA15: TIM2_CH1: ALARM
 PB0: TIM3_CH3: GYRO1_DRDY
 PB1: TIM3_CH4: GYRO2_DRDY
 PB4: TIM3_CH1: ACCEL_DRDY
 PB5: TIM3_CH2: MAG_DRDY
 PD13: TIM4_CH2: FMU-CH5
-PD14: TIM4_CH3: FMU-CH6
-PD15: TIM4_CH4: spare
+PD14: TIM4_CH3: FMU-CH8
+PD15: TIM4_CH4: FMU-CH6
 </text>
 <text x="131.826" y="62.992" size="1.27" layer="91">Spare PWM output</text>
 <text x="112.014" y="164.592" size="1.27" layer="91">Spare ADC</text>
-<text x="112.014" y="159.512" size="1.27" layer="91">Spare ADC</text>
 <text x="112.014" y="162.052" size="1.27" layer="91">Spare ADC</text>
 <text x="68.58" y="160.02" size="1.27" layer="91">FMU-CH10 changed to 
 Spektrum 3v3 EN</text>
@@ -10496,8 +10498,8 @@ Spektrum 3v3 EN</text>
 <net name="FMU-UART8_RX" class="0">
 <segment>
 <pinref part="U101" gate="PORTE_L" pin="PE0"/>
-<wire x1="175.26" y1="165.1" x2="203.2" y2="165.1" width="0.1524" layer="91"/>
-<label x="203.2" y="165.1" size="1.27" layer="95" xref="yes"/>
+<wire x1="175.26" y1="165.1" x2="182.88" y2="165.1" width="0.1524" layer="91"/>
+<label x="182.88" y="165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="FMU-UART7_RX" class="0">
@@ -10531,8 +10533,8 @@ Spektrum 3v3 EN</text>
 <net name="MAG_DRDY" class="0">
 <segment>
 <pinref part="U101" gate="PORTB_L" pin="PB1"/>
-<wire x1="33.02" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
-<label x="50.8" y="106.68" size="1.27" layer="95" xref="yes"/>
+<wire x1="33.02" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
+<label x="38.1" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!FRAM_CS" class="0">
@@ -10594,8 +10596,8 @@ Spektrum 3v3 EN</text>
 <net name="FMU-UART8_TX" class="0">
 <segment>
 <pinref part="U101" gate="PORTE_L" pin="PE1"/>
-<wire x1="175.26" y1="162.56" x2="203.2" y2="162.56" width="0.1524" layer="91"/>
-<label x="203.2" y="162.56" size="1.27" layer="95" xref="yes"/>
+<wire x1="175.26" y1="162.56" x2="182.88" y2="162.56" width="0.1524" layer="91"/>
+<label x="182.88" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ALARM" class="0">
@@ -10726,9 +10728,9 @@ Spektrum 3v3 EN</text>
 </net>
 <net name="VDD_3V3_SPEKTRUM_EN" class="0">
 <segment>
-<pinref part="U101" gate="PORTA_L" pin="PA3"/>
-<wire x1="33.02" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
-<label x="40.64" y="157.48" size="1.27" layer="95" xref="yes"/>
+<wire x1="106.68" y1="160.02" x2="114.3" y2="160.02" width="0.1524" layer="91"/>
+<label x="114.3" y="160.02" size="1.27" layer="95" xref="yes"/>
+<pinref part="U101" gate="PORTC_L" pin="PC2"/>
 </segment>
 </net>
 <net name="PPM_INPUT" class="0">
@@ -10736,6 +10738,13 @@ Spektrum 3v3 EN</text>
 <pinref part="U101" gate="PORTA_L" pin="PA0"/>
 <wire x1="33.02" y1="165.1" x2="40.64" y2="165.1" width="0.1524" layer="91"/>
 <label x="40.64" y="165.1" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="FMU-CH10" class="0">
+<segment>
+<pinref part="U101" gate="PORTA_L" pin="PA3"/>
+<wire x1="33.02" y1="157.48" x2="53.34" y2="157.48" width="0.1524" layer="91"/>
+<label x="53.34" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -12091,13 +12100,7 @@ Aux ADC ports</text>
 <sheet>
 <plain>
 <text x="165.1" y="17.78" size="2.1844" layer="94" ratio="10">Sensors</text>
-<text x="7.62" y="7.62" size="1.27" layer="97" font="vector">Bypass caps as close to device pins as possible.</text>
-<wire x1="127" y1="101.6" x2="127" y2="165.1" width="0.1524" layer="94" style="dashdot"/>
-<wire x1="127" y1="165.1" x2="5.08" y2="165.1" width="0.1524" layer="94" style="dashdot"/>
-<wire x1="5.08" y1="165.1" x2="5.08" y2="33.02" width="0.1524" layer="94" style="dashdot"/>
-<wire x1="127" y1="165.1" x2="254" y2="165.1" width="0.1524" layer="94" style="dashdot"/>
-<wire x1="254" y1="165.1" x2="254" y2="101.6" width="0.1524" layer="94" style="dashdot"/>
-<wire x1="254" y1="101.6" x2="127" y2="101.6" width="0.1524" layer="94" style="dashdot"/>
+<text x="96.52" y="33.02" size="1.27" layer="97" font="vector">Bypass caps as close to device pins as possible.</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
