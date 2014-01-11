@@ -11466,6 +11466,13 @@ mount micro USB connectors:
 <wire x1="53.34" y1="149.86" x2="53.34" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="FMU-!RESET" class="0">
+<segment>
+<label x="185.42" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JX301" gate="-!RESET" pin="S"/>
+<wire x1="185.42" y1="86.36" x2="198.12" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>

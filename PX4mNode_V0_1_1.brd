@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="14" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -4015,6 +4015,10 @@ Covered vias can be set in Masks (Limit).
 <wire x1="24.2832" y1="18.5832" x2="23.1568" y2="18.5832" width="0.2" layer="16"/>
 <wire x1="23.1568" y1="18.5832" x2="22.5568" y2="17.9832" width="0.2" layer="16"/>
 <wire x1="33.81430625" y1="13.6" x2="33.101496875" y2="12.887190625" width="0.2" layer="1"/>
+<contactref element="JX301" pad="10"/>
+<wire x1="37" y1="15.8" x2="36.5" y2="15.8" width="0.3048" layer="16"/>
+<wire x1="36.5" y1="15.8" x2="36.2712" y2="16.0288" width="0.3048" layer="16"/>
+<wire x1="36.2712" y1="16.0288" x2="36.2712" y2="16.764" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$42" class="1">
 <contactref element="J403" pad="P$1"/>
