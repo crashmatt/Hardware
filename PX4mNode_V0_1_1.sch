@@ -7501,6 +7501,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <smd name="P$3" x="0" y="-0.4" dx="0.4" dy="0.4" layer="1"/>
 <smd name="P$4" x="0" y="0.4" dx="0.4" dy="0.4" layer="1"/>
 <pad name="P$5" x="0" y="0" drill="0.3" diameter="0.6" rot="R90" stop="no" thermals="no"/>
+<rectangle x1="-0.3" y1="-0.2" x2="0.3" y2="0.2" layer="29"/>
 </package>
 <package name="QFN8-DSG">
 <circle x="-1.4" y="-0.8" radius="0.14141875" width="0.15" layer="21"/>
