@@ -9912,8 +9912,8 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$703" library="PX4lite" deviceset="BQ24315" device="">
 <attribute name="PARTNO" value="BQ24315DSGR"/>
 </part>
-<part name="R704" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="25K">
-<attribute name="PARTNO" value="RMCF0402FT25K5"/>
+<part name="R704" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="47K">
+<attribute name="PARTNO" value="RMCF0402FT47K"/>
 </part>
 <part name="U$203" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
 <attribute name="PARTNO" value="PESD0402-140"/>
@@ -9977,8 +9977,12 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </part>
 <part name="GND17" library="pixhawk2" deviceset="GND" device=""/>
 <part name="L402" library="PX4lite" deviceset="NUF8402MN" device=""/>
-<part name="SJ403" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC2" value="SOLDERJUMPERNC2"/>
-<part name="J$401" library="PX4lite" deviceset="HEADER-3X1" device="BOARDEDGE-SHORT"/>
+<part name="SJ403" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC2" value="SOLDERJUMPERNC2">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="J$401" library="PX4lite" deviceset="HEADER-3X1" device="BOARDEDGE-SHORT">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="C403" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
@@ -10006,12 +10010,16 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$403" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
 <attribute name="PARTNO" value="PESD0402-140"/>
 </part>
-<part name="SJ402" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC2" value="SOLDERJUMPERNC2"/>
+<part name="SJ402" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC2" value="SOLDERJUMPERNC2">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="U$501" library="PX4lite" deviceset="MAX21100" device=""/>
 <part name="C503" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
-<part name="J1001" library="PX4lite" deviceset="SERVO_HEADER-3X8" device=""/>
+<part name="J1001" library="PX4lite" deviceset="SERVO_HEADER-3X8" device="">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="R902" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K/0.1%">
 <attribute name="PARTNO" value="ERA-2AEB103X"/>
 </part>
@@ -10025,7 +10033,9 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="D904" library="pixhawk2" deviceset="DIODE-SCHOTTKY" device="_MSMP" value="MSS1P4-M3">
 <attribute name="PARTNO" value="MSS1P4-M3/89A"/>
 </part>
-<part name="D901" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
+<part name="D901" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="D902" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="B340A"/>
 <part name="D903" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="B340A"/>
 <part name="U$601" library="PX4lite" deviceset="TPS6303X" device=""/>
@@ -10035,7 +10045,9 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C605" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF"/>
 <part name="C606" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF"/>
 <part name="C601" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF"/>
-<part name="JP901" library="SparkFun-Connectors" deviceset="M02" device="PTH3"/>
+<part name="JP901" library="SparkFun-Connectors" deviceset="M02" device="PTH3">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="GND18" library="pixhawk2" deviceset="GND" device=""/>
 <part name="C603" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
@@ -10082,14 +10094,22 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C710" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
-<part name="JP701" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
-<part name="SJ401" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO"/>
-<part name="U$202" library="pixhawk2" deviceset="74LVC2GU04" device=""/>
+<part name="JP701" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="SJ401" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="U$202" library="pixhawk2" deviceset="74LVC2GU04" device="">
+<attribute name="PARTNO" value="74LVC2GU04"/>
+</part>
 <part name="GND2" library="pixhawk2" deviceset="GND" device=""/>
 <part name="C201" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
-<part name="JP201" library="SparkFun-Passives" deviceset="JUMPER-3" device="SMD"/>
+<part name="JP201" library="SparkFun-Passives" deviceset="JUMPER-3" device="SMD">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="JP1101" library="pixhawk2" deviceset="FIDUCIAL" device="1.5X3">
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
@@ -10098,21 +10118,29 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
 </part>
-<part name="JP202" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NO"/>
+<part name="JP202" library="SparkFun-Passives" deviceset="JUMPER-2" device="SMD-NO">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="GND19" library="pixhawk2" deviceset="GND" device=""/>
 <part name="GND22" library="pixhawk2" deviceset="GND" device=""/>
 <part name="D701" library="pixhawk2" deviceset="DIODE-SCHOTTKY" device="_MSMP" value="MSS1P4-M3">
 <attribute name="PARTNO" value="MSS1P4-M3/89A"/>
 </part>
-<part name="JP1001" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
-<part name="JP1002" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
+<part name="JP1001" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="JP1002" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="R1001" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="220R">
 <attribute name="PARTNO" value="RC0402FR-07220RL"/>
 </part>
 <part name="R1002" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="220R">
 <attribute name="PARTNO" value="RC0402FR-07220RL"/>
 </part>
-<part name="JP702" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
+<part name="JP702" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -10825,13 +10853,19 @@ RELY ON OUTPUT CAPACITANCE</text>
 <instance part="L202" gate="G$6" x="160.02" y="43.18"/>
 <instance part="L202" gate="G$2" x="119.38" y="63.5"/>
 <instance part="L202" gate="G$8" x="170.18" y="35.56"/>
-<instance part="U$202" gate="G$1" x="91.44" y="91.44"/>
+<instance part="U$202" gate="G$1" x="91.44" y="91.44">
+<attribute name="PARTNO" x="91.44" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND2" gate="1" x="76.2" y="81.28"/>
 <instance part="C201" gate="G$1" x="68.58" y="99.06">
 <attribute name="PARTNO" x="68.58" y="99.06" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JP201" gate="G$1" x="48.26" y="53.34" rot="R270"/>
-<instance part="JP202" gate="A" x="111.76" y="104.14"/>
+<instance part="JP201" gate="G$1" x="48.26" y="53.34" rot="R270">
+<attribute name="BOM" x="48.26" y="53.34" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="JP202" gate="A" x="111.76" y="104.14">
+<attribute name="BOM" x="111.76" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND19" gate="1" x="106.68" y="48.26"/>
 <instance part="GND22" gate="1" x="129.54" y="48.26"/>
 </instances>
@@ -11576,8 +11610,12 @@ Aux ADC ports</text>
 <instance part="L402" gate="G$6" x="170.18" y="132.08"/>
 <instance part="L402" gate="G$3" x="127" y="142.24"/>
 <instance part="L402" gate="G$4" x="127" y="132.08"/>
-<instance part="SJ403" gate="1" x="205.74" y="58.42"/>
-<instance part="J$401" gate="G$1" x="228.6" y="157.48"/>
+<instance part="SJ403" gate="1" x="205.74" y="58.42">
+<attribute name="BOM" x="205.74" y="58.42" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="J$401" gate="G$1" x="228.6" y="157.48">
+<attribute name="BOM" x="228.6" y="157.48" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C403" gate="G$1" x="195.58" y="152.4">
 <attribute name="PARTNO" x="195.58" y="152.4" size="1.778" layer="96" display="off"/>
 </instance>
@@ -11604,8 +11642,12 @@ Aux ADC ports</text>
 <instance part="U$403" gate="G$1" x="226.06" y="106.68" rot="R90">
 <attribute name="PARTNO" x="226.06" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SJ402" gate="1" x="205.74" y="106.68"/>
-<instance part="SJ401" gate="1" x="134.62" y="114.3"/>
+<instance part="SJ402" gate="1" x="205.74" y="106.68">
+<attribute name="BOM" x="205.74" y="106.68" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SJ401" gate="1" x="134.62" y="114.3">
+<attribute name="BOM" x="134.62" y="114.3" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -12409,7 +12451,8 @@ to center ground pad.</text>
 delay 1s / uF</text>
 <text x="66.04" y="15.24" size="1.4224" layer="95">Current Limits:
 I(limit) = 25000 / R(ilim)
-25K = 1A, 16K5 = 1.5A</text>
+25K = 1A, 16K5 = 1.5A, 
+47K ~500mA</text>
 <text x="116.84" y="76.2" size="1.4224" layer="95">Reset output 1s / uF
 10n = 10ms delay from power good
 to reset de-asserted.</text>
@@ -12526,12 +12569,16 @@ to reset de-asserted.</text>
 <instance part="C710" gate="G$1" x="170.18" y="157.48">
 <attribute name="PARTNO" x="170.18" y="157.48" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JP701" gate="G$1" x="195.58" y="104.14"/>
+<instance part="JP701" gate="G$1" x="195.58" y="104.14">
+<attribute name="BOM" x="195.58" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="D701" gate="G$1" x="205.74" y="127" smashed="yes" rot="MR270">
 <attribute name="NAME" x="210.3374" y="127" size="1.778" layer="95" rot="MR270"/>
 <attribute name="PARTNO" x="205.74" y="127" size="1.778" layer="96" rot="MR90" display="off"/>
 </instance>
-<instance part="JP702" gate="G$1" x="195.58" y="91.44"/>
+<instance part="JP702" gate="G$1" x="195.58" y="91.44">
+<attribute name="BOM" x="195.58" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13147,6 +13194,7 @@ PB0: TIM3_CH3: IO-CH7
 PB1: TIM3_CH4: IO-CH8
 PA8: TIM1_CH1: PPM_IN
 PA11: TIM1_CH4: RSSI_IN</text>
+<text x="60.96" y="86.36" size="1.778" layer="91">DO NOT FIT</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
@@ -13170,10 +13218,14 @@ PA11: TIM1_CH4: RSSI_IN</text>
 <attribute name="NAME" x="129.0574" y="137.16" size="1.778" layer="95" rot="MR270"/>
 <attribute name="PARTNO" x="124.46" y="134.62" size="1.778" layer="96" rot="MR90" display="off"/>
 </instance>
-<instance part="D901" gate="G$1" x="81.28" y="86.36" rot="R90"/>
+<instance part="D901" gate="G$1" x="81.28" y="86.36" rot="R90">
+<attribute name="BOM" x="81.28" y="86.36" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="D902" gate="G$1" x="104.14" y="127"/>
 <instance part="D903" gate="G$1" x="116.84" y="139.7" rot="R270"/>
-<instance part="JP901" gate="G$1" x="66.04" y="154.94"/>
+<instance part="JP901" gate="G$1" x="66.04" y="154.94">
+<attribute name="BOM" x="66.04" y="154.94" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND18" gate="1" x="78.74" y="144.78"/>
 </instances>
 <busses>
@@ -13297,9 +13349,15 @@ S.Bus interface</text>
 <instance part="J1001" gate="-CH5" x="101.6" y="119.38"/>
 <instance part="J1001" gate="-CH6" x="101.6" y="124.46"/>
 <instance part="J1001" gate="-CH7" x="101.6" y="129.54"/>
-<instance part="J1001" gate="-CH8" x="101.6" y="134.62"/>
-<instance part="JP1001" gate="G$1" x="106.68" y="71.12" rot="R180"/>
-<instance part="JP1002" gate="G$1" x="106.68" y="53.34" rot="R180"/>
+<instance part="J1001" gate="-CH8" x="101.6" y="134.62">
+<attribute name="BOM" x="96.52" y="137.16" size="1.778" layer="96" display="both"/>
+</instance>
+<instance part="JP1001" gate="G$1" x="106.68" y="71.12" rot="R180">
+<attribute name="BOM" x="106.68" y="71.12" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="JP1002" gate="G$1" x="106.68" y="53.34" rot="R180">
+<attribute name="BOM" x="106.68" y="53.34" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="R1001" gate="G$1" x="71.12" y="71.12" rot="R180">
 <attribute name="PARTNO" x="71.12" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
