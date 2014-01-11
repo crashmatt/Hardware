@@ -21,17 +21,17 @@
 <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Vertical" color="14" fill="15" visible="no" active="yes"/>
-<layer number="15" name="Power" color="11" fill="15" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="14" name="Vertical" color="14" fill="15" visible="yes" active="yes"/>
+<layer number="15" name="Power" color="11" fill="15" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="14" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -808,21 +808,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <text x="-4.725" y="1.525" size="2.54" layer="21">.</text>
 <rectangle x1="-3.75" y1="-2.475" x2="3.75" y2="-0.1" layer="39"/>
 </package>
-<package name="DF13C-4P-1.25V">
-<description>Single Row Straight Pin Header (SMT)</description>
-<wire x1="-4.075" y1="-3.6" x2="4.075" y2="-3.6" width="0.3048" layer="21"/>
-<wire x1="4.075" y1="-3.6" x2="4.075" y2="0" width="0.3048" layer="21"/>
-<wire x1="4.075" y1="0" x2="-4.075" y2="0" width="0.3048" layer="21"/>
-<wire x1="-4.075" y1="0" x2="-4.075" y2="-3.6" width="0.3048" layer="21"/>
-<smd name="M$1" x="-4.325" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
-<smd name="M$0" x="4.325" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
-<smd name="P$1" x="-1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
-<smd name="P$2" x="-0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
-<smd name="P$3" x="0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
-<smd name="P$4" x="1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
-<text x="-3.475" y="1.525" size="2.54" layer="21">.</text>
-<rectangle x1="-2.5" y1="-2.475" x2="2.5" y2="-0.1" layer="39"/>
-</package>
 <package name="DF13C-3P-1.25V">
 <description>Single Row Straight Pin Header (SMT)</description>
 <wire x1="-3.45" y1="-3.6" x2="3.45" y2="-3.6" width="0.3048" layer="21"/>
@@ -1270,6 +1255,27 @@ We've spent an enormous amount of time creating and checking these footprints an
 </package>
 </packages>
 </library>
+<library name="PX4FMUlite_V0_1">
+<description>Generated from &lt;b&gt;PX4FMUlite_V0_1.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="DF13C-4P-1.25V">
+<description>Single Row Straight Pin Header (SMT)</description>
+<wire x1="-4.075" y1="-3.6" x2="4.075" y2="-3.6" width="0.3048" layer="21"/>
+<wire x1="4.075" y1="-3.6" x2="4.075" y2="0" width="0.3048" layer="21"/>
+<wire x1="4.075" y1="0" x2="-4.075" y2="0" width="0.3048" layer="21"/>
+<wire x1="-4.075" y1="0" x2="-4.075" y2="-3.6" width="0.3048" layer="21"/>
+<rectangle x1="-2.5" y1="-2.475" x2="2.5" y2="-0.1" layer="39"/>
+<smd name="M$0" x="4.325" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="M$1" x="-4.325" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="P$1" x="-1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$2" x="-0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$3" x="0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$4" x="1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<text x="-3.475" y="1.525" size="2.54" layer="21">.</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1578,7 +1584,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="BOM" value="EXCLUDE" x="19.048" y="32.9184" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="17.8392" y="32.0556" size="0.5" layer="22" font="vector" ratio="15" rot="MR180"/>
 </element>
-<element name="J301" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="47.0408" y="33.528" locked="yes" rot="MR180">
+<element name="J301" library="PX4FMUlite_V0_1" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="47.0408" y="33.528" locked="yes" rot="MR180">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="47.0408" y="33.528" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R706" library="pixhawk2" package="0402-RES" value="1K" x="32.1944" y="5.6288">
@@ -1614,7 +1620,7 @@ Covered vias can be set in Masks (Limit).
 <element name="L401" library="PX4lite" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="46.228" y="27.1272" rot="MR0">
 <attribute name="PARTNO" value="KNH16C104DA5TS" x="46.228" y="27.1272" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="J403" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="53.6448" y="26.7208" locked="yes" rot="MR270">
+<element name="J403" library="PX4FMUlite_V0_1" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="53.6448" y="26.7208" locked="yes" rot="MR270">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="53.6448" y="26.7208" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R408" library="pixhawk2" package="0402-RES" value="120R" x="38.2016" y="36.068" smashed="yes">
@@ -1627,7 +1633,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="VALUE" x="32.6456" y="32.6052" size="0.4" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="33.1948" y="34.9456" size="0.4" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="J405" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="36.4744" y="33.528" locked="yes" rot="MR180">
+<element name="J405" library="PX4FMUlite_V0_1" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="36.4744" y="33.528" locked="yes" rot="MR180">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="36.4744" y="33.528" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C402" library="pixhawk2" package="0402-CAP" value="0u1" x="34.9504" y="33.1216" smashed="yes">
@@ -1717,7 +1723,7 @@ Covered vias can be set in Masks (Limit).
 <element name="L404" library="PX4lite" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="52.324" y="23.6728" rot="MR180">
 <attribute name="PARTNO" value="KNH16C104DA5TS" x="52.324" y="23.6728" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="J402" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13-4P-1.25V" x="53.6448" y="16.256" locked="yes" rot="MR270">
+<element name="J402" library="PX4FMUlite_V0_1" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="53.6448" y="16.256" locked="yes" rot="MR270">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="53.6448" y="16.256" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R401" library="pixhawk2" package="0402-RES" value="1K5" x="50.292" y="22.352">
@@ -1761,7 +1767,7 @@ Covered vias can be set in Masks (Limit).
 <attribute name="VALUE" x="21.9776" y="32.6052" size="0.4" layer="27" font="vector" ratio="15"/>
 <attribute name="NAME" x="22.4948" y="34.7776" size="0.4" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="J404" library="con-hirose-df13" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="25.8064" y="33.528" locked="yes" rot="MR180">
+<element name="J404" library="PX4FMUlite_V0_1" package="DF13C-4P-1.25V" value="DF13C-4P-1.25V" x="25.8064" y="33.528" locked="yes" rot="MR180">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)" x="25.8064" y="39.624" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C401" library="pixhawk2" package="0402-CAP" value="0u1" x="24.384" y="33.1216" smashed="yes">
@@ -1804,8 +1810,12 @@ Covered vias can be set in Masks (Limit).
 <attribute name="PROD_ID" value="DIO-09646" x="23.876" y="6.7056" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="27.0256" y="6.8072" size="1.778" layer="27" display="off"/>
 </element>
-<element name="D902" library="SparkFun-DiscreteSemi" package="SMA-DIODE" value="B340A" x="22.0472" y="8.3312"/>
-<element name="D903" library="SparkFun-DiscreteSemi" package="SMA-DIODE" value="B340A" x="22.0472" y="4.8768"/>
+<element name="D902" library="SparkFun-DiscreteSemi" package="SMA-DIODE" value="B340A" x="22.0472" y="8.3312">
+<attribute name="PARTNO" value="B340A" x="22.0472" y="8.3312" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D903" library="SparkFun-DiscreteSemi" package="SMA-DIODE" value="B340A" x="22.0472" y="4.8768">
+<attribute name="PARTNO" value="B340A" x="22.0472" y="4.8768" size="1.778" layer="27" display="off"/>
+</element>
 <element name="U$601" library="PX4lite" package="PWSON10" value="TPS6303X" x="20.828" y="23.368" smashed="yes" rot="R180"/>
 <element name="L$601" library="ti_tps_soln2" package="XFL4020" value="XFL4020-222MEB" x="25.1968" y="23.2664" smashed="yes" rot="R90">
 <attribute name="IDC" value="3.7" x="25.1968" y="23.2664" size="1.778" layer="27" rot="R90" display="off"/>

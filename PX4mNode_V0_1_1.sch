@@ -6630,91 +6630,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <smd name="P$6" x="3.125" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
 <text x="-4.7" y="-1.875" size="2.54" layer="21">.</text>
 </package>
-<package name="DF13-4P-1.25DSA">
-<description>Single Row Straight Pin Header (Through hole)</description>
-<wire x1="-3.325" y1="-2.19" x2="3.325" y2="-2.19" width="0.3048" layer="21"/>
-<wire x1="-3.325" y1="1.21" x2="3.325" y2="1.21" width="0.3048" layer="21"/>
-<wire x1="-3.325" y1="1.21" x2="-3.325" y2="0" width="0.3048" layer="21"/>
-<wire x1="-3.325" y1="0" x2="-3.325" y2="-0.81" width="0.3048" layer="21"/>
-<wire x1="-3.325" y1="-0.81" x2="-3.325" y2="-2.19" width="0.3048" layer="21"/>
-<wire x1="3.325" y1="-2.19" x2="3.325" y2="-0.81" width="0.3048" layer="21"/>
-<wire x1="3.325" y1="-0.81" x2="3.325" y2="0" width="0.3048" layer="21"/>
-<wire x1="3.325" y1="0" x2="3.325" y2="1.21" width="0.3048" layer="21"/>
-<wire x1="-2.825" y1="-1.59" x2="2.825" y2="-1.59" width="0.127" layer="21"/>
-<wire x1="-2.825" y1="0.81" x2="-2.825" y2="0" width="0.127" layer="21"/>
-<wire x1="-2.825" y1="0" x2="-2.825" y2="-0.81" width="0.1" layer="21"/>
-<wire x1="-2.825" y1="-0.81" x2="-2.825" y2="-1.59" width="0.127" layer="21"/>
-<wire x1="2.825" y1="0.81" x2="2.825" y2="0" width="0.127" layer="21"/>
-<wire x1="2.825" y1="0" x2="2.825" y2="-0.81" width="0.1" layer="21"/>
-<wire x1="2.825" y1="-0.81" x2="2.825" y2="-1.59" width="0.127" layer="21"/>
-<wire x1="-2.825" y1="0.81" x2="2.825" y2="0.81" width="0.127" layer="21"/>
-<wire x1="-3.325" y1="0" x2="-2.825" y2="0" width="0.127" layer="21"/>
-<wire x1="2.825" y1="0" x2="3.325" y2="0" width="0.127" layer="21"/>
-<wire x1="-3.325" y1="-0.81" x2="-2.825" y2="-0.81" width="0.127" layer="21"/>
-<wire x1="2.825" y1="-0.81" x2="3.325" y2="-0.81" width="0.127" layer="21"/>
-<pad name="P$1" x="1.875" y="0" drill="0.6" diameter="1.016" shape="square"/>
-<pad name="P$2" x="0.625" y="0" drill="0.6" diameter="1.016"/>
-<pad name="P$3" x="-0.625" y="0" drill="0.6" diameter="1.016"/>
-<pad name="P$4" x="-1.875" y="0" drill="0.6" diameter="1.016"/>
-<text x="-3.125" y="1.875" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.125" y="-3.75" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="DF13-4P-1.25DS">
-<description>Single Row Right Angle Pin Header (Through hole)</description>
-<wire x1="-3.325" y1="-4.47" x2="3.325" y2="-4.475" width="0.3048" layer="21"/>
-<wire x1="-3.325" y1="0.9" x2="-3.325" y2="-0.98" width="0.3048" layer="21"/>
-<wire x1="-3.325" y1="-0.98" x2="-3.325" y2="-4.47" width="0.3048" layer="21"/>
-<wire x1="-3.325" y1="-0.98" x2="3.335" y2="-0.98" width="0.127" layer="21"/>
-<wire x1="-3.325" y1="-0.81" x2="-3.325" y2="-0.98" width="0.3048" layer="21"/>
-<wire x1="-3.325" y1="-0.98" x2="-3.325" y2="-2.19" width="0.3048" layer="21"/>
-<wire x1="-3.325" y1="0.9" x2="3.325" y2="0.9" width="0.3048" layer="21"/>
-<wire x1="3.325" y1="-4.475" x2="3.325" y2="0.9" width="0.3048" layer="21"/>
-<pad name="P$1" x="1.875" y="0" drill="0.6" diameter="1.016" shape="square"/>
-<pad name="P$2" x="0.625" y="0" drill="0.6" diameter="1.016"/>
-<pad name="P$3" x="-0.625" y="0" drill="0.6" diameter="1.016"/>
-<pad name="P$4" x="-1.875" y="0" drill="0.6" diameter="1.016"/>
-<text x="-3.125" y="1.575" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.125" y="-6.255" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="DF13C-4P-1.25V">
-<description>Single Row Straight Pin Header (SMT)</description>
-<wire x1="-4.075" y1="-3.6" x2="4.075" y2="-3.6" width="0.3048" layer="21"/>
-<wire x1="4.075" y1="-3.6" x2="4.075" y2="0" width="0.3048" layer="21"/>
-<wire x1="4.075" y1="0" x2="-4.075" y2="0" width="0.3048" layer="21"/>
-<wire x1="-4.075" y1="0" x2="-4.075" y2="-3.6" width="0.3048" layer="21"/>
-<smd name="M$1" x="-4.325" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
-<smd name="M$0" x="4.325" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
-<smd name="P$1" x="-1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
-<smd name="P$2" x="-0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
-<smd name="P$3" x="0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
-<smd name="P$4" x="1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
-<text x="-3.475" y="1.525" size="2.54" layer="21">.</text>
-<rectangle x1="-2.5" y1="-2.475" x2="2.5" y2="-0.1" layer="39"/>
-</package>
-<package name="DF13A-4P-1.25H">
-<description>Single Row Straight Pin Header (SMT)</description>
-<wire x1="-3.65" y1="0.3" x2="3.65" y2="0.3" width="0.3048" layer="21"/>
-<wire x1="4.075" y1="0.9" x2="4.075" y2="4.5" width="0.3048" layer="21"/>
-<wire x1="3.65" y1="5.3" x2="-3.65" y2="5.3" width="0.3048" layer="21"/>
-<wire x1="-4.075" y1="4.5" x2="-4.075" y2="0.9" width="0.3048" layer="21"/>
-<wire x1="-3.65" y1="5.3" x2="-3.65" y2="4.5" width="0.3048" layer="21"/>
-<wire x1="-3.65" y1="4.5" x2="-4.075" y2="4.5" width="0.3048" layer="21"/>
-<wire x1="3.65" y1="5.3" x2="3.65" y2="4.5" width="0.3048" layer="21"/>
-<wire x1="3.65" y1="4.5" x2="4.075" y2="4.5" width="0.3048" layer="21"/>
-<wire x1="-3.65" y1="0.3" x2="-3.65" y2="0.9" width="0.3048" layer="21"/>
-<wire x1="-3.65" y1="0.9" x2="-4.075" y2="0.9" width="0.3048" layer="21"/>
-<wire x1="3.65" y1="0.3" x2="3.65" y2="0.9" width="0.3048" layer="21"/>
-<wire x1="3.65" y1="0.9" x2="4.075" y2="0.9" width="0.3048" layer="21"/>
-<wire x1="-3.65" y1="4.5" x2="-3.65" y2="0.9" width="0.127" layer="21"/>
-<wire x1="3.65" y1="4.5" x2="3.65" y2="0.9" width="0.127" layer="21"/>
-<smd name="P$1" x="-1.875" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
-<smd name="P$2" x="-0.625" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
-<smd name="M$0" x="-4.225" y="2.4" dx="1.6" dy="2.2" layer="1"/>
-<smd name="M$1" x="4.225" y="2.4" dx="1.6" dy="2.2" layer="1"/>
-<smd name="P$3" x="0.625" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
-<smd name="P$4" x="1.875" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
-<text x="-3.45" y="-1.875" size="2.54" layer="21">.</text>
-</package>
 <package name="DF13-3P-1.25DSA">
 <description>Single Row Straight Pin Header (Through hole)</description>
 <wire x1="-2.7" y1="-2.19" x2="2.7" y2="-2.19" width="0.3048" layer="21"/>
@@ -6919,26 +6834,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <pin name="5" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1"/>
 <pin name="6" x="-5.08" y="-7.62" visible="pad" length="short" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="CON-1X4P">
-<wire x1="1.905" y1="3.81" x2="-1.905" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="-6.35" x2="-1.905" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="-6.35" x2="1.905" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="1.905" y1="3.81" x2="1.905" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="-0.635" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="-5.08" x2="0.635" y2="-5.08" width="0.4064" layer="94"/>
-<text x="-1.905" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.905" y="-9.2075" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-<pin name="3" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
-<pin name="4" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1"/>
-</symbol>
 <symbol name="CON-1X3P">
 <wire x1="1.905" y1="3.81" x2="-1.905" y2="3.81" width="0.254" layer="94"/>
 <wire x1="-1.905" y1="-3.81" x2="-1.905" y2="3.81" width="0.254" layer="94"/>
@@ -7041,59 +6936,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <connect gate="G$1" pin="4" pad="P$4"/>
 <connect gate="G$1" pin="5" pad="P$5"/>
 <connect gate="G$1" pin="6" pad="P$6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="DF13-4P-1.25">
-<description>DF13-4P
-1.25mm Pitch Miniature Crimping Connector.</description>
-<gates>
-<gate name="G$1" symbol="CON-1X4P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="DSA" package="DF13-4P-1.25DSA">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="DS" package="DF13-4P-1.25DS">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="V" package="DF13C-4P-1.25V">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="H" package="DF13A-4P-1.25H">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9676,6 +9518,172 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="PX4FMUlite_V0_1">
+<description>Generated from &lt;b&gt;PX4FMUlite_V0_1.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="DF13C-4P-1.25V">
+<description>Single Row Straight Pin Header (SMT)</description>
+<wire x1="-4.075" y1="-3.6" x2="4.075" y2="-3.6" width="0.3048" layer="21"/>
+<wire x1="4.075" y1="-3.6" x2="4.075" y2="0" width="0.3048" layer="21"/>
+<wire x1="4.075" y1="0" x2="-4.075" y2="0" width="0.3048" layer="21"/>
+<wire x1="-4.075" y1="0" x2="-4.075" y2="-3.6" width="0.3048" layer="21"/>
+<rectangle x1="-2.5" y1="-2.475" x2="2.5" y2="-0.1" layer="39"/>
+<smd name="M$0" x="4.325" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="M$1" x="-4.325" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="P$1" x="-1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$2" x="-0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$3" x="0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$4" x="1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<text x="-3.475" y="1.525" size="2.54" layer="21">.</text>
+</package>
+<package name="DF13-4P-1.25DS">
+<description>Single Row Right Angle Pin Header (Through hole)</description>
+<wire x1="-3.325" y1="-4.47" x2="3.325" y2="-4.475" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="0.9" x2="-3.325" y2="-0.98" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="-0.98" x2="-3.325" y2="-4.47" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="-0.98" x2="3.335" y2="-0.98" width="0.127" layer="21"/>
+<wire x1="-3.325" y1="0.9" x2="3.325" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="3.325" y1="-4.475" x2="3.325" y2="0.9" width="0.3048" layer="21"/>
+<pad name="P$1" x="1.875" y="0" drill="0.6" diameter="1.016" shape="square"/>
+<pad name="P$2" x="0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$3" x="-0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$4" x="-1.875" y="0" drill="0.6" diameter="1.016"/>
+<text x="-3.125" y="1.575" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.125" y="-6.255" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="DF13-4P-1.25DSA">
+<description>Single Row Straight Pin Header (Through hole)</description>
+<wire x1="-3.325" y1="-2.19" x2="3.325" y2="-2.19" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="1.21" x2="3.325" y2="1.21" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="1.21" x2="-3.325" y2="0" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="0" x2="-3.325" y2="-0.81" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="-0.81" x2="-3.325" y2="-2.19" width="0.3048" layer="21"/>
+<wire x1="3.325" y1="-2.19" x2="3.325" y2="-0.81" width="0.3048" layer="21"/>
+<wire x1="3.325" y1="-0.81" x2="3.325" y2="0" width="0.3048" layer="21"/>
+<wire x1="3.325" y1="0" x2="3.325" y2="1.21" width="0.3048" layer="21"/>
+<wire x1="-2.825" y1="-1.59" x2="2.825" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="-2.825" y1="0.81" x2="-2.825" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.825" y1="0" x2="-2.825" y2="-0.81" width="0.1" layer="21"/>
+<wire x1="-2.825" y1="-0.81" x2="-2.825" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="2.825" y1="0.81" x2="2.825" y2="0" width="0.127" layer="21"/>
+<wire x1="2.825" y1="0" x2="2.825" y2="-0.81" width="0.1" layer="21"/>
+<wire x1="2.825" y1="-0.81" x2="2.825" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="-2.825" y1="0.81" x2="2.825" y2="0.81" width="0.127" layer="21"/>
+<wire x1="-3.325" y1="0" x2="-2.825" y2="0" width="0.127" layer="21"/>
+<wire x1="2.825" y1="0" x2="3.325" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.325" y1="-0.81" x2="-2.825" y2="-0.81" width="0.127" layer="21"/>
+<wire x1="2.825" y1="-0.81" x2="3.325" y2="-0.81" width="0.127" layer="21"/>
+<pad name="P$1" x="1.875" y="0" drill="0.6" diameter="1.016" shape="square"/>
+<pad name="P$2" x="0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$3" x="-0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$4" x="-1.875" y="0" drill="0.6" diameter="1.016"/>
+<text x="-3.125" y="1.875" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.125" y="-3.75" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="DF13A-4P-1.25H">
+<description>Single Row Straight Pin Header (SMT)</description>
+<wire x1="-3.65" y1="0.3" x2="3.65" y2="0.3" width="0.3048" layer="21"/>
+<wire x1="4.075" y1="0.9" x2="4.075" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="5.3" x2="-3.65" y2="5.3" width="0.3048" layer="21"/>
+<wire x1="-4.075" y1="4.5" x2="-4.075" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="5.3" x2="-3.65" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="4.5" x2="-4.075" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="5.3" x2="3.65" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="4.5" x2="4.075" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="0.3" x2="-3.65" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="0.9" x2="-4.075" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="0.3" x2="3.65" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="0.9" x2="4.075" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="4.5" x2="-3.65" y2="0.9" width="0.127" layer="21"/>
+<wire x1="3.65" y1="4.5" x2="3.65" y2="0.9" width="0.127" layer="21"/>
+<smd name="M$0" x="-4.225" y="2.4" dx="1.6" dy="2.2" layer="1"/>
+<smd name="M$1" x="4.225" y="2.4" dx="1.6" dy="2.2" layer="1"/>
+<smd name="P$1" x="-1.875" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$2" x="-0.625" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$3" x="0.625" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$4" x="1.875" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<text x="-3.45" y="-1.875" size="2.54" layer="21">.</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CON-1X4P">
+<wire x1="1.905" y1="3.81" x2="-1.905" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-6.35" x2="-1.905" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-6.35" x2="1.905" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="1.905" y1="3.81" x2="1.905" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-0.635" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="-5.08" x2="0.635" y2="-5.08" width="0.4064" layer="94"/>
+<pin name="1" x="-5.08" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="3" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="4" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<text x="-1.905" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.905" y="-9.2075" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DF13-4P-1.25">
+<description>DF13-4P
+1.25mm Pitch Miniature Crimping Connector.</description>
+<gates>
+<gate name="G$1" symbol="CON-1X4P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DS" package="DF13-4P-1.25DS">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DSA" package="DF13-4P-1.25DSA">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="H" package="DF13A-4P-1.25H">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="V" package="DF13C-4P-1.25V">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9828,7 +9836,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
 </part>
-<part name="J301" library="con-hirose-df13" deviceset="DF13-4P-1.25" device="V" value="DF13C-4P-1.25V">
+<part name="J301" library="PX4FMUlite_V0_1" deviceset="DF13-4P-1.25" device="V" value="DF13C-4P-1.25V">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)"/>
 </part>
 <part name="R706" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="1K">
@@ -9862,7 +9870,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="PARTNO" value="KNH16C104DA5TS"/>
 </part>
 <part name="GND31" library="pixhawk2" deviceset="GND" device=""/>
-<part name="J403" library="con-hirose-df13" deviceset="DF13-4P-1.25" device="V" value="DF13C-4P-1.25V">
+<part name="J403" library="PX4FMUlite_V0_1" deviceset="DF13-4P-1.25" device="V" value="DF13C-4P-1.25V">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)"/>
 </part>
 <part name="R408" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="120R">
@@ -9873,7 +9881,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U402" library="pixhawk2" deviceset="MAX3051" device="MAX3051EKA" value="MAX3051">
 <attribute name="PARTNO" value="MAX3051EKA"/>
 </part>
-<part name="J405" library="con-hirose-df13" deviceset="DF13-4P-1.25" device="V" value="DF13C-4P-1.25V">
+<part name="J405" library="PX4FMUlite_V0_1" deviceset="DF13-4P-1.25" device="V" value="DF13C-4P-1.25V">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)"/>
 </part>
 <part name="C402" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
@@ -9960,7 +9968,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="PARTNO" value="KNH16C104DA5TS"/>
 </part>
 <part name="GND15" library="pixhawk2" deviceset="GND" device=""/>
-<part name="J402" library="con-hirose-df13" deviceset="DF13-4P-1.25" device="V" value="DF13-4P-1.25V">
+<part name="J402" library="PX4FMUlite_V0_1" deviceset="DF13-4P-1.25" device="V" value="DF13C-4P-1.25V">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)"/>
 </part>
 <part name="R401" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="1K5">
@@ -9998,7 +10006,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U401" library="pixhawk2" deviceset="MAX3051" device="MAX3051EKA" value="MAX3051">
 <attribute name="PARTNO" value="MAX3051EKA"/>
 </part>
-<part name="J404" library="con-hirose-df13" deviceset="DF13-4P-1.25" device="V" value="DF13C-4P-1.25V">
+<part name="J404" library="PX4FMUlite_V0_1" deviceset="DF13-4P-1.25" device="V" value="DF13C-4P-1.25V">
 <attribute name="PARTNO" value="DF13C-4P-1.25V(20)"/>
 </part>
 <part name="C401" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
@@ -10036,8 +10044,12 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="D901" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="D902" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="B340A"/>
-<part name="D903" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="B340A"/>
+<part name="D902" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="B340A">
+<attribute name="PARTNO" value="B340A"/>
+</part>
+<part name="D903" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="B340A">
+<attribute name="PARTNO" value="B340A"/>
+</part>
 <part name="U$601" library="PX4lite" deviceset="TPS6303X" device=""/>
 <part name="L$601" library="ti_tps_soln2" deviceset="XFL4020-222MEB" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
@@ -10146,7 +10158,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <sheet>
 <plain>
 <text x="162.56" y="15.24" size="2.1844" layer="94" font="vector" ratio="10">FMU SoC Ports
-FRAM</text>
+</text>
 <text x="7.62" y="5.08" size="1.27" layer="91">Note: MAG/ACCEL/GYRO_DRDY pins chosen
 for both timer capture and separate
 EXTI operaton.
@@ -10789,7 +10801,9 @@ Spektrum 3v3 EN</text>
 </sheet>
 <sheet>
 <plain>
-<text x="165.1" y="17.78" size="2.1844" layer="94">FMU Serial ports</text>
+<text x="165.1" y="17.78" size="2.1844" layer="94">FMU Serial ports
+SBUS interface
+Spektrum interface</text>
 <text x="233.68" y="121.92" size="1.778" layer="97">SERIAL2</text>
 <text x="233.68" y="154.94" size="1.778" layer="97">SERIAL1</text>
 <text x="233.68" y="83.82" size="1.778" layer="97">SERIAL3</text>
@@ -11302,7 +11316,7 @@ RELY ON OUTPUT CAPACITANCE</text>
 <plain>
 <text x="162.56" y="12.7" size="2.1844" layer="94">USB
 Flash
-Expansion</text>
+SWD Debug connector</text>
 <text x="93.98" y="111.76" size="1.4224" layer="97">To be used with panel-
 mount micro USB connectors:
  - Amphenol MUSBK15230</text>
@@ -11524,9 +11538,8 @@ mount micro USB connectors:
 <text x="93.98" y="20.32" size="1.778" layer="97">I2C1</text>
 <text x="228.6" y="170.18" size="1.778" layer="97">AUX ADC PORTS</text>
 <text x="165.1" y="7.62" size="1.778" layer="94">SPI
-I2C
-Analog pressure
-CAN
+Dual I2C
+Dual CAN
 Aux ADC ports</text>
 <text x="22.86" y="170.18" size="1.778" layer="91">Note: SPI port is UNBUFFERED; only suitable for short connections.</text>
 <text x="93.98" y="83.82" size="1.778" layer="97">I2C1</text>
@@ -12292,7 +12305,7 @@ Aux ADC ports</text>
 </sheet>
 <sheet>
 <plain>
-<text x="165.1" y="17.78" size="2.1844" layer="94">Power source selector</text>
+<text x="165.1" y="17.78" size="2.1844" layer="94">Power regulation</text>
 </plain>
 <instances>
 <instance part="FRAME11" gate="G$1" x="0" y="0"/>
@@ -12443,7 +12456,10 @@ Aux ADC ports</text>
 </sheet>
 <sheet>
 <plain>
-<text x="165.1" y="17.78" size="1.9304" layer="94" font="vector" ratio="10">FMU Power and Reset</text>
+<text x="165.1" y="7.62" size="1.9304" layer="94" font="vector" ratio="10">FMU Power
+FMU Reset
+Battery backup
+Peripheral power control</text>
 <text x="187.96" y="170.18" size="1.27" layer="97" font="vector">Bypass caps as close to device pins as possible.</text>
 <text x="71.12" y="160.02" size="1.27" layer="97">Note: Maximise copper area connected 
 to center ground pad.</text>
@@ -13019,7 +13035,6 @@ to reset de-asserted.</text>
 <sheet>
 <plain>
 <text x="165.1" y="10.16" size="2.1844" layer="94">LEDs
-Piezo driver
 Safety switch</text>
 <text x="78.74" y="78.74" size="1.778" layer="97">Switch: E-Switch LP1OA1AR</text>
 <text x="134.62" y="68.58" size="1.778" layer="97">SAFETY</text>
@@ -13221,8 +13236,12 @@ PA11: TIM1_CH4: RSSI_IN</text>
 <instance part="D901" gate="G$1" x="81.28" y="86.36" rot="R90">
 <attribute name="BOM" x="81.28" y="86.36" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="D902" gate="G$1" x="104.14" y="127"/>
-<instance part="D903" gate="G$1" x="116.84" y="139.7" rot="R270"/>
+<instance part="D902" gate="G$1" x="104.14" y="127">
+<attribute name="PARTNO" x="104.14" y="127" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D903" gate="G$1" x="116.84" y="139.7" rot="R270">
+<attribute name="PARTNO" x="116.84" y="139.7" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="JP901" gate="G$1" x="66.04" y="154.94">
 <attribute name="BOM" x="66.04" y="154.94" size="1.778" layer="96" display="off"/>
 </instance>
@@ -13325,8 +13344,7 @@ PA11: TIM1_CH4: RSSI_IN</text>
 <plain>
 <text x="165.1" y="15.24" size="2.1844" layer="94">Servo Header
 S.Bus interface</text>
-<text x="12.7" y="167.64" size="1.778" layer="97">Servo outputs</text>
-<text x="137.16" y="154.94" size="1.778" layer="91">1206L150/12SL littlefuse</text>
+<text x="96.52" y="147.32" size="1.778" layer="97">Servo outputs</text>
 </plain>
 <instances>
 <instance part="FRAME8" gate="G$1" x="0" y="0"/>
@@ -13341,7 +13359,7 @@ S.Bus interface</text>
 <instance part="GND5" gate="1" x="144.78" y="106.68"/>
 <instance part="L1001" gate="G$9" x="144.78" y="116.84"/>
 <instance part="J1001" gate="-GND" x="154.94" y="111.76"/>
-<instance part="J1001" gate="-VCC" x="66.04" y="152.4"/>
+<instance part="J1001" gate="-VCC" x="167.64" y="137.16"/>
 <instance part="J1001" gate="-CH1" x="101.6" y="99.06"/>
 <instance part="J1001" gate="-CH2" x="101.6" y="104.14"/>
 <instance part="J1001" gate="-CH3" x="101.6" y="109.22"/>
@@ -13440,9 +13458,9 @@ S.Bus interface</text>
 </net>
 <net name="V_SERVO" class="1">
 <segment>
-<label x="50.8" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="152.4" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="J1001" gate="-VCC" pin="S"/>
-<wire x1="63.5" y1="152.4" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="137.16" x2="152.4" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
