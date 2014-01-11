@@ -9977,7 +9977,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </part>
 <part name="GND17" library="pixhawk2" deviceset="GND" device=""/>
 <part name="L402" library="PX4lite" deviceset="NUF8402MN" device=""/>
-<part name="SJ403" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="TRACE"/>
+<part name="SJ403" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC2" value="SOLDERJUMPERNC2"/>
 <part name="J$401" library="PX4lite" deviceset="HEADER-3X1" device="BOARDEDGE-SHORT"/>
 <part name="C403" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
@@ -10006,7 +10006,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="U$403" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
 <attribute name="PARTNO" value="PESD0402-140"/>
 </part>
-<part name="SJ402" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="TRACE"/>
+<part name="SJ402" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC2" value="SOLDERJUMPERNC2"/>
 <part name="U$501" library="PX4lite" deviceset="MAX21100" device=""/>
 <part name="C503" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
