@@ -10104,15 +10104,15 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="D701" library="pixhawk2" deviceset="DIODE-SCHOTTKY" device="_MSMP" value="MSS1P4-M3">
 <attribute name="PARTNO" value="MSS1P4-M3/89A"/>
 </part>
-<part name="JP1" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
-<part name="R1" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="220R">
+<part name="JP1001" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
+<part name="JP1002" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
+<part name="R1001" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="220R">
 <attribute name="PARTNO" value="RC0402FR-07220RL"/>
 </part>
-<part name="R2" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="220R">
+<part name="R1002" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="220R">
 <attribute name="PARTNO" value="RC0402FR-07220RL"/>
 </part>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
+<part name="JP702" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5"/>
 </parts>
 <sheets>
 <sheet>
@@ -12531,7 +12531,7 @@ to reset de-asserted.</text>
 <attribute name="NAME" x="210.3374" y="127" size="1.778" layer="95" rot="MR270"/>
 <attribute name="PARTNO" x="205.74" y="127" size="1.778" layer="96" rot="MR90" display="off"/>
 </instance>
-<instance part="JP3" gate="G$1" x="195.58" y="91.44"/>
+<instance part="JP702" gate="G$1" x="195.58" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -12595,7 +12595,7 @@ to reset de-asserted.</text>
 <pinref part="U101" gate="BAT" pin="VSSA"/>
 <wire x1="233.68" y1="91.44" x2="233.68" y2="96.52" width="0.1524" layer="91"/>
 <junction x="223.52" y="91.44"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="JP702" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="91.44" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -13298,12 +13298,12 @@ S.Bus interface</text>
 <instance part="J1001" gate="-CH6" x="101.6" y="124.46"/>
 <instance part="J1001" gate="-CH7" x="101.6" y="129.54"/>
 <instance part="J1001" gate="-CH8" x="101.6" y="134.62"/>
-<instance part="JP1" gate="G$1" x="106.68" y="71.12" rot="R180"/>
-<instance part="JP2" gate="G$1" x="106.68" y="53.34" rot="R180"/>
-<instance part="R1" gate="G$1" x="71.12" y="71.12" rot="R180">
+<instance part="JP1001" gate="G$1" x="106.68" y="71.12" rot="R180"/>
+<instance part="JP1002" gate="G$1" x="106.68" y="53.34" rot="R180"/>
+<instance part="R1001" gate="G$1" x="71.12" y="71.12" rot="R180">
 <attribute name="PARTNO" x="71.12" y="71.12" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="R2" gate="G$1" x="71.12" y="53.34" rot="R180">
+<instance part="R1002" gate="G$1" x="71.12" y="53.34" rot="R180">
 <attribute name="PARTNO" x="71.12" y="53.34" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 </instances>
@@ -13442,15 +13442,15 @@ S.Bus interface</text>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="JP1001" gate="G$1" pin="1"/>
+<pinref part="R1001" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="71.12" x2="76.2" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="JP1002" gate="G$1" pin="1"/>
+<pinref part="R1002" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="53.34" x2="76.2" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13458,14 +13458,14 @@ S.Bus interface</text>
 <segment>
 <wire x1="40.64" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
 <label x="40.64" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R1001" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="FMU-CH10" class="0">
 <segment>
 <label x="40.64" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="40.64" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R1002" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
