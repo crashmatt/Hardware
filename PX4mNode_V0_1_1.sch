@@ -7092,29 +7092,29 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 </package>
 <package name="WSON-8-5X6">
 <description>5*6mm 8DFN-EP</description>
-<wire x1="-2.25" y1="-3.03125" x2="-2.25" y2="3.03125" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="3.03125" x2="2.25" y2="3.03125" width="0.127" layer="51"/>
-<wire x1="2.25" y1="3.03125" x2="2.25" y2="-3.03125" width="0.127" layer="51"/>
-<wire x1="2.25" y1="-3.03125" x2="-2.25" y2="-3.03125" width="0.127" layer="51"/>
-<wire x1="-2.25" y1="1" x2="-2.25" y2="-1" width="0.127" layer="21"/>
-<wire x1="2.25" y1="1" x2="2.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-3.03125" x2="-2.5" y2="3.03125" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="3.03125" x2="2.5" y2="3.03125" width="0.127" layer="51"/>
+<wire x1="2.5" y1="3.03125" x2="2.5" y2="-3.03125" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-3.03125" x2="-2.5" y2="-3.03125" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="2" x2="-2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2" x2="2.5" y2="-2" width="0.127" layer="21"/>
 <circle x="-1.859375" y="-1.9375" radius="0.05" width="0.5" layer="21"/>
-<rectangle x1="-0.6875" y1="-2.953125" x2="-0.4375" y2="-2.653125" layer="51"/>
-<rectangle x1="-1.96875" y1="-2.953125" x2="-1.71875" y2="-2.653125" layer="51"/>
-<rectangle x1="0.59375" y1="-2.953125" x2="0.84375" y2="-2.653125" layer="51"/>
-<rectangle x1="1.875" y1="-2.953125" x2="2.125" y2="-2.653125" layer="51"/>
-<rectangle x1="0.59375" y1="2.653125" x2="0.84375" y2="2.953125" layer="51" rot="R180"/>
-<rectangle x1="1.875" y1="2.653125" x2="2.125" y2="2.953125" layer="51" rot="R180"/>
+<rectangle x1="-0.7875" y1="-2.953125" x2="-0.5375" y2="-2.653125" layer="51"/>
+<rectangle x1="-2.06875" y1="-2.953125" x2="-1.81875" y2="-2.653125" layer="51"/>
+<rectangle x1="0.49375" y1="-2.953125" x2="0.74375" y2="-2.653125" layer="51"/>
+<rectangle x1="1.775" y1="-2.953125" x2="2.025" y2="-2.653125" layer="51"/>
+<rectangle x1="0.49375" y1="2.653125" x2="0.74375" y2="2.953125" layer="51" rot="R180"/>
+<rectangle x1="1.775" y1="2.653125" x2="2.025" y2="2.953125" layer="51" rot="R180"/>
 <rectangle x1="-0.765625" y1="2.653125" x2="-0.515625" y2="2.953125" layer="51" rot="R180"/>
-<rectangle x1="-1.96875" y1="2.653125" x2="-1.71875" y2="2.953125" layer="51" rot="R180"/>
-<smd name="1" x="-1.875" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
-<smd name="2" x="-0.605" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
-<smd name="3" x="0.665" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
-<smd name="4" x="1.935" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
-<smd name="5" x="1.935" y="2.625" dx="0.5" dy="0.75" layer="1"/>
-<smd name="6" x="0.665" y="2.625" dx="0.5" dy="0.75" layer="1"/>
-<smd name="7" x="-0.605" y="2.625" dx="0.5" dy="0.75" layer="1"/>
-<smd name="8" x="-1.875" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<rectangle x1="-2.06875" y1="2.653125" x2="-1.81875" y2="2.953125" layer="51" rot="R180"/>
+<smd name="1" x="-1.905" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="2" x="-0.635" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="3" x="0.635" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="4" x="1.905" y="-2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="5" x="1.905" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="6" x="0.635" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="7" x="-0.635" y="2.625" dx="0.5" dy="0.75" layer="1"/>
+<smd name="8" x="-1.905" y="2.625" dx="0.5" dy="0.75" layer="1"/>
 <smd name="PAD" x="0" y="0" dx="4" dy="3.4" layer="1" cream="no"/>
 <rectangle x1="-0.5" y1="0.7" x2="0.5" y2="1.6" layer="31"/>
 <rectangle x1="-0.5" y1="-1.6" x2="0.5" y2="-0.7" layer="31"/>
@@ -7125,6 +7125,10 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <rectangle x1="-0.5" y1="-0.45" x2="0.5" y2="0.45" layer="31"/>
 <rectangle x1="0.8" y1="-0.45" x2="1.8" y2="0.45" layer="31"/>
 <rectangle x1="-1.8" y1="-0.45" x2="-0.8" y2="0.45" layer="31"/>
+<wire x1="-3" y1="3.5" x2="3" y2="3.5" width="0.127" layer="39"/>
+<wire x1="3" y1="3.5" x2="3" y2="-3.5" width="0.127" layer="39"/>
+<wire x1="3" y1="-3.5" x2="-3" y2="-3.5" width="0.127" layer="39"/>
+<wire x1="-3" y1="-3.5" x2="-3" y2="3.5" width="0.127" layer="39"/>
 </package>
 <package name="3X1-BOARD-EDGE">
 <wire x1="1.324" y1="3.81" x2="-4.826" y2="3.81" width="0.2" layer="21"/>
@@ -7557,7 +7561,7 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <connect gate="G$1" pin="CLK" pad="6"/>
 <connect gate="G$1" pin="DI/IO0" pad="5"/>
 <connect gate="G$1" pin="DO/IO1" pad="2"/>
-<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="GND" pad="4 PAD"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
