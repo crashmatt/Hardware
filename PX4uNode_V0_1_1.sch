@@ -10766,9 +10766,6 @@ Pogo pins- HW-11044</description>
 <part name="R406" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K/0.1%">
 <attribute name="PARTNO" value="ERA-2AEB103X"/>
 </part>
-<part name="L406" library="PX4lite" deviceset="KNH16C104DA5TS" device="">
-<attribute name="PARTNO" value="KNH16C104DA5TS"/>
-</part>
 <part name="L204" library="PX4lite" deviceset="KNH16C104DA5TS" device="">
 <attribute name="PARTNO" value="KNH16C104DA5TS"/>
 </part>
@@ -10796,9 +10793,6 @@ Pogo pins- HW-11044</description>
 <attribute name="PARTNO" value="PESD0402-140"/>
 </part>
 <part name="U$205" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
-<attribute name="PARTNO" value="PESD0402-140"/>
-</part>
-<part name="U$404" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
 <attribute name="PARTNO" value="PESD0402-140"/>
 </part>
 <part name="U$402" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
@@ -10839,12 +10833,6 @@ Pogo pins- HW-11044</description>
 </part>
 <part name="R403" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="1K5">
 <attribute name="PARTNO" value="RC0402FR-071K5L"/>
-</part>
-<part name="U$401" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
-<attribute name="PARTNO" value="PESD0402-140"/>
-</part>
-<part name="L403" library="PX4lite" deviceset="KNH16C104DA5TS" device="">
-<attribute name="PARTNO" value="KNH16C104DA5TS"/>
 </part>
 <part name="GND17" library="pixhawk2" deviceset="GND" device=""/>
 <part name="L402" library="PX4lite" deviceset="NUF8402MN" device=""/>
@@ -10961,9 +10949,6 @@ Pogo pins- HW-11044</description>
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
 <part name="JP701" library="SparkFun-Connectors" deviceset="M01" device="SMD-4.5X1.5">
-<attribute name="BOM" value="EXCLUDE"/>
-</part>
-<part name="SJ401" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NO">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 <part name="U$202" library="pixhawk2" deviceset="74LVC2GU04" device="">
@@ -12427,12 +12412,6 @@ Aux ADC ports</text>
 <instance part="R406" gate="G$1" x="185.42" y="165.1">
 <attribute name="PARTNO" x="185.42" y="165.1" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="L406" gate="G$1" x="182.88" y="66.04">
-<attribute name="PARTNO" x="182.88" y="66.04" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$404" gate="G$1" x="226.06" y="58.42" rot="R90">
-<attribute name="PARTNO" x="226.06" y="58.42" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="U$402" gate="G$1" x="78.74" y="33.02" rot="R90">
 <attribute name="PARTNO" x="78.74" y="33.02" size="1.778" layer="96" display="off"/>
 </instance>
@@ -12445,12 +12424,6 @@ Aux ADC ports</text>
 </instance>
 <instance part="R403" gate="G$1" x="43.18" y="101.6" rot="R90">
 <attribute name="PARTNO" x="43.18" y="101.6" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
-<instance part="U$401" gate="G$1" x="78.74" y="93.98" rot="R90">
-<attribute name="PARTNO" x="78.74" y="93.98" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="L403" gate="G$1" x="71.12" y="114.3">
-<attribute name="PARTNO" x="71.12" y="114.3" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND17" gate="1" x="144.78" y="132.08"/>
 <instance part="L402" gate="G$2" x="50.8" y="88.9"/>
@@ -12471,8 +12444,8 @@ Aux ADC ports</text>
 <instance part="C404" gate="G$1" x="205.74" y="152.4">
 <attribute name="PARTNO" x="205.74" y="152.4" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R407" gate="G$1" x="193.04" y="106.68">
-<attribute name="PARTNO" x="193.04" y="106.68" size="1.778" layer="96" display="off"/>
+<instance part="R407" gate="G$1" x="205.74" y="106.68">
+<attribute name="PARTNO" x="205.74" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND20" gate="1" x="193.04" y="91.44"/>
 <instance part="GND21" gate="1" x="152.4" y="78.74"/>
@@ -12488,11 +12461,8 @@ Aux ADC ports</text>
 <instance part="U$403" gate="G$1" x="226.06" y="106.68" rot="R90">
 <attribute name="PARTNO" x="226.06" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SJ402" gate="1" x="205.74" y="106.68">
-<attribute name="BOM" x="205.74" y="106.68" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="SJ401" gate="1" x="134.62" y="114.3">
-<attribute name="BOM" x="134.62" y="114.3" size="1.778" layer="96" display="off"/>
+<instance part="SJ402" gate="1" x="193.04" y="106.68">
+<attribute name="BOM" x="193.04" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="JP5" gate="G$1" x="99.06" y="83.82" rot="R180"/>
 <instance part="JP6" gate="G$1" x="99.06" y="20.32" rot="R180"/>
@@ -12678,31 +12648,6 @@ Aux ADC ports</text>
 <wire x1="180.34" y1="165.1" x2="170.18" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$48" class="1">
-<segment>
-<wire x1="236.22" y1="55.88" x2="236.22" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="L406" gate="G$1" pin="P$2"/>
-<wire x1="236.22" y1="66.04" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$404" gate="G$1" pin="C"/>
-<wire x1="226.06" y1="66.04" x2="187.96" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="60.96" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
-<junction x="226.06" y="66.04"/>
-<pinref part="JP7" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$42" class="1">
-<segment>
-<wire x1="93.98" y1="22.86" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="22.86" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$402" gate="G$1" pin="C"/>
-<wire x1="78.74" y1="35.56" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="L404" gate="G$1" pin="P$2"/>
-<wire x1="78.74" y1="53.34" x2="76.2" y2="53.34" width="0.1524" layer="91"/>
-<junction x="78.74" y="53.34"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="FMU_AUX_ADC2_PROT" class="0">
 <segment>
 <pinref part="R406" gate="G$1" pin="2"/>
@@ -12750,17 +12695,21 @@ Aux ADC ports</text>
 <pinref part="JP5" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="N$21" class="1">
+<net name="IC2_VDD_5V" class="1">
 <segment>
 <wire x1="93.98" y1="86.36" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="86.36" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="U$401" gate="G$1" pin="C"/>
-<wire x1="78.74" y1="96.52" x2="78.74" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="114.3" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="L403" gate="G$1" pin="P$2"/>
-<wire x1="78.74" y1="114.3" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
-<junction x="78.74" y="114.3"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="22.86" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="22.86" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U$402" gate="G$1" pin="C"/>
+<wire x1="78.74" y1="35.56" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="L404" gate="G$1" pin="P$2"/>
+<wire x1="78.74" y1="53.34" x2="76.2" y2="53.34" width="0.1524" layer="91"/>
+<junction x="78.74" y="53.34"/>
+<pinref part="JP6" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="86.36" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
+<junction x="83.82" y="53.34"/>
 </segment>
 </net>
 <net name="FMU-I2C2_SCL" class="0">
@@ -12787,16 +12736,9 @@ Aux ADC ports</text>
 </net>
 <net name="GND" class="1">
 <segment>
-<wire x1="78.74" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U$401" gate="G$1" pin="A"/>
-<wire x1="78.74" y1="91.44" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
-<junction x="78.74" y="78.74"/>
-<pinref part="L403" gate="G$1" pin="P$3"/>
-<wire x1="71.12" y1="109.22" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="78.74" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="71.12" y1="76.2" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
-<junction x="71.12" y="78.74"/>
 <pinref part="JP5" gate="G$1" pin="4"/>
 </segment>
 <segment>
@@ -12836,8 +12778,7 @@ Aux ADC ports</text>
 <junction x="152.4" y="38.1"/>
 </segment>
 <segment>
-<wire x1="236.22" y1="48.26" x2="226.06" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="48.26" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="48.26" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="48.26" x2="193.04" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="58.42" x2="182.88" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="58.42" x2="182.88" y2="48.26" width="0.1524" layer="91"/>
@@ -12849,12 +12790,6 @@ Aux ADC ports</text>
 <pinref part="GND55" gate="1" pin="GND"/>
 <pinref part="U402" gate="G$1" pin="RS"/>
 <pinref part="U402" gate="G$1" pin="SHDN"/>
-<pinref part="L406" gate="G$1" pin="P$3"/>
-<wire x1="182.88" y1="58.42" x2="182.88" y2="60.96" width="0.1524" layer="91"/>
-<junction x="182.88" y="58.42"/>
-<pinref part="U$404" gate="G$1" pin="A"/>
-<wire x1="226.06" y1="55.88" x2="226.06" y2="48.26" width="0.1524" layer="91"/>
-<junction x="226.06" y="48.26"/>
 <pinref part="JP7" gate="G$1" pin="4"/>
 </segment>
 <segment>
@@ -12914,21 +12849,19 @@ Aux ADC ports</text>
 </net>
 <net name="N$28" class="1">
 <segment>
-<wire x1="236.22" y1="104.14" x2="236.22" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="104.14" x2="233.68" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="104.14" x2="233.68" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="L405" gate="G$1" pin="P$2"/>
-<wire x1="236.22" y1="114.3" x2="226.06" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="114.3" x2="226.06" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U$403" gate="G$1" pin="C"/>
 <wire x1="226.06" y1="114.3" x2="187.96" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="109.22" x2="226.06" y2="114.3" width="0.1524" layer="91"/>
 <junction x="226.06" y="114.3"/>
 <pinref part="JP8" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="R407" gate="G$1" pin="2"/>
-<pinref part="SJ402" gate="1" pin="1"/>
-<wire x1="198.12" y1="106.68" x2="200.66" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="104.14" x2="233.68" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="55.88" x2="236.22" y2="55.88" width="0.1524" layer="91"/>
+<junction x="233.68" y="104.14"/>
+<pinref part="JP7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="CAN2_TX" class="0">
@@ -12947,25 +12880,26 @@ Aux ADC ports</text>
 </net>
 <net name="CAN2_H" class="0">
 <segment>
-<wire x1="180.34" y1="101.6" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="106.68" x2="187.96" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R407" gate="G$1" pin="1"/>
 <pinref part="U401" gate="G$1" pin="CANH"/>
-<wire x1="187.96" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
-<junction x="187.96" y="101.6"/>
+<wire x1="180.34" y1="101.6" x2="185.42" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="JP8" gate="G$1" pin="2"/>
+<pinref part="SJ402" gate="1" pin="1"/>
+<wire x1="185.42" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="106.68" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="106.68" x2="185.42" y2="101.6" width="0.1524" layer="91"/>
+<junction x="185.42" y="101.6"/>
 </segment>
 </net>
 <net name="CAN2_L" class="0">
 <segment>
 <wire x1="213.36" y1="99.06" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="U401" gate="G$1" pin="CANL"/>
-<pinref part="SJ402" gate="1" pin="2"/>
 <wire x1="213.36" y1="99.06" x2="236.22" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="106.68" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="106.68" x2="213.36" y2="99.06" width="0.1524" layer="91"/>
 <junction x="213.36" y="99.06"/>
 <pinref part="JP8" gate="G$1" pin="3"/>
+<pinref part="R407" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="106.68" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD_5V_PERIPH" class="1">
@@ -12976,35 +12910,20 @@ Aux ADC ports</text>
 </segment>
 <segment>
 <label x="124.46" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="SJ401" gate="1" pin="1"/>
-<wire x1="129.54" y1="114.3" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="L405" gate="G$1" pin="P$1"/>
+<wire x1="124.46" y1="114.3" x2="177.8" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="30.48" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="66.04" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="L404" gate="G$1" pin="P$1"/>
 </segment>
-<segment>
-<wire x1="66.04" y1="114.3" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
-<label x="27.94" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L403" gate="G$1" pin="P$1"/>
-</segment>
 </net>
-<net name="5V_CAN_CONN" class="0">
+<net name="N$21" class="0">
 <segment>
-<pinref part="L405" gate="G$1" pin="P$1"/>
-<wire x1="139.7" y1="114.3" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="114.3" x2="177.8" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="114.3" x2="147.32" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="121.92" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
-<label x="154.94" y="121.92" size="1.778" layer="95" xref="yes"/>
-<junction x="147.32" y="114.3"/>
-<pinref part="SJ401" gate="1" pin="2"/>
-</segment>
-<segment>
-<wire x1="177.8" y1="66.04" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
-<label x="139.7" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L406" gate="G$1" pin="P$1"/>
+<pinref part="R407" gate="G$1" pin="1"/>
+<pinref part="SJ402" gate="1" pin="2"/>
+<wire x1="200.66" y1="106.68" x2="198.12" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
