@@ -11088,7 +11088,7 @@ Spektrum 3v3 EN</text>
 <pinref part="U101" gate="PORTB_L" pin="PB2"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="CLK2" class="0">
 <segment>
 <wire x1="175.26" y1="88.9" x2="190.5" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="88.9" x2="205.74" y2="88.9" width="0.1524" layer="91"/>
@@ -11099,7 +11099,7 @@ Spektrum 3v3 EN</text>
 <pinref part="U101" gate="OSC" pin="OSC_OUT"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="CLK1" class="0">
 <segment>
 <wire x1="175.26" y1="93.98" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="93.98" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
@@ -12217,32 +12217,7 @@ mount micro USB connectors:
 <junction x="48.26" y="71.12"/>
 </segment>
 </net>
-<net name="OTG_DM1" class="0">
-<segment>
-<wire x1="86.36" y1="129.54" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="129.54" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="139.7" x2="66.04" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="U$301" gate="G$1" pin="D2I"/>
-<pinref part="JP11" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="OTG_DP1" class="0">
-<segment>
-<wire x1="71.12" y1="132.08" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="129.54" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="U$301" gate="G$1" pin="D1I"/>
-<wire x1="71.12" y1="132.08" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="JP11" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="OTG_FS_DP" class="0">
-<segment>
-<wire x1="40.64" y1="129.54" x2="33.02" y2="129.54" width="0.1524" layer="91"/>
-<label x="33.02" y="129.54" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="U$301" gate="G$1" pin="D1O"/>
-</segment>
-</net>
-<net name="OTG_FS_DM" class="0">
 <segment>
 <wire x1="40.64" y1="139.7" x2="33.02" y2="139.7" width="0.1524" layer="91"/>
 <label x="33.02" y="139.7" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
@@ -12364,6 +12339,31 @@ mount micro USB connectors:
 <label x="185.42" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JX301" gate="-!RESET" pin="S"/>
 <wire x1="185.42" y1="86.36" x2="198.12" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="OTG_FS_DM" class="0">
+<segment>
+<wire x1="40.64" y1="129.54" x2="33.02" y2="129.54" width="0.1524" layer="91"/>
+<label x="33.02" y="129.54" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U$301" gate="G$1" pin="D1O"/>
+</segment>
+</net>
+<net name="UDB_DP" class="0">
+<segment>
+<pinref part="U$301" gate="G$1" pin="D2I"/>
+<wire x1="66.04" y1="139.7" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="139.7" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="JP11" gate="G$1" pin="3"/>
+<wire x1="73.66" y1="129.54" x2="86.36" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB_DM" class="0">
+<segment>
+<pinref part="JP11" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="132.08" x2="71.12" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="132.08" x2="71.12" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$301" gate="G$1" pin="D1I"/>
+<wire x1="71.12" y1="129.54" x2="66.04" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -13611,14 +13611,14 @@ to reset de-asserted.</text>
 <junction x="129.54" y="35.56"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="VCAP_2" class="0">
 <segment>
 <pinref part="U101" gate="G$2" pin="VCAP_2"/>
 <pinref part="C718" gate="G$1" pin="1"/>
 <wire x1="236.22" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="VCAP_1" class="0">
 <segment>
 <pinref part="U101" gate="G$2" pin="VCAP_1"/>
 <pinref part="C716" gate="G$1" pin="1"/>
@@ -14102,8 +14102,8 @@ S.Bus interface</text>
 <instance part="FRAME8" gate="G$1" x="0" y="0"/>
 <instance part="L1001" gate="G$8" x="81.28" y="99.06"/>
 <instance part="L1001" gate="G$7" x="68.58" y="104.14"/>
-<instance part="L1001" gate="G$6" x="53.34" y="109.22"/>
-<instance part="L1001" gate="G$5" x="81.28" y="114.3"/>
+<instance part="L1001" gate="G$5" x="53.34" y="109.22"/>
+<instance part="L1001" gate="G$6" x="81.28" y="114.3"/>
 <instance part="L1001" gate="G$4" x="66.04" y="119.38"/>
 <instance part="L1001" gate="G$3" x="53.34" y="124.46"/>
 <instance part="L1001" gate="G$2" x="78.74" y="129.54"/>
@@ -14156,7 +14156,7 @@ S.Bus interface</text>
 <segment>
 <wire x1="40.64" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
 <label x="40.64" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L1001" gate="G$6" pin="P$1"/>
+<pinref part="L1001" gate="G$5" pin="P$1"/>
 </segment>
 </net>
 <net name="N$68" class="0">
@@ -14168,14 +14168,14 @@ S.Bus interface</text>
 </net>
 <net name="N$77" class="0">
 <segment>
-<pinref part="L1001" gate="G$5" pin="P$2"/>
+<pinref part="L1001" gate="G$6" pin="P$2"/>
 <wire x1="86.36" y1="114.3" x2="99.06" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="J1001" gate="-CH4" pin="S"/>
 </segment>
 </net>
 <net name="N$78" class="0">
 <segment>
-<pinref part="L1001" gate="G$6" pin="P$2"/>
+<pinref part="L1001" gate="G$5" pin="P$2"/>
 <wire x1="58.42" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="J1001" gate="-CH3" pin="S"/>
 </segment>
@@ -14198,7 +14198,7 @@ S.Bus interface</text>
 <segment>
 <wire x1="40.64" y1="114.3" x2="76.2" y2="114.3" width="0.1524" layer="91"/>
 <label x="40.64" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L1001" gate="G$5" pin="P$1"/>
+<pinref part="L1001" gate="G$6" pin="P$1"/>
 </segment>
 </net>
 <net name="FMU-CH5" class="0">
