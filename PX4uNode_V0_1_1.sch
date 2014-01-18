@@ -11665,8 +11665,8 @@ Spektrum interface</text>
 <instance part="L201" gate="G$9" x="144.78" y="142.24"/>
 <instance part="GND8" gate="1" x="144.78" y="134.62"/>
 <instance part="L202" gate="G$9" x="20.32" y="20.32"/>
-<instance part="L202" gate="G$6" x="99.06" y="17.78"/>
-<instance part="L202" gate="G$4" x="83.82" y="12.7"/>
+<instance part="L202" gate="G$8" x="99.06" y="17.78"/>
+<instance part="L202" gate="G$6" x="83.82" y="12.7"/>
 <instance part="L202" gate="G$1" x="127" y="60.96"/>
 <instance part="L202" gate="G$2" x="127" y="50.8"/>
 <instance part="GND9" gate="1" x="20.32" y="12.7"/>
@@ -11675,7 +11675,7 @@ Spektrum interface</text>
 <instance part="L202" gate="G$3" x="147.32" y="50.8"/>
 <instance part="L202" gate="G$5" x="127" y="38.1"/>
 <instance part="L202" gate="G$7" x="147.32" y="60.96"/>
-<instance part="L202" gate="G$8" x="147.32" y="38.1"/>
+<instance part="L202" gate="G$4" x="147.32" y="38.1"/>
 <instance part="U$202" gate="G$1" x="83.82" y="99.06">
 <attribute name="PARTNO" x="83.82" y="99.06" size="1.778" layer="96" display="off"/>
 </instance>
@@ -11802,7 +11802,7 @@ Spektrum interface</text>
 </segment>
 <segment>
 <label x="127" y="12.7" size="1.27" layer="95" xref="yes"/>
-<pinref part="L202" gate="G$4" pin="P$2"/>
+<pinref part="L202" gate="G$6" pin="P$2"/>
 <wire x1="127" y1="12.7" x2="88.9" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -11814,7 +11814,7 @@ Spektrum interface</text>
 </segment>
 <segment>
 <label x="127" y="17.78" size="1.27" layer="95" xref="yes"/>
-<pinref part="L202" gate="G$6" pin="P$2"/>
+<pinref part="L202" gate="G$8" pin="P$2"/>
 <wire x1="127" y1="17.78" x2="104.14" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -12011,14 +12011,14 @@ Spektrum interface</text>
 <net name="FMU-UART7_RX" class="0">
 <segment>
 <label x="60.96" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L202" gate="G$6" pin="P$1"/>
+<pinref part="L202" gate="G$8" pin="P$1"/>
 <wire x1="60.96" y1="17.78" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-UART7_TX" class="0">
 <segment>
 <label x="60.96" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="L202" gate="G$4" pin="P$1"/>
+<pinref part="L202" gate="G$6" pin="P$1"/>
 <wire x1="78.74" y1="12.7" x2="60.96" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
