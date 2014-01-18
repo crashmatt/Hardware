@@ -10909,17 +10909,11 @@ Pogo pins- HW-11044</description>
 <part name="C707" library="pixhawk2" deviceset="CAP" device="0603" value="1u0">
 <attribute name="PARTNO" value="CC0603ZRY5V7BB105"/>
 </part>
-<part name="C709" library="pixhawk2" deviceset="CAP" device="0603" value="1u0">
-<attribute name="PARTNO" value="CC0603ZRY5V7BB105"/>
-</part>
 <part name="GND68" library="pixhawk2" deviceset="GND" device=""/>
 <part name="U$702" library="pixhawk2" deviceset="MIC5332" device="">
 <attribute name="PARTNO" value="MIC5332-SSYMT"/>
 </part>
 <part name="R702" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K">
-<attribute name="PARTNO" value="RC0402FR-0710KL"/>
-</part>
-<part name="R703" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K">
 <attribute name="PARTNO" value="RC0402FR-0710KL"/>
 </part>
 <part name="R701" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K">
@@ -13252,9 +13246,6 @@ to reset de-asserted.</text>
 <instance part="C707" gate="G$1" x="99.06" y="86.36">
 <attribute name="PARTNO" x="99.06" y="86.36" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C709" gate="G$1" x="109.22" y="86.36">
-<attribute name="PARTNO" x="109.22" y="86.36" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="GND68" gate="1" x="78.74" y="73.66"/>
 <instance part="U$702" gate="G$1" x="81.28" y="104.14">
 <attribute name="PARTNO" x="81.28" y="104.14" size="1.778" layer="96" display="off"/>
@@ -13263,11 +13254,6 @@ to reset de-asserted.</text>
 <attribute name="PARTNO" x="50.8" y="116.84" size="1.778" layer="96" rot="MR180" display="off"/>
 <attribute name="NAME" x="46.99" y="115.3414" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="46.99" y="120.142" size="1.778" layer="96" rot="MR180"/>
-</instance>
-<instance part="R703" gate="G$1" x="53.34" y="86.36" smashed="yes" rot="MR90">
-<attribute name="PARTNO" x="53.34" y="86.36" size="1.778" layer="96" rot="MR90" display="off"/>
-<attribute name="NAME" x="54.8386" y="82.55" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="50.038" y="82.55" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="R701" gate="G$1" x="40.64" y="132.08" rot="R90">
 <attribute name="PARTNO" x="40.64" y="132.08" size="1.778" layer="96" display="off"/>
@@ -13400,22 +13386,19 @@ to reset de-asserted.</text>
 <wire x1="86.36" y1="76.2" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND68" gate="1" pin="GND"/>
 <junction x="78.74" y="76.2"/>
-<pinref part="C709" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="76.2" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="76.2" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C707" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="83.82" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
 <junction x="86.36" y="76.2"/>
-<junction x="99.06" y="76.2"/>
 <pinref part="C702" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="83.82" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
 <junction x="68.58" y="76.2"/>
 <pinref part="U$702" gate="G$1" pin="GND"/>
+<wire x1="40.64" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U$702" gate="G$1" pin="EN2"/>
 <wire x1="53.34" y1="76.2" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="R703" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="81.28" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="99.06" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
 <junction x="53.34" y="76.2"/>
 </segment>
 </net>
@@ -13665,17 +13648,6 @@ to reset de-asserted.</text>
 <pinref part="U$701" gate="G$1" pin="VOUT1"/>
 </segment>
 </net>
-<net name="VDD_3V3_PERIPH_EN" class="1">
-<segment>
-<label x="35.56" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U$702" gate="G$1" pin="EN2"/>
-<wire x1="35.56" y1="99.06" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R703" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="91.44" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
-<junction x="53.34" y="99.06"/>
-</segment>
-</net>
 <net name="VDD_3V3_SENSORS" class="1">
 <segment>
 <wire x1="96.52" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
@@ -13697,17 +13669,6 @@ to reset de-asserted.</text>
 <wire x1="40.64" y1="149.86" x2="40.64" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
 <junction x="40.64" y="149.86"/>
-</segment>
-</net>
-<net name="VDD_3V3_PERIPH" class="1">
-<segment>
-<label x="111.76" y="104.14" size="1.27" layer="95" xref="yes"/>
-<wire x1="109.22" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C709" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="91.44" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U$702" gate="G$1" pin="VOUT2"/>
-<wire x1="109.22" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
-<junction x="109.22" y="104.14"/>
 </segment>
 </net>
 <net name="N$9" class="0">
