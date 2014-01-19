@@ -10980,24 +10980,30 @@ Pogo pins- HW-11044</description>
 <part name="U$1" library="SparkFun-Connectors" deviceset="M04X2" device=""/>
 <part name="GND19" library="pixhawk2" deviceset="GND" device=""/>
 <part name="U$3" library="PX4lite" deviceset="NUF2042XV6" device=""/>
+<part name="R1" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K">
+<attribute name="PARTNO" value="RC0402FR-0710KL"/>
+</part>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="162.56" y="15.24" size="2.1844" layer="94" font="vector" ratio="10">FMU SoC Ports
 </text>
-<text x="7.62" y="5.08" size="1.27" layer="91">Note: MAG/ACCEL/GYRO_DRDY pins chosen
+<text x="58.42" y="15.24" size="1.27" layer="91">Note: MAG/ACCEL/GYRO_DRDY pins chosen
 for both timer capture and separate
 EXTI operaton.
 
 EXTI0 - TIM3_CH3 - GYRO1
-EXTI1 - &lt;free&gt;
+EXTI1 - TIM3_CH2 - MAG
 EXTI2 - &lt;free&gt;
-EXTI3 - &lt;free&gt;
 EXTI4 - TIM3_CH1 - ACCEL
-EXTI5-9 - TIM3_CH2 - MAG
+EXTI5 - &lt;free&gt;
+EXTI6 - &lt;free&gt;
+EXTI7 - SAFETY
+EXTI8 - &lt;free&gt;
+EXTI9 - &lt;free&gt;
 </text>
-<text x="7.62" y="27.94" size="1.27" layer="91">Timer allocation:
+<text x="15.24" y="15.24" size="1.27" layer="91">Timer allocation:
 PE9: TIM1_CH1: FMU-CH4
 PE11: TIM1_CH2: FMU-CH3
 PE13: TIM1_CH3: FMU-CH2
@@ -11016,7 +11022,7 @@ PD15: TIM4_CH4: FMU-CH6
 </text>
 <text x="131.826" y="62.992" size="1.27" layer="91">Spare PWM output</text>
 <text x="112.014" y="164.592" size="1.27" layer="91">Spare ADC</text>
-<text x="112.014" y="162.052" size="1.27" layer="91">Spare ADC</text>
+<text x="137.414" y="162.052" size="1.27" layer="91">Spare ADC</text>
 <text x="68.58" y="160.02" size="1.27" layer="91">FMU-CH10 changed to 
 Spektrum 3v3 EN</text>
 </plain>
@@ -11463,11 +11469,11 @@ Spektrum 3v3 EN</text>
 <pinref part="U101" gate="PORTA_H" pin="PA14"/>
 </segment>
 </net>
-<net name="!ACCEL_MAG_CS" class="0">
+<net name="FMU-LED_SAFETY" class="0">
 <segment>
 <pinref part="U101" gate="PORTC_H" pin="PC15"/>
-<wire x1="106.68" y1="119.38" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
-<label x="132.08" y="119.38" size="1.27" layer="95" xref="yes"/>
+<wire x1="106.68" y1="119.38" x2="114.3" y2="119.38" width="0.1524" layer="91"/>
+<label x="114.3" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="FMU-UART8_TX" class="0">
@@ -11561,13 +11567,6 @@ Spektrum 3v3 EN</text>
 <label x="58.42" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="!VDD_SERVO_VALID" class="0">
-<segment>
-<pinref part="U101" gate="PORTB_L" pin="PB7"/>
-<wire x1="33.02" y1="91.44" x2="58.42" y2="91.44" width="0.1524" layer="91"/>
-<label x="58.42" y="91.44" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="GPIO_EXT_1" class="0">
 <segment>
 <pinref part="U101" gate="PORTC_H" pin="PC14"/>
@@ -11599,8 +11598,8 @@ Spektrum 3v3 EN</text>
 <net name="FMU-CH9" class="0">
 <segment>
 <pinref part="U101" gate="PORTA_L" pin="PA2"/>
-<wire x1="33.02" y1="160.02" x2="53.34" y2="160.02" width="0.1524" layer="91"/>
-<label x="53.34" y="160.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="33.02" y1="160.02" x2="43.18" y2="160.02" width="0.1524" layer="91"/>
+<label x="43.18" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VDD_3V3_SPEKTRUM_EN" class="0">
@@ -11620,8 +11619,22 @@ Spektrum 3v3 EN</text>
 <net name="FMU-CH10" class="0">
 <segment>
 <pinref part="U101" gate="PORTA_L" pin="PA3"/>
-<wire x1="33.02" y1="157.48" x2="53.34" y2="157.48" width="0.1524" layer="91"/>
-<label x="53.34" y="157.48" size="1.27" layer="95" xref="yes"/>
+<wire x1="33.02" y1="157.48" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
+<label x="43.18" y="157.48" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SAFETY" class="0">
+<segment>
+<pinref part="U101" gate="PORTB_L" pin="PB7"/>
+<wire x1="33.02" y1="91.44" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
+<label x="40.64" y="91.44" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="VDD_SERVO_SENSE" class="0">
+<segment>
+<pinref part="U101" gate="PORTC_L" pin="PC1"/>
+<wire x1="106.68" y1="162.56" x2="114.3" y2="162.56" width="0.1524" layer="91"/>
+<label x="114.3" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -13268,6 +13281,9 @@ to reset de-asserted.</text>
 <attribute name="BOM" x="195.58" y="91.44" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="D2" gate="G$1" x="205.74" y="127" rot="R270"/>
+<instance part="R1" gate="G$1" x="139.7" y="50.8" rot="R270">
+<attribute name="PARTNO" x="139.7" y="50.8" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13461,6 +13477,16 @@ to reset de-asserted.</text>
 <wire x1="45.72" y1="116.84" x2="35.56" y2="116.84" width="0.1524" layer="91"/>
 <junction x="45.72" y="116.84"/>
 </segment>
+<segment>
+<label x="86.36" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R705" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="55.88" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="55.88" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="68.58" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
+<junction x="129.54" y="68.58"/>
+</segment>
 </net>
 <net name="FMU-BOOT0" class="0">
 <segment>
@@ -13476,14 +13502,8 @@ to reset de-asserted.</text>
 <net name="VDD_5V" class="1">
 <segment>
 <pinref part="U$703" gate="G$1" pin="IN"/>
-<wire x1="93.98" y1="60.96" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
 <label x="86.36" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R705" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="55.88" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="68.58" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
-<junction x="91.44" y="60.96"/>
+<wire x1="93.98" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="22.86" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -13517,10 +13537,10 @@ to reset de-asserted.</text>
 <net name="!VDD_5V_PERIPH_EN" class="0">
 <segment>
 <wire x1="121.92" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
-<label x="134.62" y="35.56" size="1.27" layer="95" xref="yes"/>
+<label x="144.78" y="35.56" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$703" gate="G$1" pin="!CE"/>
 <pinref part="R705" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="35.56" x2="134.62" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="35.56" x2="144.78" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="45.72" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
 <junction x="129.54" y="35.56"/>
 </segment>
@@ -13553,16 +13573,20 @@ to reset de-asserted.</text>
 </net>
 <net name="VDD_5V_PERIPH" class="1">
 <segment>
-<wire x1="121.92" y1="60.96" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
-<label x="134.62" y="60.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="121.92" y1="60.96" x2="144.78" y2="60.96" width="0.1524" layer="91"/>
+<label x="144.78" y="60.96" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$703" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="!VDD_5V_PERIPH_OC" class="0">
 <segment>
-<label x="134.62" y="40.64" size="1.27" layer="95" xref="yes"/>
-<wire x1="121.92" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
+<label x="144.78" y="40.64" size="1.27" layer="95" xref="yes"/>
+<wire x1="121.92" y1="40.64" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U$703" gate="G$1" pin="!FAULT"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="40.64" x2="144.78" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="45.72" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+<junction x="139.7" y="40.64"/>
 </segment>
 </net>
 <net name="VDD_5V_SENS" class="0">
@@ -13912,7 +13936,7 @@ PA11: TIM1_CH4: RSSI_IN</text>
 <pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="VDD_SERVO_SENS" class="0">
+<net name="VDD_SERVO_SENSE" class="0">
 <segment>
 <pinref part="R903" gate="G$1" pin="2"/>
 <pinref part="R902" gate="G$1" pin="1"/>
