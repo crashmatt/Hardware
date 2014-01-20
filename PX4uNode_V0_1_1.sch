@@ -1480,46 +1480,6 @@ diameter 2.54 mm, horizontal, grid 7.62 mm</description>
 <rectangle x1="2.032" y1="-0.381" x2="2.667" y2="0.381" layer="21"/>
 <rectangle x1="-2.667" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
 </package>
-<package name="TSSOP8_SOT505-2">
-<wire x1="1.25" y1="1.5" x2="1.45" y2="1.3" width="0.15" layer="51" curve="-90"/>
-<wire x1="1.45" y1="1" x2="1.45" y2="-1" width="0.15" layer="21"/>
-<wire x1="1.45" y1="-1.2" x2="1.25" y2="-1.5" width="0.15" layer="51" curve="-90"/>
-<wire x1="1.25" y1="-1.5" x2="-1.25" y2="-1.5" width="0.15" layer="51"/>
-<wire x1="-1.25" y1="-1.5" x2="-1.45" y2="-1.3" width="0.15" layer="51" curve="-90"/>
-<wire x1="-1.45" y1="-1" x2="-1.45" y2="1" width="0.15" layer="21"/>
-<wire x1="-1.45" y1="1.3" x2="-1.25" y2="1.5" width="0.15" layer="51" curve="-90"/>
-<wire x1="-1.25" y1="1.5" x2="1.25" y2="1.5" width="0.15" layer="51"/>
-<wire x1="-1.45" y1="-1.3" x2="-1.45" y2="1.3" width="0.15" layer="51"/>
-<wire x1="1.45" y1="1.3" x2="1.45" y2="-1.2" width="0.15" layer="51"/>
-<wire x1="-1.45" y1="1.35" x2="-1.3" y2="1.5" width="0.0008" layer="57"/>
-<wire x1="-1.3" y1="1.5" x2="1.3" y2="1.5" width="0.0008" layer="57"/>
-<wire x1="1.3" y1="1.5" x2="1.45" y2="1.35" width="0.0008" layer="57"/>
-<wire x1="1.45" y1="1.35" x2="1.45" y2="-1.35" width="0.0008" layer="57"/>
-<wire x1="1.45" y1="-1.35" x2="1.3" y2="-1.5" width="0.0008" layer="57"/>
-<wire x1="1.3" y1="-1.5" x2="-1.3" y2="-1.5" width="0.0008" layer="57"/>
-<wire x1="-1.3" y1="-1.5" x2="-1.45" y2="-1.35" width="0.0008" layer="57"/>
-<wire x1="-1.45" y1="-1.35" x2="-1.45" y2="1.35" width="0.0008" layer="57"/>
-<circle x="-1.65" y="-1.95" radius="0.1802" width="0.15" layer="21"/>
-<circle x="-1.05" y="-0.95" radius="0.1802" width="0.15" layer="51"/>
-<smd name="7" x="-0.325" y="1.775" dx="0.35" dy="0.85" layer="1"/>
-<smd name="2" x="-0.325" y="-1.775" dx="0.35" dy="0.85" layer="1"/>
-<smd name="6" x="0.325" y="1.775" dx="0.35" dy="0.85" layer="1"/>
-<smd name="5" x="0.975" y="1.775" dx="0.35" dy="0.85" layer="1"/>
-<smd name="3" x="0.325" y="-1.775" dx="0.35" dy="0.85" layer="1"/>
-<smd name="4" x="0.975" y="-1.775" dx="0.35" dy="0.85" layer="1"/>
-<smd name="1" x="-0.975" y="-1.775" dx="0.35" dy="0.85" layer="1"/>
-<smd name="8" x="-0.975" y="1.775" dx="0.35" dy="0.85" layer="1"/>
-<text x="-1.65" y="-1.05" size="0.3" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
-<text x="1.95" y="-1.1" size="0.3" layer="25" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.1" y1="-2" x2="-0.85" y2="-1.55" layer="51"/>
-<rectangle x1="-0.45" y1="-2" x2="-0.2" y2="-1.55" layer="51"/>
-<rectangle x1="0.2" y1="-2" x2="0.45" y2="-1.55" layer="51"/>
-<rectangle x1="0.85" y1="-2" x2="1.1" y2="-1.55" layer="51"/>
-<rectangle x1="-1.1" y1="1.55" x2="-0.85" y2="2" layer="51"/>
-<rectangle x1="-0.45" y1="1.55" x2="-0.2" y2="2" layer="51"/>
-<rectangle x1="0.2" y1="1.55" x2="0.45" y2="2" layer="51"/>
-<rectangle x1="0.85" y1="1.55" x2="1.1" y2="2" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="A4L-LOC">
@@ -5437,50 +5397,6 @@ diameter 2.54 mm, horizontal, grid 7.62 mm</description>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="74LVC2G240">
-<wire x1="-7.62" y1="10.16" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="2.54" x2="-7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="2.54" width="0.254" layer="94"/>
-<wire x1="10.16" y1="2.54" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="0" x2="-6.35" y2="0" width="0.2032" layer="94"/>
-<wire x1="-6.35" y1="0" x2="-6.35" y2="-2.286" width="0.2032" layer="94"/>
-<wire x1="8.89" y1="-2.286" x2="8.89" y2="0" width="0.2032" layer="94"/>
-<wire x1="8.89" y1="0" x2="10.16" y2="0" width="0.2032" layer="94"/>
-<wire x1="10.16" y1="2.54" x2="8.89" y2="2.54" width="0.2032" layer="94"/>
-<wire x1="8.89" y1="2.54" x2="8.89" y2="4.572" width="0.2032" layer="94"/>
-<wire x1="-6.35" y1="4.572" x2="-6.35" y2="2.54" width="0.2032" layer="94"/>
-<wire x1="-6.35" y1="2.54" x2="-7.62" y2="2.54" width="0.2032" layer="94"/>
-<wire x1="-6.35" y1="-2.286" x2="0.762" y2="-2.286" width="0.2032" layer="94"/>
-<wire x1="-6.35" y1="4.572" x2="0.762" y2="4.572" width="0.2032" layer="94"/>
-<wire x1="3.048" y1="4.572" x2="8.89" y2="4.572" width="0.2032" layer="94"/>
-<wire x1="8.89" y1="-2.286" x2="3.048" y2="-2.286" width="0.2032" layer="94"/>
-<circle x="2.54" y="-2.286" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="2.54" y="4.572" radius="0.3592" width="0.2032" layer="94"/>
-<text x="-7.62" y="10.922" size="1.27" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-9.652" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="-12.7" y="7.62" length="middle" direction="sup"/>
-<pin name="GND" x="-12.7" y="-5.08" length="middle" direction="sup"/>
-<pin name="1A" x="-12.7" y="2.54" length="middle"/>
-<pin name="2A" x="-12.7" y="0" length="middle"/>
-<pin name="1Y" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="2Y" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="!1OE" x="15.24" y="7.62" length="middle" direction="in" rot="R180"/>
-<pin name="!2OE" x="15.24" y="-5.08" length="middle" direction="in" rot="R180"/>
-<polygon width="0.2032" layer="94">
-<vertex x="0.762" y="3.81"/>
-<vertex x="0.762" y="5.334"/>
-<vertex x="2.032" y="4.572"/>
-</polygon>
-<polygon width="0.2032" layer="94">
-<vertex x="0.762" y="-1.524"/>
-<vertex x="0.762" y="-3.048"/>
-<vertex x="2.032" y="-2.286"/>
-</polygon>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="A4L-LOC" prefix="FRAME" uservalue="yes">
@@ -6299,32 +6215,6 @@ Various fiducial points for machine vision alignment.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="74LVC2G240">
-<description>Dual inverter tri-state, 3.3V/5V compatible
-&lt;br /&gt;
-&lt;a href="http://www.nxp.com/documents/data_sheet/74LVC2G240.pdf"&gt;http://www.nxp.com/documents/data_sheet/74LVC2G240.pdf&lt;/a&gt;&lt;br /&gt;
-&lt;a href="http://focus.ti.com/lit/ds/symlink/sn74lvc2g240.pdf"&gt;http://focus.ti.com/lit/ds/symlink/sn74lvc2g240.pdf&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="74LVC2G240" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-TSSOP-8" package="TSSOP8_SOT505-2">
-<connects>
-<connect gate="G$1" pin="!1OE" pad="1"/>
-<connect gate="G$1" pin="!2OE" pad="7"/>
-<connect gate="G$1" pin="1A" pad="2"/>
-<connect gate="G$1" pin="1Y" pad="6"/>
-<connect gate="G$1" pin="2A" pad="5"/>
-<connect gate="G$1" pin="2Y" pad="3"/>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun">
@@ -6661,6 +6551,71 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <pad name="P$2" x="-0.31725" y="0" drill="0.3" diameter="0.7" shape="square" rot="R180"/>
 <pad name="P$3" x="0.31725" y="0" drill="0.3" diameter="0.7" shape="square" rot="R180"/>
 </package>
+<package name="VSSOP8">
+<wire x1="-1.05" y1="1.2" x2="1.05" y2="1.2" width="0.127" layer="21"/>
+<wire x1="1.05" y1="1.2" x2="1.05" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="1.05" y1="-1.2" x2="-1.05" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-1.05" y1="-1.2" x2="-1.05" y2="1.2" width="0.127" layer="21"/>
+<circle x="-0.75" y="-0.9" radius="0.15" width="0" layer="51"/>
+<smd name="1" x="-0.75" y="-1.55" dx="0.35" dy="0.55" layer="1"/>
+<smd name="2" x="-0.25" y="-1.55" dx="0.35" dy="0.55" layer="1"/>
+<smd name="3" x="0.25" y="-1.55" dx="0.35" dy="0.55" layer="1"/>
+<smd name="4" x="0.75" y="-1.55" dx="0.35" dy="0.55" layer="1"/>
+<smd name="5" x="0.75" y="1.55" dx="0.35" dy="0.55" layer="1"/>
+<smd name="6" x="0.25" y="1.55" dx="0.35" dy="0.55" layer="1"/>
+<smd name="7" x="-0.25" y="1.55" dx="0.35" dy="0.55" layer="1"/>
+<smd name="8" x="-0.75" y="1.55" dx="0.35" dy="0.55" layer="1"/>
+<text x="-1.756" y="-1.2999" size="1.016" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.456" y="-1.2999" size="1.016" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.875" y1="1.25" x2="-0.625" y2="1.65" layer="51"/>
+<rectangle x1="-0.375" y1="1.25" x2="-0.125" y2="1.65" layer="51"/>
+<rectangle x1="0.125" y1="1.25" x2="0.375" y2="1.65" layer="51"/>
+<rectangle x1="0.625" y1="1.25" x2="0.875" y2="1.65" layer="51"/>
+<rectangle x1="-0.875" y1="-1.65" x2="-0.625" y2="-1.25" layer="51"/>
+<rectangle x1="-0.375" y1="-1.65" x2="-0.125" y2="-1.25" layer="51"/>
+<rectangle x1="0.125" y1="-1.65" x2="0.375" y2="-1.25" layer="51"/>
+<rectangle x1="0.625" y1="-1.65" x2="0.875" y2="-1.25" layer="51"/>
+</package>
+<package name="TSSOP8_SOT505-2">
+<wire x1="1.25" y1="1.5" x2="1.45" y2="1.3" width="0.15" layer="51" curve="-90"/>
+<wire x1="1.45" y1="1" x2="1.45" y2="-1" width="0.15" layer="21"/>
+<wire x1="1.45" y1="-1.2" x2="1.25" y2="-1.5" width="0.15" layer="51" curve="-90"/>
+<wire x1="1.25" y1="-1.5" x2="-1.25" y2="-1.5" width="0.15" layer="51"/>
+<wire x1="-1.25" y1="-1.5" x2="-1.45" y2="-1.3" width="0.15" layer="51" curve="-90"/>
+<wire x1="-1.45" y1="-1" x2="-1.45" y2="1" width="0.15" layer="21"/>
+<wire x1="-1.45" y1="1.3" x2="-1.25" y2="1.5" width="0.15" layer="51" curve="-90"/>
+<wire x1="-1.25" y1="1.5" x2="1.25" y2="1.5" width="0.15" layer="51"/>
+<wire x1="-1.45" y1="-1.3" x2="-1.45" y2="1.3" width="0.15" layer="51"/>
+<wire x1="1.45" y1="1.3" x2="1.45" y2="-1.2" width="0.15" layer="51"/>
+<wire x1="-1.45" y1="1.35" x2="-1.3" y2="1.5" width="0.0008" layer="57"/>
+<wire x1="-1.3" y1="1.5" x2="1.3" y2="1.5" width="0.0008" layer="57"/>
+<wire x1="1.3" y1="1.5" x2="1.45" y2="1.35" width="0.0008" layer="57"/>
+<wire x1="1.45" y1="1.35" x2="1.45" y2="-1.35" width="0.0008" layer="57"/>
+<wire x1="1.45" y1="-1.35" x2="1.3" y2="-1.5" width="0.0008" layer="57"/>
+<wire x1="1.3" y1="-1.5" x2="-1.3" y2="-1.5" width="0.0008" layer="57"/>
+<wire x1="-1.3" y1="-1.5" x2="-1.45" y2="-1.35" width="0.0008" layer="57"/>
+<wire x1="-1.45" y1="-1.35" x2="-1.45" y2="1.35" width="0.0008" layer="57"/>
+<circle x="-1.65" y="-1.95" radius="0.1802" width="0.15" layer="21"/>
+<circle x="-1.05" y="-0.95" radius="0.1802" width="0.15" layer="51"/>
+<smd name="7" x="-0.325" y="1.775" dx="0.35" dy="0.85" layer="1"/>
+<smd name="2" x="-0.325" y="-1.775" dx="0.35" dy="0.85" layer="1"/>
+<smd name="6" x="0.325" y="1.775" dx="0.35" dy="0.85" layer="1"/>
+<smd name="5" x="0.975" y="1.775" dx="0.35" dy="0.85" layer="1"/>
+<smd name="3" x="0.325" y="-1.775" dx="0.35" dy="0.85" layer="1"/>
+<smd name="4" x="0.975" y="-1.775" dx="0.35" dy="0.85" layer="1"/>
+<smd name="1" x="-0.975" y="-1.775" dx="0.35" dy="0.85" layer="1"/>
+<smd name="8" x="-0.975" y="1.775" dx="0.35" dy="0.85" layer="1"/>
+<text x="-1.65" y="-1.05" size="0.3" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
+<text x="1.95" y="-1.1" size="0.3" layer="25" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.1" y1="-2" x2="-0.85" y2="-1.55" layer="51"/>
+<rectangle x1="-0.45" y1="-2" x2="-0.2" y2="-1.55" layer="51"/>
+<rectangle x1="0.2" y1="-2" x2="0.45" y2="-1.55" layer="51"/>
+<rectangle x1="0.85" y1="-2" x2="1.1" y2="-1.55" layer="51"/>
+<rectangle x1="-1.1" y1="1.55" x2="-0.85" y2="2" layer="51"/>
+<rectangle x1="-0.45" y1="1.55" x2="-0.2" y2="2" layer="51"/>
+<rectangle x1="0.2" y1="1.55" x2="0.45" y2="2" layer="51"/>
+<rectangle x1="0.85" y1="1.55" x2="1.1" y2="2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP-FEEDTHROUGH-COMMON">
@@ -6798,6 +6753,50 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <pin name="VSS" x="-5.08" y="-27.94" length="middle" rot="R90"/>
 <text x="-7.62" y="10.668" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="10.668" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="74LVC2G240">
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-6.35" y2="0" width="0.2032" layer="94"/>
+<wire x1="-6.35" y1="0" x2="-6.35" y2="-2.286" width="0.2032" layer="94"/>
+<wire x1="8.89" y1="-2.286" x2="8.89" y2="0" width="0.2032" layer="94"/>
+<wire x1="8.89" y1="0" x2="10.16" y2="0" width="0.2032" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="8.89" y2="2.54" width="0.2032" layer="94"/>
+<wire x1="8.89" y1="2.54" x2="8.89" y2="4.572" width="0.2032" layer="94"/>
+<wire x1="-6.35" y1="4.572" x2="-6.35" y2="2.54" width="0.2032" layer="94"/>
+<wire x1="-6.35" y1="2.54" x2="-7.62" y2="2.54" width="0.2032" layer="94"/>
+<wire x1="-6.35" y1="-2.286" x2="0.762" y2="-2.286" width="0.2032" layer="94"/>
+<wire x1="-6.35" y1="4.572" x2="0.762" y2="4.572" width="0.2032" layer="94"/>
+<wire x1="3.048" y1="4.572" x2="8.89" y2="4.572" width="0.2032" layer="94"/>
+<wire x1="8.89" y1="-2.286" x2="3.048" y2="-2.286" width="0.2032" layer="94"/>
+<circle x="2.54" y="-2.286" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="2.54" y="4.572" radius="0.3592" width="0.2032" layer="94"/>
+<text x="-7.62" y="10.922" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-9.652" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="-12.7" y="7.62" length="middle" direction="sup"/>
+<pin name="GND" x="-12.7" y="-5.08" length="middle" direction="sup"/>
+<pin name="1A" x="-12.7" y="2.54" length="middle"/>
+<pin name="2A" x="-12.7" y="0" length="middle"/>
+<pin name="1Y" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="2Y" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="!1OE" x="15.24" y="7.62" length="middle" direction="in" rot="R180"/>
+<pin name="!2OE" x="15.24" y="-5.08" length="middle" direction="in" rot="R180"/>
+<polygon width="0.2032" layer="94">
+<vertex x="0.762" y="3.81"/>
+<vertex x="0.762" y="5.334"/>
+<vertex x="2.032" y="4.572"/>
+</polygon>
+<polygon width="0.2032" layer="94">
+<vertex x="0.762" y="-1.524"/>
+<vertex x="0.762" y="-3.048"/>
+<vertex x="2.032" y="-2.286"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -7064,6 +7063,47 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <connect gate="G$1" pin="OUT" pad="8"/>
 <connect gate="G$1" pin="VBAT" pad="6"/>
 <connect gate="G$1" pin="VSS" pad="2 GND P$2 P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74LVC2G240">
+<description>Dual inverter tri-state, 3.3V/5V compatible
+&lt;br /&gt;
+&lt;a href="http://www.nxp.com/documents/data_sheet/74LVC2G240.pdf"&gt;http://www.nxp.com/documents/data_sheet/74LVC2G240.pdf&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://focus.ti.com/lit/ds/symlink/sn74lvc2g240.pdf"&gt;http://focus.ti.com/lit/ds/symlink/sn74lvc2g240.pdf&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="74LVC2G240" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TSSOP-8" package="TSSOP8_SOT505-2">
+<connects>
+<connect gate="G$1" pin="!1OE" pad="1"/>
+<connect gate="G$1" pin="!2OE" pad="7"/>
+<connect gate="G$1" pin="1A" pad="2"/>
+<connect gate="G$1" pin="1Y" pad="6"/>
+<connect gate="G$1" pin="2A" pad="5"/>
+<connect gate="G$1" pin="2Y" pad="3"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="VSSOP8">
+<connects>
+<connect gate="G$1" pin="!1OE" pad="1"/>
+<connect gate="G$1" pin="!2OE" pad="7"/>
+<connect gate="G$1" pin="1A" pad="2"/>
+<connect gate="G$1" pin="1Y" pad="6"/>
+<connect gate="G$1" pin="2A" pad="5"/>
+<connect gate="G$1" pin="2Y" pad="3"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10672,7 +10712,7 @@ Pogo pins- HW-11044</description>
 </part>
 <part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
-<part name="U$2" library="pixhawk2" deviceset="74LVC2G240" device="-TSSOP-8"/>
+<part name="U$2" library="PX4lite" deviceset="74LVC2G240" device=""/>
 <part name="GND22" library="pixhawk2" deviceset="GND" device=""/>
 <part name="R2" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K">
 <attribute name="PARTNO" value="RC0402FR-0710KL"/>
@@ -11380,7 +11420,7 @@ Spektrum interface</text>
 <instance part="L202" gate="G$5" x="127" y="38.1"/>
 <instance part="L202" gate="G$7" x="147.32" y="60.96"/>
 <instance part="L202" gate="G$4" x="147.32" y="38.1"/>
-<instance part="GND2" gate="1" x="58.42" y="93.98"/>
+<instance part="GND2" gate="1" x="58.42" y="88.9"/>
 <instance part="C201" gate="G$1" x="58.42" y="111.76" smashed="yes">
 <attribute name="PARTNO" x="58.42" y="111.76" size="1.778" layer="96" display="off"/>
 <attribute name="NAME" x="59.944" y="114.681" size="1.778" layer="95"/>
@@ -11396,8 +11436,8 @@ Spektrum interface</text>
 <instance part="U$3" gate="G$1" x="58.42" y="50.8"/>
 <instance part="U$2" gate="G$1" x="91.44" y="104.14"/>
 <instance part="GND22" gate="1" x="124.46" y="88.9"/>
-<instance part="R2" gate="G$1" x="71.12" y="114.3" rot="R90">
-<attribute name="PARTNO" x="71.12" y="114.3" size="1.778" layer="96" display="off"/>
+<instance part="R2" gate="G$1" x="68.58" y="93.98" rot="R180">
+<attribute name="PARTNO" x="68.58" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R3" gate="G$1" x="116.84" y="93.98" rot="R180">
 <attribute name="PARTNO" x="116.84" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
@@ -11649,16 +11689,16 @@ Spektrum interface</text>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="58.42" y1="96.52" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="91.44" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="93.98" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="C201" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="109.22" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
 <junction x="58.42" y="99.06"/>
 <pinref part="U$2" gate="G$1" pin="GND"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="109.22" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
-<junction x="71.12" y="99.06"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
+<junction x="58.42" y="93.98"/>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
@@ -11725,8 +11765,13 @@ Spektrum interface</text>
 </segment>
 <segment>
 <label x="48.26" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="48.26" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="106.68" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="1A"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="106.68" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="93.98" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
+<junction x="76.2" y="106.68"/>
 </segment>
 </net>
 <net name="FMU-UART7_RX" class="0">
@@ -11781,16 +11826,12 @@ Spektrum interface</text>
 <label x="48.26" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="48.26" y1="121.92" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="VCC"/>
-<wire x1="58.42" y1="121.92" x2="71.12" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="121.92" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="121.92" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="111.76" x2="76.2" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="111.76" x2="76.2" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="C201" gate="G$1" pin="1"/>
 <wire x1="58.42" y1="116.84" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="119.38" x2="71.12" y2="121.92" width="0.1524" layer="91"/>
 <junction x="58.42" y="121.92"/>
-<junction x="71.12" y="121.92"/>
 </segment>
 </net>
 <net name="SBUS_OUTPUT_ENABLE" class="0">
