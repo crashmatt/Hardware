@@ -1480,6 +1480,32 @@ diameter 2.54 mm, horizontal, grid 7.62 mm</description>
 <rectangle x1="2.032" y1="-0.381" x2="2.667" y2="0.381" layer="21"/>
 <rectangle x1="-2.667" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
 </package>
+<package name="MS621FE">
+<circle x="0" y="0" radius="3.4" width="0.2032" layer="21"/>
+<wire x1="0" y1="-3" x2="0" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0" y1="-3" x2="0.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="0" y1="-3" x2="-0.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="0" y1="0.5" x2="0" y2="3" width="0.127" layer="51"/>
+<wire x1="0" y1="3" x2="0.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="0" y1="3" x2="-0.5" y2="2.5" width="0.127" layer="51"/>
+<smd name="1" x="5.15" y="0.75" dx="3" dy="0.75" layer="1"/>
+<smd name="2" x="5.15" y="-0.75" dx="3" dy="0.75" layer="1"/>
+<text x="3.5" y="1.5" size="0.4064" layer="25">&gt;NAME</text>
+<text x="3.5" y="-2" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-1.2" y="-0.3" size="0.6096" layer="51">6.8MM</text>
+<polygon width="0.127" layer="51">
+<vertex x="6.5" y="0.5"/>
+<vertex x="6.5" y="1"/>
+<vertex x="4.3" y="1"/>
+<vertex x="4.3" y="0.5"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="6.5" y="-0.5"/>
+<vertex x="4.3" y="-0.5"/>
+<vertex x="4.3" y="-1"/>
+<vertex x="6.5" y="-1"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="A4L-LOC">
@@ -5397,6 +5423,16 @@ diameter 2.54 mm, horizontal, grid 7.62 mm</description>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="BATTERY">
+<wire x1="-3.556" y1="0" x2="3.556" y2="0" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<pin name="NEG" x="0" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="POS" x="0" y="5.08" visible="off" length="middle" rot="R270"/>
+<text x="-2.54" y="0.508" size="1.778" layer="94">+</text>
+<text x="-2.54" y="-4.572" size="1.778" layer="94">-</text>
+<text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-5.08" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="A4L-LOC" prefix="FRAME" uservalue="yes">
@@ -6211,6 +6247,30 @@ Various fiducial points for machine vision alignment.</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MS621FE">
+<description>&lt;b&gt;SEIKO 6.8mm Rechargeable 3V lithium battery&lt;b&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;If discontinued or not available, similar devices are available from Panasonic and Sanyo, usually direct replacements.&lt;b&gt;</description>
+<gates>
+<gate name="G$1" symbol="BATTERY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MS621FE">
+<connects>
+<connect gate="G$1" pin="NEG" pad="2"/>
+<connect gate="G$1" pin="POS" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="http://speed.sii.co.jp/data/file_PRODUCT_MASTER_50112_TITLE_IMAGESP.pdf" constant="no"/>
+<attribute name="LINK" value="http://search.digikey.com/us/en/products/MS621FE-FL11E/728-1057-ND/1889208" constant="no"/>
+<attribute name="MFGPN" value="MS621FE" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -10720,6 +10780,7 @@ Pogo pins- HW-11044</description>
 <part name="R3" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K">
 <attribute name="PARTNO" value="RC0402FR-0710KL"/>
 </part>
+<part name="U$4" library="pixhawk2" deviceset="MS621FE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13028,7 +13089,8 @@ to reset de-asserted.</text>
 <instance part="R1" gate="G$1" x="139.7" y="50.8" rot="R270">
 <attribute name="PARTNO" x="139.7" y="50.8" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="JP3" gate="G$1" x="182.88" y="101.6"/>
+<instance part="JP3" gate="G$1" x="180.34" y="104.14"/>
+<instance part="U$4" gate="G$1" x="198.12" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -13092,6 +13154,9 @@ to reset de-asserted.</text>
 <pinref part="U101" gate="BAT" pin="VSSA"/>
 <wire x1="233.68" y1="91.44" x2="233.68" y2="96.52" width="0.1524" layer="91"/>
 <junction x="223.52" y="91.44"/>
+<pinref part="U$4" gate="G$1" pin="NEG"/>
+<wire x1="198.12" y1="93.98" x2="198.12" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="91.44" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -13345,16 +13410,19 @@ to reset de-asserted.</text>
 <net name="VBAT" class="0">
 <segment>
 <pinref part="U101" gate="BAT" pin="VBAT"/>
-<wire x1="205.74" y1="111.76" x2="213.36" y2="111.76" width="0.1524" layer="91"/>
 <junction x="205.74" y="111.76"/>
-<wire x1="213.36" y1="111.76" x2="233.68" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="111.76" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="111.76" x2="233.68" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="111.76" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
 <label x="185.42" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R706" gate="G$1" pin="1"/>
-<junction x="213.36" y="111.76"/>
+<junction x="193.04" y="111.76"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="190.5" y1="101.6" x2="213.36" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="101.6" x2="213.36" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="111.76" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="111.76" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="104.14" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="POS"/>
+<wire x1="198.12" y1="106.68" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
