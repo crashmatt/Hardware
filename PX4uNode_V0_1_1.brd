@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Vertical" color="14" fill="15" visible="no" active="yes"/>
-<layer number="15" name="Power" color="11" fill="15" visible="no" active="yes"/>
+<layer number="15" name="Power" color="11" fill="15" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -1797,9 +1797,9 @@ Covered vias can be set in Masks (Limit).
 <attribute name="PARTNO" value="*" x="49.53468125" y="40.5136" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="49.53468125" y="40.5136" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JP1104" library="pixhawk2" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="24.4832" y="18.921925">
-<attribute name="PARTNO" value="*" x="24.4832" y="18.921925" size="1.778" layer="27" display="off"/>
-<attribute name="BOM" value="EXCLUDE" x="24.4832" y="18.921925" size="1.778" layer="27" display="off"/>
+<element name="JP1104" library="pixhawk2" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="11.1832" y="21.221925">
+<attribute name="PARTNO" value="*" x="11.1832" y="21.221925" size="1.778" layer="27" display="off"/>
+<attribute name="BOM" value="EXCLUDE" x="11.1832" y="21.221925" size="1.778" layer="27" display="off"/>
 </element>
 <element name="L1001" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="49.0848" y="24.1608" rot="R270"/>
 <element name="L201" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="22.34" y="15.316" rot="MR270"/>
