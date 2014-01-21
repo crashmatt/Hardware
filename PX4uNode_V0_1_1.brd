@@ -10,7 +10,7 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Ground" color="2" fill="10" visible="no" active="yes"/>
-<layer number="3" name="Horizontal" color="13" fill="15" visible="yes" active="yes"/>
+<layer number="3" name="Horizontal" color="13" fill="15" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
@@ -21,17 +21,17 @@
 <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Vertical" color="14" fill="15" visible="yes" active="yes"/>
+<layer number="14" name="Vertical" color="14" fill="15" visible="no" active="yes"/>
 <layer number="15" name="Power" color="11" fill="15" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -155,27 +155,28 @@
 <text x="60.8168" y="19.0312" size="1.27" layer="22" ratio="15" rot="MR0">Z</text>
 <wire x1="61.8744" y1="20.32" x2="62.6872" y2="19.5072" width="0.4064" layer="22"/>
 <wire x1="61.8744" y1="19.5072" x2="62.6872" y2="20.32" width="0.4064" layer="22"/>
-<text x="61.0504" y="35.9848" size="1.016" layer="21" font="vector" ratio="15" rot="R90">uNode
+<text x="40.2152" y="30.4496" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">uNode
 V0_1</text>
-<text x="20.032" y="43.3344" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">POWER</text>
-<text x="51.528" y="63.4512" size="0.762" layer="22" font="vector" ratio="15" rot="MR90">SPI</text>
-<text x="16.1712" y="46.5856" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">SPKT/PPM</text>
-<text x="36.4896" y="68.6056" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">CAN1</text>
-<text x="55.9096" y="63.164" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">I2C1</text>
-<text x="12.2848" y="16.4392" size="0.762" layer="22" font="vector" ratio="15" rot="MR0">UART3 / GPS</text>
-<text x="10.9184" y="19.324" size="0.762" layer="22" font="vector" ratio="15" rot="MR270">UART1</text>
-<text x="8.4952" y="17.9552" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">UART2</text>
-<text x="35.0688" y="40.4896" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">AUX ADC</text>
-<text x="31.4112" y="57.8632" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">SAFETY</text>
-<text x="63.256" y="45.968" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">I2C2</text>
-<text x="24.7024" y="68.1232" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">CAN2</text>
-<text x="27.5112" y="55.3632" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">3V3</text>
-<text x="24.4112" y="51.8632" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">5V</text>
+<text x="53.218" y="33.7844" size="0.762" layer="21" font="vector" ratio="15" rot="R180">POWER</text>
+<text x="28.2488" y="9.278" size="0.762" layer="22" font="vector" ratio="15" rot="MR0">SPI</text>
+<text x="52.1212" y="10.1356" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">SPKT/PPM</text>
+<text x="37.6896" y="7.1556" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">CAN1</text>
+<text x="25.136" y="32.9596" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">I2C1</text>
+<text x="20.6348" y="24.6892" size="0.762" layer="22" font="vector" ratio="15" rot="MR0">UART3 / GPS</text>
+<text x="24.174" y="16.2684" size="0.762" layer="21" font="vector" ratio="15" rot="R180">UART1</text>
+<text x="24.2548" y="11.9552" size="0.762" layer="21" font="vector" ratio="15" rot="R180">UART2</text>
+<text x="15.1604" y="26.9188" size="0.762" layer="22" font="vector" ratio="15" rot="MR90">AUX ADC</text>
+<text x="16.0368" y="27.0612" size="0.762" layer="22" font="vector" ratio="15" rot="MR90">SAFETY</text>
+<text x="21.706" y="35.768" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">I2C2</text>
+<text x="41.0024" y="9.8732" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">CAN2</text>
+<text x="43.5112" y="11.6132" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">3V3</text>
+<text x="48.9612" y="12.2132" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">5V</text>
 <text x="33.1848" y="3.2496" size="0.8128" layer="21" font="vector" ratio="15">CANpwr</text>
 <wire x1="12.8" y1="4.2" x2="58.2" y2="4.2" width="0" layer="20"/>
 <wire x1="58.2" y1="4.2" x2="58.2" y2="38.2" width="0" layer="20"/>
 <wire x1="58.2" y1="38.2" x2="12.8" y2="38.2" width="0" layer="20"/>
 <wire x1="12.8" y1="38.2" x2="12.8" y2="4.2" width="0" layer="20"/>
+<text x="49.718" y="34.2344" size="1.778" layer="21" font="vector" ratio="15" rot="R180">+</text>
 </plain>
 <libraries>
 <library name="pixhawk2">
@@ -4051,6 +4052,20 @@ Covered vias can be set in Masks (Limit).
 <wire x1="45.5" y1="34.9" x2="46.2" y2="34.9" width="0.6" layer="16"/>
 <wire x1="45.5" y1="34.9" x2="45.2" y2="35.2" width="0.6" layer="16"/>
 <wire x1="45.2" y1="35.2" x2="45.2" y2="35.5" width="0.6" layer="16"/>
+<polygon width="0.254" layer="1">
+<vertex x="42.95" y="36.4"/>
+<vertex x="43.85" y="36.4"/>
+<vertex x="45.15" y="37.7"/>
+<vertex x="47.35" y="37.7"/>
+<vertex x="47.6" y="37.45"/>
+<vertex x="47.6" y="35.85"/>
+<vertex x="46.45" y="34.7"/>
+<vertex x="45.7" y="34.05"/>
+<vertex x="45.25" y="33.6"/>
+<vertex x="43.3" y="33.6"/>
+<vertex x="42.85" y="34.05"/>
+<vertex x="42.85" y="36.3"/>
+</polygon>
 </signal>
 <signal name="GPIO_EXT_1">
 <contactref element="U101" pad="8"/>
@@ -4641,8 +4656,8 @@ Covered vias can be set in Masks (Limit).
 <wire x1="35.35" y1="12.35" x2="35.35" y2="9.5868" width="0.4064" layer="16"/>
 <wire x1="35.35" y1="9.5868" x2="35.4568" y2="9.48" width="0.4064" layer="16"/>
 <polygon width="0.254" layer="1" thermals="no">
-<vertex x="45" y="32.1"/>
-<vertex x="49.8" y="32.1"/>
+<vertex x="45" y="31.95"/>
+<vertex x="49.95" y="31.95"/>
 <vertex x="50.2" y="31.7"/>
 <vertex x="50.2" y="28.5"/>
 <vertex x="50" y="28.3"/>
@@ -5195,15 +5210,6 @@ Covered vias can be set in Masks (Limit).
 <contactref element="J1001" pad="PWR_S7"/>
 <contactref element="J1001" pad="PWR_S1"/>
 <contactref element="J1001" pad="PWR_S3"/>
-<wire x1="54.338" y1="31.8428" x2="52.7808" y2="33.4" width="1" layer="1"/>
-<wire x1="52.7808" y1="33.4" x2="52.5" y2="33.4" width="1" layer="1"/>
-<wire x1="52.5" y1="33.4" x2="51" y2="33.4" width="0.8" layer="1"/>
-<wire x1="51" y1="33.4" x2="50.6" y2="33.4" width="1" layer="1"/>
-<wire x1="50.6" y1="33.4" x2="50.3" y2="33.1" width="1.27" layer="1"/>
-<wire x1="50.3" y1="33.1" x2="48.7" y2="33.1" width="1.27" layer="1"/>
-<wire x1="48.7" y1="33.1" x2="47.8" y2="33.1" width="0.8" layer="1"/>
-<wire x1="47.8" y1="33.1" x2="47.5972" y2="32.8972" width="0.8" layer="1"/>
-<wire x1="47.5972" y1="32.8972" x2="46.4688" y2="32.8972" width="0.8" layer="1"/>
 <wire x1="54.338" y1="31.8428" x2="54.338" y2="29.3028" width="1.27" layer="1"/>
 <wire x1="54.338" y1="29.3028" x2="54.338" y2="29.3" width="1.27" layer="1"/>
 <wire x1="54.338" y1="29.3" x2="54.338" y2="26.7628" width="1.27" layer="1"/>
@@ -5229,6 +5235,17 @@ Covered vias can be set in Masks (Limit).
 <wire x1="54.35" y1="26.75" x2="54.338" y2="26.75" width="0.254" layer="1"/>
 <wire x1="54.35" y1="29.3" x2="54.338" y2="29.3028" width="0.254" layer="1"/>
 <wire x1="54.35" y1="29.3" x2="54.338" y2="29.3" width="0.254" layer="1"/>
+<wire x1="54.338" y1="31.8428" x2="52.7308" y2="33.45" width="0.6096" layer="1"/>
+<wire x1="52.7308" y1="33.45" x2="50.15" y2="33.45" width="0.6096" layer="1"/>
+<wire x1="50.15" y1="33.45" x2="49.5972" y2="32.8972" width="0.6096" layer="1"/>
+<wire x1="49.5972" y1="32.8972" x2="46.4688" y2="32.8972" width="0.6096" layer="1"/>
+<polygon width="0.254" layer="1">
+<vertex x="54.7" y="32.4"/>
+<vertex x="53.1" y="34"/>
+<vertex x="46.5" y="34"/>
+<vertex x="45.95" y="33.45"/>
+<vertex x="45.9" y="32.4"/>
+</polygon>
 </signal>
 <signal name="FMU-CH9">
 <contactref element="U101" pad="25"/>
