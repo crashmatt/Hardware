@@ -6617,14 +6617,14 @@ Source: http://www.linear.com/pc/downloadDocument.do?navId=H0,C1,C1003,C1042,C10
 <wire x1="1.05" y1="-1.2" x2="-1.05" y2="-1.2" width="0.127" layer="21"/>
 <wire x1="-1.05" y1="-1.2" x2="-1.05" y2="1.2" width="0.127" layer="21"/>
 <circle x="-0.75" y="-0.9" radius="0.15" width="0" layer="51"/>
-<smd name="1" x="-0.75" y="-1.55" dx="0.35" dy="0.55" layer="1"/>
-<smd name="2" x="-0.25" y="-1.55" dx="0.35" dy="0.55" layer="1"/>
-<smd name="3" x="0.25" y="-1.55" dx="0.35" dy="0.55" layer="1"/>
-<smd name="4" x="0.75" y="-1.55" dx="0.35" dy="0.55" layer="1"/>
-<smd name="5" x="0.75" y="1.55" dx="0.35" dy="0.55" layer="1"/>
-<smd name="6" x="0.25" y="1.55" dx="0.35" dy="0.55" layer="1"/>
-<smd name="7" x="-0.25" y="1.55" dx="0.35" dy="0.55" layer="1"/>
-<smd name="8" x="-0.75" y="1.55" dx="0.35" dy="0.55" layer="1"/>
+<smd name="1" x="-0.75" y="-1.55" dx="0.3" dy="0.55" layer="1"/>
+<smd name="2" x="-0.25" y="-1.55" dx="0.3" dy="0.55" layer="1"/>
+<smd name="3" x="0.25" y="-1.55" dx="0.3" dy="0.55" layer="1"/>
+<smd name="4" x="0.75" y="-1.55" dx="0.3" dy="0.55" layer="1"/>
+<smd name="5" x="0.75" y="1.55" dx="0.3" dy="0.55" layer="1"/>
+<smd name="6" x="0.25" y="1.55" dx="0.3" dy="0.55" layer="1"/>
+<smd name="7" x="-0.25" y="1.55" dx="0.3" dy="0.55" layer="1"/>
+<smd name="8" x="-0.75" y="1.55" dx="0.3" dy="0.55" layer="1"/>
 <text x="-1.756" y="-1.2999" size="1.016" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.456" y="-1.2999" size="1.016" layer="27" rot="R90">&gt;VALUE</text>
 <rectangle x1="-0.875" y1="1.25" x2="-0.625" y2="1.65" layer="51"/>
