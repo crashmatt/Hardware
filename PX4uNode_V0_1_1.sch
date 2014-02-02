@@ -10766,7 +10766,6 @@ Pogo pins- HW-11044</description>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device=""/>
 <part name="U$1" library="SparkFun-Connectors" deviceset="M04X2" device=""/>
 <part name="GND19" library="pixhawk2" deviceset="GND" device=""/>
-<part name="U$3" library="PX4lite" deviceset="NUF2042XV6" device=""/>
 <part name="R1" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K">
 <attribute name="PARTNO" value="RC0402FR-0710KL"/>
 </part>
@@ -10781,6 +10780,22 @@ Pogo pins- HW-11044</description>
 <attribute name="PARTNO" value="RC0402FR-0710KL"/>
 </part>
 <part name="U$4" library="pixhawk2" deviceset="MS621FE" device=""/>
+<part name="U$3" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
+<attribute name="PARTNO" value="PESD0402-140"/>
+</part>
+<part name="U$5" library="pixhawk2" deviceset="DIODE-TVS" device="" value="PESD0402-140">
+<attribute name="PARTNO" value="PESD0402-140"/>
+</part>
+<part name="R4" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="120R">
+<attribute name="PARTNO" value="RC0402FR-07120RL"/>
+</part>
+<part name="R5" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="120R">
+<attribute name="PARTNO" value="RC0402FR-07120RL"/>
+</part>
+<part name="JP13" library="pixhawk2" deviceset="FIDUCIAL" device="1.5X3">
+<attribute name="BOM" value="EXCLUDE"/>
+<attribute name="PARTNO" value="*"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -11446,7 +11461,7 @@ Spektrum interface</text>
 <text x="233.68" y="160.02" size="1.778" layer="97">SERIAL1</text>
 <text x="233.68" y="76.2" size="1.778" layer="97">SERIAL3</text>
 <text x="220.98" y="58.42" size="1.778" layer="95">Default GPS port</text>
-<text x="20.32" y="48.26" size="1.778" layer="97">Spektrum/DSM</text>
+<text x="12.7" y="53.34" size="1.778" layer="97">Spektrum/DSM</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
@@ -11475,7 +11490,7 @@ Spektrum interface</text>
 <instance part="L202" gate="G$1" x="127" y="60.96"/>
 <instance part="L202" gate="G$2" x="127" y="50.8"/>
 <instance part="GND9" gate="1" x="20.32" y="12.7"/>
-<instance part="GND46" gate="1" x="86.36" y="40.64"/>
+<instance part="GND46" gate="1" x="86.36" y="33.02"/>
 <instance part="U$201" gate="G$1" x="93.98" y="50.8"/>
 <instance part="L202" gate="G$3" x="147.32" y="50.8"/>
 <instance part="L202" gate="G$5" x="127" y="38.1"/>
@@ -11494,7 +11509,6 @@ Spektrum interface</text>
 <instance part="JP1" gate="G$1" x="220.98" y="109.22"/>
 <instance part="JP2" gate="G$1" x="220.98" y="71.12"/>
 <instance part="GND19" gate="1" x="58.42" y="30.48"/>
-<instance part="U$3" gate="G$1" x="58.42" y="50.8"/>
 <instance part="U$2" gate="G$1" x="91.44" y="104.14"/>
 <instance part="GND22" gate="1" x="124.46" y="88.9"/>
 <instance part="R2" gate="G$1" x="68.58" y="93.98" rot="R180">
@@ -11502,6 +11516,18 @@ Spektrum interface</text>
 </instance>
 <instance part="R3" gate="G$1" x="116.84" y="93.98" rot="R180">
 <attribute name="PARTNO" x="116.84" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="U$3" gate="G$1" x="76.2" y="43.18" rot="R90">
+<attribute name="PARTNO" x="76.2" y="43.18" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$5" gate="G$1" x="58.42" y="38.1" rot="R90">
+<attribute name="PARTNO" x="58.42" y="38.1" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R4" gate="G$1" x="43.18" y="60.96">
+<attribute name="PARTNO" x="43.18" y="60.96" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R5" gate="G$1" x="43.18" y="50.8">
+<attribute name="PARTNO" x="43.18" y="50.8" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -11746,7 +11772,12 @@ Spektrum interface</text>
 <segment>
 <pinref part="GND46" gate="1" pin="GND"/>
 <pinref part="U$201" gate="G$1" pin="3"/>
-<wire x1="86.36" y1="50.8" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="50.8" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="A"/>
+<wire x1="86.36" y1="38.1" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="40.64" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="38.1" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
+<junction x="86.36" y="38.1"/>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -11763,7 +11794,7 @@ Spektrum interface</text>
 </segment>
 <segment>
 <pinref part="GND19" gate="1" pin="GND"/>
-<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="U$5" gate="G$1" pin="A"/>
 <wire x1="58.42" y1="33.02" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -11791,9 +11822,9 @@ Spektrum interface</text>
 </net>
 <net name="SPEKTRUM_RX" class="0">
 <segment>
-<label x="40.64" y="45.72" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<wire x1="45.72" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="D1O"/>
+<label x="33.02" y="50.8" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="38.1" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VDD_3V3_SPEKTRUM" class="1">
@@ -11805,8 +11836,6 @@ Spektrum interface</text>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="VBUS"/>
-<wire x1="58.42" y1="66.04" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="68.58" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="68.58" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$201" gate="G$1" pin="2"/>
@@ -11816,13 +11845,15 @@ Spektrum interface</text>
 <wire x1="45.72" y1="78.74" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
 <junction x="58.42" y="68.58"/>
+<pinref part="U$5" gate="G$1" pin="C"/>
+<wire x1="58.42" y1="40.64" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PPM_INPUT" class="0">
 <segment>
-<label x="40.64" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="40.64" y1="55.88" x2="45.72" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="D2O"/>
+<label x="33.02" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="33.02" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <label x="48.26" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -11872,13 +11903,18 @@ Spektrum interface</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="D1I"/>
-<wire x1="71.12" y1="45.72" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="45.72" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="D2I"/>
-<wire x1="76.2" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U$201" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="55.88" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="C"/>
+<wire x1="76.2" y1="55.88" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="60.96" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="55.88" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
+<junction x="50.8" y="55.88"/>
 <junction x="76.2" y="55.88"/>
 </segment>
 </net>
@@ -14089,6 +14125,10 @@ vision alignment.</text>
 <attribute name="BOM" x="15.24" y="12.7" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="JP4" gate="G$1" x="236.22" y="160.02" rot="R180"/>
+<instance part="JP13" gate="G$1" x="15.24" y="17.78">
+<attribute name="PARTNO" x="15.24" y="17.78" size="1.778" layer="96" display="off"/>
+<attribute name="BOM" x="15.24" y="17.78" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
