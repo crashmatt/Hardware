@@ -12164,7 +12164,7 @@ mount micro USB connectors:
 </sheet>
 <sheet>
 <plain>
-<text x="93.98" y="160.02" size="1.778" layer="97">SPI</text>
+<text x="91.44" y="160.02" size="1.778" layer="97">SPI</text>
 <text x="96.52" y="91.44" size="1.778" layer="97">I2C2</text>
 <text x="228.6" y="170.18" size="1.778" layer="97">AUX ADC PORTS</text>
 <text x="165.1" y="7.62" size="1.778" layer="94">SPI
@@ -12173,13 +12173,13 @@ Dual CAN
 Aux ADC ports</text>
 <text x="22.86" y="170.18" size="1.778" layer="91">Note: SPI port is UNBUFFERED; only suitable for short connections.</text>
 <text x="96.52" y="27.94" size="1.778" layer="97">I2C1</text>
-<text x="83.82" y="162.56" size="1.778" layer="91">ESD PROTECTOR REMOVED</text>
+<text x="81.28" y="162.56" size="1.778" layer="91">ESD PROTECTOR REMOVED</text>
 </plain>
 <instances>
 <instance part="FRAME9" gate="G$1" x="0" y="0"/>
-<instance part="GND70" gate="1" x="60.96" y="132.08"/>
-<instance part="L401" gate="G$1" x="60.96" y="160.02">
-<attribute name="PARTNO" x="60.96" y="160.02" size="1.778" layer="96" display="off"/>
+<instance part="GND70" gate="1" x="58.42" y="129.54"/>
+<instance part="L401" gate="G$1" x="58.42" y="160.02">
+<attribute name="PARTNO" x="58.42" y="160.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND31" gate="1" x="78.74" y="10.16"/>
 <instance part="R408" gate="G$1" x="193.04" y="58.42">
@@ -12263,52 +12263,52 @@ Aux ADC ports</text>
 <instance part="JP7" gate="G$1" x="241.3" y="53.34" rot="R180"/>
 <instance part="JP8" gate="G$1" x="241.3" y="101.6" rot="R180"/>
 <instance part="JP9" gate="G$1" x="228.6" y="160.02" rot="R180"/>
-<instance part="U$1" gate="G$1" x="78.74" y="142.24"/>
+<instance part="U$1" gate="G$1" x="76.2" y="139.7"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="SPI_EXT_MISO" class="0">
 <segment>
-<label x="48.26" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="71.12" y1="144.78" x2="48.26" y2="144.78" width="0.1524" layer="91"/>
+<label x="45.72" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="68.58" y1="142.24" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="SPI_EXT_MOSI" class="0">
 <segment>
-<label x="48.26" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="48.26" y1="127" x2="91.44" y2="127" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="127" x2="91.44" y2="142.24" width="0.1524" layer="91"/>
+<label x="45.72" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="124.46" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="124.46" x2="88.9" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="6"/>
-<wire x1="91.44" y1="142.24" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="139.7" x2="83.82" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPI_EXT_SCK" class="0">
 <segment>
-<label x="48.26" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="88.9" y1="152.4" x2="48.26" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="152.4" x2="88.9" y2="147.32" width="0.1524" layer="91"/>
+<label x="45.72" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="86.36" y1="149.86" x2="45.72" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="149.86" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="147.32" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!SPI_EXT_NSS" class="0">
 <segment>
-<label x="48.26" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="48.26" y1="154.94" x2="91.44" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="154.94" x2="91.44" y2="144.78" width="0.1524" layer="91"/>
+<label x="45.72" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="152.4" x2="88.9" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="152.4" x2="88.9" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="4"/>
-<wire x1="91.44" y1="144.78" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="142.24" x2="83.82" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$41" class="1">
 <segment>
 <pinref part="L401" gate="G$1" pin="P$2"/>
-<wire x1="93.98" y1="160.02" x2="66.04" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="160.02" x2="93.98" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="160.02" x2="63.5" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="160.02" x2="91.44" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="8"/>
-<wire x1="93.98" y1="139.7" x2="86.36" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="137.16" x2="83.82" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FMU-VDD_3V3" class="1">
@@ -12470,8 +12470,8 @@ Aux ADC ports</text>
 </net>
 <net name="GPIO_EXT_1" class="0">
 <segment>
-<wire x1="71.12" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
-<label x="48.26" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="68.58" y1="139.7" x2="45.72" y2="139.7" width="0.1524" layer="91"/>
+<label x="45.72" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="5"/>
 </segment>
 </net>
@@ -12545,11 +12545,11 @@ Aux ADC ports</text>
 <segment>
 <pinref part="GND70" gate="1" pin="GND"/>
 <pinref part="L401" gate="G$1" pin="P$3"/>
-<wire x1="60.96" y1="134.62" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="132.08" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="7"/>
-<wire x1="60.96" y1="139.7" x2="60.96" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
-<junction x="60.96" y="139.7"/>
+<wire x1="58.42" y1="137.16" x2="58.42" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="137.16" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
+<junction x="58.42" y="137.16"/>
 </segment>
 <segment>
 <wire x1="78.74" y1="15.24" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
@@ -12700,8 +12700,8 @@ Aux ADC ports</text>
 </net>
 <net name="VDD_5V_PERIPH" class="1">
 <segment>
-<wire x1="55.88" y1="160.02" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
-<label x="48.26" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="53.34" y1="160.02" x2="45.72" y2="160.02" width="0.1524" layer="91"/>
+<label x="45.72" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="L401" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -13452,6 +13452,7 @@ to reset de-asserted.</text>
 <wire x1="198.12" y1="111.76" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="POS"/>
 <wire x1="198.12" y1="106.68" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
+<junction x="198.12" y="111.76"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -14137,6 +14138,54 @@ vision alignment.</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,2,121.92,60.96,L202G$1,P$1,,,,"/>
+<approved hash="101,2,132.08,60.96,L202G$1,P$2,,,,"/>
+<approved hash="101,2,121.92,50.8,L202G$2,P$1,,,,"/>
+<approved hash="101,2,132.08,50.8,L202G$2,P$2,,,,"/>
+<approved hash="101,2,142.24,50.8,L202G$3,P$1,,,,"/>
+<approved hash="101,2,152.4,50.8,L202G$3,P$2,,,,"/>
+<approved hash="101,2,121.92,38.1,L202G$5,P$1,,,,"/>
+<approved hash="101,2,132.08,38.1,L202G$5,P$2,,,,"/>
+<approved hash="101,2,142.24,60.96,L202G$7,P$1,,,,"/>
+<approved hash="101,2,152.4,60.96,L202G$7,P$2,,,,"/>
+<approved hash="101,2,142.24,38.1,L202G$4,P$1,,,,"/>
+<approved hash="101,2,152.4,38.1,L202G$4,P$2,,,,"/>
+<approved hash="101,3,198.12,88.9,JX301-TDI/EXTB,S,,,,"/>
+<approved hash="101,4,165.1,142.24,L402G$5,P$1,,,,"/>
+<approved hash="101,4,175.26,142.24,L402G$5,P$2,,,,"/>
+<approved hash="101,4,165.1,132.08,L402G$6,P$1,,,,"/>
+<approved hash="101,4,175.26,132.08,L402G$6,P$2,,,,"/>
+<approved hash="101,4,121.92,142.24,L402G$3,P$1,,,,"/>
+<approved hash="101,4,132.08,142.24,L402G$3,P$2,,,,"/>
+<approved hash="101,4,121.92,132.08,L402G$1,P$1,,,,"/>
+<approved hash="101,4,132.08,132.08,L402G$1,P$2,,,,"/>
+<approved hash="102,2,78.74,111.76,VCC,FMU-VDD_3V3,,,,"/>
+<approved hash="102,6,121.92,121.92,VOUT,VDD_5V,,,,"/>
+<approved hash="106,1,106.68,76.2,!FRAM_CS,,,,,"/>
+<approved hash="106,1,33.02,66.04,FRAM_MISO,,,,,"/>
+<approved hash="106,1,33.02,63.5,FRAM_MOSI,,,,,"/>
+<approved hash="106,1,33.02,68.58,FRAM_SCK,,,,,"/>
+<approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
+<approved hash="113,2,130.071,89.431,FRAME5,,,,,"/>
+<approved hash="113,3,130.071,89.431,FRAME6,,,,,"/>
+<approved hash="113,8,130.071,89.431,FRAME7,,,,,"/>
+<approved hash="113,9,130.071,89.431,FRAME4,,,,,"/>
+<approved hash="113,10,130.071,89.431,FRAME8,,,,,"/>
+<approved hash="113,4,130.071,89.431,FRAME9,,,,,"/>
+<approved hash="113,6,130.071,89.431,FRAME11,,,,,"/>
+<approved hash="113,10,159.35,111.76,J1001,,,,,"/>
+<approved hash="113,4,97.1973,81.0853,JP5,,,,,"/>
+<approved hash="113,4,97.1973,17.5853,JP6,,,,,"/>
+<approved hash="113,4,239.437,50.6053,JP7,,,,,"/>
+<approved hash="113,4,239.437,98.8653,JP8,,,,,"/>
+<approved hash="113,4,224.197,158.555,JP9,,,,,"/>
+<approved hash="113,8,125.137,62.0353,JP10,,,,,"/>
+<approved hash="113,3,89.5773,129.345,JP11,,,,,"/>
+<approved hash="113,2,220.98,148.357,JP12,,,,,"/>
+<approved hash="113,2,220.98,110.257,JP1,,,,,"/>
+<approved hash="113,2,220.98,72.1572,JP2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
