@@ -12988,8 +12988,8 @@ Aux ADC ports</text>
 <wire x1="142.24" y1="116.84" x2="142.24" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="C605" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="116.84" x2="132.08" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="121.92" x2="190.5" y2="121.92" width="0.1524" layer="91"/>
-<label x="190.5" y="121.92" size="1.27" layer="95" xref="yes"/>
+<wire x1="152.4" y1="121.92" x2="177.8" y2="121.92" width="0.1524" layer="91"/>
+<label x="177.8" y="121.92" size="1.27" layer="95" xref="yes"/>
 <junction x="152.4" y="121.92"/>
 <junction x="132.08" y="121.92"/>
 <junction x="142.24" y="121.92"/>
