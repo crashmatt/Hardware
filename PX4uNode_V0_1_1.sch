@@ -10769,7 +10769,6 @@ Pogo pins- HW-11044</description>
 <part name="R1" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K">
 <attribute name="PARTNO" value="RC0402FR-0710KL"/>
 </part>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="JP4" library="SparkFun-Connectors" deviceset="M01" device="PTH"/>
 <part name="U$2" library="PX4lite" deviceset="74LVC2G240" device=""/>
 <part name="GND22" library="pixhawk2" deviceset="GND" device=""/>
@@ -13125,7 +13124,6 @@ to reset de-asserted.</text>
 <instance part="R1" gate="G$1" x="139.7" y="50.8" rot="R270">
 <attribute name="PARTNO" x="139.7" y="50.8" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="JP3" gate="G$1" x="180.34" y="104.14"/>
 <instance part="U$4" gate="G$1" x="198.12" y="101.6"/>
 </instances>
 <busses>
@@ -13451,12 +13449,7 @@ to reset de-asserted.</text>
 <wire x1="205.74" y1="111.76" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
 <label x="185.42" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R706" gate="G$1" pin="1"/>
-<junction x="193.04" y="111.76"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="111.76" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="111.76" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="104.14" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="111.76" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="POS"/>
 <wire x1="198.12" y1="106.68" x2="198.12" y2="111.76" width="0.1524" layer="91"/>
 </segment>
