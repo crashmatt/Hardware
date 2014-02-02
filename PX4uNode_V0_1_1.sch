@@ -10395,13 +10395,13 @@ Pogo pins- HW-11044</description>
 </classes>
 <parts>
 <part name="X101" library="pixhawk2" deviceset="OSCILLATOR" device="-3.2X2.5" value="3.2x2.5 mm / 24 MHz / 15 ppm">
-<attribute name="PARTNO" value="NX3225SA-24.000000MHZ"/>
+<attribute name="PARTNO" value="ABM8G-24.000MHZ-4Y-T3"/>
 </part>
-<part name="C101" library="pixhawk2" deviceset="CAP" device="0402" value="8p">
-<attribute name="PARTNO" value="C1005C0G1H080C"/>
+<part name="C101" library="pixhawk2" deviceset="CAP" device="0402" value="16p">
+<attribute name="PARTNO" value="C1005C0G1H160"/>
 </part>
-<part name="C102" library="pixhawk2" deviceset="CAP" device="0402" value="8p">
-<attribute name="PARTNO" value="C1005C0G1H080C"/>
+<part name="C102" library="pixhawk2" deviceset="CAP" device="0402" value="16p">
+<attribute name="PARTNO" value="C1005C0G1H160"/>
 </part>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="R101" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="10K">
