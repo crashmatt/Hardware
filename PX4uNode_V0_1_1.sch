@@ -10394,7 +10394,7 @@ Pogo pins- HW-11044</description>
 </class>
 </classes>
 <parts>
-<part name="X101" library="pixhawk2" deviceset="OSCILLATOR" device="-3.2X2.5" value="3.2x2.5 mm / 24 MHz / 15 ppm">
+<part name="X101" library="pixhawk2" deviceset="OSCILLATOR" device="-3.2X2.5" value="3.2x2.5 mm / 24 MHz / 30 ppm / 10pF">
 <attribute name="PARTNO" value="ABM8G-24.000MHZ-4Y-T3"/>
 </part>
 <part name="C101" library="pixhawk2" deviceset="CAP" device="0402" value="16p">
@@ -10834,9 +10834,7 @@ PD15: TIM4_CH4: FMU-CH6
 </text>
 <text x="131.826" y="62.992" size="1.27" layer="91">Spare PWM output</text>
 <text x="112.014" y="164.592" size="1.27" layer="91">Spare ADC</text>
-<text x="137.414" y="162.052" size="1.27" layer="91">Spare ADC</text>
-<text x="68.58" y="160.02" size="1.27" layer="91">FMU-CH10 changed to 
-Spektrum 3v3 EN</text>
+<text x="142.494" y="162.052" size="1.27" layer="91">Spare ADC</text>
 </plain>
 <instances>
 <instance part="X101" gate="G$1" x="205.74" y="96.52" smashed="yes">
