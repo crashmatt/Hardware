@@ -10606,11 +10606,17 @@ Pogo pins- HW-11044</description>
 <attribute name="PARTNO" value="*"/>
 </part>
 <part name="FRAME11" library="pixhawk2" deviceset="A4L-LOC" device=""/>
-<part name="L1001" library="PX4lite" deviceset="NUF8402MN" device=""/>
+<part name="L1001" library="PX4lite" deviceset="NUF8402MN" device="">
+<attribute name="PARTNO" value="NUF8402MN"/>
+</part>
 <part name="GND5" library="pixhawk2" deviceset="GND" device=""/>
-<part name="L201" library="PX4lite" deviceset="NUF8402MN" device=""/>
+<part name="L201" library="PX4lite" deviceset="NUF8402MN" device="">
+<attribute name="PARTNO" value="NUF8402MN"/>
+</part>
 <part name="GND8" library="pixhawk2" deviceset="GND" device=""/>
-<part name="L202" library="PX4lite" deviceset="NUF8402MN" device=""/>
+<part name="L202" library="PX4lite" deviceset="NUF8402MN" device="">
+<attribute name="PARTNO" value="NUF8402MN"/>
+</part>
 <part name="GND9" library="pixhawk2" deviceset="GND" device=""/>
 <part name="U$302" library="PX4lite" deviceset="W25Q64FV" device="">
 <attribute name="PARTNO" value="W25Q64FVZP"/>
@@ -10627,7 +10633,9 @@ Pogo pins- HW-11044</description>
 <attribute name="PARTNO" value="RC0402FR-071K5L"/>
 </part>
 <part name="GND17" library="pixhawk2" deviceset="GND" device=""/>
-<part name="L403" library="PX4lite" deviceset="NUF8402MN" device=""/>
+<part name="L403" library="PX4lite" deviceset="NUF8402MN" device="">
+<attribute name="PARTNO" value="NUF8402MN"/>
+</part>
 <part name="SJ402" library="SparkFun-Passives" deviceset="SOLDERJUMPER" device="NC2" value="SOLDERJUMPERNC2">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
@@ -10637,7 +10645,9 @@ Pogo pins- HW-11044</description>
 <part name="C404" library="pixhawk2" deviceset="CAP" device="0402" value="0u1">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104"/>
 </part>
-<part name="U$301" library="PX4lite" deviceset="NUF2042XV6" device=""/>
+<part name="U$301" library="PX4lite" deviceset="NUF2042XV6" device="">
+<attribute name="PARTNO" value="NUF2042XV6"/>
+</part>
 <part name="R408" library="pixhawk2" deviceset="RESISTOR" device="0402-RES" value="120R">
 <attribute name="PARTNO" value="RC0402FR-07120RL"/>
 </part>
@@ -10686,13 +10696,25 @@ Pogo pins- HW-11044</description>
 <part name="D903" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SMA" value="B340A">
 <attribute name="PARTNO" value="B340A"/>
 </part>
-<part name="U$601" library="PX4lite" deviceset="TPS6303X" device=""/>
-<part name="L$601" library="ti_tps_soln2" deviceset="XFL4020-222MEB" device=""/>
+<part name="U$601" library="PX4lite" deviceset="TPS6303X" device="">
+<attribute name="PARTNO" value="TPS63061DSCT"/>
+</part>
+<part name="L$601" library="ti_tps_soln2" deviceset="XFL4020-222MEB" device="">
+<attribute name="PARTNO" value="XFL4020-222MEB"/>
+</part>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
-<part name="C606" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF"/>
-<part name="C604" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF"/>
-<part name="C605" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF"/>
-<part name="C601" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF"/>
+<part name="C606" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF">
+<attribute name="PARTNO" value="C3225X7R1C226M250AC"/>
+</part>
+<part name="C604" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF">
+<attribute name="PARTNO" value="C3225X7R1C226M250AC"/>
+</part>
+<part name="C605" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF">
+<attribute name="PARTNO" value="C3225X7R1C226M250AC"/>
+</part>
+<part name="C601" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF">
+<attribute name="PARTNO" value="C3225X7R1C226M250AC"/>
+</part>
 <part name="JP901" library="SparkFun-Connectors" deviceset="M02" device="PTH3">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
@@ -10770,7 +10792,9 @@ Pogo pins- HW-11044</description>
 <part name="JP404" library="SparkFun-Connectors" deviceset="M04" device="PTH">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
-<part name="JP403" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
+<part name="JP403" library="SparkFun-Connectors" deviceset="M03" device="PTH">
+<attribute name="PARTNO" value="EXCLUDE"/>
+</part>
 <part name="JP801" library="SparkFun-Connectors" deviceset="M03" device="PTH">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
@@ -10787,9 +10811,11 @@ Pogo pins- HW-11044</description>
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
 <part name="D901" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="">
-<attribute name="BOM" value="EXCLUDE"/>
+<attribute name="PARTNO" value="MBRA140"/>
 </part>
-<part name="D701" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device=""/>
+<part name="D701" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="">
+<attribute name="PARTNO" value="MBRA140"/>
+</part>
 <part name="J401" library="SparkFun-Connectors" deviceset="M04X2" device="">
 <attribute name="BOM" value="EXCLUDE"/>
 </part>
@@ -11503,7 +11529,9 @@ Spektrum interface</text>
 <instance part="U$204" gate="G$1" x="210.82" y="78.74" rot="R90">
 <attribute name="PARTNO" x="210.82" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="L201" gate="G$8" x="99.06" y="165.1"/>
+<instance part="L201" gate="G$8" x="99.06" y="165.1">
+<attribute name="PARTNO" x="99.06" y="165.1" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="L201" gate="G$7" x="83.82" y="160.02"/>
 <instance part="L201" gate="G$6" x="68.58" y="154.94"/>
 <instance part="L201" gate="G$5" x="99.06" y="149.86"/>
@@ -11516,7 +11544,9 @@ Spektrum interface</text>
 <instance part="L202" gate="G$9" x="20.32" y="20.32"/>
 <instance part="L202" gate="G$8" x="99.06" y="17.78"/>
 <instance part="L202" gate="G$6" x="83.82" y="12.7"/>
-<instance part="L202" gate="G$1" x="127" y="60.96"/>
+<instance part="L202" gate="G$1" x="127" y="60.96">
+<attribute name="PARTNO" x="127" y="60.96" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="L202" gate="G$2" x="127" y="50.8"/>
 <instance part="GND9" gate="1" x="20.32" y="12.7"/>
 <instance part="GND46" gate="1" x="86.36" y="33.02"/>
@@ -12013,7 +12043,9 @@ mount micro USB connectors:
 <attribute name="PARTNO" x="81.28" y="50.8" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND12" gate="1" x="76.2" y="27.94"/>
-<instance part="U$301" gate="G$1" x="53.34" y="134.62"/>
+<instance part="U$301" gate="G$1" x="53.34" y="134.62">
+<attribute name="PARTNO" x="53.34" y="134.62" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C301" gate="G$1" x="48.26" y="50.8">
 <attribute name="PARTNO" x="48.26" y="50.8" size="1.778" layer="96" display="off"/>
 </instance>
@@ -12264,7 +12296,9 @@ Aux ADC ports</text>
 <attribute name="PARTNO" x="43.18" y="101.6" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND17" gate="1" x="144.78" y="132.08"/>
-<instance part="L403" gate="G$4" x="50.8" y="88.9"/>
+<instance part="L403" gate="G$4" x="50.8" y="88.9">
+<attribute name="PARTNO" x="50.8" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="L403" gate="G$8" x="60.96" y="81.28"/>
 <instance part="L403" gate="G$2" x="50.8" y="25.4"/>
 <instance part="L403" gate="G$7" x="60.96" y="17.78"/>
@@ -12314,7 +12348,9 @@ Aux ADC ports</text>
 <instance part="JP404" gate="G$1" x="241.3" y="101.6" rot="R180">
 <attribute name="BOM" x="241.3" y="101.6" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="JP403" gate="G$1" x="228.6" y="160.02" rot="R180"/>
+<instance part="JP403" gate="G$1" x="228.6" y="160.02" rot="R180">
+<attribute name="PARTNO" x="228.6" y="160.02" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="J401" gate="G$1" x="76.2" y="139.7">
 <attribute name="BOM" x="76.2" y="139.7" size="1.778" layer="96" display="off"/>
 </instance>
@@ -12920,16 +12956,27 @@ Aux ADC ports</text>
 </plain>
 <instances>
 <instance part="FRAME11" gate="G$1" x="0" y="0"/>
-<instance part="U$601" gate="A" x="101.6" y="109.22" smashed="yes"/>
+<instance part="U$601" gate="A" x="101.6" y="109.22" smashed="yes">
+<attribute name="PARTNO" x="101.6" y="109.22" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="L$601" gate="A" x="101.6" y="144.78" smashed="yes">
 <attribute name="NAME" x="96.8756" y="149.4536" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="88.3158" y="141.1986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="PARTNO" x="101.6" y="144.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY2" gate="GND" x="91.44" y="66.04"/>
-<instance part="C606" gate="G$1" x="152.4" y="111.76"/>
-<instance part="C604" gate="G$1" x="132.08" y="111.76"/>
-<instance part="C605" gate="G$1" x="142.24" y="111.76"/>
-<instance part="C601" gate="G$1" x="50.8" y="104.14"/>
+<instance part="C606" gate="G$1" x="152.4" y="111.76">
+<attribute name="PARTNO" x="152.4" y="111.76" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C604" gate="G$1" x="132.08" y="111.76">
+<attribute name="PARTNO" x="132.08" y="111.76" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C605" gate="G$1" x="142.24" y="111.76">
+<attribute name="PARTNO" x="142.24" y="111.76" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C601" gate="G$1" x="50.8" y="104.14">
+<attribute name="PARTNO" x="50.8" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C603" gate="G$1" x="68.58" y="93.98">
 <attribute name="PARTNO" x="68.58" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
@@ -13176,7 +13223,10 @@ to reset de-asserted.</text>
 <instance part="C709" gate="G$1" x="170.18" y="157.48">
 <attribute name="PARTNO" x="170.18" y="157.48" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="D701" gate="G$1" x="205.74" y="127" rot="R270"/>
+<instance part="D701" gate="G$1" x="205.74" y="127" smashed="yes" rot="R270">
+<attribute name="PARTNO" x="205.74" y="127" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="NAME" x="208.7626" y="129.54" size="1.778" layer="95" rot="R270"/>
+</instance>
 <instance part="R705" gate="G$1" x="139.7" y="50.8" rot="R270">
 <attribute name="PARTNO" x="139.7" y="50.8" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
@@ -13780,7 +13830,6 @@ PB0: TIM3_CH3: IO-CH7
 PB1: TIM3_CH4: IO-CH8
 PA8: TIM1_CH1: PPM_IN
 PA11: TIM1_CH4: RSSI_IN</text>
-<text x="60.96" y="86.36" size="1.778" layer="91">DO NOT FIT</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
@@ -13814,8 +13863,9 @@ PA11: TIM1_CH4: RSSI_IN</text>
 <attribute name="BOM" x="66.04" y="154.94" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND18" gate="1" x="78.74" y="144.78"/>
-<instance part="D901" gate="G$1" x="81.28" y="86.36" rot="R90">
-<attribute name="BOM" x="81.28" y="86.36" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="D901" gate="G$1" x="81.28" y="86.36" smashed="yes" rot="R90">
+<attribute name="PARTNO" x="78.74" y="83.82" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="80.7974" y="88.9" size="1.778" layer="95" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -13922,7 +13972,9 @@ S.Bus interface</text>
 <instance part="L1001" gate="G$8" x="81.28" y="99.06"/>
 <instance part="L1001" gate="G$7" x="68.58" y="104.14"/>
 <instance part="L1001" gate="G$5" x="53.34" y="109.22"/>
-<instance part="L1001" gate="G$6" x="81.28" y="114.3"/>
+<instance part="L1001" gate="G$6" x="81.28" y="114.3">
+<attribute name="PARTNO" x="81.28" y="114.3" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="L1001" gate="G$4" x="66.04" y="119.38"/>
 <instance part="L1001" gate="G$3" x="53.34" y="124.46"/>
 <instance part="L1001" gate="G$2" x="78.74" y="129.54"/>
