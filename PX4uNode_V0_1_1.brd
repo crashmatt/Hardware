@@ -2715,8 +2715,8 @@ Covered vias can be set in Masks (Limit).
 <signal name="SERIAL2_TX">
 <contactref element="L201" pad="P$12"/>
 <contactref element="JP204" pad="1"/>
-<wire x1="19.2" y1="13.2" x2="20.5" y2="14.5" width="0.2" layer="1"/>
-<wire x1="20.5" y1="14.5" x2="20.5" y2="14.8" width="0.2" layer="1"/>
+<wire x1="19.2" y1="13.2" x2="20.5" y2="14.5" width="0.6096" layer="1"/>
+<wire x1="20.5" y1="14.5" x2="20.5" y2="14.8" width="0.6096" layer="1"/>
 <via x="20.5" y="14.8" extent="1-16" drill="0.3"/>
 <wire x1="20.5" y1="14.8" x2="20.766" y2="15.066" width="0.2" layer="16"/>
 <wire x1="20.766" y1="15.066" x2="21.64" y2="15.066" width="0.2" layer="16"/>
