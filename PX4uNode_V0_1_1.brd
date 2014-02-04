@@ -23,15 +23,15 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Vertical" color="14" fill="15" visible="no" active="yes"/>
 <layer number="15" name="Power" color="11" fill="15" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -47,9 +47,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -159,11 +159,11 @@
 V0_1</text>
 <text x="53.218" y="33.7844" size="0.762" layer="21" font="vector" ratio="15" rot="R180">POWER</text>
 <text x="28.2488" y="9.278" size="0.762" layer="22" font="vector" ratio="15" rot="MR0">SPI</text>
-<text x="52.1212" y="10.1356" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">SPKT/PPM</text>
+<text x="52.1712" y="10.0856" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">SPKT/PPM</text>
 <text x="37.6896" y="7.1556" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">CAN1</text>
 <text x="25.886" y="32.3596" size="0.762" layer="22" font="vector" ratio="15" rot="MR180">I2C1</text>
 <text x="20.6348" y="24.6892" size="0.762" layer="22" font="vector" ratio="15" rot="MR0">UART3 / GPS</text>
-<text x="24.174" y="16.2684" size="0.762" layer="21" font="vector" ratio="15" rot="R180">UART1</text>
+<text x="24.274" y="16.0184" size="0.762" layer="21" font="vector" ratio="15" rot="R180">UART1</text>
 <text x="24.2548" y="11.9552" size="0.762" layer="21" font="vector" ratio="15" rot="R180">UART2</text>
 <text x="15.1604" y="26.9188" size="0.762" layer="22" font="vector" ratio="15" rot="MR90">AUX ADC</text>
 <text x="16.0368" y="27.0612" size="0.762" layer="22" font="vector" ratio="15" rot="MR90">SAFETY</text>
@@ -1558,16 +1558,20 @@ Covered vias can be set in Masks (Limit).
 </pass>
 </autorouter>
 <elements>
-<element name="X101" library="pixhawk2" package="OSCILLATOR-3.2X2.5" value="3.2x2.5 mm / 24 MHz / 30 ppm / 10pF" x="33.9928" y="11.0368" smashed="yes" rot="R180">
-<attribute name="NAME" x="35.52093125" y="11.12016875" size="0.4" layer="25" font="vector" ratio="10" rot="R180"/>
+<element name="X101" library="pixhawk2" package="OSCILLATOR-3.2X2.5" value="3.2x2.5 mm / 24 MHz / 30 ppm / 10pF" x="33.9928" y="11.0368" locked="yes" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.17983125" y="11.97093125" size="0.4" layer="25" font="vector" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="40.118890625" y="13.939615625" size="0.4" layer="27" font="vector" ratio="10" rot="R180"/>
 <attribute name="PARTNO" value="ABM8G-24.000MHZ-4Y-T3" x="33.9928" y="11.0368" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C101" library="pixhawk2" package="0402-CAP" value="16p" x="33.8072" y="13.4144" rot="R180">
+<element name="C101" library="pixhawk2" package="0402-CAP" value="16p" x="33.8072" y="13.4144" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="C1005C0G1H160" x="33.8072" y="13.4144" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="32.7462" y="13.6659" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="32.9962" y="13.6159" size="0.4064" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="C102" library="pixhawk2" package="0402-CAP" value="16p" x="35.88" y="13.432" rot="R180">
+<element name="C102" library="pixhawk2" package="0402-CAP" value="16p" x="35.88" y="13.432" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="C1005C0G1H160" x="35.88" y="13.432" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="36.819" y="14.5335" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="35.069" y="13.6335" size="0.4064" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R101" library="pixhawk2" package="0402-RES" value="10K" x="45.592" y="22.5896" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="RC0402FR-0710KL" x="45.592" y="22.5896" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1578,41 +1582,49 @@ Covered vias can be set in Masks (Limit).
 <attribute name="PARTNO" value="C1608Y5V1C225Z" x="29.7504" y="34.1652" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C711" library="pixhawk2" package="0402-CAP" value="0u1" x="44.7912" y="18.7192" smashed="yes" rot="R270">
-<attribute name="NAME" x="44.58969375" y="20.10180625" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="45.48969375" y="19.55180625" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="44.58969375" y="18.00820625" size="0.4064" layer="27" font="vector" ratio="15" rot="R270"/>
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="44.7912" y="18.7192" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C712" library="pixhawk2" package="0402-CAP" value="0u1" x="28.252" y="32.0384" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="28.252" y="32.0384" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="28.341" y="31.4399" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="29.491" y="33.0399" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="27.441" y="32.2399" size="0.4064" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="C716" library="pixhawk2" package="0402-CAP" value="0u1" x="33.9576" y="14.5544" rot="R180">
+<element name="C716" library="pixhawk2" package="0402-CAP" value="0u1" x="33.9576" y="14.5544" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="33.9576" y="14.5544" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="32.6466" y="14.8059" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="33.1466" y="14.7559" size="0.4064" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R709" library="pixhawk2" package="0402-RES" value="10K" x="22.352" y="20.9888" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="RC0402FR-0710KL" x="22.352" y="20.9888" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="22.641" y="22.1873" size="0.4064" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="22.991" y="19.8373" size="0.4064" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="VALUE" x="21.641" y="20.7873" size="0.4064" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
-<element name="C713" library="pixhawk2" package="0402-CAP" value="0u1" x="34.9568" y="9.48" rot="MR0">
+<element name="C713" library="pixhawk2" package="0402-CAP" value="0u1" x="34.9568" y="9.48" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="34.9568" y="9.48" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="35.5958" y="10.2285" size="0.4064" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="VALUE" x="34.1458" y="9.2785" size="0.4064" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
-<element name="S701" library="pixhawk2" package="EVQP7J01K" value="RESET" x="32.0216" y="6.3432" smashed="yes" rot="MR0">
+<element name="S701" library="pixhawk2" package="EVQP7J01K" value="RESET" x="32.0216" y="6.3432" locked="yes" smashed="yes" rot="MR0">
 <attribute name="NAME" x="29.6322" y="4.6905" size="0.6" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="VALUE" x="34.7123" y="4.854" size="0.6" layer="28" font="vector" ratio="15" rot="MR90"/>
 <attribute name="PARTNO" value="EVQP7J01K" x="32.0216" y="6.3432" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C501" library="pixhawk2" package="0805-CAP" value="10u/10V" x="44.1032" y="12.032" smashed="yes" rot="R90">
-<attribute name="NAME" x="43.5935" y="11.4622" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="45.6435" y="11.3122" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="45.0159" y="11.5238" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 <attribute name="PARTNO" value="CC0805ZKY5V6BB106" x="44.1032" y="12.032" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C715" library="pixhawk2" package="0603-CAP" value="2u2" x="45.178" y="30.2936" rot="R90">
+<element name="C715" library="pixhawk2" package="0603-CAP" value="2u2" x="45.178" y="30.2936" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="C1608Y5V1C225Z" x="45.178" y="30.2936" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="46.3795" y="29.5546" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="VALUE" x="45.3795" y="31.1046" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="C714" library="pixhawk2" package="0402-CAP" value="0u1" x="26.1296" y="15.092" rot="R180">
+<element name="C714" library="pixhawk2" package="0402-CAP" value="0u1" x="26.1296" y="15.092" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="26.1296" y="15.092" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="26.9186" y="14.1935" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="25.3186" y="15.2935" size="0.4064" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="OSHW_LOGO" library="pixhawk2" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="25.7188" y="24.752" rot="MR0">
 <attribute name="PARTNO" value="*" x="25.7188" y="35.928" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -1634,67 +1646,83 @@ Covered vias can be set in Masks (Limit).
 <attribute name="PARTNO" value="*" x="50.42" y="25.34" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="50.42" y="25.34" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JX301" library="pixhawk2" package="FTSH-105-01-XXX-DV-K" value="ARM_MINI_JTAG-SMT" x="34.9" y="24.7" rot="MR270">
+<element name="JX301" library="pixhawk2" package="FTSH-105-01-XXX-DV-K" value="ARM_MINI_JTAG-SMT" x="34.9" y="24.7" locked="yes" rot="MR270">
 <attribute name="PARTNO" value="M50-3900542" x="23.724" y="31.812" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="34.9" y="24.7" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="U101" library="pixhawk2" package="TQFP100" value="STM32F4X7VX" x="35.5" y="24" locked="yes" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="STM32F427VI" x="35.5" y="24" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="35.8015" y="18.54099375" size="0.6" layer="27" font="vector" ratio="15" rot="R90"/>
-<attribute name="NAME" x="26.763021875" y="23.233434375" size="0.6" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="34.483434375" y="32.386978125" size="0.6" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C710" library="pixhawk2" package="0402-CAP" value="0u1" x="43.728" y="31.2224" rot="R90">
+<element name="C710" library="pixhawk2" package="0402-CAP" value="0u1" x="43.728" y="31.2224" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="43.728" y="31.2224" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="43.1295" y="30.5834" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="VALUE" x="43.9295" y="32.0334" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="R805" library="pixhawk2" package="0402-RES" value="220R" x="43.3216" y="16.9368" rot="MR90">
+<element name="R805" library="pixhawk2" package="0402-RES" value="220R" x="43.3216" y="16.9368" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="RC0402FR-07220RL" x="49.4176" y="16.9368" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="42.2201" y="16.2978" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="43.1201" y="17.6478" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="LED802" library="pixhawk2" package="0603-LED" value="GREEN" x="43.3248" y="19.172" rot="MR90">
+<element name="LED802" library="pixhawk2" package="0603-LED" value="GREEN" x="43.3248" y="19.172" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="APTD1608CGCK" x="47.3888" y="16.124" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="42.0233" y="18.133" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="43.1233" y="19.883" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
 <element name="C701" library="pixhawk2" package="0603-CAP" value="2u2" x="46.0304" y="17.52" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="C1608Y5V1C225Z" x="46.0304" y="17.52" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="47.9194" y="17.3185" size="0.4064" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="45.6694" y="18.5185" size="0.4064" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="VALUE" x="45.2194" y="17.3185" size="0.4064" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
-<element name="C502" library="pixhawk2" package="0402-CAP" value="10n" x="44.9904" y="14.608" rot="R180">
+<element name="C502" library="pixhawk2" package="0402-CAP" value="10n" x="44.9904" y="14.608" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="CC0402KRX7R7BB103" x="44.9904" y="16.640003125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="45.6794" y="14.0095" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="44.1794" y="14.8095" size="0.4064" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R802" library="pixhawk2" package="0402-RES" value="1K5" x="20.0208" y="31.152" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="RC0402FR-071K5L" x="29.367996875" y="31.152" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="18.9193" y="29.563" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="NAME" x="18.6693" y="30.463" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
 <attribute name="VALUE" x="19.8193" y="31.863" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
 <element name="R801" library="pixhawk2" package="0402-RES" value="47R" x="20.352" y="28.6584" smashed="yes" rot="MR180">
 <attribute name="PARTNO" value="RC0402JR-0747RL" x="15.881596875" y="20.9368" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="18.663" y="27.9599" size="0.4064" layer="26" font="vector" ratio="15" rot="MR180"/>
+<attribute name="NAME" x="19.563" y="27.8099" size="0.4064" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="VALUE" x="21.063" y="28.8599" size="0.4064" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
-<element name="R707" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="41.1244" y="20.6264" rot="MR90">
+<element name="R707" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="41.1244" y="20.6264" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="41.1244" y="20.6264" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="39.9229" y="19.9874" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="40.9229" y="21.3374" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="R708" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="41.1256" y="18.5444" rot="MR270">
+<element name="R708" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="41.1256" y="18.5444" smashed="yes" rot="MR270">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="41.1256" y="18.5444" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="40.3271" y="19.2334" size="0.4064" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="VALUE" x="41.3271" y="17.8334" size="0.4064" layer="28" font="vector" ratio="15" rot="MR270"/>
 </element>
-<element name="R706" library="pixhawk2" package="0402-RES" value="1K" x="30.9288" y="11.1944" rot="MR90">
+<element name="R706" library="pixhawk2" package="0402-RES" value="1K" x="30.9288" y="11.1944" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="RC0402FR-071KL" x="30.9288" y="11.1944" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="31.7273" y="10.5554" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="30.7273" y="11.9054" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="C703" library="pixhawk2" package="0402-CAP" value="10n" x="48.52" y="13.6212" rot="MR0">
+<element name="C703" library="pixhawk2" package="0402-CAP" value="10n" x="48.52" y="13.6212" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="CC0402KRX7R7BB103" x="48.52" y="13.6212" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="51.009" y="13.5697" size="0.4064" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="VALUE" x="47.709" y="13.4197" size="0.4064" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
 <element name="C708" library="pixhawk2" package="0603-CAP" value="1u0" x="44.68" y="15.4888" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="CC0603ZRY5V7BB105" x="44.68" y="15.4888" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="45.1785" y="13.6998" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="NAME" x="45.4002" y="13.7785" size="0.4064" layer="26" font="vector" ratio="15" rot="MR0"/>
 <attribute name="VALUE" x="44.4785" y="16.2998" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
 <element name="C705" library="pixhawk2" package="0603-CAP" value="1u0" x="46.208" y="14.8152" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="CC0603ZRY5V7BB105" x="46.208" y="14.8152" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="44.8262" y="13.4935" size="0.4064" layer="26" font="vector" ratio="15" rot="MR180"/>
+<attribute name="NAME" x="45.5262" y="13.4935" size="0.4064" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="VALUE" x="46.0065" y="15.6262" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
 <element name="R704" library="pixhawk2" package="0402-RES" value="10K" x="30.376" y="31.9888" smashed="yes" rot="MR180">
 <attribute name="PARTNO" value="RC0402FR-0710KL" x="30.376" y="31.9888" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="28.887" y="33.1903" size="0.4064" layer="26" font="vector" ratio="15" rot="MR180"/>
+<attribute name="NAME" x="29.737" y="33.1403" size="0.4064" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="VALUE" x="31.087" y="32.1903" size="0.4064" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
 <element name="L203" library="PX4lite" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="21.928" y="11.764" rot="MR0">
@@ -1708,44 +1736,52 @@ Covered vias can be set in Masks (Limit).
 <attribute name="NAME" x="46.0335" y="5.1126" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="46.9335" y="6.7126" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="U402" library="pixhawk2" package="SOT23-8" value="MAX3051" x="49.9544" y="6.5448" smashed="yes" rot="R90">
+<element name="U402" library="pixhawk2" package="SOT23-8" value="MAX3051" x="49.9544" y="6.5448" locked="yes" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="MAX3051EKA" x="46.2968" y="-3.6152" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="51.9544" y="9.1948" size="0.4" layer="27" font="vector" ratio="15" rot="R180"/>
-<attribute name="NAME" x="51.4052" y="6.8544" size="0.4" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="50.5544" y="8.5948" size="0.4" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C402" library="pixhawk2" package="0402-CAP" value="0u1" x="52.4216" y="6.5496" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="54.4536" y="21.18" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="51.3201" y="7.1386" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="51.3701" y="7.2386" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="52.2201" y="5.7386" size="0.4064" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="R402" library="pixhawk2" package="0402-RES" value="1K5" x="24.4128" y="31.4872" rot="R90">
+<element name="R402" library="pixhawk2" package="0402-RES" value="1K5" x="24.4128" y="31.4872" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="RC0402FR-071K5L" x="21.9744" y="31.4872" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="25.4643" y="30.7982" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="VALUE" x="24.6143" y="32.1982" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="R404" library="pixhawk2" package="0402-RES" value="1K5" x="22.2304" y="31.4872" rot="R90">
+<element name="R404" library="pixhawk2" package="0402-RES" value="1K5" x="22.2304" y="31.4872" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="RC0402FR-071K5L" x="21.4176" y="27.0168" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="21.3482" y="29.9681" size="0.4064" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="22.4319" y="32.1982" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="R405" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="16.008" y="32.012" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="1.784003125" y="37.2952" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="15.0065" y="32.701003125" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="16.7065" y="32.651003125" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="15.806496875" y="31.301003125" size="0.4064" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="R406" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="16.012" y="26.048" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="31.861596875" y="14.6688" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="17.7135" y="25.458996875" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="17.0135" y="25.408996875" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="16.213503125" y="26.758996875" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="R804" library="pixhawk2" package="0402-RES" value="220R" x="43.4832" y="25.8952" rot="MR270">
+<element name="R804" library="pixhawk2" package="0402-RES" value="220R" x="43.4832" y="25.8952" smashed="yes" rot="MR270">
 <attribute name="PARTNO" value="RC0402FR-07220RL" x="43.4832" y="25.8952" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="42.6347" y="26.6842" size="0.4064" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="VALUE" x="43.6847" y="25.1842" size="0.4064" layer="28" font="vector" ratio="15" rot="MR270"/>
 </element>
-<element name="LED801" library="pixhawk2" package="0603-LED" value="AMBER" x="43.3496" y="21.628" rot="MR270">
+<element name="LED801" library="pixhawk2" package="0603-LED" value="AMBER" x="43.3496" y="21.628" smashed="yes" rot="MR270">
 <attribute name="PARTNO" value="APTD1608SECK" x="43.3496" y="21.628" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="44.8011" y="22.767" size="0.4064" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="VALUE" x="43.5511" y="20.917" size="0.4064" layer="28" font="vector" ratio="15" rot="MR270"/>
 </element>
 <element name="U$701" library="pixhawk2" package="MLF-8-EPAD" value="MIC5332" x="48.1136" y="15.6224" smashed="yes" rot="MR270">
 <attribute name="PARTNO" value="MIC5332-SSYMT" x="48.1136" y="15.6224" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="47.0136" y="17.2224" size="0.5" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="NAME" x="49.9136" y="16.9224" size="0.5" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="VALUE" x="49.8136" y="16.7224" size="0.5" layer="28" font="vector" ratio="15" rot="MR270"/>
 </element>
-<element name="U$703" library="PX4lite" package="QFN8-DSG" value="BQ24315" x="47.5776" y="20.24" rot="R270">
+<element name="U$703" library="PX4lite" package="QFN8-DSG" value="BQ24315" x="47.5776" y="20.24" locked="yes" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="BQ24315DSGR" x="47.5776" y="20.24" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R703" library="pixhawk2" package="0402-RES" value="47K" x="49.4064" y="20.3352" smashed="yes" rot="R270">
@@ -1753,22 +1789,28 @@ Covered vias can be set in Masks (Limit).
 <attribute name="NAME" x="50.1049" y="20.9242" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="49.2049" y="19.6242" size="0.4064" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="U$204" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="21.6248" y="10.0864" rot="MR180">
+<element name="U$204" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="21.6248" y="10.0864" smashed="yes" rot="MR180">
 <attribute name="PARTNO" value="PESD0402-140" x="21.6248" y="10.0864" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="20.6858" y="10.9879" size="0.4064" layer="26" font="vector" ratio="15" rot="MR180"/>
+<attribute name="VALUE" x="22.3358" y="10.2879" size="0.4064" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
 <element name="U$401" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="29.5496" y="37.2632">
 <attribute name="PARTNO" value="PESD0402-140" x="29.5496" y="37.2632" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$801" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="21.2944" y="28.984" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="PESD0402-140" x="21.2944" y="28.984" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="21.5959" y="25.695" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="22.1959" y="28.145" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="21.4959" y="29.695" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="C706" library="pixhawk2" package="0805-CAP" value="10u/10V" x="26.5568" y="16.5984" rot="R180">
+<element name="C706" library="pixhawk2" package="0805-CAP" value="10u/10V" x="26.5568" y="16.5984" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="CC0805ZKY5V6BB106" x="26.5568" y="16.5984" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="26.9258" y="18.1999" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="25.3758" y="16.7999" size="0.4064" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="R803" library="pixhawk2" package="0402-RES" value="220R" x="43.4608" y="23.8632" rot="MR270">
+<element name="R803" library="pixhawk2" package="0402-RES" value="220R" x="43.4608" y="23.8632" smashed="yes" rot="MR270">
 <attribute name="PARTNO" value="RC0402FR-07220RL" x="43.4608" y="23.8632" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="42.6623" y="24.7522" size="0.4064" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="VALUE" x="43.6623" y="23.1522" size="0.4064" layer="28" font="vector" ratio="15" rot="MR270"/>
 </element>
 <element name="JP1103" library="pixhawk2" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="22.15" y="14.25">
 <attribute name="PARTNO" value="*" x="22.15" y="14.25" size="1.778" layer="27" display="off"/>
@@ -1778,41 +1820,53 @@ Covered vias can be set in Masks (Limit).
 <attribute name="PARTNO" value="*" x="40" y="34.3" size="1.778" layer="27" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="40" y="34.3" size="1.778" layer="27" display="off"/>
 </element>
-<element name="L1001" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="49.0848" y="24.1608" rot="R270">
+<element name="L1001" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="49.0848" y="24.1608" locked="yes" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="NUF8402MN" x="49.0848" y="24.1608" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="45.8348" y="26.1608" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="50.7348" y="27.1608" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="L201" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="22.34" y="15.316" rot="MR270">
+<element name="L201" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="22.34" y="15.316" locked="yes" smashed="yes" rot="MR270">
 <attribute name="PARTNO" value="NUF8402MN" x="22.34" y="15.316" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="25.59" y="17.316" size="1.27" layer="28" rot="MR270"/>
+<attribute name="NAME" x="20.74" y="17.716" size="1.27" layer="26" rot="MR270"/>
 </element>
-<element name="L202" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="22.8712" y="23.6824" rot="MR270">
+<element name="L202" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="22.8712" y="23.6824" locked="yes" smashed="yes" rot="MR270">
 <attribute name="PARTNO" value="NUF8402MN" x="22.8712" y="23.6824" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="26.1212" y="25.6824" size="1.27" layer="28" rot="MR270"/>
+<attribute name="NAME" x="20.9712" y="24.3824" size="1.27" layer="26" rot="MR270"/>
 </element>
-<element name="U$302" library="PX4lite" package="WSON-8-5X6" value="W25Q64FV" x="23.6416" y="24.4696" smashed="yes">
+<element name="U$302" library="PX4lite" package="WSON-8-5X6" value="W25Q64FV" x="23.6416" y="24.4696" locked="yes" smashed="yes">
 <attribute name="PARTNO" value="W25Q64FVZP" x="23.6416" y="24.4696" size="1.778" layer="27" display="off"/>
 </element>
 <element name="L402" library="PX4lite" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="29.1272" y="36.424" rot="MR90">
 <attribute name="PARTNO" value="KNH16C104DA5TS" x="29.1272" y="36.424" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="R401" library="pixhawk2" package="0402-RES" value="1K5" x="23.348" y="31.492" rot="R90">
+<element name="R401" library="pixhawk2" package="0402-RES" value="1K5" x="23.348" y="31.492" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="RC0402FR-071K5L" x="20.7064" y="31.492" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="23.053" y="29.9505" size="0.4064" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="23.5495" y="32.203" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="R403" library="pixhawk2" package="0402-RES" value="1K5" x="21.0656" y="31.492" rot="R90">
+<element name="R403" library="pixhawk2" package="0402-RES" value="1K5" x="21.0656" y="31.492" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="RC0402FR-071K5L" x="20.0496" y="27.2248" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="20.4171" y="30.703" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="VALUE" x="21.2671" y="32.203" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="L403" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="23.1288" y="31.6872" rot="MR0">
+<element name="L403" library="PX4lite" package="DFN16-THIN" value="NUF8402MN" x="23.1288" y="31.6872" locked="yes" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="NUF8402MN" x="23.1288" y="31.6872" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="24.6288" y="32.8372" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="25.1288" y="28.4372" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="SJ402" library="SparkFun-Passives" package="SJ_2S-NOTRACE" value="SOLDERJUMPERNC2" x="47.0984" y="8.0592">
 <attribute name="BOM" value="EXCLUDE" x="47.0984" y="8.0592" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C403" library="pixhawk2" package="0402-CAP" value="0u1" x="16.0056" y="29.9968" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="16.0056" y="29.9968" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="15.8041" y="28.8858" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="16.5541" y="30.7358" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="15.8041" y="29.1858" size="0.4064" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="C404" library="pixhawk2" package="0402-CAP" value="0u1" x="16.0056" y="28.0616" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="16.0056" y="28.0616" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="15.3071" y="29.0726" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="17.0071" y="27.3226" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="16.2071" y="28.8726" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="U$301" library="PX4lite" package="SOT563-6" value="NUF2042XV6" x="33.256" y="34.7408" rot="R90">
@@ -1820,143 +1874,184 @@ Covered vias can be set in Masks (Limit).
 </element>
 <element name="R408" library="pixhawk2" package="0402-RES" value="120R" x="46.682" y="5.9664" smashed="yes" rot="MR270">
 <attribute name="PARTNO" value="RC0402FR-07120RL" x="30.934" y="5.9664" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="45.9835" y="6.6554" size="0.4064" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="NAME" x="45.8335" y="6.4554" size="0.4064" layer="26" font="vector" ratio="15" rot="MR270"/>
 <attribute name="VALUE" x="46.8835" y="5.2554" size="0.4064" layer="28" font="vector" ratio="15" rot="MR270"/>
 </element>
-<element name="U401" library="pixhawk2" package="SOT23-8" value="MAX3051" x="50.0224" y="6.5552" smashed="yes" rot="MR270">
+<element name="U401" library="pixhawk2" package="SOT23-8" value="MAX3051" x="50.0224" y="6.5552" locked="yes" smashed="yes" rot="MR270">
 <attribute name="PARTNO" value="MAX3051EKA" x="42.9104" y="6.5552" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="VALUE" x="52.0224" y="3.9052" size="0.4" layer="28" font="vector" ratio="15" rot="MR0"/>
-<attribute name="NAME" x="51.5052" y="6.0776" size="0.4" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="NAME" x="48.4052" y="5.3276" size="0.4" layer="26" font="vector" ratio="15" rot="MR90"/>
 </element>
 <element name="C401" library="pixhawk2" package="0402-CAP" value="0u1" x="52.4216" y="6.584" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="53.336" y="1.9104" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="52.2201" y="3.195" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="NAME" x="51.595" y="5.4299" size="0.4064" layer="26" font="vector" ratio="15" rot="MR180"/>
 <attribute name="VALUE" x="52.2201" y="7.395" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="L404" library="PX4lite" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="35.056" y="6.8928" rot="R270">
+<element name="L404" library="PX4lite" package="KYOCERA-KNH16-DA" value="KNH16C104DA5TS" x="35.056" y="6.8928" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="KNH16C104DA5TS" x="31.7032" y="6.8928" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$402" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="35.1264" y="5.588" rot="MR90">
+<element name="U$402" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="35.1264" y="5.588" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="PESD0402-140" x="30.2496" y="3.3528" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="35.8249" y="4.849" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="34.9249" y="6.299" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="SJ401" library="SparkFun-Passives" package="SJ_2S-NOTRACE" value="SOLDERJUMPERNC2" x="47.1336" y="8.0592" rot="MR0">
+<element name="SJ401" library="SparkFun-Passives" package="SJ_2S-NOTRACE" value="SOLDERJUMPERNC2" x="47.1336" y="8.0592" locked="yes" smashed="yes" rot="MR0">
 <attribute name="BOM" value="EXCLUDE" x="47.1336" y="8.0592" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="45.8208" y="8.8361" size="0.4064" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="48.0861" y="6.4082" size="0.4064" layer="28" rot="MR0"/>
 </element>
-<element name="U$501" library="PX4lite" package="16LGA-3X3" value="MAX21100" x="41.124" y="11.9464" smashed="yes" rot="R180">
-<attribute name="NAME" x="42.024" y="14.4464" size="0.5" layer="25" font="vector" ratio="15" rot="R180"/>
+<element name="U$501" library="PX4lite" package="16LGA-3X3" value="MAX21100" x="41.124" y="11.9464" locked="yes" smashed="yes" rot="R180">
+<attribute name="NAME" x="42.324" y="14.3464" size="0.5" layer="25" font="vector" ratio="15" rot="R180"/>
 <attribute name="VALUE" x="42.624" y="14.3464" size="0.5" layer="27" font="vector" ratio="15" rot="R180"/>
 <attribute name="PARTNO" value="MAX21100+" x="41.124" y="11.9464" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C503" library="pixhawk2" package="0402-CAP" value="0u1" x="38.1244" y="11.9432" rot="R90">
+<element name="C503" library="pixhawk2" package="0402-CAP" value="0u1" x="38.1244" y="11.9432" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="38.1244" y="11.9432" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="38.3259" y="10.0542" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="VALUE" x="38.3259" y="12.7542" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="J1001" library="PX4lite" package="3X8RA_SERVO" value="" x="53.068" y="22.9528" locked="yes" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="53.068" y="22.9528" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R902" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="41.6712" y="34.6752" rot="MR90">
+<element name="R902" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="41.6712" y="34.6752" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="52.4408" y="34.6752" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="40.5197" y="33.1362" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="41.4697" y="35.3862" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="R903" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="43.4592" y="32.4328" rot="MR0">
+<element name="R903" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="43.4592" y="32.4328" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="43.4592" y="43.6088" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="42.2687" y="33.1982" size="0.4064" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="VALUE" x="42.7482" y="32.2313" size="0.4064" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
-<element name="R901" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="41.608" y="36.8248" rot="MR90">
+<element name="R901" library="pixhawk2" package="0402-RES" value="10K/0.1%" x="41.608" y="36.8248" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="ERA-2AEB103X" x="53.1904" y="36.8248" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="40.4065" y="36.1858" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="41.4065" y="37.5358" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="D904" library="pixhawk2" package="MICROSMP" value="MSS1P4-M3" x="43.0152" y="36.7248" rot="R90">
+<element name="D904" library="pixhawk2" package="MICROSMP" value="MSS1P4-M3" x="43.0152" y="36.7248" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="MSS1P4-M3/89A" x="45.86" y="30.9336" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="44.1152" y="35.6248" size="0.3" layer="27" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="42.2152" y="35.6248" size="0.3" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="D902" library="SparkFun-DiscreteSemi" package="SMA-DIODE" value="B340A" x="46.4688" y="35.0472" rot="R90">
+<element name="D902" library="SparkFun-DiscreteSemi" package="SMA-DIODE" value="B340A" x="46.4688" y="35.0472" locked="yes" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="B340A" x="46.4688" y="35.0472" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="44.8178" y="35.5112" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="44.8178" y="35.3012" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="D903" library="SparkFun-DiscreteSemi" package="SMA-DIODE" value="B340A" x="45.1528" y="36.1768" rot="MR0">
+<element name="D903" library="SparkFun-DiscreteSemi" package="SMA-DIODE" value="B340A" x="45.1528" y="36.1768" locked="yes" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="B340A" x="45.1528" y="36.1768" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="48.1222" y="36.8888" size="0.4064" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="44.8988" y="37.8278" size="0.4064" layer="28" rot="MR0"/>
 </element>
-<element name="U$601" library="PX4lite" package="PWSON10" value="TPS6303X" x="47.872" y="29.268" smashed="yes" rot="MR180">
+<element name="U$601" library="PX4lite" package="PWSON10" value="TPS6303X" x="47.872" y="29.268" locked="yes" smashed="yes" rot="MR180">
 <attribute name="PARTNO" value="TPS63061DSCT" x="47.872" y="29.268" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="L$601" library="ti_tps_soln2" package="XFL4020" value="XFL4020-222MEB" x="43.8032" y="29.2664" smashed="yes" rot="MR90">
+<element name="L$601" library="ti_tps_soln2" package="XFL4020" value="XFL4020-222MEB" x="43.8032" y="29.2664" locked="yes" smashed="yes" rot="MR90">
 <attribute name="IDC" value="3.7" x="43.8032" y="29.2664" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="L" value="2.2E-6" x="43.8032" y="29.2664" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="VENDOR" value="Coilcraft" x="43.8032" y="29.2664" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Coilcraft" x="43.8032" y="29.2664" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="XFL4020-222MEB" x="43.8032" y="29.2664" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="DCR" value="0.02" x="43.8032" y="29.2664" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="NAME" x="45.2038" y="31.9682" size="0.6096" layer="26" ratio="6" rot="SMR0"/>
+<attribute name="NAME" x="41.3318" y="29.8538" size="0.6096" layer="26" ratio="6" rot="SMR270"/>
 <attribute name="VALUE" x="43.1682" y="25.812" size="1.27" layer="28" ratio="6" rot="SMR90"/>
 <attribute name="PARTNO" value="XFL4020-222MEB" x="43.8032" y="29.2664" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="C606" library="SparkFun-Capacitors" package="1210" value="22uF" x="47.4848" y="22.7512" smashed="yes" rot="MR180">
+<element name="C606" library="SparkFun-Capacitors" package="1210" value="22uF" x="47.4848" y="22.7512" locked="yes" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="CAP-10381" x="47.4848" y="22.7512" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="50.2512" y="23.6152" size="0.4064" layer="26" rot="MR270"/>
+<attribute name="NAME" x="49.8012" y="23.4152" size="0.4064" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="46.5848" y="23.4512" size="0.4064" layer="28" rot="MR180"/>
 <attribute name="PARTNO" value="C3225X7R1C226M250AC" x="47.4848" y="22.7512" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="C604" library="SparkFun-Capacitors" package="1210" value="22uF" x="47.4848" y="25.6976" smashed="yes" rot="MR180">
+<element name="C604" library="SparkFun-Capacitors" package="1210" value="22uF" x="47.4848" y="25.6976" locked="yes" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="CAP-10381" x="47.4848" y="25.6976" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="49.6976" y="28.4152" size="0.4064" layer="26" rot="MR270"/>
+<attribute name="NAME" x="49.6476" y="26.5652" size="0.4064" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="46.5848" y="26.3976" size="0.4064" layer="28" rot="MR180"/>
 <attribute name="PARTNO" value="C3225X7R1C226M250AC" x="47.4848" y="25.6976" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="C605" library="SparkFun-Capacitors" package="1210" value="22uF" x="47.4848" y="19.8048" smashed="yes" rot="MR180">
+<element name="C605" library="SparkFun-Capacitors" package="1210" value="22uF" x="47.4848" y="19.8048" locked="yes" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="CAP-10381" x="47.4848" y="19.8048" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="50.2048" y="20.5152" size="0.4064" layer="26" rot="MR270"/>
+<attribute name="NAME" x="49.7048" y="20.5652" size="0.4064" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="46.5848" y="20.5048" size="0.4064" layer="28" rot="MR180"/>
 <attribute name="PARTNO" value="C3225X7R1C226M250AC" x="47.4848" y="19.8048" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="C601" library="SparkFun-Capacitors" package="1210" value="22uF" x="47.7816" y="32.6256" smashed="yes" rot="MR180">
+<element name="C601" library="SparkFun-Capacitors" package="1210" value="22uF" x="47.7816" y="32.6256" locked="yes" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="CAP-10381" x="47.7816" y="32.6256" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="NAME" x="50.5256" y="33.5184" size="0.4064" layer="26" rot="MR270"/>
+<attribute name="NAME" x="50.0756" y="33.5684" size="0.4064" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="46.8816" y="33.3256" size="0.4064" layer="28" rot="MR180"/>
 <attribute name="PARTNO" value="C3225X7R1C226M250AC" x="47.7816" y="32.6256" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="JP901" library="SparkFun-Connectors" package="1X02_LONGPADS" value="M02PTH3" x="49.2656" y="35.9312">
 <attribute name="BOM" value="EXCLUDE" x="49.2656" y="35.9312" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C603" library="pixhawk2" package="0402-CAP" value="0u1" x="48.1736" y="27.7376" rot="R180">
+<element name="C603" library="pixhawk2" package="0402-CAP" value="0u1" x="48.1736" y="27.7376" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="48.1736" y="27.2296" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="49.0626" y="28.7891" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="47.3626" y="27.9391" size="0.4064" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="C602" library="pixhawk2" package="0402-CAP" value="0u1" x="44.2424" y="33.5184" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="44.2424" y="33.5184" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="43.1409" y="34.3074" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="NAME" x="43.1909" y="34.2074" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="44.0409" y="32.7074" size="0.4064" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="C704" library="pixhawk2" package="0402-CAP" value="10n" x="45.532" y="17.2052" rot="R180">
+<element name="C704" library="pixhawk2" package="0402-CAP" value="10n" x="45.532" y="17.2052" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="CC0402KRX7R7BB103" x="45.532" y="12.5316" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="46.271" y="16.6067" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="44.721" y="17.4067" size="0.4064" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="C702" library="pixhawk2" package="0603-CAP" value="1u0" x="49.6508" y="16.044" rot="R90">
+<element name="C702" library="pixhawk2" package="0603-CAP" value="1u0" x="49.6508" y="16.044" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="CC0603ZRY5V7BB105" x="50.9716" y="12.2848" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="50.9023" y="15.305" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="VALUE" x="49.8523" y="16.855" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="C707" library="pixhawk2" package="0603-CAP" value="1u0" x="47.6688" y="15.1184">
+<element name="C707" library="pixhawk2" package="0603-CAP" value="1u0" x="47.6688" y="15.1184" smashed="yes">
 <attribute name="PARTNO" value="CC0603ZRY5V7BB105" x="47.6688" y="18.1664" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="46.0298" y="13.8669" size="0.4064" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="48.4798" y="14.9169" size="0.4064" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="U$702" library="pixhawk2" package="MLF-8-EPAD" value="MIC5332" x="47.6688" y="17.0504" rot="R180">
+<element name="U$702" library="pixhawk2" package="MLF-8-EPAD" value="MIC5332" x="47.6688" y="17.0504" locked="yes" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="MIC5332-SSYMT" x="51.2248" y="19.8952" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="48.9188" y="18.8004" size="0.5" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="48.7688" y="18.7504" size="0.5" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="R702" library="pixhawk2" package="0402-RES" value="10K" x="30.568" y="16.0744" rot="MR0">
+<element name="R702" library="pixhawk2" package="0402-RES" value="10K" x="30.568" y="16.0744" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="RC0402FR-0710KL" x="34.124" y="21.764" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="31.407" y="16.8729" size="0.4064" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="VALUE" x="29.857" y="15.8729" size="0.4064" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
-<element name="R701" library="pixhawk2" package="0402-RES" value="10K" x="48.4376" y="13.8424">
+<element name="R701" library="pixhawk2" package="0402-RES" value="10K" x="48.4376" y="13.8424" smashed="yes">
 <attribute name="PARTNO" value="RC0402FR-0710KL" x="48.4376" y="14.2488" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="47.7986" y="12.7409" size="0.4064" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="49.1486" y="13.6409" size="0.4064" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="JP202" library="PX4lite" package="3X1RA" value="HEADER-3X1RA" x="56.78" y="11.0448" rot="R180">
+<element name="JP202" library="PX4lite" package="3X1RA" value="HEADER-3X1RA" x="56.78" y="11.0448" locked="yes" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="56.78" y="11.0448" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C301" library="pixhawk2" package="0603-CAP" value="2u2" x="20.1064" y="29.248" rot="R90">
+<element name="C301" library="pixhawk2" package="0603-CAP" value="2u2" x="20.1064" y="29.248" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="C1608Y5V1C225Z" x="19.9032" y="29.248" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="19.8079" y="30.509" size="0.4064" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="VALUE" x="20.3079" y="30.059" size="0.4064" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="C302" library="pixhawk2" package="0402-CAP" value="0u1" x="19.9728" y="26.8552" rot="R270">
+<element name="C302" library="pixhawk2" package="0402-CAP" value="0u1" x="19.9728" y="26.8552" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="20.5824" y="26.8552" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="20.5713" y="27.5942" size="0.4064" layer="25" font="vector" ratio="15" rot="R270"/>
+<attribute name="VALUE" x="19.7713" y="26.0442" size="0.4064" layer="27" font="vector" ratio="15" rot="R270"/>
 </element>
 <element name="C709" library="pixhawk2" package="0402-CAP" value="0u1" x="38.6528" y="14.5312" smashed="yes">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="38.6528" y="14.5312" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="37.400196875" y="15.2489375" size="0.4064" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="37.950196875" y="15.1489375" size="0.4064" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="39.4638" y="14.3297" size="0.4064" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="C201" library="pixhawk2" package="0402-CAP" value="0u1" x="26.1" y="15.8" rot="MR0">
+<element name="C201" library="pixhawk2" package="0402-CAP" value="0u1" x="26.1" y="15.8" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="CC0402ZRY5V7BB104" x="26.1" y="16.3" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="26.739" y="16.4985" size="0.4064" layer="26" font="vector" ratio="15" rot="MR0"/>
+<attribute name="VALUE" x="25.289" y="15.5985" size="0.4064" layer="28" font="vector" ratio="15" rot="MR0"/>
 </element>
-<element name="JP201" library="SparkFun-Passives" package="SJ_3" value="JUMPER-3SMD" x="47.2" y="12" rot="MR180">
+<element name="JP201" library="SparkFun-Passives" package="SJ_3" value="JUMPER-3SMD" x="47.2" y="12" locked="yes" smashed="yes" rot="MR180">
 <attribute name="BOM" value="EXCLUDE" x="47.2" y="12" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="45.93" y="10.73" size="0.4064" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="47.0999" y="12" size="0.02" layer="28" rot="MR180"/>
+<attribute name="VALUE" x="45.93" y="13.905" size="0.4064" layer="28" rot="MR180"/>
 </element>
 <element name="JP1102" library="pixhawk2" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="33.05" y="33.1" rot="MR0">
 <attribute name="PARTNO" value="*" x="33.05" y="33.1" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -1968,82 +2063,129 @@ Covered vias can be set in Masks (Limit).
 <element name="JP1002" library="SparkFun-Connectors" package="PAD-1.5X4.5" value="M01SMD-4.5X1.5" x="33.6" y="5.5">
 <attribute name="BOM" value="EXCLUDE" x="33.6" y="5.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R1001" library="pixhawk2" package="0402-RES" value="220R" x="31" y="7.3">
+<element name="R1001" library="pixhawk2" package="0402-RES" value="220R" x="31" y="7.3" smashed="yes">
 <attribute name="PARTNO" value="RC0402FR-07220RL" x="31" y="7.7" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="29.911" y="8.0485" size="0.4064" layer="25" font="vector" ratio="15"/>
+<attribute name="VALUE" x="31.711" y="7.0985" size="0.4064" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="R1002" library="pixhawk2" package="0402-RES" value="220R" x="33.1" y="7.3" rot="R180">
+<element name="R1002" library="pixhawk2" package="0402-RES" value="220R" x="33.1" y="7.3" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="RC0402FR-07220RL" x="33.1" y="7.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="34.189" y="8.4015" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="32.389" y="7.5015" size="0.4064" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="JP401" library="SparkFun-Connectors" package="1X04" value="" x="26.9" y="36.8" rot="R180">
+<element name="JP401" library="SparkFun-Connectors" package="1X04" value="" x="26.9" y="36.8" locked="yes" smashed="yes" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="26.9" y="36.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="27.1462" y="41.0712" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="28.17" y="39.975" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="JP402" library="SparkFun-Connectors" package="1X04" value="" x="26.9" y="34.1" rot="R180">
+<element name="JP402" library="SparkFun-Connectors" package="1X04" value="" x="26.9" y="34.1" locked="yes" smashed="yes" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="26.9" y="34.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="27.0962" y="39.5712" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="28.17" y="37.275" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="JP405" library="SparkFun-Connectors" package="1X04" value="" x="37" y="8.1">
+<element name="JP405" library="SparkFun-Connectors" package="1X04" value="" x="37" y="8.1" locked="yes" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="37" y="8.1" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="36.1038" y="2.5788" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="35.73" y="4.925" size="1.27" layer="27"/>
 </element>
-<element name="JP404" library="SparkFun-Connectors" package="1X04" value="" x="37" y="5.5">
+<element name="JP404" library="SparkFun-Connectors" package="1X04" value="" x="37" y="5.5" locked="yes" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="37" y="5.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="36.0038" y="1.0288" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="35.73" y="2.325" size="1.27" layer="27"/>
 </element>
-<element name="JP403" library="SparkFun-Connectors" package="1X03" value="" x="14.1" y="26.5" rot="R90">
+<element name="JP403" library="SparkFun-Connectors" package="1X03" value="" x="14.1" y="26.5" locked="yes" smashed="yes" rot="R90">
 <attribute name="BOM" value="EXCLUDE" x="14.1" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PARTNO" value="EXCLUDE" x="14.1" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="12.3212" y="26.8038" size="0.8128" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="17.275" y="25.23" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="JP801" library="SparkFun-Connectors" package="1X03" value="" x="18" y="26.5" rot="R90">
+<element name="JP801" library="SparkFun-Connectors" package="1X03" value="" x="18" y="26.5" locked="yes" smashed="yes" rot="R90">
 <attribute name="BOM" value="EXCLUDE" x="18" y="26.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="16.1712" y="25.1538" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="21.175" y="25.23" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="JP301" library="SparkFun-Connectors" package="1X04" value="" x="39.6" y="36.9" rot="R180">
+<element name="JP301" library="SparkFun-Connectors" package="1X04" value="" x="39.6" y="36.9" locked="yes" smashed="yes" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="39.6" y="36.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="39.9462" y="39.7712" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="40.87" y="40.075" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="JP203" library="SparkFun-Connectors" package="2X3" value="" x="19.2" y="18.5" rot="R180">
+<element name="JP203" library="SparkFun-Connectors" package="2X3" value="" x="19.2" y="18.5" locked="yes" smashed="yes" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="19.2" y="18.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="11.695" y="19.27" size="0.8128" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="20.47" y="21.675" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="JP204" library="SparkFun-Connectors" package="2X3" value="" x="19.2" y="13.2" rot="R180">
+<element name="JP204" library="SparkFun-Connectors" package="2X3" value="" x="19.2" y="13.2" locked="yes" smashed="yes" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="19.2" y="13.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="11.745" y="14.17" size="0.8128" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="20.47" y="16.375" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="JP205" library="SparkFun-Connectors" package="2X3" value="" x="19.2" y="23.7" rot="R180">
+<element name="JP205" library="SparkFun-Connectors" package="2X3" value="" x="19.2" y="23.7" locked="yes" smashed="yes" rot="R180">
 <attribute name="BOM" value="EXCLUDE" x="19.2" y="23.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="11.645" y="24.42" size="0.8128" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="20.47" y="26.875" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="D901" library="SparkFun-DiscreteSemi" package="SOD-523" value="DIODE-SCHOTTKY" x="43.4" y="33.8" rot="MR0">
+<element name="D901" library="SparkFun-DiscreteSemi" package="SOD-523" value="DIODE-SCHOTTKY" x="43.4" y="33.8" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="MBRA140" x="43.4" y="33.8" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="D701" library="SparkFun-DiscreteSemi" package="SOD-523" value="DIODE-SCHOTTKY" x="30.9" y="13.3" rot="MR270">
 <attribute name="PARTNO" value="MBRA140" x="30.9" y="13.3" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="J401" library="SparkFun-Connectors" package="2X4" value="M04X2" x="23.1" y="6.8">
+<element name="J401" library="SparkFun-Connectors" package="2X4" value="M04X2" x="23.1" y="6.8" locked="yes" smashed="yes">
 <attribute name="BOM" value="EXCLUDE" x="23.1" y="6.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="23.27" y="2.425" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="18.02" y="2.355" size="1.27" layer="27"/>
 </element>
-<element name="R705" library="pixhawk2" package="0402-RES" value="10K" x="45.4" y="28.5" rot="R180">
+<element name="R705" library="pixhawk2" package="0402-RES" value="10K" x="45.4" y="28.5" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="RC0402FR-0710KL" x="45.4" y="28.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="46.089" y="27.8015" size="0.4064" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="44.689" y="28.7015" size="0.4064" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
-<element name="JP1105" library="SparkFun-Connectors" package="1X01" value="M01PTH" x="22.3" y="19.1"/>
-<element name="U$203" library="PX4lite" package="VSSOP8" value="74LVC2G240" x="26.6" y="13.2" rot="MR0">
+<element name="JP1105" library="SparkFun-Connectors" package="1X01" value="M01PTH" x="22.3" y="19.1" locked="yes" smashed="yes">
+<attribute name="NAME" x="23.6938" y="19.8788" size="0.6096" layer="25" ratio="15"/>
+<attribute name="VALUE" x="21.03" y="15.925" size="1.27" layer="27"/>
+</element>
+<element name="U$203" library="PX4lite" package="VSSOP8" value="74LVC2G240" x="26.6" y="13.2" locked="yes" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="74LVC2G240" x="26.6" y="13.2" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="24.156" y="10.3501" size="1.016" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="24.144" y="11.9001" size="1.016" layer="28" rot="MR90"/>
 </element>
-<element name="R203" library="pixhawk2" package="0402-RES" value="10K" x="28.5" y="12.1" rot="MR270">
+<element name="R203" library="pixhawk2" package="0402-RES" value="10K" x="28.5" y="12.1" smashed="yes" rot="MR270">
 <attribute name="PARTNO" value="RC0402FR-0710KL" x="28" y="12.1" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="28.4515" y="14.789" size="0.4064" layer="26" font="vector" ratio="15" rot="MR270"/>
+<attribute name="VALUE" x="28.7015" y="11.389" size="0.4064" layer="28" font="vector" ratio="15" rot="MR270"/>
 </element>
-<element name="R204" library="pixhawk2" package="0402-RES" value="10K" x="29.6" y="12.1" rot="MR90">
+<element name="R204" library="pixhawk2" package="0402-RES" value="10K" x="29.6" y="12.1" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="RC0402FR-0710KL" x="29.6" y="12.1" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="29.2485" y="13.311" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="29.3985" y="12.811" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="U$704" library="pixhawk2" package="MS621FE" value="MS621FE" x="40.5" y="13.1" rot="MR0">
+<element name="U$704" library="pixhawk2" package="MS621FE" value="MS621FE" x="40.5" y="13.1" locked="yes" smashed="yes" rot="MR0">
 <attribute name="MFGPN" value="MS621FE" x="40.5" y="13.1" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="DATASHEET" value="http://speed.sii.co.jp/data/file_PRODUCT_MASTER_50112_TITLE_IMAGESP.pdf" x="40.5" y="13.1" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="LINK" value="http://search.digikey.com/us/en/products/MS621FE-FL11E/728-1057-ND/1889208" x="40.5" y="13.1" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="BOM" value="EXCLUDE" x="40.5" y="13.1" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="37" y="14.6" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="37" y="11.1" size="0.4064" layer="28" rot="MR0"/>
 </element>
-<element name="U$202" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="52.2" y="8.95" rot="MR180">
+<element name="U$202" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="52.2" y="8.95" smashed="yes" rot="MR180">
 <attribute name="PARTNO" value="PESD0402-140" x="52.2" y="8.95" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="51.411" y="8.4515" size="0.4064" layer="26" font="vector" ratio="15" rot="MR180"/>
+<attribute name="VALUE" x="52.911" y="9.1515" size="0.4064" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
-<element name="U$201" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="50.1" y="12.5" rot="MR90">
+<element name="U$201" library="pixhawk2" package="0402-TVS" value="PESD0402-140" x="50.1" y="12.5" smashed="yes" rot="MR90">
 <attribute name="PARTNO" value="PESD0402-140" x="50.1" y="12.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="50.6985" y="11.511" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="49.8985" y="13.211" size="0.4064" layer="28" font="vector" ratio="15" rot="MR90"/>
 </element>
-<element name="R201" library="pixhawk2" package="0402-RES" value="120R" x="49.75" y="10.05" rot="MR180">
+<element name="R201" library="pixhawk2" package="0402-RES" value="120R" x="49.75" y="10.05" smashed="yes" rot="MR180">
 <attribute name="PARTNO" value="RC0402FR-07120RL" x="49.75" y="9.55" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="50.8985" y="9.961" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="50.461" y="10.2515" size="0.4064" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
-<element name="R202" library="pixhawk2" package="0402-RES" value="120R" x="49.75" y="8.95" rot="MR180">
+<element name="R202" library="pixhawk2" package="0402-RES" value="120R" x="49.75" y="8.95" smashed="yes" rot="MR180">
 <attribute name="PARTNO" value="RC0402FR-07120RL" x="49.75" y="8.95" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="50.8985" y="8.261" size="0.4064" layer="26" font="vector" ratio="15" rot="MR90"/>
+<attribute name="VALUE" x="50.461" y="9.1515" size="0.4064" layer="28" font="vector" ratio="15" rot="MR180"/>
 </element>
 <element name="JP1101" library="pixhawk2" package="FIDUCIAL-1.5X3" value="FIDUCIAL1.5X3" x="24.25" y="10.55" rot="MR90">
 <attribute name="PARTNO" value="*" x="24.25" y="10.55" size="1.778" layer="28" rot="MR90" display="off"/>
